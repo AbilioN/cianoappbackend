@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    
+
     public function register(Request $request)
     {
         $validator = Validator::make([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => $request->password,
-        ], 
+        ],
         [
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
@@ -54,7 +54,10 @@ class AuthController extends Controller
         ]);
 
         if (!Auth::attempt($request->only('email', 'password'))) {
-            return response()->json(['message' => 'Credenciais inválidas'], 401);
+            return response()->json([
+                'message' => 'Credenciais inválidas',
+                'error_code' => 'invalid_credentials'
+            ], 401);
         }
 
         $user = Auth::user();

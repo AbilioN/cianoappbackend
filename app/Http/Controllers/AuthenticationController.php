@@ -12,10 +12,10 @@ use Illuminate\Validation\Rule;
 
 class AuthenticationController extends Controller
 {
-    
+
     public function register(Request $request)
     {
-        
+
         try {
             // dd($request->all());
             $validator = Validator::make(
@@ -29,7 +29,7 @@ class AuthenticationController extends Controller
                     'email' => ['required', 'email', Rule::unique('users')],
                     'password' => ['required', 'min:8'],
                 ]);
-    
+
             if($validator->fails()) {
                 return redirect()->back()->withErrors($validator);
             }
@@ -66,19 +66,19 @@ class AuthenticationController extends Controller
                 {
                     return redirect()->intended('/admin');
                 }
-                
+
                 return redirect()->intended('/home');
             }
             return back()->withErrors([
                 'email' => 'Credenciais inválidas!',
                 'password' => 'Credenciais inválidas!'
             ])->onlyInput('email');
-            
+
         }catch(Exception $e) {
             dd($e->getMessage());
             return redirect()->back()->withErrors(['email' => 'Credenciais inválidas. Verifique seu e-mail e senha.']);
         }
-   
+
     }
 
     public function logout(Request $request)
@@ -91,11 +91,11 @@ class AuthenticationController extends Controller
         }else{
             $redirectRoute = '/';
         }
-        
+
         Auth::logout();
-    
+
         $request->session()->invalidate();
-    
+
         $request->session()->regenerateToken();
         return redirect($redirectRoute);
     }
