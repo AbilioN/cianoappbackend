@@ -7,13 +7,12 @@ use App\Livewire\Admin;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Dashboard;
-use App\Livewire\HistoryCredits\Find;
-use App\Livewire\HistoryCredits\Show as HistoryCreditsShow;
 use App\Livewire\Partner\Create;
 use App\Livewire\Partner\Edit;
 use App\Livewire\Partner\Show;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Admin as AdminMiddleware;
+use App\Livewire\Aquariums\Create as AquariumsCreate;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,9 +41,8 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/partner/create', Create::class)->name('admin.partner.create');
     Route::get('/admin/partner/show', Show::class)->name('admin.partner.show');
     Route::get('/admin/partner/edit/{id}', Edit::class)->name('admin.partner.edit');
+    Route::get('/admin/aquariums/create', AquariumsCreate::class)->name('admin.aquariums.create');
 
-    Route::get('/admin/credits/show', HistoryCreditsShow::class)->name('admin.credits.show');
-    Route::get('/admin/credits/find/{id}', Find::class)->name('admin.credits.find');
     Route::get('/profile', function () {
         // ...
     })->withoutMiddleware([AdminMiddleware::class]);

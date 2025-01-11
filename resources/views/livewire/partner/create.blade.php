@@ -1,6 +1,6 @@
 <div>
     <div class="mt-12 flex justify-center">
-        <div class="max-w-lg w-full bg-white shadow-md rounded-md">
+        <div class="max-w-lg w-full bg-white shadow-md rounded-md border border-solid border-gray-100">
             <div class="p-8">
               <h2 class="text-2xl font-bold text-gray-800 mb-8">Cadastro</h2>
                   <div class="mb-6">
