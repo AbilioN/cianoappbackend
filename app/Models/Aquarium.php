@@ -8,7 +8,7 @@ class Aquarium extends Model
 {
     //
 
-    protected $fillable = ['name', 'user_id'];
+    protected $fillable = ['name', 'slug', 'user_id'];
 
     public function user()
     {

@@ -207,7 +207,7 @@
                     </a>
                   <ul x-show="open" class="mt-1 px-2" id="sub-menu-1">
                       <li>
-                          <a href="{{ route('admin.aquariums.create') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white ">Consumo de Creditos</a>
+                          <a href="#" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white ">Consumo de Creditos</a>
                       </li>
                       {{-- <li>
                           <a href="{{route('admin.partner.create')}}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Cadastro</a>
