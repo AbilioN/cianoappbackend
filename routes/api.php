@@ -12,7 +12,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
 
     Route::post('create-aquarium', [AquariumController::class, 'createAquarium']);
-    Route::get('get-aquarium', [AquariumController::class, 'getAquarium']);
+    Route::get('aquariums', [AquariumController::class, 'getAquarium']);
     Route::get('get-aquarium-by-id', [AquariumController::class, 'getAquariumById']);
     Route::put('update-aquarium', [AquariumController::class, 'updateAquarium']);
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
