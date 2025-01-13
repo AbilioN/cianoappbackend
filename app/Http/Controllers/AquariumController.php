@@ -39,7 +39,7 @@ class AquariumController extends Controller
             ]);
             // dd($aquarium);
             DB::commit();
-            return response()->json(['message' => 'Aquarium created successfully', 'message_code' => 'aquarium_created_successfully', 'aquarium' => $aquarium]);
+            return response()->json(['message' => 'success', 'message_code' => 'aquarium_created_successfully', 'aquarium' => $aquarium]);
         }catch(\Exception $e){
             DB::rollBack();
             dd($e->getMessage());
@@ -52,7 +52,12 @@ class AquariumController extends Controller
 
     public function getAquarium()
     {
-        return response()->json(['message' => 'Aquarium retrieved successfully']);
+        $user = Auth::user();
+        $aquariums = $user->aquariums;
+        if($aquariums->isEmpty()){
+            return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+        }
+        return response()->json(['message' => 'success', 'message_code' => 'aquariums_retrieved_successfully', 'aquariums' => $aquariums]);
     }
 }
 

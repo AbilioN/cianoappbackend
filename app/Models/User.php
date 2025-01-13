@@ -10,7 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    
+
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -25,7 +25,7 @@ class User extends Authenticatable
         'password',
         'role_id',
     ];
-    
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -35,7 +35,7 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-    
+
     /**
      * Get the attributes that should be cast.
      *
@@ -48,19 +48,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    
+
     public function role()
     {
         return $this->hasOne(Role::class , 'id', 'role_id');
-    }
-
-    public function aquariums()
-    {
-        return $this->hasMany(Aquarium::class, 'user_id', 'id');
     }
     
     public function counter() 
     {
         return $this->hasMany(LoginCounter::class, 'user_id', 'id');
+    }
+
+    public function aquariums()
+    {
+        return $this->hasMany(Aquarium::class, 'user_id', 'id');
     }
 }
