@@ -12,8 +12,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
 
     Route::post('create-aquarium', [AquariumController::class, 'createAquarium']);
-    Route::get('aquariums', [AquariumController::class, 'getAquarium']);
-    Route::get('get-aquarium-by-id', [AquariumController::class, 'getAquariumById']);
+    Route::get('aquariums', [AquariumController::class, 'getAquariums']);
+    Route::get('aquarium/{id}', [AquariumController::class, 'getAquarium']);
     Route::put('update-aquarium', [AquariumController::class, 'updateAquarium']);
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
     // Adicione outras rotas autenticadas aqui
