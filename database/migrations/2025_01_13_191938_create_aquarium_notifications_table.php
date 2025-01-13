@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('aquarium_notifications', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('aquarium_id')->constrained('aquariums');
+            $table->foreignId('aquarium_id')->constrained('aquaria');
             $table->foreignId('notification_id')->constrained('notifications');
             $table->timestamps();
         });

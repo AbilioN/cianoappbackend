@@ -20,8 +20,9 @@ class Notification extends Model
         return $this->belongsTo(Aquarium::class);
     }
 
-    public function notificationBodies()
+    public function bodies()
     {
         return $this->hasMany(NotificationBody::class);
     }
+
 }

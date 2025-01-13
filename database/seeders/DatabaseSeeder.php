@@ -34,16 +34,18 @@ class DatabaseSeeder extends Seeder
             'role_id' => 1,
         ]);
 
-        Aquarium::factory()->create([
+        Aquarium::create([
             'user_id' => 1,
             'name' => 'Test Aquarium',
             'slug' => 'test-aquarium',
         ]);
 
-        Notification::factory()->create([
-            'key' => 'fish_aquarium',
+        Notification::create([
+            'name' => 'Fish Aquarium',
+            'slug' => 'fish-aquarium',
+            // 'key' => 'fish_aquarium',
             'duration_type' => 'seconds',
-            'duration_value' => 10,
+            'duration_value' => 3,
             'type' => 'single',
             'start_date' => now(),
             'end_date' => now()->addSeconds(10),
@@ -77,7 +79,7 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($notifications as $lang => $notification) {
-            NotificationBody::factory()->create([
+            NotificationBody::create([
                 'notification_id' => 1,
                 'lang' => $lang,
                 'title' => $notification['title'],
