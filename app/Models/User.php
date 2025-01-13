@@ -54,13 +54,15 @@ class User extends Authenticatable
         return $this->hasOne(Role::class , 'id', 'role_id');
     }
 
+    public function aquariums()
+    {
+        return $this->hasMany(Aquarium::class, 'user_id', 'id');
+    }
+
     public function counter()
     {
         return $this->hasMany(LoginCounter::class, 'user_id', 'id');
     }
 
-    public function aquariums()
-    {
-        return $this->hasMany(Aquarium::class, 'user_id', 'id');
-    }
+
 }

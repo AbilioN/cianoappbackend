@@ -41,7 +41,6 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/partner/create', Create::class)->name('admin.partner.create');
     Route::get('/admin/partner/show', Show::class)->name('admin.partner.show');
     Route::get('/admin/partner/edit/{id}', Edit::class)->name('admin.partner.edit');
-    Route::get('/admin/aquariums/create', AquariumsCreate::class)->name('admin.aquariums.create');
 
     Route::get('/profile', function () {
         // ...
