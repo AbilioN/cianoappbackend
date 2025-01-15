@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('duration_type');
             $table->integer('duration_value');
             $table->string('type');
-            $table->boolean('is_read')->default(false);
-            $table->dateTime('start_date');
-            $table->dateTime('end_date');
-            $table->dateTime('renew_date')->nullable();
-            $table->dateTime('read_at')->nullable();
+            // $table->boolean('is_read')->default(false);
+            // $table->dateTime('start_date');
+            // $table->dateTime('end_date');
+            // $table->dateTime('renew_date')->nullable();
+            // $table->dateTime('read_at')->nullable();
             $table->string('callback_key')->nullable();
             $table->dateTime('created_at');
             $table->dateTime('updated_at');

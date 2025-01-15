@@ -45,10 +45,11 @@ class DatabaseSeeder extends Seeder
             'slug' => 'fish-aquarium',
             // 'key' => 'fish_aquarium',
             'duration_type' => 'seconds',
-            'duration_value' => 3,
+            'duration_value' => 10,
             'type' => 'single',
-            'start_date' => now(),
-            'end_date' => now()->addSeconds(10),
+            // 'start_date' => now(),
+            // 'end_date' => now()->addSeconds(10),
+            // 'callback_key' => 'fish_aquarium',
         ]);
 
         $notifications = [
@@ -58,7 +59,7 @@ class DatabaseSeeder extends Seeder
             ],
             'pt' => [
                 'title' => 'Notificação de Teste',
-                'body' => 'Esta é uma notificação de teste',
+                'body' => 'Esta é uma notificação de teste vinda diretamente do back end',
             ],
             'it' => [
                 'title' => 'Notifica di Test',

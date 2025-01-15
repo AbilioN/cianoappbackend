@@ -21,6 +21,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('notifications', [NotificationController::class, 'getNotifications']);
     Route::get('notification/{slug}', [NotificationController::class, 'getNotification']);
+
+    Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     // Adicione outras rotas autenticadas aqui
 });
 
