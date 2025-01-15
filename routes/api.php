@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\AquariumController;
+use App\Http\Controllers\NotificationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('aquarium/{id}', [AquariumController::class, 'getAquarium']);
     Route::put('update-aquarium', [AquariumController::class, 'updateAquarium']);
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
+
+
+    Route::get('notifications', [NotificationController::class, 'getNotifications']);
+    Route::get('notification/{slug}', [NotificationController::class, 'getNotification']);
+
+    Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     // Adicione outras rotas autenticadas aqui
 });
 

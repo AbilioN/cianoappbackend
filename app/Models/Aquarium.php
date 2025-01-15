@@ -14,4 +14,15 @@ class Aquarium extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function notifications()
+    {
+        return $this->hasMany(AquariumNotification::class);
+    }
+
+    public function allNotifications()
+    {
+        return $this->hasManyThrough(Notification::class, AquariumNotification::class);
+    }
+
 }
