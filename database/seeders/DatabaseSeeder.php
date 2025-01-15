@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Aquarium::create([
-            'user_id' => 1,
+            'user_id' => 3,
             'name' => 'Test Aquarium',
             'slug' => 'test-aquarium',
         ]);

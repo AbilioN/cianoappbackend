@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aquarium;
 use App\Models\AquariumNotification;
 use App\Models\Notification;
 use Illuminate\Http\Request;
@@ -22,10 +23,16 @@ class NotificationController extends Controller
     {
         try{
             // dd($request->all());
+            // return response()->json([
+            //     'message' => 'success',
+            //     'message_code' => 'notification_activated',
+            //     'notification' => $request->all()
+            // ]);
 
             DB::beginTransaction();
             $isCreating = false;
             $user = Auth::user();
+
             $notification = Notification::where('slug', $request->notification_slug)->first();
             if (!$notification) {
                 return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
@@ -33,6 +40,7 @@ class NotificationController extends Controller
 
             $durationValue = $notification->duration_value;
             $durationType = $notification->duration_type;
+            $startDate = now();
 
             if ($durationType === 'days') {
                 $endDate = now()->addDays($durationValue);
@@ -48,26 +56,37 @@ class NotificationController extends Controller
                 $endDate = now();
             }
 
-            $userAquariumNotification = AquariumNotification::where('user_id', $user->id)->where('notification_id', $notification->id)->first();
-            if ($userAquariumNotification) {
+            $aquarium = Aquarium::find($request->aquarium_id);
+            if(!$aquarium){
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
+            }
+
+            if($aquarium->user_id != $user->id  ){
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
+            }
+
+                $userAquariumNotification = AquariumNotification::where('aquarium_id', $aquarium->id)->where('notification_id', $notification->id)->first();
+
+            if (!$userAquariumNotification) {
                 // return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
                 $userAquariumNotification = AquariumNotification::firstOrCreate([
-                    'user_id' => $user->id,
+                    'aquarium_id' => $aquarium->id,
                     'notification_id' => $notification->id,
-                    'start_date' => now(),
+                    'start_date' => $startDate,
                     'end_date' => $endDate,
                     // 'renew_date' => now()->addDays($notification->duration_value),
                 ]);
                 $isCreating = true;
             }
 
-
             if($isCreating){
                 // $notification->is_active = true;
                 // $notification->save();
-                return response()->json(['message' => 'success' , 'message_code' => 'notification_activated' , 'notification' => $notification]);
+                return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'notification' => $userAquariumNotification->toDto()]);
             }else{
-                return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
+                // return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
+                return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'notification' => $userAquariumNotification->toDto()]);
+
             }
 
         }catch(\Exception $e){
