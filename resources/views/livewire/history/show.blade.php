@@ -16,7 +16,7 @@
                             <li onclick="toggleDiv(1)" class="p-3 hover:bg-[#e7f7f7] hover:cursor-pointer ">
                                 Aquario 1
                             </li>
-                            <div id="next-to-1" class="overflow-hidden max-h-0 max-h-[500px] transition-[max-height] duration-300 easy-in-out">
+                            <div id="next-to-1" class="overflow-hidden max-h-[0px!important] max-h-[500px] transition-[max-height] duration-300 easy-in-out">
                                 <table class="min-w-full divide-y divide-gray-300">
                                     <thead>
                                         <tr>
@@ -81,7 +81,7 @@
                             <li onclick="toggleDiv(2)" class="p-3 hover:bg-[#e7f7f7] hover:cursor-pointer ">
                                 Aquario 2
                             </li>
-                            <div id="next-to-2" class="overflow-auto max-h-0 max-h-[500px] transition-[max-height] duration-300 easy-in-out">
+                            <div id="next-to-2" class="overflow-auto max-h-[0px!important] max-h-[500px] transition-[max-height] duration-300 easy-in-out">
                                 <table class="min-w-full divide-y divide-gray-300">
                                     <thead>
                                         <tr>
@@ -146,7 +146,7 @@
                             <li onclick="toggleDiv(3)" class="p-3 hover:bg-[#e7f7f7] hover:cursor-pointer ">
                                 Aquario 3
                             </li>
-                            <div id="next-to-3" class="overflow-auto max-h-0 max-h-[500px] transition-[max-height] duration-300 easy-in-out">
+                            <div id="next-to-3" class="overflow-auto max-h-[0px!important] max-h-[500px] transition-[max-height] duration-300 easy-in-out">
                                 <table class="min-w-full divide-y divide-gray-300">
                                     <thead>
                                         <tr>
@@ -222,7 +222,7 @@
     <script>
         function toggleDiv(id) {
         const proximo = document.getElementById('next-to-' + id);
-          proximo.classList.toggle('max-h-0');
+          proximo.classList.toggle('max-h-[0px!important]');
         }
       </script>
     
