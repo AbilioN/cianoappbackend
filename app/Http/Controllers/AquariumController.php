@@ -50,7 +50,7 @@ class AquariumController extends Controller
         // return response()->json(['message' => 'Aquarium created successfully']);
     }
 
-    public function getAquarium()
+    public function getAquariums()
     {
         $user = Auth::user();
         $aquariums = $user->aquariums;
@@ -58,6 +58,20 @@ class AquariumController extends Controller
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }
         return response()->json(['message' => 'success', 'message_code' => 'aquariums_retrieved_successfully', 'aquariums' => $aquariums]);
+    }
+
+    public function getAquarium(Request $request)
+    {
+        $user = Auth::user();
+        $aquarium = $user->aquariums()->where('id', $request->id)->get()->first();
+
+        if(!$aquarium){
+            return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+        }
+        if($aquarium->user_id != $user->id) {
+            return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+        }
+        return response()->json(['message' => 'success', 'message_code' => 'aquarium_retrieved_successfully', 'aquarium' => $aquarium]);
     }
 }
 

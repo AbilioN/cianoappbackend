@@ -51,7 +51,7 @@
                                     <div class="flex">
                                         <a href="{{route('admin.partner.edit' , $user->id )}}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                                         {{-- <a href="{{route('admin.credits.find' , $user->id )}}" class="mx-4 text-indigo-600 hover:text-indigo-900">Historico</a> --}}
-                                        <a href="#" class="mx-4 text-indigo-600 hover:text-indigo-900">Historico</a>
+                                        <a href="{{ route('history-show', $user->id) }}" class="mx-4 text-indigo-600 hover:text-indigo-900">Historico</a>
 
                                     </div>
                                 </td>
