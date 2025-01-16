@@ -1,11 +1,11 @@
-<div class="px-12 py-8 sm:px-8"> <!-- Adicione as classes de padding aqui -->
+{{-- <div class="px-12 py-8 sm:px-8"> <!-- Adicione as classes de padding aqui -->
     <div class="sm:flex sm:items-center">
         <div class="sm:flex-auto">
             <h1 class="text-base font-semibold leading-6 text-gray-900">Histórico de Créditos</h1>
         </div>
-        {{-- <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
+        <!-- <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
             <a href="{{ route('admin.partner.create') }}" type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Adicionar Novo</a>
-        </div> --}}
+        </div> -->
     </div>
     <div class="mt-8 flow-root">
         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -16,7 +16,7 @@
                             <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Cliente</th>
                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Tipo</th>
                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Data/Hora</th>
-                            {{-- <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Ação</th> --}}
+                            <!-- <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Ação</th> -->
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
@@ -35,9 +35,9 @@
                                 <td class="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
                                     <div class="text-gray-900">{{ $error->when }}</div>
                                 </td>
-                                {{-- <td class="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                                <!-- <td class="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                     <a href="{{ route('admin.partner.edit', $history->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
-                                </td> --}}
+                                </td> -->
                             </tr>
                         @endforeach
                     </tbody>
@@ -87,4 +87,7 @@
             </div>
         </div>
     </div>
+</div> --}}
+<div>
+    
 </div>
