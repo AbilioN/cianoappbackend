@@ -79,6 +79,7 @@ class NotificationController extends Controller
                 $isCreating = true;
             }
 
+            DB::commit();
             if($isCreating){
                 // $notification->is_active = true;
                 // $notification->save();
@@ -94,5 +95,20 @@ class NotificationController extends Controller
             dd($e->getMessage());
             return response()->json(['message' => 'failed' , 'message_code' => 'notification_activated_failed' , 'errors' => $e->getMessage()], 500);
         }
+    }
+
+    public function getAquariumNotifications($aquariumSlug)
+    {
+        $user = Auth::user();
+        $aquarium = Aquarium::where('slug', $aquariumSlug)->where('user_id', $user->id)->with('allNotifications')->first();
+        if(!$aquarium){
+            return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
+        }
+        if($aquarium->user_id != $user->id){
+            return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
+        }
+
+        $aquariumNotifications = AquariumNotification::where('aquarium_id', $aquarium->id)->get();
+        return response()->json($aquarium);
     }
 }

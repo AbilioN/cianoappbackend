@@ -20,9 +20,16 @@ class Aquarium extends Model
         return $this->hasMany(AquariumNotification::class);
     }
 
-    public function allNotifications()
+public function allNotifications()
     {
-        return $this->hasManyThrough(Notification::class, AquariumNotification::class);
+        return $this->hasManyThrough(
+            Notification::class,
+            AquariumNotification::class,
+            'aquarium_id',
+            'id',
+            'id',
+            'notification_id'
+        )->with('bodies');
     }
 
 }
