@@ -25,4 +25,8 @@ class Notification extends Model
         return $this->hasMany(NotificationBody::class);
     }
 
+    public function aquariumNotifications()
+    {
+        return $this->hasMany(AquariumNotification::class, 'Notification_id', 'id');
+    }
 }

@@ -26,7 +26,7 @@
                 @foreach($aquariumNotifications as $aquariumNotification)
                     <tr class="hover:bg-[#f7f7f7]">
                         <td class="whitespace-nowrap py-5 text-sm sm:pl-0">
-                            <div class="font-medium text-gray-900">{{ $aquariumNotification->notification_id }}</div>
+                            <div class="font-medium text-gray-900">{{ $aquariumNotification->notification->name }}</div>
                         </td>
                         <td class="whitespace-nowrap py-5 text-sm text-gray-500">
                             <div class="text-gray-900">{{ $aquariumNotification->start_date }}</div>
