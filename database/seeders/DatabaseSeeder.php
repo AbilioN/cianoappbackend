@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Aquarium;
+use App\Models\AquariumNotification;
 use App\Models\Notification;
 use App\Models\NotificationBody;
 use App\Models\User;
@@ -35,14 +36,31 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Aquarium::create([
-            'user_id' => 1,
+            'user_id' => 2,
             'name' => 'Test Aquarium',
             'slug' => 'test-aquarium',
+        ]);
+
+        Aquarium::create([
+            'user_id' => 2,
+            'name' => 'Test Aquaria',
+            'slug' => 'test-aquaria',
         ]);
 
         Notification::create([
             'name' => 'Fish Aquarium',
             'slug' => 'fish-aquarium',
+            // 'key' => 'fish_aquarium',
+            'duration_type' => 'seconds',
+            'duration_value' => 10,
+            'type' => 'single',
+            // 'start_date' => now(),
+            // 'end_date' => now()->addSeconds(10),
+            // 'callback_key' => 'fish_aquarium',
+        ]);
+        Notification::create([
+            'name' => 'Snake Aquarium',
+            'slug' => 'snake-aquarium',
             // 'key' => 'fish_aquarium',
             'duration_type' => 'seconds',
             'duration_value' => 10,
@@ -87,5 +105,46 @@ class DatabaseSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
+
+        AquariumNotification::create([
+            'aquarium_id' => 1,
+            'notification_id' => 1,
+            'start_date' => now(),
+            'end_date' => now()->addDays(3),
+            'renew_date' => now()->addDays(6),
+            'is_read' => false,
+            'is_active' => true,
+            'read_at' => null,
+        ]);
+        AquariumNotification::create([
+            'aquarium_id' => 1,
+            'notification_id' => 2,
+            'start_date' => now()->subDays(3),
+            'end_date' => now(),
+            'renew_date' => now()->addDays(3),
+            'is_read' => true,
+            'is_active' => false,
+            'read_at' => now(),
+        ]);
+        AquariumNotification::create([
+            'aquarium_id' => 2,
+            'notification_id' => 1,
+            'start_date' => now(),
+            'end_date' => now()->addDays(3),
+            'renew_date' => now()->addDays(6),
+            'is_read' => false,
+            'is_active' => true,
+            'read_at' => null,
+        ]);
+        AquariumNotification::create([
+            'aquarium_id' => 2,
+            'notification_id' => 2,
+            'start_date' => now()->subDays(3),
+            'end_date' => now(),
+            'renew_date' => now()->addDays(6),
+            'is_read' => true,
+            'is_active' => true,
+            'read_at' => now()->subHours(2),
+        ]);
     }
 }
