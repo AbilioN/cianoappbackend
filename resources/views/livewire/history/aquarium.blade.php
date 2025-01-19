@@ -1,5 +1,9 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
+
+    @php
+        use Carbon\Carbon;
+    @endphp
     
     @if(!$aquariumNotifications)
 
@@ -26,14 +30,14 @@
                             <div class="px-2 font-medium text-gray-900">{{ $aquariumNotification->notification->name }}</div>
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm text-gray-500">
-                            <div class="px-2 text-gray-900">{{ $aquariumNotification->start_date }}</div>
+                            <div class="px-2 text-gray-900">{{ carbon::parse($aquariumNotification->start_date)->format('d/m/Y H:i') }}</div>
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm text-gray-500">
-                            <div class="px-2 text-gray-900">{{ $aquariumNotification->end_date }}</div>
+                            <div class="px-2 text-gray-900">{{ carbon::parse($aquariumNotification->end_date)->format('d/m/Y H:i') }}</div>
                             
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm text-gray-500">
-                            <div class="px-2 text-gray-900">{{ $aquariumNotification->renew_date }}</div>
+                            <div class="px-2 text-gray-900">{{ carbon::parse($aquariumNotification->renew_date)->format('d/m/Y H:i') }}</div>
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 px-2 text-sm">
                             @if($aquariumNotification->is_read)
@@ -43,7 +47,7 @@
                             @endif
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm text-gray-500">
-                            <div class="px-2 text-gray-900">{{ $aquariumNotification->read_at }}</div>
+                            <div class="px-2 text-gray-900">{{ carbon::parse($aquariumNotification->read_at)->format('d/m/Y H:i') }}</div>
                         </td>
                         <td class="border-r-0 border-b-0 border border-gray-300 whitespace-nowrap py-5 px-2 text-sm">
                             @if($aquariumNotification->is_active)
