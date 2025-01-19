@@ -30,6 +30,6 @@ class Aquarium extends Component
         ->orderBy('read_at', 'DESC')
         ->orderBy('start_date');
         
-        return view('livewire.history.aquarium', ['aquariumNotifications' => $aquariumNotifications->paginate(15, ['*'], 'childPage')]);
+        return view('livewire.history.aquarium', ['aquariumNotifications' => $aquariumNotifications->paginate(10, ['*'], 'childPage')]);
     }
 }

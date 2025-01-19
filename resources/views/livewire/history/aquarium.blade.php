@@ -6,7 +6,7 @@
         <h1 class="text-base font-semibold leading-6 text-gray-900">Nenhum aquário encontrado.</h1>
         
     @else
-    <div wire:ignore.self id="next-to-{{ $aquariumId }}" class="overflow-hidden max-h-[0px!important] max-h-[500px] transition-[max-height] duration-300 easy-in-out">
+    <div wire:ignore.self id="next-to-{{ $aquariumId }}" class="overflow-hidden max-h-[0px!important] max-h-[1000px] transition-[max-height] duration-300 easy-in-out">
         <table class="min-w-full divide-y divide-gray-300">
             <thead>
                 <tr>

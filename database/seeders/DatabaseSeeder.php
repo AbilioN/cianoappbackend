@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
         $notification2 = Notification::factory()->create();
 
         // Criar 20 notificações de aquário para cada aquário usando factories
-        for ($i = 0; $i < 6; $i++) {
+        for ($i = 0; $i < 15; $i++) {
             AquariumNotification::factory()->create([
                 'aquarium_id' => $aquarium1->id,
                 'notification_id' => $notification1->id,
