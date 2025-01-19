@@ -48,4 +48,8 @@ Route::middleware([AdminMiddleware::class])->group(function () {
         // ...
     })->withoutMiddleware([AdminMiddleware::class]);
     Route::get('/admin/dashboard' , Dashboard::class)->name('admin.dashboard');
+
+    // Route::get('/history', function(){
+    //     return 'history';
+    // })->name('history-show');
 });

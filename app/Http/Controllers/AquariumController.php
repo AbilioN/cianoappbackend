@@ -62,16 +62,25 @@ class AquariumController extends Controller
 
     public function getAquarium(Request $request)
     {
-        $user = Auth::user();
-        $aquarium = $user->aquariums()->where('id', $request->id)->get()->first();
 
-        if(!$aquarium){
+        $user = Auth::user();
+        $aquariums = $user->aquariums;
+        if($aquariums->isEmpty()){
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }
-        if($aquarium->user_id != $user->id) {
-            return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
-        }
-        return response()->json(['message' => 'success', 'message_code' => 'aquarium_retrieved_successfully', 'aquarium' => $aquarium]);
+        return response()->json(['message' => 'success', 'message_code' => 'aquariums_retrieved_successfully', 'aquariums' => $aquariums]);
+
+
+    //     $user = Auth::user();
+    //     $aquarium = $user->aquariums()->where('id', $request->id)->get()->first();
+    // dd($aquarium);
+    //     if(!$aquarium){
+    //         return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+    //     }
+    //     if($aquarium->user_id != $user->id) {
+    //         return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+    //     }
+    //     return response()->json(['message' => 'success', 'message_code' => 'aquarium_retrieved_successfully', 'aquarium' => $aquarium]);
     }
 }
 

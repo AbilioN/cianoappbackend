@@ -87,7 +87,6 @@ class NotificationController extends Controller
             }else{
                 // return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
                 return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'notification' => $userAquariumNotification->toDto()]);
-
             }
 
         }catch(\Exception $e){
@@ -104,11 +103,14 @@ class NotificationController extends Controller
         if(!$aquarium){
             return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
         }
-        if($aquarium->user_id != $user->id){
+        if($aquarium->user_id !== $user->id){
             return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
         }
-
         $aquariumNotifications = AquariumNotification::where('aquarium_id', $aquarium->id)->get();
-        return response()->json($aquarium);
+        $aquariumNotificationsDto = $aquariumNotifications->map(function ($notification) {
+            return $notification->toDto();
+        });
+        return response()->json($aquariumNotificationsDto);
     }
+
 }
