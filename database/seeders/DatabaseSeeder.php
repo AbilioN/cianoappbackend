@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Aquarium;
+use App\Models\AquariumNotification;
 use App\Models\Notification;
 use App\Models\NotificationBody;
 use App\Models\User;
@@ -34,23 +35,65 @@ class DatabaseSeeder extends Seeder
             'role_id' => 1,
         ]);
 
-        Aquarium::create([
-            'user_id' => 3,
-            'name' => 'Test Aquarium',
-            'slug' => 'test-aquarium',
+        // Criar aquários
+        $aquarium1 = Aquarium::factory()->create([
+            'user_id' => 2,
+        ]);
+        $aquarium2 = Aquarium::factory()->create([
+            'user_id' => 2,
         ]);
 
-        Notification::create([
-            'name' => 'Fish Aquarium',
-            'slug' => 'fish-aquarium',
-            // 'key' => 'fish_aquarium',
-            'duration_type' => 'seconds',
-            'duration_value' => 10,
-            'type' => 'single',
-            // 'start_date' => now(),
-            // 'end_date' => now()->addSeconds(10),
-            // 'callback_key' => 'fish_aquarium',
-        ]);
+
+        // Criar notificações
+        $notification1 = Notification::factory()->create();
+        $notification2 = Notification::factory()->create();
+
+        // Criar 20 notificações de aquário para cada aquário usando factories
+        for ($i = 0; $i < 6; $i++) {
+            AquariumNotification::factory()->create([
+                'aquarium_id' => $aquarium1->id,
+                'notification_id' => $notification1->id,
+                'start_date' => now()->addDays($i),
+                'end_date' => now()->addDays($i + 3),
+                'renew_date' => now()->addDays($i + 6),
+                'is_read' => false,
+                'is_active' => true,
+                'read_at' => null,
+            ]);
+
+            AquariumNotification::factory()->create([
+                'aquarium_id' => $aquarium1->id,
+                'notification_id' => $notification2->id,
+                'start_date' => now()->subDays($i),
+                'end_date' => now()->addDays($i),
+                'renew_date' => now()->addDays($i + 3),
+                'is_read' => true,
+                'is_active' => false,
+                'read_at' => now(),
+            ]);
+
+            AquariumNotification::factory()->create([
+                'aquarium_id' => $aquarium2->id,
+                'notification_id' => $notification1->id,
+                'start_date' => now()->addDays($i),
+                'end_date' => now()->addDays($i + 3),
+                'renew_date' => now()->addDays($i + 6),
+                'is_read' => false,
+                'is_active' => true,
+                'read_at' => null,
+            ]);
+
+            AquariumNotification::factory()->create([
+                'aquarium_id' => $aquarium2->id,
+                'notification_id' => $notification2->id,
+                'start_date' => now()->subDays($i),
+                'end_date' => now(),
+                'renew_date' => now()->addDays($i + 6),
+                'is_read' => true,
+                'is_active' => true,
+                'read_at' => now()->subHours(2),
+            ]);
+        }
 
         $notifications = [
             'en' => [

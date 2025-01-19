@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class AquariumNotification extends Model
 {
-    //
+
+    use HasFactory;
+
     protected $fillable = ['aquarium_id', 'notification_id', 'start_date', 'end_date', 'renew_date', 'is_read', 'is_active', 'read_at'];
 
     public function aquarium()
@@ -18,8 +21,6 @@ class AquariumNotification extends Model
     {
         return $this->belongsTo(Notification::class);
     }
-
-
 
     public function toDto()
     {
