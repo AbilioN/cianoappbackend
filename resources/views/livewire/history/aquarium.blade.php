@@ -27,7 +27,7 @@
                 @foreach($aquariumNotifications as $aquariumNotification)
                     <tr class="hover:bg-[#f7f7f7]">
                         <td class="border-l-0 border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm sm:pl-0">
-                            <div class="px-2 font-medium text-gray-900">{{ $aquariumNotification->notification->name }}</div>
+                            <div class="px-2 font-medium text-gray-900 text-wrap">{{ $aquariumNotification->notification->name }}</div>
                         </td>
                         <td class="border-b-0 border border-gray-300 whitespace-nowrap py-5 text-sm text-gray-500">
                             <div class="px-2 text-gray-900">{{ carbon::parse($aquariumNotification->start_date)->format('d/m/Y H:i') }}</div>
