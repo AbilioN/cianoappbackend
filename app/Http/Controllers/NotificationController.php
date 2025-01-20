@@ -72,6 +72,10 @@ class NotificationController extends Controller
             $consumableNotification = ConsumableNotification::where('notification_id', $notification->id)->first();
             if ($consumableNotification) {
                 $consumableNotificationId = $consumableNotification->id;
+
+                // criar aquariumConsumable
+                // $aquarium->consumables()
+
             }
 
             if (!$userAquariumNotification) {

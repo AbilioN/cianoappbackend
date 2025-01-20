@@ -48,6 +48,8 @@ class DefaultNotificationsSeeder extends Seeder
             'image_url' => 'https://via.placeholder.com/150',
         ]);
 
+
+
         $notification = Notification::create([
             'name' => 'Water Conditioner',
             'slug' => 'water-conditioner',

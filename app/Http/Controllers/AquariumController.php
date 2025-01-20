@@ -53,7 +53,8 @@ class AquariumController extends Controller
     public function getAquariums()
     {
         $user = Auth::user();
-        $aquariums = $user->aquariums;
+        $aquariums = $user->aquariums->with('consumables');
+        // dd($aquariums);
         if($aquariums->isEmpty()){
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }

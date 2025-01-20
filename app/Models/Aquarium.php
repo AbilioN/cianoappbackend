@@ -23,7 +23,7 @@ class Aquarium extends Model
         return $this->hasMany(AquariumNotification::class);
     }
 
-public function allNotifications()
+    public function allNotifications()
     {
         return $this->hasManyThrough(
             Notification::class,
@@ -34,5 +34,19 @@ public function allNotifications()
             'notification_id'
         )->with('bodies');
     }
+
+    public function consumables()
+    {
+        return $this->hasManyThrough(
+            Consumable::class,
+            AquariumNotification::class,
+            'aquarium_id',
+            'id',
+            'id',
+            'consumable_id'
+        );
+    }
+
+
 
 }
