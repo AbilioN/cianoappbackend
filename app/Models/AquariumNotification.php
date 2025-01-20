@@ -10,7 +10,7 @@ class AquariumNotification extends Model
 
     use HasFactory;
 
-    protected $fillable = ['aquarium_id', 'notification_id', 'start_date', 'end_date', 'renew_date', 'is_read', 'is_active', 'read_at'];
+    protected $fillable = ['aquarium_id', 'notification_id', 'consumable_notification_id', 'start_date', 'end_date', 'renew_date', 'is_read', 'is_active', 'read_at'];
 
     public function aquarium()
     {
@@ -24,10 +24,12 @@ class AquariumNotification extends Model
 
     public function toDto()
     {
-        return [
+
+        $returnData = [
             'id' => $this->id,
             'aquarium' => $this->aquarium,
             'notification' => $this->notification,
+            'consumable' => $this->consumable_notification_id ? $this->consumableNotification->consumable : null,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
             'renew_date' => $this->renew_date,
@@ -35,5 +37,16 @@ class AquariumNotification extends Model
             'is_active' => $this->is_active,
             'read_at' => $this->read_at,
         ];
+
+        // if (isset($this->consumable_notification_id)) {
+        //     $returnData['consumable'] = $this->consumableNotification->consumable;
+        // }
+
+        return $returnData;
+    }
+
+    public function consumableNotification()
+    {
+        return $this->belongsTo(ConsumableNotification::class);
     }
 }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('aquarium_id')->constrained('aquaria');
             $table->foreignId('notification_id')->constrained('notifications');
+            $table->unsignedBigInteger('consumable_notification_id')->nullable()->default(null);
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->dateTime('renew_date')->nullable();
@@ -22,6 +23,8 @@ return new class extends Migration
             $table->boolean('is_active')->default(true);
             $table->dateTime('read_at')->nullable();
             $table->timestamps();
+
+            $table->foreign('consumable_notification_id')->references('id')->on('consumable_notifications')->onDelete('set null');
         });
     }
 
