@@ -25,6 +25,18 @@ class AquariumNotification extends Model
     public function toDto()
     {
 
+        $notification = $this->notification;
+
+        $notificationBodies = $notification->bodies;
+        // dd('aqui');
+         $notificationBodies->map(function ($body) {
+            // Verifica se o título existe antes de tentar substituí-lo
+            if (isset($body['title'])) {
+                $body['title'] = str_replace('{aquarium_name}', $this->aquarium->name, $body['title']);
+            }
+            return $body; // Retorna o corpo atualizado
+        });
+
         $returnData = [
             'id' => $this->id,
             'aquarium' => $this->aquarium,
@@ -37,6 +49,7 @@ class AquariumNotification extends Model
             'is_active' => $this->is_active,
             'read_at' => $this->read_at,
         ];
+
 
         // if (isset($this->consumable_notification_id)) {
         //     $returnData['consumable'] = $this->consumableNotification->consumable;
