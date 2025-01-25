@@ -21,4 +21,21 @@ class Notification extends Model
     {
         return $this->hasMany(AquariumNotification::class, 'Notification_id', 'id');
     }
+
+    public function toDto()
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'slug' => $this->slug,
+            'duration_type' => $this->duration_type,
+            'duration_value' => $this->duration_value,
+            'type' => $this->type,
+            'callback_key' => $this->callback_key,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+            'bodies' => $this->bodies,
+        ];
+    }
+
 }

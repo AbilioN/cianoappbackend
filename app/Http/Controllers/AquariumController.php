@@ -53,12 +53,15 @@ class AquariumController extends Controller
     public function getAquariums()
     {
         $user = Auth::user();
-        $aquariums = $user->aquariums->with('consumables');
-        // dd($aquariums);
+        // Usando o método with corretamente na consulta
+        $aquariums = $user->aquariums()->with('consumableNotifications')->get();
+        $aquariumDtos = $aquariums->map(function ($aquarium) {
+            return $aquarium->toDto(); // Chamando o método toDto em cada aquário
+        });
         if($aquariums->isEmpty()){
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }
-        return response()->json(['message' => 'success', 'message_code' => 'aquariums_retrieved_successfully', 'aquariums' => $aquariums]);
+        return response()->json(['message' => 'success', 'message_code' => 'aquariums_retrieved_successfully', 'aquariums' => $aquariumDtos]);
     }
 
     public function getAquarium(Request $request)

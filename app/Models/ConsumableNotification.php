@@ -16,4 +16,13 @@ class ConsumableNotification extends Model
     {
         return $this->belongsTo(Consumable::class);
     }
+
+    public function toDto()
+    {
+        // return [
+        //     'id' => $this->id,
+        //     'consumable_id' => $this->consumable_id,
+        // ];
+        return $this->consumable->toDto();
+    }
 }
