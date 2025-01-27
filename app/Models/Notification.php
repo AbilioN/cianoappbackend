@@ -38,4 +38,37 @@ class Notification extends Model
         ];
     }
 
+    public function calculateDates()
+    {
+        $durationValue = $this->duration_value;
+        $durationType = $this->duration_type;
+        $startDate = now();
+
+        switch ($durationType) {
+            case 'days':
+                $endDate = now()->addDays($durationValue);
+                break;
+            case 'weeks':
+                $endDate = now()->addWeeks($durationValue);
+                break;
+            case 'months':
+                $endDate = now()->addMonths($durationValue);
+                break;
+            case 'minutes':
+                $endDate = now()->addMinutes($durationValue);
+                break;
+            case 'hours':
+                $endDate = now()->addHours($durationValue);
+                break;
+            default:
+                $endDate = now();
+                break;
+        }
+
+        return [
+            'start_date' => $startDate,
+            'end_date' => $endDate,
+        ];
+    }
+
 }

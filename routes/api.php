@@ -17,6 +17,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('aquarium/{id}', [AquariumController::class, 'getAquarium']);
     Route::put('update-aquarium', [AquariumController::class, 'updateAquarium']);
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
+    Route::post('aquarium/add-consumable', [AquariumController::class, 'addConsumable']);
 
 
     Route::get('notifications', [NotificationController::class, 'getNotifications']);
@@ -24,6 +25,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     Route::get('aquarium-notifications/{aquariumSlug}', [NotificationController::class, 'getAquariumNotifications']);
+
     // Adicione outras rotas autenticadas aqui
 });
 
