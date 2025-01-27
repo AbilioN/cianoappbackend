@@ -99,31 +99,36 @@ class AquariumController extends Controller
             DB::beginTransaction();
             $validator = Validator::make($request->all(), [
                 'aquarium_id' => 'required|integer',
-                'consumable_id' => 'required|integer',
+                'consumable_code' => 'required|string',
             ]);
             if ($validator->fails()) {
                 return response()->json(['message' => 'Validation failed', 'message_code' => 'validation_failed', 'errors' => $validator->errors()], 422);
             }
             $user = Auth::user();
             $aquarium = $user->aquariums()->where('id', $request->aquarium_id)->get()->first();
-
             if($user->id != $aquarium->user_id){
                 return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
             }
-            $consumable = Consumable::find($request->consumable_id);
-            $notification = Notification::find($request->notification_id);
+            $consumable = Consumable::where('code', $request->consumable_code)->get()->first();
+
+            if(!$consumable){
+                return response()->json(['message' => 'Consumable not found', 'message_code' => 'consumable_not_found'], 404);
+            }
+
+
+            $notification = $consumable->notification;
             $consumableNotification = ConsumableNotification::create([
                 'consumable_id' => $consumable->id,
-                'notification_id' => $request->notification_id,
+                'notification_id' => $notification->id,
             ]);
 
-            $dates = $notification->getDates();
+            $dates = $notification->calculateDates();
             $startDate = $dates['start_date'];
             $endDate = $dates['end_date'];
 
             $aquariumNotification = AquariumNotification::create([
                 'aquarium_id' => $aquarium->id,
-                'notification_id' => $request->notification_id,
+                'notification_id' => $notification->id,
                 'consumable_notification_id' => $consumableNotification->id,
                 'start_date' => $startDate,
                 'end_date' => $endDate,
@@ -133,6 +138,8 @@ class AquariumController extends Controller
             return response()->json(['message' => 'success', 'message_code' => 'consumable_added_successfully', 'consumable' => $consumable]);
         }
         catch(\Exception $e){
+
+            dd($e->getMessage());
             DB::rollBack();
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }

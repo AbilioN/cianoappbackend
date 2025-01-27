@@ -28,6 +28,11 @@ class Consumable extends Model
         return $this->hasManyThrough(Notification::class, ConsumableNotification::class, 'consumable_id', 'id', 'id', 'notification_id');
     }
 
+    public function notification()
+    {
+        return $this->hasOneThrough(Notification::class, ConsumableNotification::class, 'consumable_id', 'id', 'id', 'notification_id');
+    }
+
     public function toDto()
     {
         return [
