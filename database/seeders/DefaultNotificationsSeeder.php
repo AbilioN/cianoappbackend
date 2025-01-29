@@ -102,7 +102,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable2 = Consumable::factory()->create([
             'name' => 'WATER TEST STRIPS',
             'slug' => 'water-test-strips',
@@ -165,7 +165,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable3 = Consumable::factory()->create([
             'name' => 'WATER CLEAR & PROTECTION S',
             'slug' => slugify('WATER CLEAR & PROTECTION S'),
@@ -290,7 +290,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable5 = Consumable::factory()->create([
             'name' => 'WATER CLEAR & PROTECTION L',
             'slug' => slugify('WATER CLEAR & PROTECTION L'),
@@ -352,8 +352,8 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
-        
+
+
         $consumable6 = Consumable::factory()->create([
             'name' => 'WATER CLEAR & PROTECTION XL',
             'slug' => slugify('WATER CLEAR & PROTECTION XL'),
@@ -415,7 +415,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable7= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT S',
             'slug' => slugify('WATER BIO-BACT S'),
@@ -478,7 +478,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable8= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT M',
             'slug' => slugify('WATER BIO-BACT M'),
@@ -541,7 +541,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable9= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT L',
             'slug' => slugify('WATER BIO-BACT L'),
@@ -602,7 +602,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable10= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT XL',
             'slug' => slugify('WATER BIO-BACT XL'),
@@ -664,7 +664,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable11= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT S (Pack)',
             'slug' => slugify('WATER BIO-BACT S (Pack)'),
@@ -725,7 +725,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable12= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT M (Pack)',
             'slug' => slugify('WATER BIO-BACT M (Pack)'),
@@ -786,7 +786,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable13= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT L (Pack)',
             'slug' => slugify('WATER BIO-BACT L (Pack)'),
@@ -847,7 +847,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable14= Consumable::factory()->create([
             'name' => 'WATER BIO-BACT XL (Pack)',
             'slug' => slugify('WATER BIO-BACT XL (Pack)'),
@@ -908,8 +908,8 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
-        
+
+
         $consumable15= Consumable::factory()->create([
             'name' => 'WATER FOAM S',
             'slug' => slugify('WATER FOAM S'),
@@ -968,8 +968,8 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
-        
+
+
         $consumable16= Consumable::factory()->create([
             'name' => 'WATER FOAM M',
             'slug' => slugify('WATER FOAM M'),
@@ -1028,7 +1028,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable17 = Consumable::factory()->create([
             'name' => 'WATER FOAM L',
             'slug' => slugify('WATER FOAM L'),
@@ -1087,7 +1087,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable18 = Consumable::factory()->create([
             'name' => 'WATER FOAM XL',
             'slug' => slugify('WATER FOAM XL'),
@@ -1146,7 +1146,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable19 = Consumable::factory()->create([
             'name' => 'WATER FOAM COARSE XL',
             'slug' => slugify('WATER FOAM COARSE XL'),
@@ -1206,7 +1206,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable20 = Consumable::factory()->create([
             'name' => 'WATER PAD XL',
             'slug' => slugify('WATER PAD XL'),
@@ -1265,7 +1265,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable21 = Consumable::factory()->create([
             'name' => 'WATER ALGAE S',
             'slug' => slugify('WATER ALGAE S'),
@@ -1324,7 +1324,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable22 = Consumable::factory()->create([
             'name' => 'WATER ALGAE M',
             'slug' => slugify('WATER ALGAE M'),
@@ -1383,7 +1383,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable23 = Consumable::factory()->create([
             'name' => 'WATER ALGAE L',
             'slug' => slugify('WATER ALGAE L'),
@@ -1442,7 +1442,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable24 = Consumable::factory()->create([
             'name' => 'WATER ALGAE xL',
             'slug' => slugify('WATER ALGAE xL'),
@@ -1502,7 +1502,7 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        
+
         $consumable25 = Consumable::factory()->create([
             'name' => 'FISH PROTECTION DOSATOR S',
             'slug' => slugify('FISH PROTECTION DOSATOR S'),
@@ -1561,8 +1561,8 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
-        
+
+
         $consumable26 = Consumable::factory()->create([
             'name' => 'FISH PROTECTION DOSATOR M',
             'slug' => slugify('FISH PROTECTION DOSATOR M'),
@@ -1681,7 +1681,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable28 = Consumable::factory()->create([
             'name' => 'FISH PROTECTION DOSATOR XL',
             'slug' => slugify('FISH PROTECTION DOSATOR XL'),
@@ -1740,7 +1740,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable29 = Consumable::factory()->create([
             'name' => 'PLANTS PROTECTION DOSATOR S',
             'slug' => slugify('PLANTS PROTECTION DOSATOR S'),
@@ -1799,7 +1799,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable30 = Consumable::factory()->create([
             'name' => 'PLANTS PROTECTION DOSATOR M',
             'slug' => slugify('PLANTS PROTECTION DOSATOR M'),
@@ -1858,7 +1858,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable31 = Consumable::factory()->create([
             'name' => 'PLANTS PROTECTION DOSATOR L',
             'slug' => slugify('PLANTS PROTECTION DOSATOR L'),
@@ -1917,7 +1917,7 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
-        
+
         $consumable32 = Consumable::factory()->create([
             'name' => 'PLANTS PROTECTION DOSATOR XL',
             'slug' => slugify('PLANTS PROTECTION DOSATOR XL'),
