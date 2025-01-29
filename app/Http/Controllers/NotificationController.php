@@ -91,10 +91,10 @@ class NotificationController extends Controller
                 $isCreating = true;
             }
 
-            DB::commit();
-            if($isCreating){
-                // $notification->is_active = true;
-                // $notification->save();
+            if(!$isCreating){
+                $userAquariumNotification->is_active = true;
+                $userAquariumNotification->save();
+                DB::commit();
                 return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'data' => $userAquariumNotification->toDto()]);
             }else{
                 // return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
@@ -123,6 +123,48 @@ class NotificationController extends Controller
             return $notification->toDto();
         });
         return response()->json($aquariumNotificationsDto);
+    }
+
+    public function deactiveNotification(Request $request)
+    {
+        
+        try{
+
+            DB::beginTransaction();
+            $user = Auth::user();
+
+            $notification = Notification::find($request->notification_id);
+            if (!$notification) {
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
+            }
+
+            $aquarium = Aquarium::find($request->aquarium_id);
+            if(!$aquarium){
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
+            }
+
+            if($aquarium->user_id != $user->id  ){
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
+            }
+
+                $userAquariumNotification = AquariumNotification::where('aquarium_id', $aquarium->id)->where('notification_id', $notification->id)->first();
+
+            if (!$userAquariumNotification) {
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
+            }
+            
+            if($userAquariumNotification === false) {
+                return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated' , 'data' => $userAquariumNotification->toDto()]);
+            }
+            $userAquariumNotification->is_active = false;
+            $userAquariumNotification->save();
+            DB::commit();
+            return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated' , 'data' => $userAquariumNotification->toDto()]);
+
+        }catch(\Exception $e){
+            DB::rollBack();
+            return response()->json(['message' => 'failed' , 'message_code' => 'notification_activated_failed' , 'errors' => $e->getMessage()], 500);
+        }
     }
 
 }
