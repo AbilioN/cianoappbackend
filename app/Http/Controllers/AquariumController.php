@@ -106,6 +106,9 @@ class AquariumController extends Controller
             }
             $user = Auth::user();
             $aquarium = $user->aquariums()->where('id', $request->aquarium_id)->get()->first();
+            if(!$aquarium){
+                return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+            }
             if($user->id != $aquarium->user_id){
                 return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
             }
@@ -114,7 +117,6 @@ class AquariumController extends Controller
             if(!$consumable){
                 return response()->json(['message' => 'Consumable not found', 'message_code' => 'consumable_not_found'], 404);
             }
-
 
             $notification = $consumable->notification;
             $consumableNotification = ConsumableNotification::create([
@@ -134,8 +136,9 @@ class AquariumController extends Controller
                 'end_date' => $endDate,
             ]);
 
+            $aquarium = $aquarium->refresh();
             DB::commit();
-            return response()->json(['message' => 'success', 'message_code' => 'consumable_added_successfully', 'consumable' => $consumable]);
+            return response()->json(['message' => 'success', 'message_code' => 'consumable_added_successfully', 'aquarium' => $aquarium->toDto()]);
         }
         catch(\Exception $e){
 

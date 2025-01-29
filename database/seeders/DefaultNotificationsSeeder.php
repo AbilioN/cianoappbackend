@@ -45,7 +45,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => 'water-conditioner',
             'code' => 'COM560038',
             'description' => 'Water Conditioner',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
