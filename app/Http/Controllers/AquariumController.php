@@ -132,6 +132,19 @@ class AquariumController extends Controller
             $startDate = $dates['start_date'];
             $endDate = $dates['end_date'];
 
+            $consumableExists = $consumableNotification->consumable->id;
+            // $aquariumNotificationExists = AquariumNotification::where('aquarium_id', $aquarium->id)
+            // ->where('consumable_notification_id', $consumableNotification->id)
+            // ->where('notification_id', $notification->id)->exists();
+            $aquariumNotificationExists = AquariumNotification::where('aquarium_id', $aquarium->id)
+                ->whereHas('consumableNotification', function ($query) use ($consumable) {
+                $query->where('consumable_id', $consumable->id);
+            })->exists();
+            if($aquariumNotificationExists) {
+                DB::rollBack();
+                return response()->json(['message' => 'Consumable already exists in this aquarium', 'message_code' => 'consumable_already_exists_in_this_aquarium'], 422);
+            }
+
             $aquariumNotification = AquariumNotification::create([
                 'aquarium_id' => $aquarium->id,
                 'notification_id' => $notification->id,
@@ -146,7 +159,6 @@ class AquariumController extends Controller
         }
         catch(\Exception $e){
 
-            dd($e->getMessage());
             DB::rollBack();
             return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
         }
