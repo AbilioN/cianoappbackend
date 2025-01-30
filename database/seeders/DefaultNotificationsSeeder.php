@@ -1977,16 +1977,16 @@ class DefaultNotificationsSeeder extends Seeder
             ]);
         }
 
-        $notification33 = Notification::create([
-            'name' => 'Adicionar Water conditioner + Water bio-bact',
-            'slug' => slugify('Adicionar Water conditioner + Water bio-bact'),
+        $notificationFishStep4 = Notification::create([
+            'name' => 'Fish Aquarium Step 4',
+            'slug' => slugify('Fish Aquarium Step 4'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
-        $notifications33 = [
+        $notificationsFishStep4 = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
@@ -2014,25 +2014,25 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications33 as $lang => $notification) {
+        foreach ($notificationsFishStep4 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 33,
+                'notification_id' => $notificationFishStep4->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
         }
 
-        $notification34 = Notification::create([
-            'name' => 'Adicione uma notificação para ser alertado daqui a 5 dias!',
-            'slug' => slugify('Adicione uma notificação para ser alertado daqui a 5 dias!'),
+        $notificationFishStep7 = Notification::create([
+            'name' => 'Fish Aquarium Step 7',
+            'slug' => slugify('Fish Aquarium Step 7'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 5,
             'type' => 'single',
         ]);
 
-        $notifications34 = [
+        $notificationsFishStep7 = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
@@ -2060,25 +2060,25 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications34 as $lang => $notification) {
+        foreach ($notificationsFishStep7 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 34,
+                'notification_id' => $notificationFishStep4->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
         }
 
-        $notification35 = Notification::create([
-            'name' => 'Passo 4',
-            'slug' => slugify('Passo 4'),
+        $notificationFishPlantsStep4 = Notification::create([
+            'name' => 'Fish Plants Aquarium Step 4',
+            'slug' => slugify('Fish Plants Aquarium Step 4'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
-        $notifications35 = [
+        $notificationsFishPlantsStep4 = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
@@ -2106,25 +2106,25 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications35 as $lang => $notification) {
+        foreach ($notificationsFishPlantsStep4 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 35,
+                'notification_id' => $notificationFishPlantsStep4->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
         }
 
-        $notification36 = Notification::create([
-            'name' => 'Passo 7',
-            'slug' => slugify('Passo 7'),
+        $notificationFishPlantsStep7 = Notification::create([
+            'name' => 'Fish Plants Aquarium Step 7',
+            'slug' => slugify('Fish Plants Aquarium Step 7'),
             // 'duration_type' => 'days',2
             'duration_type' => 'seconds',
             'duration_value' => 5,
             'type' => 'single',
         ]);
 
-        $notifications36 = [
+        $notificationsFishPlantsStep7 = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
@@ -2152,25 +2152,25 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications36 as $lang => $notification) {
+        foreach ($notificationsFishPlantsStep7 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 36,
+                'notification_id' => $notificationFishPlantsStep7->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
         }
 
-        $notification37 = Notification::create([
-            'name' => 'Verificação com detalhe dos peixes, àgua e desenvolvimento de algas',
-            'slug' => slugify('Verificação com detalhe dos peixes, àgua e desenvolvimento de algas'),
+        $notificationWaterCheck = Notification::create([
+            'name' => 'Maintenance Water Check',
+            'slug' => slugify('Maintenance Water Check'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
-        $notifications37 = [
+        $notificationsWaterCheck = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Carefully check your fish and plants, the appearance of the water, and whether there is any algae growth.',
@@ -2198,25 +2198,25 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications37 as $lang => $notification) {
+        foreach ($notificationsWaterCheck as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 37,
+                'notification_id' => $notificationWaterCheck->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
         }
 
-        $notification38 = Notification::create([
-            'name' => 'Use o Water Test Strips',
-            'slug' => slugify('Use o Water Test Strips'),
+        $notificationTestStrips = Notification::create([
+            'name' => 'Maintenance Use Water Test Strips',
+            'slug' => slugify('Maintenance Use Water Test Strips'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
-        $notifications38 = [
+        $notificationsTestStrips = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
@@ -2244,9 +2244,9 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications38 as $lang => $notification) {
+        foreach ($notificationsTestStrips as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 38,
+                'notification_id' => $notificationTestStrips->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
@@ -2254,16 +2254,16 @@ class DefaultNotificationsSeeder extends Seeder
         }
 
 
-        $notification39 = Notification::create([
-            'name' => 'Troca 25% de água',
-            'slug' => slugify('Troca 25% de água'),
+        $notificationWaterChange = Notification::create([
+            'name' => 'Maintenance Water Change',
+            'slug' => slugify('Maintenance Water Change'),
             // 'duration_type' => 'days',
             'duration_type' => 'seconds',
             'duration_value' => 30,
             'type' => 'single',
         ]);
 
-        $notifications39 = [
+        $notificationsWaterChange = [
             'en' => [
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium! Replace 25% of the water to ensure a clean and healthy environment.',
@@ -2291,9 +2291,9 @@ class DefaultNotificationsSeeder extends Seeder
         ];
 
 
-        foreach ($notifications39 as $lang => $notification) {
+        foreach ($notificationsWaterChange as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 39,
+                'notification_id' => $notificationWaterChange->id,
                 'lang' => $lang,
                 'title' => $notification['title'],
                 'body' => $notification['body'],
