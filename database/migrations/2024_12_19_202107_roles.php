@@ -23,7 +23,7 @@ return new class extends Migration
                 'name' => 'Admin'
             ],
             [
-                'name' => 'Parceiro'
+                'name' => 'Cliente'
             ],
         ]);
     }

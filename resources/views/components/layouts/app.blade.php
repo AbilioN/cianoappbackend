@@ -18,7 +18,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 
-    <link rel="shortcut icon" sizes="114x114" href="{{ asset('favicon.png') }}">
+    <link rel="shortcut icon" sizes="114x114" href="favicon.ico">
     <style>
 
 label[title="Next"] { right: 0; }
