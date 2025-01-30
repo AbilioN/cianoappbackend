@@ -98,6 +98,7 @@ class NotificationController extends Controller
                 return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'data' => $userAquariumNotification->toDto()]);
             }else{
                 // return response()->json(['message' => 'failed' , 'message_code' => 'notification_already_activated' ], 404);
+                DB::commit();
                 return response()->json(['message' => 'success' , 'message_code' => 'notification_activated_successfully' , 'data' => $userAquariumNotification->toDto()]);
             }
 

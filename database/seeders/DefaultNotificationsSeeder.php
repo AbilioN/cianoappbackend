@@ -1976,5 +1976,328 @@ class DefaultNotificationsSeeder extends Seeder
                 'body' => $notification['body'],
             ]);
         }
+
+        $notification33 = Notification::create([
+            'name' => 'Adicionar Water conditioner + Water bio-bact',
+            'slug' => slugify('Adicionar Water conditioner + Water bio-bact'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 15,
+            'type' => 'single',
+        ]);
+
+        $notifications33 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Está hora de cuidar da água do seu aquário! Adicione os liquidos WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para os seus peixes.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'È ora di prenderti cura dell’acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l’acqua, eliminare le impurità e mantenere l’equilibrio biologico ideale per i tuoi pesci.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => '¡Es hora de cuidar el agua de tu acuario! Añade WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas y mantener el equilibrio biológico ideal para tus peces.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => 'Es ist Zeit, sich um das Wasser in Ihrem Aquarium zu kümmern! Fügen Sie WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu entfernen und das ideale biologische Gleichgewicht für Ihre Fische zu erhalten.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => 'Il est temps de prendre soin de l’eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l’eau, éliminer les impuretés et maintenir l’équilibre biologique idéal pour vos poissons.',
+            ],
+        ];
+
+
+        foreach ($notifications33 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 33,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+        
+        $notification34 = Notification::create([
+            'name' => 'Adicione uma notificação para ser alertado daqui a 5 dias!',
+            'slug' => slugify('Adicione uma notificação para ser alertado daqui a 5 dias!'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 5,
+            'type' => 'single',
+        ]);
+
+        $notifications34 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Já passaram 5 dias, está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'Sono passati 5 giorni, è ora di verificare la qualità dell’acqua! Usa le TEST STRIPS Ciano® per misurare i parametri essenziali dell’acqua.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => 'Han pasado 5 días, ¡es hora de comprobar la calidad del agua! Utiliza las TEST STRIPS Ciano® para medir los parámetros esenciales del agua.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => '5 Tage sind vergangen, es ist Zeit, die Wasserqualität zu überprüfen! Verwenden Sie die Ciano® TEST STRIPS, um die wesentlichen Wasserparameter zu messen.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => '5 jours se sont écoulés, il est temps de vérifier la qualité de l’eau ! Utilisez les TEST STRIPS Ciano® pour mesurer les paramètres essentiels de l’eau.',
+            ],
+        ];
+
+
+        foreach ($notifications34 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 34,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+        
+        $notification35 = Notification::create([
+            'name' => 'Passo 4',
+            'slug' => slugify('Passo 4'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 15,
+            'type' => 'single',
+        ]);
+
+        $notifications35 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Está hora de cuidar da água do seu aquário! Adicione os liquidos WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para os seus peixes.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'È ora di prenderti cura dell’acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l’acqua, eliminare le impurità e mantenere l’equilibrio biologico ideale per i tuoi pesci.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => '¡Es hora de cuidar el agua de tu acuario! Añade WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas y mantener el equilibrio biológico ideal para tus peces.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => 'Es ist Zeit, sich um das Wasser in Ihrem Aquarium zu kümmern! Fügen Sie WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu entfernen und das ideale biologische Gleichgewicht für Ihre Fische zu erhalten.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => 'Il est temps de prendre soin de l’eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l’eau, éliminer les impuretés et maintenir l’équilibre biologique idéal pour vos poissons.',
+            ],
+        ];
+
+
+        foreach ($notifications35 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 35,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+        
+        $notification36 = Notification::create([
+            'name' => 'Passo 7',
+            'slug' => slugify('Passo 7'),
+            // 'duration_type' => 'days',2
+            'duration_type' => 'seconds',
+            'duration_value' => 5,
+            'type' => 'single',
+        ]);
+
+        $notifications36 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Já passaram 5 dias, está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'Sono passati 5 giorni, è ora di verificare la qualità dell’acqua! Usa le TEST STRIPS Ciano® per misurare i parametri essenziali dell’acqua.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => 'Han pasado 5 días, ¡es hora de comprobar la calidad del agua! Utiliza las TEST STRIPS Ciano® para medir los parámetros esenciales del agua.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => '5 Tage sind vergangen, es ist Zeit, die Wasserqualität zu überprüfen! Verwenden Sie die Ciano® TEST STRIPS, um die wesentlichen Wasserparameter zu messen.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => '5 jours se sont écoulés, il est temps de vérifier la qualité de l’eau ! Utilisez les TEST STRIPS Ciano® pour mesurer les paramètres essentiels de l’eau.',
+            ],
+        ];
+
+
+        foreach ($notifications36 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 36,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+
+        $notification37 = Notification::create([
+            'name' => 'Verificação com detalhe dos peixes, àgua e desenvolvimento de algas',
+            'slug' => slugify('Verificação com detalhe dos peixes, àgua e desenvolvimento de algas'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 15,
+            'type' => 'single',
+        ]);
+
+        $notifications37 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => 'Carefully check your fish and plants, the appearance of the water, and whether there is any algae growth.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Verifique com detalhe os seus peixes e plantas, o aspeto da àgua e se há desenvolvimento de algas.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'Controlla attentamente i tuoi pesci e le tue piante, l’aspetto dell’acqua e se si stanno sviluppando alghe.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => 'Revisa cuidadosamente tus peces y plantas, el aspecto del agua y si hay desarrollo de algas.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => 'Überprüfen Sie sorgfältig Ihre Fische und Pflanzen, das Aussehen des Wassers und ob sich Algen entwickeln.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => 'Examinez attentivement vos poissons et plantes, l’apparence de l’eau et le développement éventuel d’algues.',
+            ],
+        ];
+
+
+        foreach ($notifications37 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 37,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+        
+        $notification38 = Notification::create([
+            'name' => 'Use o Water Test Strips',
+            'slug' => slugify('Use o Water Test Strips'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 15,
+            'type' => 'single',
+        ]);
+
+        $notifications38 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => 'Time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'Controlla attentamente i tuoi pesci e le tue piante, l’aspetto dell’acqua e se si stanno sviluppando alghe.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => 'Revisa cuidadosamente tus peces y plantas, el aspecto del agua y si hay desarrollo de algas.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => 'Überprüfen Sie sorgfältig Ihre Fische und Pflanzen, das Aussehen des Wassers und ob sich Algen entwickeln.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => 'Examinez attentivement vos poissons et plantes, l’apparence de l’eau et le développement éventuel d’algues.',
+            ],
+        ];
+
+
+        foreach ($notifications38 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 38,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+        
+        
+        $notification39 = Notification::create([
+            'name' => 'Troca 25% de água',
+            'slug' => slugify('Troca 25% de água'),
+            // 'duration_type' => 'days',
+            'duration_type' => 'seconds',
+            'duration_value' => 30,
+            'type' => 'single',
+        ]);
+
+        $notifications39 = [
+            'en' => [
+                'title' => 'Your aquarium {aquarium_name} needs your attention!',
+                'body' => 'Time to take care of your aquarium! Replace 25% of the water to ensure a clean and healthy environment.',
+            ],
+            'pt' => [
+                'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
+                'body' => 'Está na hora de cuidar do seu aquário! Substitua 25% da água para garantir um ambiente limpo e saudável.',
+            ],
+            'it' => [
+                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
+                'body' => 'È ora di prenderti cura del tuo acquario! Sostituisci il 25% dell’acqua per garantire un ambiente pulito e sano.',
+            ],
+            'es' => [
+                'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
+                'body' => '¡Es hora de cuidar tu acuario! Sustituye el 25% del agua para garantizar un ambiente limpio y saludable.',
+            ],
+            'de' => [
+                'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
+                'body' => 'Es ist Zeit, sich um Ihr Aquarium zu kümmern! Ersetzen Sie 25% des Wassers, um eine saubere und gesunde Umgebung zu gewährleisten.',
+            ],
+            'fr' => [
+                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
+                'body' => 'Il est temps de prendre soin de votre aquarium ! Remplacez 25 % de l’eau pour garantir un environnement propre et sain.',
+            ],
+        ];
+
+
+        foreach ($notifications39 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => 39,
+                'lang' => $lang,
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
     }
 }
