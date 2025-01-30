@@ -68,8 +68,6 @@ class Aquarium extends Model
         $returnArray['created_at'] = $this->created_at;
         $returnArray['updated_at'] = $this->updated_at;
 
-        // $returnArray['notifications'] = $this->notifications;
-
         if(count($consumableNotificationsDto) > 0){
             $returnArray['consumables'] = $consumableNotificationsDto;
         }

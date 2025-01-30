@@ -91,6 +91,7 @@ class NotificationController extends Controller
                 $isCreating = true;
             }
 
+            $aquarium->refresh();
             DB::commit();
             if($isCreating){
                 // $notification->is_active = true;

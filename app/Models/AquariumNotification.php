@@ -36,10 +36,9 @@ class AquariumNotification extends Model
             }
             return $body; // Retorna o corpo atualizado
         });
-
         $returnData = [
             'id' => $this->id,
-            'aquarium' => $this->aquarium,
+            'aquarium' => $this->aquarium->toDto(),
             'notification' => $this->notification,
             'consumable' => $this->consumable_notification_id ? $this->consumableNotification->consumable : null,
             'start_date' => $this->start_date,
@@ -74,6 +73,8 @@ class AquariumNotification extends Model
             // 'aquarium_id' => $this->aquarium_id,
             // 'notification_id' => $this->notification_id,
             // 'consumable_notification_id' => $this->consumable_notification_id,
+            'name' => $this->notification->name,
+            'slug' => $this->notification->slug,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
             'renew_date' => $this->renew_date,
