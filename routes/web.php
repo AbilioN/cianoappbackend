@@ -39,15 +39,15 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin', Admin::class)->name('admin.home');
-    Route::get('/admin/partner/create', Create::class)->name('admin.partner.create');
-    Route::get('/admin/partner/show', Show::class)->name('admin.partner.show');
-    Route::get('/admin/partner/edit/{id}', Edit::class)->name('admin.partner.edit');
+    Route::get('/admin/client/create', Create::class)->name('admin.partner.create');
+    Route::get('/admin/client/show', Show::class)->name('admin.partner.show');
+    Route::get('/admin/client/edit/{id}', Edit::class)->name('admin.partner.edit');
     Route::get('/admin/history/{id}', HistoryShow::class)->name('history-show');
 
     Route::get('/profile', function () {
         // ...
     })->withoutMiddleware([AdminMiddleware::class]);
-    Route::get('/admin/dashboard' , Dashboard::class)->name('admin.dashboard');
+    // Route::get('/admin/dashboard' , Dashboard::class)->name('admin.dashboard');
 
     // Route::get('/history', function(){
     //     return 'history';
