@@ -164,5 +164,36 @@ class AquariumController extends Controller
         }
 
     }
+
+    public function deleteAquarium(Request $request)
+    {
+        try {
+            DB::beginTransaction();
+    
+            $user = Auth::user();
+            $aquarium = Aquarium::find($request->aquarium_id);
+    
+            if(!$aquarium){
+                return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+            }
+            if($aquarium->user_id != $user->id){
+                return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+            }
+    
+            $aquariumNotifications = $aquarium->aquariumNotifications();
+    
+            if($aquariumNotifications) {
+                $aquariumNotifications->delete();
+            }
+            $aquarium->delete();
+            
+            DB::commit();
+            return response()->json(['message' => 'success', 'message_code' => 'delete_aquarium_successfully']);
+        }
+        catch(Exception $e) {
+            DB::rollBack();
+            return response()->json(['message' => 'failed' , 'message_code' => 'delete_aquarium_failed' , 'errors' => $e->getMessage()], 500);
+        }
+    }
 }
 
