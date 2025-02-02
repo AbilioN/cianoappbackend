@@ -108,7 +108,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => 'water-test-strips',
             'code' => 'COM560038',
             'description' => 'Water Test Strips',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -171,7 +171,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER CLEAR & PROTECTION S'),
             'code' => 'COM560018',
             'description' => 'Water Clear & Protection S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -234,7 +234,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER CLEAR & PROTECTION M'),
             'code' => 'COM560022',
             'description' => 'Water Clear & Protection M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -296,7 +296,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER CLEAR & PROTECTION L'),
             'code' => 'COM560028',
             'description' => 'Water Clear & Protection L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -359,7 +359,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER CLEAR & PROTECTION XL'),
             'code' => 'COM560051',
             'description' => 'Water Clear & Protection XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -421,7 +421,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT S'),
             'code' => 'COM560019',
             'description' => 'Water bio-bact S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -484,7 +484,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT M'),
             'code' => 'COM560023',
             'description' => 'Water bio-bact M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -547,7 +547,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT L'),
             'code' => 'COM560029',
             'description' => 'Water bio-bact L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -608,7 +608,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT XL'),
             'code' => 'COM560052',
             'description' => 'Water bio-bact XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -670,7 +670,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT S (Pack)'),
             'code' => 'COM560033',
             'description' => 'Water bio-bact S (pack)',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -731,7 +731,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT M (Pack)'),
             'code' => 'COM560034',
             'description' => 'Water bio-bact M (pack)',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -792,7 +792,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT L (Pack)'),
             'code' => 'COM560036',
             'description' => 'Water bio-bact L (pack)',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -853,7 +853,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT XL (Pack)'),
             'code' => 'COM560064',
             'description' => 'Water bio-bact XL (pack)',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
 
@@ -915,7 +915,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER FOAM S'),
             'code' => 'COM560021',
             'description' => 'Water Foam S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification15 = Notification::create([
@@ -975,7 +975,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER FOAM M'),
             'code' => 'COM560025',
             'description' => 'Water Foam M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification16 = Notification::create([
@@ -1034,7 +1034,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER FOAM L'),
             'code' => 'COM560026',
             'description' => 'Water Foam L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification17 = Notification::create([
@@ -1093,7 +1093,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER FOAM XL'),
             'code' => 'COM560054',
             'description' => 'Water Foam XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification18 = Notification::create([
@@ -1152,7 +1152,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER FOAM COARSE XL'),
             'code' => 'COM560053',
             'description' => 'Water Foam Coarse XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification19 = Notification::create([
@@ -1212,7 +1212,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER PAD XL'),
             'code' => 'COM560055',
             'description' => 'Water Pad XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification20 = Notification::create([
@@ -1271,7 +1271,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER ALGAE S'),
             'code' => 'COM560020',
             'description' => 'Water Algae S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification21 = Notification::create([
@@ -1330,7 +1330,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER ALGAE M'),
             'code' => 'COM560024',
             'description' => 'Water Algae M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification22 = Notification::create([
@@ -1389,7 +1389,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER ALGAE L'),
             'code' => 'COM560030',
             'description' => 'Water Algae L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification23 = Notification::create([
@@ -1448,7 +1448,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER ALGAE xL'),
             'code' => 'TRE400005',
             'description' => 'Water Algae xL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification24 = Notification::create([
@@ -1508,7 +1508,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('FISH PROTECTION DOSATOR S'),
             'code' => 'COM560043',
             'description' => 'Fish Protection Dosator S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification25 = Notification::create([
@@ -1568,7 +1568,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('FISH PROTECTION DOSATOR M'),
             'code' => 'COM560044',
             'description' => 'Fish Protection Dosator M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification26 = Notification::create([
@@ -1628,7 +1628,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('FISH PROTECTION DOSATOR L'),
             'code' => 'COM560049',
             'description' => 'Fish Protection Dosator L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification27 = Notification::create([
@@ -1687,7 +1687,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('FISH PROTECTION DOSATOR XL'),
             'code' => 'COM560045',
             'description' => 'Fish Protection Dosator XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification28 = Notification::create([
@@ -1746,7 +1746,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('PLANTS PROTECTION DOSATOR S'),
             'code' => 'COM560046',
             'description' => 'Plants Protection Dosator S',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification29 = Notification::create([
@@ -1805,7 +1805,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('PLANTS PROTECTION DOSATOR M'),
             'code' => 'COM560047',
             'description' => 'Plants Protection Dosator M',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification30 = Notification::create([
@@ -1864,7 +1864,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('PLANTS PROTECTION DOSATOR L'),
             'code' => 'COM560050',
             'description' => 'Plants Protection Dosator L',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification31 = Notification::create([
@@ -1923,7 +1923,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('PLANTS PROTECTION DOSATOR XL'),
             'code' => 'COM560048',
             'description' => 'Plants Protection Dosator XL',
-            'image_url' => 'https://via.placeholder.com/150',
+            'image_url' => 'https://picsum.photos/200/300',
         ]);
 
         $notification32 = Notification::create([
