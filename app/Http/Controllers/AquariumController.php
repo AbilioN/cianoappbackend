@@ -143,6 +143,7 @@ class AquariumController extends Controller
             if($aquariumNotificationExists) {
                 DB::rollBack();
                 return response()->json(['message' => 'Consumable already exists in this aquarium', 'message_code' => 'consumable_already_exists_in_this_aquarium'], 422);
+                // Se o consumable ja existir, deve ir para a rota de activate notification
             }
 
             $aquariumNotification = AquariumNotification::create([

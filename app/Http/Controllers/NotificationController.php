@@ -156,16 +156,19 @@ class NotificationController extends Controller
             }
 
             if($userAquariumNotification === false) {
-                return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated' , 'data' => $userAquariumNotification->toDto()]);
+                // criar menssagem de sucesso no front-end
+                return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated_successfully' , 'data' => $userAquariumNotification->toDto()]);
             }
             $userAquariumNotification->is_active = false;
             $userAquariumNotification->save();
             DB::commit();
-            return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated' , 'data' => $userAquariumNotification->toDto()]);
+            // Criar menssagem de sucesso no front-end
+            return response()->json(['message' => 'success' , 'message_code' => 'notification_deactivated_successfully' , 'data' => $userAquariumNotification->toDto()]);
 
         }catch(\Exception $e){
             DB::rollBack();
-            return response()->json(['message' => 'failed' , 'message_code' => 'notification_activated_failed' , 'errors' => $e->getMessage()], 500);
+            // criar menssagem de erro no front-end
+            return response()->json(['message' => 'failed' , 'message_code' => 'notification_deactivated_failed' , 'errors' => $e->getMessage()], 500);
         }
     }
 
