@@ -40,67 +40,73 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => 'main-aquarium-2',
         ]);
 
-        $consumable1 = Consumable::factory()->create([
-            'name' => 'Water Conditioner',
-            'slug' => 'water-conditioner',
-            'code' => 'COM56003',
-            'description' => 'Water Conditioner',
-            'image_url' => 'https://picsum.photos/200/300',
-        ]);
+        // $consumable1 = Consumable::factory()->create([
+        //     'name' => 'Water Conditioner',
+        //     'slug' => 'water-conditioner',
+        //     'code' => 'COM56003',
+        //     'description' => 'Water Conditioner',
+        //     'image_url' => 'https://picsum.photos/200/300',
+        // ]);
 
 
 
-        $notification1 = Notification::create([
-            'name' => 'Water Conditioner',
-            'slug' => 'water-conditioner',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
-            'duration_value' => 15,
-            'type' => 'single',
-        ]);
+        // $notification1 = Notification::create([
+        //     'name' => 'Water Conditioner',
+        //     'slug' => 'water-conditioner',
+        //     'duration_type' => 'days',
+        //     'duration_value' => 15,
+        //     'type' => 'single',
+        // ]);
 
-        $consumableNotification = ConsumableNotification::create([
-            'consumable_id' => $consumable1->id,
-            'notification_id' => $notification1->id,
-        ]);
+        // $consumableNotification = ConsumableNotification::create([
+        //     'consumable_id' => $consumable1->id,
+        //     'notification_id' => $notification1->id,
+        // ]);
 
-        $notifications1 = [
-            'en' => [
-                'title' => 'Your Aquarium {aquarium_name} Needs Your Attention',
-                'body' => "It's time to take care of your aquarium's water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, eliminate impurities, and maintain the ideal biological balance for your fish.",
-            ],
-            'pt' => [
-                'title' => 'Seu Aquário {aquarium_name} precisa da sua atenção',
-                'body' => 'Esta na hora de cuidar da água do seu aquário! /n Adicione o líquido WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para seus peixes.',
-            ],
-            'it' => [
-                'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione',
-                'body' => 'È ora di prendersi cura dell\'acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l\'acqua, eliminare le impurità e mantenere l\'equilibrio biologico ideale per i tuoi pesci.',
-            ],
-            'es' => [
-                'title' => 'Tu Acuario {aquarium_name} necesita tu atención',
-                'body' => '¡Es hora de cuidar el agua de tu acuario! Agrega WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas e mantener el equilibrio biológico ideal para tus peces.',
-            ],
-            'de' => [
-                'title' => 'Ihr Aquarium {aquarium_name} benötigt Ihre Aufmerksamkeit',
-                'body' => 'Es ist Zeit, sich um das Wasser deines Aquariums zu kümmern! Füge WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu beseitigen und das ideale biologische Gleichgewicht für deine Fische aufrechtzuerhalten.',
-            ],
-            'fr' => [
-                'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention',
-                'body' => 'Il est temps de prendre soin de l\'eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l\'eau, éliminer les impuretés et maintenir l\'équilibre biologique idéal pour vos poissons.',
-            ],
-        ];
+        // $notifications1 = [
+        //     'en' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Your Aquarium {aquarium_name} Needs Your Attention',
+        //         'body' => "It's time to take care of your aquarium's water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, eliminate impurities, and maintain the ideal biological balance for your fish.",
+        //     ],
+        //     'pt' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Seu Aquário {aquarium_name} precisa da sua atenção',
+        //         'body' => 'Esta na hora de cuidar da água do seu aquário! /n Adicione o líquido WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para seus peixes.',
+        //     ],
+        //     'it' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione',
+        //         'body' => 'È ora di prendersi cura dell\'acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l\'acqua, eliminare le impurità e mantenere l\'equilibrio biologico ideale per i tuoi pesci.',
+        //     ],
+        //     'es' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Tu Acuario {aquarium_name} necesita tu atención',
+        //         'body' => '¡Es hora de cuidar el agua de tu acuario! Agrega WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas e mantener el equilibrio biológico ideal para tus peces.',
+        //     ],
+        //     'de' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Ihr Aquarium {aquarium_name} benötigt Ihre Aufmerksamkeit',
+        //         'body' => 'Es ist Zeit, sich um das Wasser deines Aquariums zu kümmern! Füge WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu beseitigen und das ideale biologische Gleichgewicht für deine Fische aufrechtzuerhalten.',
+        //     ],
+        //     'fr' => [
+        //         'presentation' => 'Water Conditioner',
+        //         'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention',
+        //         'body' => 'Il est temps de prendre soin de l\'eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l\'eau, éliminer les impuretés et maintenir l\'équilibre biologique idéal pour vos poissons.',
+        //     ],
+        // ];
 
 
 
-        foreach ($notifications1 as $lang => $notification) {
-            NotificationBody::create([
-                'notification_id' => 1,
-                'lang' => $lang,
-                'title' => $notification['title'],
-                'body' => $notification['body'],
-            ]);
-        }
+        // foreach ($notifications1 as $lang => $notification) {
+        //     NotificationBody::create([
+        //         'notification_id' => $notification1->id,
+        //         'lang' => $lang,
+        //         'presentation' => $notification['presentation'],
+        //         'title' => $notification['title'],
+        //         'body' => $notification['body'],
+        //     ]);
+        // }
 
 
         $consumable2 = Consumable::factory()->create([
@@ -116,8 +122,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification2 = Notification::create([
             'name' => 'Water Test Strips',
             'slug' => 'water-test-strips',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
@@ -129,26 +134,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications2 = [
             'en' => [
+                'presentation' => 'Water Test Strips',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => "Time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.",
             ],
             'pt' => [
+                'presentation' => 'Water Test Strips',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'È hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
             ],
            'it' => [
+                'presentation' => 'Water Test Strips',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di controllare la qualità dell’acqua! Usa le TEST STRIPS Ciano® per misurare i parametri essenziali dell’acqua.',
             ],
             'es' => [
+                'presentation' => 'Water Test Strips',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de verificar la calidad del agua! Usa las TEST STRIPS Ciano® para medir los parámetros esenciales del agua.',
             ],
             'de' => [
+                'presentation' => 'Water Test Strips',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, die Wasserqualität zu überprüfen! Verwenden Sie die Ciano® TESTSTREIFEN, um die wichtigsten Wasserparameter zu messen.',
             ],
             'fr' => [
+                'presentation' => 'Water Test Strips',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de vérifier la qualité de l’eau ! Utilisez les TEST STRIPS Ciano® pour mesurer les paramètres essentiels de l’eau.',
             ],
@@ -158,8 +169,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications2 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 2,
+                'notification_id' => $notification2->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -179,8 +191,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification3 = Notification::create([
             'name' => 'Water clear and protection S',
             'slug' => 'water-clear-and-protection-s',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 30,
             'type' => 'single',
         ]);
@@ -192,26 +203,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications3 = [
             'en' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
-                'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear and fresh.',
+                'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear & fresh.',
             ],
             'pt' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de substituir o WATER CLEAR & PROTECTION e manter a água do seu aquário cristalina e sem odores.',
             ],
             'it' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di sostituire il WATER CLEAR & PROTECTION e mantenere l’acqua del tuo acquario cristallina e senza odori.',
             ],
             'es' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Es hora de reemplazar el WATER CLEAR & PROTECTION y mantener el agua de tu acuario cristalina y sin olores.',
             ],
             'de' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das WATER CLEAR & PROTECTION auszutauschen und das Wasser in Ihrem Aquarium kristallklar und geruchsfrei zu halten.',
             ],
             'fr' => [
+                'presentation' => 'Water clear & protection S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de remplacer le WATER CLEAR & PROTECTION et de garder l’eau de votre aquarium cristalline et sans odeurs.',
             ],
@@ -221,8 +238,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications3 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 3,
+                'notification_id' => $notification3->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -242,8 +260,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification4 = Notification::create([
             'name' => 'Water clear and protection M',
             'slug' => 'water-clear-and-protection-m',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 30,
             'type' => 'single',
         ]);
@@ -255,26 +272,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications4 = [
             'en' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
-                'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear and fresh.',
+                'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear & fresh.',
             ],
             'pt' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de substituir o WATER CLEAR & PROTECTION e manter a água do seu aquário cristalina e sem odores.',
             ],
             'it' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di sostituire il WATER CLEAR & PROTECTION e mantenere l’acqua del tuo acquario cristallina e senza odori.',
             ],
             'es' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Es hora de reemplazar el WATER CLEAR & PROTECTION y mantener el agua de tu acuario cristalina y sin olores.',
             ],
             'de' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das WATER CLEAR & PROTECTION auszutauschen und das Wasser in Ihrem Aquarium kristallklar und geruchsfrei zu halten.',
             ],
             'fr' => [
+                'presentation' => 'Water clear & protection M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de remplacer le WATER CLEAR & PROTECTION et de garder l’eau de votre aquarium cristalline et sans odeurs.',
             ],
@@ -284,8 +307,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications4 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 4,
+                'notification_id' => $notification4->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -304,8 +328,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification5 = Notification::create([
             'name' => 'Water clear and protection L',
             'slug' => 'water-clear-and-protection-l',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 30,
             'type' => 'single',
         ]);
@@ -317,26 +340,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications5 = [
             'en' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear and fresh.',
             ],
             'pt' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de substituir o WATER CLEAR & PROTECTION e manter a água do seu aquário cristalina e sem odores.',
             ],
             'it' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di sostituire il WATER CLEAR & PROTECTION e mantenere l’acqua del tuo acquario cristallina e senza odori.',
             ],
             'es' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Es hora de reemplazar el WATER CLEAR & PROTECTION y mantener el agua de tu acuario cristalina y sin olores.',
             ],
             'de' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das WATER CLEAR & PROTECTION auszutauschen und das Wasser in Ihrem Aquarium kristallklar und geruchsfrei zu halten.',
             ],
             'fr' => [
+                'presentation' => 'Water clear & protection L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de remplacer le WATER CLEAR & PROTECTION et de garder l’eau de votre aquarium cristalline et sans odeurs.',
             ],
@@ -346,8 +375,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications5 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 5,
+                'notification_id' => $notification5->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -367,8 +397,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification6 = Notification::create([
             'name' => 'Water clear and protection XL',
             'slug' => 'water-clear-and-protection-xl',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 30,
             'type' => 'single',
         ]);
@@ -380,26 +409,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications6 = [
             'en' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to replace the WATER CLEAR & PROTECTION to keep your aquarium water crystal clear and fresh.',
             ],
             'pt' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de substituir o WATER CLEAR & PROTECTION e manter a água do seu aquário cristalina e sem odores.',
             ],
             'it' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di sostituire il WATER CLEAR & PROTECTION e mantenere l’acqua del tuo acquario cristallina e senza odori.',
             ],
             'es' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Es hora de reemplazar el WATER CLEAR & PROTECTION y mantener el agua de tu acuario cristalina y sin olores.',
             ],
             'de' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das WATER CLEAR & PROTECTION auszutauschen und das Wasser in Ihrem Aquarium kristallklar und geruchsfrei zu halten.',
             ],
             'fr' => [
+                'presentation' => 'Water clear & protection XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de remplacer le WATER CLEAR & PROTECTION et de garder l’eau de votre aquarium cristalline et sans odeurs.',
             ],
@@ -409,8 +444,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications6 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 6,
+                'notification_id' => $notification6->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -429,8 +465,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification7 = Notification::create([
             'name' => 'Water Bio-Bact S',
             'slug' => 'water-bio-bact-s',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 140,
             'type' => 'single',
         ]);
@@ -442,26 +477,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications7 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -471,8 +512,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications7 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 7,
+                'notification_id' => $notification7->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -492,8 +534,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification8 = Notification::create([
             'name' => 'Water Bio-Bact M',
             'slug' => 'water-bio-bact-m',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 140,
             'type' => 'single',
         ]);
@@ -505,26 +546,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications8 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -534,8 +581,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications8 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 8,
+                'notification_id' => $notification8->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -555,8 +603,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification9 = Notification::create([
             'name' => 'Water Bio-Bact L',
             'slug' => 'water-bio-bact-l',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 140,
             'type' => 'single',
         ]);
@@ -568,26 +615,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications9 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -596,8 +649,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications9 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 9,
+                'notification_id' => $notification9->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -616,8 +670,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification10 = Notification::create([
             'name' => 'Water Bio-Bact XL',
             'slug' => 'water-bio-bact-xl',
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 140,
             'type' => 'single',
         ]);
@@ -629,26 +682,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications10 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -657,8 +716,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications10 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 10,
+                'notification_id' => $notification10->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -678,8 +738,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification11 = Notification::create([
             'name' => 'Water Bio-Bact S (pack)',
             'slug' => slugify('Water Bio-Bact S (pack)'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -691,26 +750,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications11 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact S (pack)',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -719,8 +784,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications11 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 11,
+                'notification_id' => $notification11->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -739,8 +805,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification12 = Notification::create([
             'name' => 'Water Bio-Bact M (pack)',
             'slug' => slugify('Water Bio-Bact M (pack)'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -752,26 +817,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications12 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact M (pack)',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -780,8 +851,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications12 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 12,
+                'notification_id' => $notification12->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -800,8 +872,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification13 = Notification::create([
             'name' => 'Water Bio-Bact L (pack)',
             'slug' => slugify('Water Bio-Bact L (pack)'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -813,26 +884,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications13 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact L (pack)',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -841,8 +918,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications13 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 13,
+                'notification_id' => $notification13->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -861,8 +939,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification14 = Notification::create([
             'name' => 'Water Bio-Bact XL (pack)',
             'slug' => slugify('Water Bio-Bact XL (pack)'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -874,26 +951,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications14 = [
             'en' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to maintain the biological balance of your aquarium! Replace the WATER BIO-BACT and ensure effective biological filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de manter o equilíbrio biológico do seu aquário! Substitua o WATER BIO-BACT e  e mantenha a eficácia da filtragem biológica.',
             ],
             'it' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di mantenere l’equilibrio biologico del tuo acquario! Sostituisci il WATER BIO-BACT e mantieni l’efficacia della filtrazione biologica.',
             ],
             'es' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de mantener el equilibrio biológico de tu acuario! Reemplaza el WATER BIO-BACT y conserva la eficacia de la filtración biológica.',
             ],
             'de' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, das biologische Gleichgewicht in Ihrem Aquarium zu erhalten! Ersetzen Sie das WATER BIO-BACT und bewahren Sie die Effizienz der biologischen Filterung.',
             ],
             'fr' => [
+                'presentation' => 'Water Bio-Bact XL (pack)',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de maintenir l’équilibre biologique de votre aquarium ! Remplacez le WATER BIO-BACT et préservez l’efficacité de la filtration biologique.',
             ],
@@ -902,8 +985,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications14 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 14,
+                'notification_id' => $notification14->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -921,8 +1005,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification15 = Notification::create([
             'name' => 'Water Foam S',
             'slug' => slugify('Water Foam S'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -934,26 +1017,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications15 = [
             'en' => [
+                'presentation' => 'Water Foam S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER FOAM? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Foam S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER FOAM? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Foam S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER FOAM? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Foam S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER FOAM? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Foam S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER FOAM erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Foam S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER FOAM ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -962,8 +1051,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications15 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 15,
+                'notification_id' => $notification15->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -981,8 +1071,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification16 = Notification::create([
             'name' => 'Water Foam M',
             'slug' => slugify('Water Foam M'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -994,26 +1083,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications16 = [
             'en' => [
+                'presentation' => 'Water Foam M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER FOAM? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Foam M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER FOAM? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Foam M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER FOAM? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Foam M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER FOAM? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Foam M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER FOAM erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Foam M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER FOAM ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -1022,8 +1117,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications16 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 16,
+                'notification_id' => $notification16->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1040,8 +1136,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification17 = Notification::create([
             'name' => 'Water Foam L',
             'slug' => slugify('Water Foam L'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -1053,26 +1148,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications17 = [
             'en' => [
+                'presentation' => 'Water Foam L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER FOAM? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Foam L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER FOAM? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Foam L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER FOAM? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Foam L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER FOAM? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Foam L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER FOAM erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Foam L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER FOAM ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -1081,8 +1182,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications17 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 17,
+                'notification_id' => $notification17->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1099,8 +1201,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification18 = Notification::create([
             'name' => 'Water Foam XL',
             'slug' => slugify('Water Foam XL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -1112,26 +1213,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications18 = [
             'en' => [
+                'presentation' => 'Water Foam XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER FOAM? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Foam XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER FOAM? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Foam XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER FOAM? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Foam XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER FOAM? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Foam XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER FOAM erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Foam XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER FOAM ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -1140,8 +1247,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications18 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 18,
+                'notification_id' => $notification18->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1158,8 +1266,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification19 = Notification::create([
             'name' => 'Water Foam Coarse XL',
             'slug' => slugify('Water Foam Coarse XL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 90,
             'type' => 'single',
         ]);
@@ -1171,26 +1278,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications19 = [
             'en' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER FOAM COARSE? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER FOAM COARSE? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER FOAM COARSE? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER FOAM COARSE? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER FOAM COARSE erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Foam Coarse XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER FOAM COARSE ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -1199,8 +1312,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications19 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 19,
+                'notification_id' => $notification19->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1218,8 +1332,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification20 = Notification::create([
             'name' => 'Water Pad XL',
             'slug' => slugify('Water Pad XL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
@@ -1231,26 +1344,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications20 = [
             'en' => [
+                'presentation' => 'Water Pad XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Ready to renew the WATER PAD? This will ensure clean water and efficient filtration.',
             ],
             'pt' => [
+                'presentation' => 'Water Pad XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Vamos renovar o WATER PAD? Assim garantirá uma água limpa e uma filtração eficiente.',
             ],
             'it' => [
+                'presentation' => 'Water Pad XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Rinnoviamo il WATER PAD? In questo modo garantirai un’acqua pulita e una filtrazione efficiente.',
             ],
             'es' => [
+                'presentation' => 'Water Pad XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Renovamos el WATER PAD? Así garantizarás agua limpia y una filtración eficiente.',
             ],
             'de' => [
+                'presentation' => 'Water Pad XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Sollen wir den WATER PAD erneuern? So stellen Sie sauberes Wasser und eine effiziente Filterung sicher.',
             ],
             'fr' => [
+                'presentation' => 'Water Pad XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'On renouvelle le WATER PAD ? Cela garantira une eau propre et une filtration efficace.',
             ],
@@ -1259,8 +1378,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications20 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 20,
+                'notification_id' => $notification20->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1277,8 +1397,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification21 = Notification::create([
             'name' => 'Water Algae S',
             'slug' => slugify('Water Algae S'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 45,
             'type' => 'single',
         ]);
@@ -1290,26 +1409,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications21 = [
             'en' => [
+                'presentation' => 'Water Algae S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Battling algae in your aquarium? Follow the guide’s steps and replace the WATER ALGAE if needed.',
             ],
             'pt' => [
+                'presentation' => 'Water Algae S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Ainda com algas no aquário? Siga os passos do guia e se necessário substitua o WATER ALGAE.',
             ],
             'it' => [
+                'presentation' => 'Water Algae S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Ancora alghe nell’acquario? Segui i passaggi della guida e, se necessario, sostituisci il WATER ALGAE.',
             ],
             'es' => [
+                'presentation' => 'Water Algae S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Aún con algas en el acuario? Sigue los pasos de la guía y, si es necesario, reemplaza el WATER ALGAE.',
             ],
             'de' => [
+                'presentation' => 'Water Algae S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Immer noch Algen im Aquarium? Befolgen Sie die Schritte im Leitfaden und ersetzen Sie bei Bedarf das WATER ALGAE.',
             ],
             'fr' => [
+                'presentation' => 'Water Algae S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Toujours des algues dans l’aquarium ? Suivez les étapes du guide et, si nécessaire, remplacez le WATER ALGAE.',
             ],
@@ -1318,8 +1443,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications21 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 21,
+                'notification_id' => $notification21->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1336,8 +1462,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification22 = Notification::create([
             'name' => 'Water Algae M',
             'slug' => slugify('Water Algae M'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 45,
             'type' => 'single',
         ]);
@@ -1349,26 +1474,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications22 = [
             'en' => [
+                'presentation' => 'Water Algae M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Battling algae in your aquarium? Follow the guide’s steps and replace the WATER ALGAE if needed.',
             ],
             'pt' => [
+                'presentation' => 'Water Algae M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Ainda com algas no aquário? Siga os passos do guia e se necessário substitua o WATER ALGAE.',
             ],
             'it' => [
+                'presentation' => 'Water Algae M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Ancora alghe nell’acquario? Segui i passaggi della guida e, se necessario, sostituisci il WATER ALGAE.',
             ],
             'es' => [
+                'presentation' => 'Water Algae M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Aún con algas en el acuario? Sigue los pasos de la guía y, si es necesario, reemplaza el WATER ALGAE.',
             ],
             'de' => [
+                'presentation' => 'Water Algae M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Immer noch Algen im Aquarium? Befolgen Sie die Schritte im Leitfaden und ersetzen Sie bei Bedarf das WATER ALGAE.',
             ],
             'fr' => [
+                'presentation' => 'Water Algae M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Toujours des algues dans l’aquarium ? Suivez les étapes du guide et, si nécessaire, remplacez le WATER ALGAE.',
             ],
@@ -1377,8 +1508,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications22 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 22,
+                'notification_id' => $notification22->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1395,8 +1527,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification23 = Notification::create([
             'name' => 'Water Algae L',
             'slug' => slugify('Water Algae L'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 45,
             'type' => 'single',
         ]);
@@ -1408,26 +1539,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications23 = [
             'en' => [
+                'presentation' => 'Water Algae L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Battling algae in your aquarium? Follow the guide’s steps and replace the WATER ALGAE if needed.',
             ],
             'pt' => [
+                'presentation' => 'Water Algae L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Ainda com algas no aquário? Siga os passos do guia e se necessário substitua o WATER ALGAE.',
             ],
             'it' => [
+                'presentation' => 'Water Algae L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Ancora alghe nell’acquario? Segui i passaggi della guida e, se necessario, sostituisci il WATER ALGAE.',
             ],
             'es' => [
+                'presentation' => 'Water Algae L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Aún con algas en el acuario? Sigue los pasos de la guía y, si es necesario, reemplaza el WATER ALGAE.',
             ],
             'de' => [
+                'presentation' => 'Water Algae L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Immer noch Algen im Aquarium? Befolgen Sie die Schritte im Leitfaden und ersetzen Sie bei Bedarf das WATER ALGAE.',
             ],
             'fr' => [
+                'presentation' => 'Water Algae L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Toujours des algues dans l’aquarium ? Suivez les étapes du guide et, si nécessaire, remplacez le WATER ALGAE.',
             ],
@@ -1436,8 +1573,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications23 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 23,
+                'notification_id' => $notification23->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1454,8 +1592,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification24 = Notification::create([
             'name' => 'Water Algae xL',
             'slug' => slugify('Water Algae xL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 45,
             'type' => 'single',
         ]);
@@ -1467,26 +1604,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications24 = [
             'en' => [
+                'presentation' => 'Water Algae XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Battling algae in your aquarium? Follow the guide’s steps and replace the WATER ALGAE if needed.',
             ],
             'pt' => [
+                'presentation' => 'Water Algae XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Ainda com algas no aquário? Siga os passos do guia e se necessário substitua o WATER ALGAE.',
             ],
             'it' => [
+                'presentation' => 'Water Algae XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Ancora alghe nell’acquario? Segui i passaggi della guida e, se necessario, sostituisci il WATER ALGAE.',
             ],
             'es' => [
+                'presentation' => 'Water Algae XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¿Aún con algas en el acuario? Sigue los pasos de la guía y, si es necesario, reemplaza el WATER ALGAE.',
             ],
             'de' => [
+                'presentation' => 'Water Algae XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Immer noch Algen im Aquarium? Befolgen Sie die Schritte im Leitfaden und ersetzen Sie bei Bedarf das WATER ALGAE.',
             ],
             'fr' => [
+                'presentation' => 'Water Algae XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Toujours des algues dans l’aquarium ? Suivez les étapes du guide et, si nécessaire, remplacez le WATER ALGAE.',
             ],
@@ -1495,8 +1638,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications24 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 24,
+                'notification_id' => $notification24->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1514,8 +1658,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification25 = Notification::create([
             'name' => 'Fish Protection Dosator S',
             'slug' => slugify('Fish Protection Dosator S'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1527,26 +1670,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications25 = [
             'en' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, fish lovers! Replace the FISH PROTECTION DOSATOR to boost your fish’s immune system and protect them from diseases.',
             ],
             'pt' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta PET! Substitua o FISH PROTECTION DOSATOR e continue a reforçar o sistema imunitário do seu Peixe protejendo-o contra doenças. ',
             ],
             'it' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta PET! Sostituisci il FISH PROTECTION DOSATOR e continua a rafforzare il sistema immunitario del tuo pesce proteggendolo dalle malattie.',
             ],
             'es' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta PET! Sustituye el FISH PROTECTION DOSATOR y sigue reforzando el sistema inmunitario de tu pez protegiéndolo contra enfermedades.',
             ],
             'de' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'PET-Alarm! Ersetzen Sie den FISH PROTECTION DOSATOR und stärken Sie weiterhin das Immunsystem Ihres Fisches, um ihn vor Krankheiten zu schützen.',
             ],
             'fr' => [
+                'presentation' => 'Fish Protection Dosator S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte PET ! Remplacez le FISH PROTECTION DOSATOR et continuez à renforcer le système immunitaire de votre poisson en le protégeant contre les maladies.',
             ],
@@ -1555,8 +1704,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications25 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 25,
+                'notification_id' => $notification25->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1574,8 +1724,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification26 = Notification::create([
             'name' => 'Fish Protection Dosator M',
             'slug' => slugify('Fish Protection Dosator M'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1587,26 +1736,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications26 = [
             'en' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, fish lovers! Replace the FISH PROTECTION DOSATOR to boost your fish’s immune system and protect them from diseases.',
             ],
             'pt' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta PET! Substitua o FISH PROTECTION DOSATOR e continue a reforçar o sistema imunitário do seu Peixe protejendo-o contra doenças. ',
             ],
             'it' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta PET! Sostituisci il FISH PROTECTION DOSATOR e continua a rafforzare il sistema immunitario del tuo pesce proteggendolo dalle malattie.',
             ],
             'es' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta PET! Sustituye el FISH PROTECTION DOSATOR y sigue reforzando el sistema inmunitario de tu pez protegiéndolo contra enfermedades.',
             ],
             'de' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'PET-Alarm! Ersetzen Sie den FISH PROTECTION DOSATOR und stärken Sie weiterhin das Immunsystem Ihres Fisches, um ihn vor Krankheiten zu schützen.',
             ],
             'fr' => [
+                'presentation' => 'Fish Protection Dosator M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte PET ! Remplacez le FISH PROTECTION DOSATOR et continuez à renforcer le système immunitaire de votre poisson en le protégeant contre les maladies.',
             ],
@@ -1615,8 +1770,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications26 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 26,
+                'notification_id' => $notification26->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1634,8 +1790,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification27 = Notification::create([
             'name' => 'Fish Protection Dosator L',
             'slug' => slugify('Fish Protection Dosator L'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1647,26 +1802,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications27 = [
             'en' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, fish lovers! Replace the FISH PROTECTION DOSATOR to boost your fish’s immune system and protect them from diseases.',
             ],
             'pt' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta PET! Substitua o FISH PROTECTION DOSATOR e continue a reforçar o sistema imunitário do seu Peixe protejendo-o contra doenças. ',
             ],
             'it' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta PET! Sostituisci il FISH PROTECTION DOSATOR e continua a rafforzare il sistema immunitario del tuo pesce proteggendolo dalle malattie.',
             ],
             'es' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta PET! Sustituye el FISH PROTECTION DOSATOR y sigue reforzando el sistema inmunitario de tu pez protegiéndolo contra enfermedades.',
             ],
             'de' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'PET-Alarm! Ersetzen Sie den FISH PROTECTION DOSATOR und stärken Sie weiterhin das Immunsystem Ihres Fisches, um ihn vor Krankheiten zu schützen.',
             ],
             'fr' => [
+                'presentation' => 'Fish Protection Dosator L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte PET ! Remplacez le FISH PROTECTION DOSATOR et continuez à renforcer le système immunitaire de votre poisson en le protégeant contre les maladies.',
             ],
@@ -1675,8 +1836,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications27 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 27,
+                'notification_id' => $notification27->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1693,8 +1855,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification28 = Notification::create([
             'name' => 'Fish Protection Dosator XL',
             'slug' => slugify('Fish Protection Dosator XL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1706,26 +1867,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications28 = [
             'en' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, fish lovers! Replace the FISH PROTECTION DOSATOR to boost your fish’s immune system and protect them from diseases.',
             ],
             'pt' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta PET! Substitua o FISH PROTECTION DOSATOR e continue a reforçar o sistema imunitário do seu Peixe protejendo-o contra doenças. ',
             ],
             'it' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta PET! Sostituisci il FISH PROTECTION DOSATOR e continua a rafforzare il sistema immunitario del tuo pesce proteggendolo dalle malattie.',
             ],
             'es' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta PET! Sustituye el FISH PROTECTION DOSATOR y sigue reforzando el sistema inmunitario de tu pez protegiéndolo contra enfermedades.',
             ],
             'de' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'PET-Alarm! Ersetzen Sie den FISH PROTECTION DOSATOR und stärken Sie weiterhin das Immunsystem Ihres Fisches, um ihn vor Krankheiten zu schützen.',
             ],
             'fr' => [
+                'presentation' => 'Fish Protection Dosator XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte PET ! Remplacez le FISH PROTECTION DOSATOR et continuez à renforcer le système immunitaire de votre poisson en le protégeant contre les maladies.',
             ],
@@ -1734,8 +1901,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications28 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 28,
+                'notification_id' => $notification28->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1752,8 +1920,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification29 = Notification::create([
             'name' => 'Plants Protection Dosator S',
             'slug' => slugify('Plants Protection Dosator S'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1765,26 +1932,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications29 = [
             'en' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, plant enthusiasts! Replace the PLANTS PROTECTION DOSATOR to feed your plants with essential nutrients for their healthy growth and well-being.',
             ],
             'pt' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta plantas! Substitua o PLANTS PROTECTION DOSATOR e continue a alimentar as suas plantas com nutrientes essenciais para o seu crescimento e bem estar.',
             ],
             'it' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta piante! Sostituisci il PLANTS PROTECTION DOSATOR e continua a nutrire le tue piante con i nutrienti essenziali per la loro crescita e il loro benessere.',
             ],
             'es' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta plantas! Sustituye el PLANTS PROTECTION DOSATOR y sigue alimentando tus plantas con nutrientes esenciales para su crecimiento y bienestar.',
             ],
             'de' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Pflanzen-Alarm! Ersetzen Sie den PLANTS PROTECTION DOSATOR und versorgen Sie Ihre Pflanzen weiterhin mit wichtigen Nährstoffen für ihr Wachstum und Wohlbefinden.',
             ],
             'fr' => [
+                'presentation' => 'Plants Protection Dosator S',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte plantes ! Remplacez le PLANTS PROTECTION DOSATOR et continuez à nourrir vos plantes avec les nutriments essentiels à leur croissance et leur bien-être.',
             ],
@@ -1793,8 +1966,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications29 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 29,
+                'notification_id' => $notification29->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1811,8 +1985,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification30 = Notification::create([
             'name' => 'Plants Protection Dosator M',
             'slug' => slugify('Plants Protection Dosator M'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1824,26 +1997,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications30 = [
             'en' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, plant enthusiasts! Replace the PLANTS PROTECTION DOSATOR to feed your plants with essential nutrients for their healthy growth and well-being.',
             ],
             'pt' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta plantas! Substitua o PLANTS PROTECTION DOSATOR e continue a alimentar as suas plantas com nutrientes essenciais para o seu crescimento e bem estar.',
             ],
             'it' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta piante! Sostituisci il PLANTS PROTECTION DOSATOR e continua a nutrire le tue piante con i nutrienti essenziali per la loro crescita e il loro benessere.',
             ],
             'es' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta plantas! Sustituye el PLANTS PROTECTION DOSATOR y sigue alimentando tus plantas con nutrientes esenciales para su crecimiento y bienestar.',
             ],
             'de' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Pflanzen-Alarm! Ersetzen Sie den PLANTS PROTECTION DOSATOR und versorgen Sie Ihre Pflanzen weiterhin mit wichtigen Nährstoffen für ihr Wachstum und Wohlbefinden.',
             ],
             'fr' => [
+                'presentation' => 'Plants Protection Dosator M',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte plantes ! Remplacez le PLANTS PROTECTION DOSATOR et continuez à nourrir vos plantes avec les nutriments essentiels à leur croissance et leur bien-être.',
             ],
@@ -1852,8 +2031,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications30 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 30,
+                'notification_id' => $notification30->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1870,8 +2050,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification31 = Notification::create([
             'name' => 'Plants Protection Dosator L',
             'slug' => slugify('Plants Protection Dosator L'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1883,26 +2062,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications31 = [
             'en' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, plant enthusiasts! Replace the PLANTS PROTECTION DOSATOR to feed your plants with essential nutrients for their healthy growth and well-being.',
             ],
             'pt' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta plantas! Substitua o PLANTS PROTECTION DOSATOR e continue a alimentar as suas plantas com nutrientes essenciais para o seu crescimento e bem estar.',
             ],
             'it' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta piante! Sostituisci il PLANTS PROTECTION DOSATOR e continua a nutrire le tue piante con i nutrienti essenziali per la loro crescita e il loro benessere.',
             ],
             'es' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta plantas! Sustituye el PLANTS PROTECTION DOSATOR y sigue alimentando tus plantas con nutrientes esenciales para su crecimiento y bienestar.',
             ],
             'de' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Pflanzen-Alarm! Ersetzen Sie den PLANTS PROTECTION DOSATOR und versorgen Sie Ihre Pflanzen weiterhin mit wichtigen Nährstoffen für ihr Wachstum und Wohlbefinden.',
             ],
             'fr' => [
+                'presentation' => 'Plants Protection Dosator L',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte plantes ! Remplacez le PLANTS PROTECTION DOSATOR et continuez à nourrir vos plantes avec les nutriments essentiels à leur croissance et leur bien-être.',
             ],
@@ -1911,8 +2096,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications31 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 31,
+                'notification_id' => $notification31->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1929,8 +2115,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notification32 = Notification::create([
             'name' => 'Plants Protection Dosator XL',
             'slug' => slugify('Plants Protection Dosator XL'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 60,
             'type' => 'single',
         ]);
@@ -1942,26 +2127,32 @@ class DefaultNotificationsSeeder extends Seeder
 
         $notifications32 = [
             'en' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Attention, plant enthusiasts! Replace the PLANTS PROTECTION DOSATOR to feed your plants with essential nutrients for their healthy growth and well-being.',
             ],
             'pt' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Alerta plantas! Substitua o PLANTS PROTECTION DOSATOR e continue a alimentar as suas plantas com nutrientes essenciais para o seu crescimento e bem estar.',
             ],
             'it' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Allerta piante! Sostituisci il PLANTS PROTECTION DOSATOR e continua a nutrire le tue piante con i nutrienti essenziali per la loro crescita e il loro benessere.',
             ],
             'es' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Alerta plantas! Sustituye el PLANTS PROTECTION DOSATOR y sigue alimentando tus plantas con nutrientes esenciales para su crecimiento y bienestar.',
             ],
             'de' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Pflanzen-Alarm! Ersetzen Sie den PLANTS PROTECTION DOSATOR und versorgen Sie Ihre Pflanzen weiterhin mit wichtigen Nährstoffen für ihr Wachstum und Wohlbefinden.',
             ],
             'fr' => [
+                'presentation' => 'Plants Protection Dosator XL',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Alerte plantes ! Remplacez le PLANTS PROTECTION DOSATOR et continuez à nourrir vos plantes avec les nutriments essentiels à leur croissance et leur bien-être.',
             ],
@@ -1970,8 +2161,9 @@ class DefaultNotificationsSeeder extends Seeder
 
         foreach ($notifications32 as $lang => $notification) {
             NotificationBody::create([
-                'notification_id' => 32,
+                'notification_id' => $notification32->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -1980,34 +2172,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationFishStep4 = Notification::create([
             'name' => 'Fish Aquarium Step 4',
             'slug' => slugify('Fish Aquarium Step 4'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
         $notificationsFishStep4 = [
             'en' => [
+                'presentation' => 'Protect the water.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
             ],
             'pt' => [
+                'presentation' => 'Proteja a água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está hora de cuidar da água do seu aquário! Adicione os liquidos WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para os seus peixes.',
             ],
             'it' => [
+                'presentation' => 'Proteggi l’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di prenderti cura dell’acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l’acqua, eliminare le impurità e mantenere l’equilibrio biologico ideale per i tuoi pesci.',
             ],
             'es' => [
+                'presentation' => 'Protege el agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de cuidar el agua de tu acuario! Añade WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas y mantener el equilibrio biológico ideal para tus peces.',
             ],
             'de' => [
+                'presentation' => 'Schützen Sie das Wasser.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, sich um das Wasser in Ihrem Aquarium zu kümmern! Fügen Sie WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu entfernen und das ideale biologische Gleichgewicht für Ihre Fische zu erhalten.',
             ],
             'fr' => [
+                'presentation' => 'Protégez l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de prendre soin de l’eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l’eau, éliminer les impuretés et maintenir l’équilibre biologique idéal pour vos poissons.',
             ],
@@ -2018,6 +2215,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationFishStep4->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2026,34 +2224,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationFishStep7 = Notification::create([
             'name' => 'Fish Aquarium Step 7',
             'slug' => slugify('Fish Aquarium Step 7'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 5,
             'type' => 'single',
         ]);
 
         $notificationsFishStep7 = [
             'en' => [
+                'presentation' => 'Measure water parameters.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
             ],
             'pt' => [
+                'presentation' => 'Medir parâmetros da água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Já passaram 5 dias, está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
             ],
             'it' => [
+                'presentation' => 'Misura i parametri dell’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Sono passati 5 giorni, è ora di verificare la qualità dell’acqua! Usa le TEST STRIPS Ciano® per misurare i parametri essenziali dell’acqua.',
             ],
             'es' => [
+                'presentation' => 'Medir los parámetros del agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Han pasado 5 días, ¡es hora de comprobar la calidad del agua! Utiliza las TEST STRIPS Ciano® para medir los parámetros esenciales del agua.',
             ],
             'de' => [
+                'presentation' => 'Wasserparameter messen.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => '5 Tage sind vergangen, es ist Zeit, die Wasserqualität zu überprüfen! Verwenden Sie die Ciano® TEST STRIPS, um die wesentlichen Wasserparameter zu messen.',
             ],
             'fr' => [
+                'presentation' => 'Mesurer les paramètres de l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => '5 jours se sont écoulés, il est temps de vérifier la qualité de l’eau ! Utilisez les TEST STRIPS Ciano® pour mesurer les paramètres essentiels de l’eau.',
             ],
@@ -2064,6 +2267,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationFishStep4->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2072,34 +2276,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationFishPlantsStep4 = Notification::create([
             'name' => 'Fish Plants Aquarium Step 4',
             'slug' => slugify('Fish Plants Aquarium Step 4'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
         $notificationsFishPlantsStep4 = [
             'en' => [
+                'presentation' => 'Protect the water.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium’s water! Add WATER CONDITIONER and WATER BIO-BACT to protect the water, remove impurities, and maintain the ideal biological balance for your fish.',
             ],
             'pt' => [
+                'presentation' => 'Proteja a água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está hora de cuidar da água do seu aquário! Adicione os liquidos WATER CONDITIONER e WATER BIO-BACT para proteger a água, eliminar impurezas e manter o equilíbrio biológico ideal para os seus peixes.',
             ],
             'it' => [
+                'presentation' => 'Proteggi l’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di prenderti cura dell’acqua del tuo acquario! Aggiungi WATER CONDITIONER e WATER BIO-BACT per proteggere l’acqua, eliminare le impurità e mantenere l’equilibrio biologico ideale per i tuoi pesci.',
             ],
             'es' => [
+                'presentation' => 'Protege el agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de cuidar el agua de tu acuario! Añade WATER CONDITIONER y WATER BIO-BACT para proteger el agua, eliminar impurezas y mantener el equilibrio biológico ideal para tus peces.',
             ],
             'de' => [
+                'presentation' => 'Schützen Sie das Wasser.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, sich um das Wasser in Ihrem Aquarium zu kümmern! Fügen Sie WATER CONDITIONER und WATER BIO-BACT hinzu, um das Wasser zu schützen, Verunreinigungen zu entfernen und das ideale biologische Gleichgewicht für Ihre Fische zu erhalten.',
             ],
             'fr' => [
+                'presentation' => 'Protégez l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de prendre soin de l’eau de votre aquarium ! Ajoutez WATER CONDITIONER et WATER BIO-BACT pour protéger l’eau, éliminer les impuretés et maintenir l’équilibre biologique idéal pour vos poissons.',
             ],
@@ -2110,6 +2319,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationFishPlantsStep4->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2118,34 +2328,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationFishPlantsStep7 = Notification::create([
             'name' => 'Fish Plants Aquarium Step 7',
             'slug' => slugify('Fish Plants Aquarium Step 7'),
-            // 'duration_type' => 'days',2
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 5,
             'type' => 'single',
         ]);
 
         $notificationsFishPlantsStep7 = [
             'en' => [
+                'presentation' => 'Measure water parameters.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => '5 days have passed, it’s time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
             ],
             'pt' => [
+                'presentation' => 'Medir parâmetros da água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Já passaram 5 dias, está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
             ],
             'it' => [
+                'presentation' => 'Misura i parametri dell’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Sono passati 5 giorni, è ora di verificare la qualità dell’acqua! Usa le TEST STRIPS Ciano® per misurare i parametri essenziali dell’acqua.',
             ],
             'es' => [
+                'presentation' => 'Medir los parámetros del agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Han pasado 5 días, ¡es hora de comprobar la calidad del agua! Utiliza las TEST STRIPS Ciano® para medir los parámetros esenciales del agua.',
             ],
             'de' => [
+                'presentation' => 'Wasserparameter messen.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => '5 Tage sind vergangen, es ist Zeit, die Wasserqualität zu überprüfen! Verwenden Sie die Ciano® TEST STRIPS, um die wesentlichen Wasserparameter zu messen.',
             ],
             'fr' => [
+                'presentation' => 'Mesurer les paramètres de l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => '5 jours se sont écoulés, il est temps de vérifier la qualité de l’eau ! Utilisez les TEST STRIPS Ciano® pour mesurer les paramètres essentiels de l’eau.',
             ],
@@ -2156,6 +2371,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationFishPlantsStep7->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2164,34 +2380,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationWaterCheck = Notification::create([
             'name' => 'Maintenance Water Check',
             'slug' => slugify('Maintenance Water Check'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
         $notificationsWaterCheck = [
             'en' => [
+                'presentation' => 'Check your fish and plants.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Carefully check your fish and plants, the appearance of the water, and whether there is any algae growth.',
             ],
             'pt' => [
+                'presentation' => 'Verifique os seus peixes e plantas.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Verifique com detalhe os seus peixes e plantas, o aspeto da àgua e se há desenvolvimento de algas.',
             ],
             'it' => [
+                'presentation' => 'Controlla i tuoi pesci e le tue piante.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Controlla attentamente i tuoi pesci e le tue piante, l’aspetto dell’acqua e se si stanno sviluppando alghe.',
             ],
             'es' => [
+                'presentation' => 'Verifica tus peces y plantas.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Revisa cuidadosamente tus peces y plantas, el aspecto del agua y si hay desarrollo de algas.',
             ],
             'de' => [
+                'presentation' => 'Überprüfen Sie Ihre Fische und Pflanzen.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Überprüfen Sie sorgfältig Ihre Fische und Pflanzen, das Aussehen des Wassers und ob sich Algen entwickeln.',
             ],
             'fr' => [
+                'presentation' => 'Vérifiez vos poissons et plantes.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Examinez attentivement vos poissons et plantes, l’apparence de l’eau et le développement éventuel d’algues.',
             ],
@@ -2202,6 +2423,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationWaterCheck->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2210,34 +2432,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationTestStrips = Notification::create([
             'name' => 'Maintenance Use Water Test Strips',
             'slug' => slugify('Maintenance Use Water Test Strips'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 15,
             'type' => 'single',
         ]);
 
         $notificationsTestStrips = [
             'en' => [
+                'presentation' => 'Check the water quality.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to check the water quality! Use Ciano® TEST STRIPS to measure the essential water parameters.',
             ],
             'pt' => [
+                'presentation' => 'Verifique a qualidade da água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de verificar a qualidade da água! Utilize as TEST STRIPS Ciano® para medir os parâmetros essenciais da água.',
             ],
             'it' => [
+                'presentation' => 'Verifica la qualità dell’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'Controlla attentamente i tuoi pesci e le tue piante, l’aspetto dell’acqua e se si stanno sviluppando alghe.',
             ],
             'es' => [
+                'presentation' => 'Verifica la calidad del agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => 'Revisa cuidadosamente tus peces y plantas, el aspecto del agua y si hay desarrollo de algas.',
             ],
             'de' => [
+                'presentation' => 'Überprüfen Sie die Wasserqualität.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Überprüfen Sie sorgfältig Ihre Fische und Pflanzen, das Aussehen des Wassers und ob sich Algen entwickeln.',
             ],
             'fr' => [
+                'presentation' => 'Vérifiez la qualité de l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Examinez attentivement vos poissons et plantes, l’apparence de l’eau et le développement éventuel d’algues.',
             ],
@@ -2248,6 +2475,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationTestStrips->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);
@@ -2257,34 +2485,39 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationWaterChange = Notification::create([
             'name' => 'Maintenance Water Change',
             'slug' => slugify('Maintenance Water Change'),
-            // 'duration_type' => 'days',
-            'duration_type' => 'seconds',
+            'duration_type' => 'days',
             'duration_value' => 30,
             'type' => 'single',
         ]);
 
         $notificationsWaterChange = [
             'en' => [
+                'presentation' => 'Replace the water.',
                 'title' => 'Your aquarium {aquarium_name} needs your attention!',
                 'body' => 'Time to take care of your aquarium! Replace 25% of the water to ensure a clean and healthy environment.',
             ],
             'pt' => [
+                'presentation' => 'Susbstitua a água.',
                 'title' => 'O seu aquário {aquarium_name} precisa da sua atenção!',
                 'body' => 'Está na hora de cuidar do seu aquário! Substitua 25% da água para garantir um ambiente limpo e saudável.',
             ],
             'it' => [
+                'presentation' => 'Sostituisci l’acqua.',
                 'title' => 'Il tuo acquario {aquarium_name} ha bisogno della tua attenzione!',
                 'body' => 'È ora di prenderti cura del tuo acquario! Sostituisci il 25% dell’acqua per garantire un ambiente pulito e sano.',
             ],
             'es' => [
+                'presentation' => 'Sustituye el agua.',
                 'title' => '¡Tu acuario {aquarium_name} necesita tu atención!',
                 'body' => '¡Es hora de cuidar tu acuario! Sustituye el 25% del agua para garantizar un ambiente limpio y saludable.',
             ],
             'de' => [
+                'presentation' => 'Ersetzen Sie das Wasser.',
                 'title' => 'Ihr Aquarium {aquarium_name} braucht Ihre Aufmerksamkeit!',
                 'body' => 'Es ist Zeit, sich um Ihr Aquarium zu kümmern! Ersetzen Sie 25% des Wassers, um eine saubere und gesunde Umgebung zu gewährleisten.',
             ],
             'fr' => [
+                'presentation' => 'Remplacez l’eau.',
                 'title' => 'Votre aquarium {aquarium_name} a besoin de votre attention !',
                 'body' => 'Il est temps de prendre soin de votre aquarium ! Remplacez 25 % de l’eau pour garantir un environnement propre et sain.',
             ],
@@ -2295,6 +2528,7 @@ class DefaultNotificationsSeeder extends Seeder
             NotificationBody::create([
                 'notification_id' => $notificationWaterChange->id,
                 'lang' => $lang,
+                'presentation' => $notification['presentation'],
                 'title' => $notification['title'],
                 'body' => $notification['body'],
             ]);

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('notification_id')->constrained('notifications');
             $table->string('lang');
+            $table->string('presentation');
             $table->string('title');
             $table->string('body');
             $table->timestamps();
