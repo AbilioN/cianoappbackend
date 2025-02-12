@@ -105,7 +105,8 @@ class AuthController extends Controller
         if (!Auth::attempt($request->only('email', 'password'))) {
             return response()->json([
                 'message' => 'Credenciais inválidas',
-                'error_code' => 'invalid_credentials'
+                'error_code' => 'invalid_credentials',
+                'message_code' => 'invalid_credentials',
             ], 401);
         }
 
@@ -123,10 +124,12 @@ class AuthController extends Controller
         ]);
 
         return response()->json([
+            'message' => 'Login realizado com sucesso',
+            'message_code' => 'login_success',
             'user' => $user,
             'token' => $token,
             'aquariums' => $aquariums,
-        ]);
+        ], 200);
     }
     public function logout(Request $request)
     {
