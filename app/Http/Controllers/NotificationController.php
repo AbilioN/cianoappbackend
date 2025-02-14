@@ -51,11 +51,14 @@ class NotificationController extends Controller
                 $endDate = now()->addMonths($durationValue);
             } elseif ($durationType === 'minutes') {
                 $endDate = now()->addMinutes($durationValue);
+            }else if($durationType === 'seconds'){
+                $endDate = now()->addSeconds($durationValue);
             } elseif ($durationType === 'hours') {
                 $endDate = now()->addHours($durationValue);
             } else {
                 $endDate = now();
             }
+            
 
             $aquarium = Aquarium::find($request->aquarium_id);
             if(!$aquarium){
