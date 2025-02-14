@@ -2328,7 +2328,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationFishPlantsStep7 = Notification::create([
             'name' => 'Fish Plants Aquarium Step 7',
             'slug' => slugify('Fish Plants Aquarium Step 7'),
-            'duration_type' => 'days',
+            'duration_type' => 'seconds',
             'duration_value' => 5,
             'type' => 'single',
         ]);
