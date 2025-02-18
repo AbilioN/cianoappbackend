@@ -30,7 +30,7 @@ return new class extends Migration
             'email' => 'client@email.com',
             'name' => 'Client',
             'password' => Hash::make('password'),
-            'role_id' => 2,
+            'role_id' => 2, 
         ]);
     }
 

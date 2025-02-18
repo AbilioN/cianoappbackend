@@ -1521,7 +1521,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER ALGAE L'),
             'code' => 'COM560030',
             'description' => 'Water Algae L',
-            'image_url' => 'https://picsum.photos/200/300',
+            'image_url' => 'https://app.ciano.pt/images/products/COM560030.png',
         ]);
 
         $notification23 = Notification::create([

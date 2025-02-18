@@ -119,7 +119,7 @@ class AquariumController extends Controller
             $consumable = Consumable::where('code', $request->consumable_code)->get()->first();
 
             if(!$consumable){
-                return response()->json(['message' => 'Consumable not found', 'message_code' => 'consumable_not_found'], 404);
+                return response()->json(['message' => 'Consumable not found', 'message_code' => 'product_not_found'], 404);
             }
 
             $notification = $consumable->notification;
@@ -142,7 +142,7 @@ class AquariumController extends Controller
             })->exists();
             if($aquariumNotificationExists) {
                 DB::rollBack();
-                return response()->json(['message' => 'Consumable already exists in this aquarium', 'message_code' => 'consumable_already_exists_in_this_aquarium'], 422);
+                return response()->json(['message' => 'Product already exists in this aquarium', 'message_code' => 'product_already_exists_in_this_aquarium'], 422);
                 // Se o consumable ja existir, deve ir para a rota de activate notification
             }
 
@@ -156,7 +156,7 @@ class AquariumController extends Controller
 
             $aquarium = $aquarium->refresh();
             DB::commit();
-            return response()->json(['message' => 'success', 'message_code' => 'consumable_added_successfully', 'aquarium' => $aquarium->toDto()]);
+            return response()->json(['message' => 'success', 'message_code' => 'product_added_successfully', 'aquarium' => $aquarium->toDto()]);
         }
         catch(\Exception $e){
 
