@@ -74,16 +74,16 @@ class AquariumNotification extends Model
         $today = Carbon::now('Europe/Lisbon');
 
         
-        $totalDays = ceil($startDate->diffInDays($endDate));
+        $totalDays = $startDate->diffInDays($endDate);
 
         
-        $daysLeft = ceil(max(0, $today->diffInDays($endDate, false))); // false para obter negativo se já passou
+        $daysLeft = max(0, $today->diffInDays($endDate, false)); // false para obter negativo se já passou
 
         
         $elapsedDays = $totalDays - $daysLeft;
         $progress = $totalDays > 0 ? ($elapsedDays / $totalDays) * 100 : 0;
 
-        $progress = floor(max(0, min(100, $progress)));
+        $progress = max(0, min(100, $progress));
         
         return [
             'id' => $this->notification_id,
@@ -101,9 +101,9 @@ class AquariumNotification extends Model
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'bodies' => $notificationBodies,
-            'days_left' => $daysLeft,
-            'total_days_left' => $totalDays,
-            'progress' => $progress,
+            'days_left' => ceil($daysLeft),
+            'total_days' => ceil($totalDays),
+            'progress' => floor($progress),
         ];
 
     }
