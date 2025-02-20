@@ -37,6 +37,16 @@ class AquariumNotification extends Model
             }
             return $body; // Retorna o corpo atualizado
         });
+
+        $startDate = Carbon::parse($this->start_date);
+        $endDate = Carbon::parse($this->end_date);
+        $today = Carbon::now('Europe/Lisbon');
+        $totalDays = ceil($startDate->diffInDays($endDate));
+        $daysLeft = ceil(max(0, $today->diffInDays($endDate, false))); // false para obter negativo se já passou
+        $elapsedDays = $totalDays - $daysLeft;
+        $progress = $totalDays > 0 ? ($elapsedDays / $totalDays) * 100 : 0;
+        $progress = floor(max(0, min(100, $progress)));
+
         $returnData = [
             'id' => $this->id,
             'aquarium' => $this->aquarium->toDto(),
@@ -48,8 +58,10 @@ class AquariumNotification extends Model
             'is_read' => $this->is_read,
             'is_active' => $this->is_active,
             'read_at' => $this->read_at,
+            'progress' => $progress,
+            'total_days_left' => $totalDays,
+            'days_left' => $daysLeft,
         ];
-
 
         // if (isset($this->consumable_notification_id)) {
         //     $returnData['consumable'] = $this->consumableNotification->consumable;
@@ -75,14 +87,9 @@ class AquariumNotification extends Model
 
         
         $totalDays = ceil($startDate->diffInDays($endDate));
-
-        
         $daysLeft = ceil(max(0, $today->diffInDays($endDate, false))); // false para obter negativo se já passou
-
-        
         $elapsedDays = $totalDays - $daysLeft;
         $progress = $totalDays > 0 ? ($elapsedDays / $totalDays) * 100 : 0;
-
         $progress = floor(max(0, min(100, $progress)));
         
         return [
