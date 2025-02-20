@@ -102,6 +102,7 @@ class AquariumNotification extends Model
             'updated_at' => $this->updated_at,
             'bodies' => $notificationBodies,
             'days_left' => $daysLeft,
+            'total_days_left' => $totalDays,
             'progress' => $progress,
         ];
 
