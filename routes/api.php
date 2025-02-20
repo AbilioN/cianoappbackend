@@ -19,13 +19,13 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
     Route::post('aquarium/add-consumable', [AquariumController::class, 'addConsumable']);
 
-
     Route::get('notifications', [NotificationController::class, 'getNotifications']);
     Route::get('notification/{slug}', [NotificationController::class, 'getNotification']);
 
     Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     Route::get('aquarium-notifications/{aquariumSlug}', [NotificationController::class, 'getAquariumNotifications']);
     Route::put('notification/deactivate', [NotificationController::class, 'deactiveNotification']);
+    Route::delete('aquarium-notifications/delete', [NotificationController::class, 'deleteNotification']);
 
     // Adicione outras rotas autenticadas aqui
 });
