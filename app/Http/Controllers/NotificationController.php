@@ -179,7 +179,7 @@ class NotificationController extends Controller
     {
 
         try{
-
+            $user = Auth::user();
             $aquarium = Aquarium::find($request->aquarium_id);
             if(!$aquarium){
                 return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
