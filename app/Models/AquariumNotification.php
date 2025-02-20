@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class AquariumNotification extends Model
 {
@@ -68,6 +69,22 @@ class AquariumNotification extends Model
             return $body; // Retorna o corpo atualizado
         });
 
+        $startDate = Carbon::parse($this->start_date);
+        $endDate = Carbon::parse($this->end_date);
+        $today = Carbon::now('Europe/Lisbon');
+
+        
+        $totalDays = $startDate->diffInDays($endDate);
+
+        
+        $daysLeft = max(0, $today->diffInDays($endDate, false)); // false para obter negativo se já passou
+
+        
+        $elapsedDays = $totalDays - $daysLeft;
+        $progress = $totalDays > 0 ? ($elapsedDays / $totalDays) * 100 : 0;
+
+        $progress = max(0, min(100, $progress));
+        
         return [
             'id' => $this->notification_id,
             // 'aquarium_id' => $this->aquarium_id,
@@ -84,6 +101,8 @@ class AquariumNotification extends Model
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'bodies' => $notificationBodies,
+            'days_left' => $daysLeft,
+            'progress' => $progress,
         ];
 
     }
