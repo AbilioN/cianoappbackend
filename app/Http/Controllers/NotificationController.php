@@ -175,4 +175,38 @@ class NotificationController extends Controller
         }
     }
 
+    public function readNotification(Request $request)
+    {
+
+        try{
+
+            $aquarium = Aquarium::find($request->aquarium_id);
+            if(!$aquarium){
+                return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
+            }
+    
+            if($aquarium->user_id !== $user->id){
+                return response()->json(['message' => 'failed' , 'message_code' => 'aquarium_not_found' ], 404);
+            }
+    
+            $userAquariumNotification = AquariumNotification::where('aquarium_id', $aquarium->id)->where('notification_id', $notification->id)->first();
+            if (!$userAquariumNotification) {
+                return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
+            }
+    
+            $userAquariumNotification->is_read = true;
+            $userAquariumNotification->save();
+    
+            return response()->json(['message' => 'success' , 'message_code' => 'notification_read_successfully' , 'data' => $userAquariumNotification->toDto()]);
+    
+
+        }catch(\Exception $e){
+            return response()->json(['message' => 'failed' , 'message_code' => 'notification_read_failed' , 'errors' => $e->getMessage()], 500);
+        }
+        
+
+       
+    }
+    
+
 }

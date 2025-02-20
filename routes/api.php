@@ -26,7 +26,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     Route::get('aquarium-notifications/{aquariumSlug}', [NotificationController::class, 'getAquariumNotifications']);
     Route::put('notification/deactivate', [NotificationController::class, 'deactiveNotification']);
-
+    Route::post('notification/read', [NotificationController::class, 'readNotification']);
     // Adicione outras rotas autenticadas aqui
 });
 
