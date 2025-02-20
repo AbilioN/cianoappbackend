@@ -74,10 +74,10 @@ class AquariumNotification extends Model
         $today = Carbon::now('Europe/Lisbon');
 
         
-        $totalDays = floor($startDate->diffInDays($endDate));
+        $totalDays = ceil($startDate->diffInDays($endDate));
 
         
-        $daysLeft = floor(max(0, $today->diffInDays($endDate, false))); // false para obter negativo se já passou
+        $daysLeft = ceil(max(0, $today->diffInDays($endDate, false))); // false para obter negativo se já passou
 
         
         $elapsedDays = $totalDays - $daysLeft;
