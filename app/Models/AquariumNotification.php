@@ -59,7 +59,7 @@ class AquariumNotification extends Model
             'is_active' => $this->is_active,
             'read_at' => $this->read_at,
             'progress' => $progress,
-            'total_days_left' => $totalDays,
+            'total_days' => $totalDays,
             'days_left' => $daysLeft,
         ];
 
@@ -109,7 +109,7 @@ class AquariumNotification extends Model
             'updated_at' => $this->updated_at,
             'bodies' => $notificationBodies,
             'days_left' => $daysLeft,
-            'total_days_left' => $totalDays,
+            'total_days' => $totalDays,
             'progress' => $progress,
         ];
 
