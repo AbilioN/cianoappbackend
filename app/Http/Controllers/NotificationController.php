@@ -195,6 +195,7 @@ class NotificationController extends Controller
             }
     
             $userAquariumNotification->is_read = true;
+            $userAquariumNotification->read_at = now();
             $userAquariumNotification->save();
     
             return response()->json(['message' => 'success' , 'message_code' => 'notification_read_successfully' , 'data' => $userAquariumNotification->toDto()]);
