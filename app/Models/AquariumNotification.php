@@ -113,6 +113,8 @@ class AquariumNotification extends Model
             'days_left' => $daysLeft,
             'total_days' => $totalDays,
             'progress' => $progress,
+            'duration_type' => $this->notification->duration_type,
+            'duration_value' => $this->notification->duration_value,
         ];
 
     }
