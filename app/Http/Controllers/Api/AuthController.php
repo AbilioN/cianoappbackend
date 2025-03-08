@@ -3,12 +3,16 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ResetPasswordMail;
 use App\Models\LoginCounter;
 use App\Models\User;
 use Carbon\Carbon;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
@@ -81,4 +85,38 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'Logout realizado com sucesso']);
     }
+
+        public function sendResetLink(Request $request)
+        {
+            $request->validate(['email' => 'required|email']);
+    
+            $status = Password::sendResetLink($request->only('email'));
+    
+            return $status === Password::RESET_LINK_SENT
+                ? response()->json(['message' => 'E-mail de recuperação enviado!'])
+                : response()->json(['error' => 'Erro ao enviar e-mail.'], 400);
+        }
+    
+        public function resetPassword(Request $request)
+        {
+            $request->validate([
+                'email' => 'required|email',
+                'token' => 'required',
+                'password' => 'required|min:8|confirmed',
+            ]);
+    
+            $status = Password::reset(
+                $request->only('email', 'password', 'password_confirmation', 'token'),
+                function ($user, $password) {
+                    $user->forceFill([
+                        'password' => Hash::make($password),
+                    ])->save();
+                }
+            );
+    
+            return $status === Password::PASSWORD_RESET
+                ? response()->json(['message' => 'Senha redefinida com sucesso!'])
+                : response()->json(['error' => 'Erro ao redefinir senha.'], 400);
+        }
+
 }
