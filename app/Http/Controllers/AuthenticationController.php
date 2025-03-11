@@ -7,6 +7,7 @@ use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Password;
@@ -123,23 +124,16 @@ class AuthenticationController extends Controller
     public function resetPassword(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|exists:users,email',
             'token' => 'required',
             'password' => 'required|min:8|confirmed',
         ], [
-            'email' => 'Email inválido.',
             'password' => 'Senha Inválida.',
             'password.confirmed' => 'A senha não corresponde.',
         ]);
-        
-        try {
-            if (!$request->has('email')) {
-                throw new Exception('O campo email não foi enviado na requisição.');
-            }
-            
-            // Encontra o usuário pelo e-mail
-            $user = User::where('email', $request->email)->first();
 
+        try {
+            $user = $this->findUserByToken($request->token);
+            
             if (!$user) {
                 return redirect()->back()->withErrors(['error' => 'Usuário não encontrado.']);
             }
@@ -149,8 +143,12 @@ class AuthenticationController extends Controller
                 return redirect()->back()->withErrors(['error' => 'Token inválido ou expirado.']);
             }
 
-            $status = Password::reset(
-                $request->only('email', 'password', 'password_confirmation', 'token'),
+            $status = Password::reset([
+                    'email' => $user->email,
+                    'password' => $request->password,
+                    'password_confirmation' => $request->password_confirmation,
+                    'token' => $request->token,
+                ],
                 function ($user, $password) {
                     $user->forceFill([
                         'password' => Hash::make($password),
@@ -175,5 +173,20 @@ class AuthenticationController extends Controller
         } catch (Exception $e) {
             return redirect()->back()->withErrors(['error' => 'Erro inesperado: ' . $e->getMessage()]);
         }
+    }
+
+    public function findUserByToken($token)
+    {
+        $resetEntry = DB::table('password_reset_tokens')
+            ->whereRaw("1 = 1")
+            ->get()
+            ->first(fn ($entry) => Hash::check($token, $entry->token));
+    
+        if (!$resetEntry) {
+            throw new Exception('Token inválido. não encontrado nenhum token para este email.');
+            return null;
+        }
+    
+        return User::where('email', $resetEntry->email)->first();
     }
 }

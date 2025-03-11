@@ -27,11 +27,6 @@
                 <input type="hidden" required name="token" value="{{ $token }}">
 
                 <div class="mt-5">
-                    <small class="block text-start pl-1">email: @if ($errors->has('email'))<span class="text-red-500 text-xs mt-1">*{{ $errors->first('email') }}</span>@endif</small>
-                    <input type="email" required name="email" class="rounded-[4px] w-full shadow-sm border border-gray-300 ">
-                </div>
-                   
-                <div class="mt-5">
                     <small class="block text-start pl-1">senha: @if ($errors->has('password'))<span class="text-red-500 text-xs mt-1">*{{ $errors->first('password') }}</span>@endif</small>
                     <input type="password" required name="password" class="rounded-[4px] w-full shadow-sm border border-gray-300 ">
                 </div>
@@ -45,7 +40,7 @@
 
             </form>
             @if($errors->has('error'))
-                <small class="text-red-400 mt-3">{{ $error->all('error') }}</small>
+                <small class="text-red-400 mt-3">{{ $errors->first('error') }}</small>
             @endif
             
             <span class="text-wrap text-xs max-w-full mt-7">© 2025 CIANO. Todos os direitos reservados.</span>
