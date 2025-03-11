@@ -19,7 +19,7 @@ class Notification extends Model
 
     public function aquariumNotifications()
     {
-        return $this->hasMany(AquariumNotification::class, 'Notification_id', 'id');
+        return $this->hasMany(AquariumNotification::class, 'notification_id', 'id');
     }
 
     public function toDto()
