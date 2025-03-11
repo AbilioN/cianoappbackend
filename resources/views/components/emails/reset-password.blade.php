@@ -23,12 +23,8 @@
             <h2>Redefinição de senha</h2>
 
             <p>Você solicitou a redefinição de senha. Clique no link abaixo para redefinir:</p>
-            <a href="{{ url('/reset-password/'.$token) }}">Redefinir Senha</a>
-            
-            <div style="margin: 10px auto; padding: 15px 25px; background-color:rgba(100, 100, 100, 0.5); color: grey;">
-                <h2>{{$token}}</h2>
-                {{-- <a href="{{url()}}" target="_blank" style="text-decoration: none; color:grey; font-size: 2em; font-weight: bold;">Recuperar senha</a> --}}
-            </div>
+            <a href="{{ url('/reset/'.$token) }}">Redefinir Senha</a>
+ 
             <p>Se você não solicitou, ignore este e-mail.</p>
         </div>
     </div>

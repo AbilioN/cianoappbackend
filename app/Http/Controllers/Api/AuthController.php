@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
@@ -86,37 +87,55 @@ class AuthController extends Controller
         return response()->json(['message' => 'Logout realizado com sucesso']);
     }
 
-        public function sendResetLink(Request $request)
-        {
+    public function sendResetLink(Request $request)
+    {
+        try {
             $request->validate(['email' => 'required|email']);
+            $emailExists = User::where('email', $request->email)->exists();
+            if (!$emailExists) {
+                return response()->json(['message' => 'Email do not exists', 'message_code' => 'email_not_found'], 404);
+            }
     
             $status = Password::sendResetLink($request->only('email'));
     
             return $status === Password::RESET_LINK_SENT
                 ? response()->json(['message' => 'E-mail de recuperação enviado!'])
-                : response()->json(['error' => 'Erro ao enviar e-mail.'], 400);
+                : response()->json(['message' => 'Erro ao enviar o email', 'message_code' => 'email_not_sent', 'error' => $status], 400);
+        } catch (ValidationException $e) {
+            return response()->json(['message' => 'validation error', 'message_code' => 'validation_error', 'errors' => $e->errors()], 422);
+        } catch (Exception $e) {
+            return response()->json(['message' => 'Erro interno no servidor.', 'message_code' => 'internal_error', 'error' => $e->getMessage()], 500);
         }
+    }
     
-        public function resetPassword(Request $request)
-        {
-            $request->validate([
-                'email' => 'required|email',
-                'token' => 'required',
-                'password' => 'required|min:8|confirmed',
-            ]);
+    // public function resetPassword(Request $request)
+    // {
+    //     try {
+    //         // Validação com retorno de erro JSON
+    //         $validatedData = $request->validate([
+    //             'email' => 'required|email',
+    //             'token' => 'required',
+    //             'password' => 'required|min:8|confirmed',
+    //         ]);
     
-            $status = Password::reset(
-                $request->only('email', 'password', 'password_confirmation', 'token'),
-                function ($user, $password) {
-                    $user->forceFill([
-                        'password' => Hash::make($password),
-                    ])->save();
-                }
-            );
+    //         $status = Password::reset(
+    //             $validatedData,
+    //             function ($user, $password) {
+    //                 $user->forceFill([
+    //                     'password' => Hash::make($password),
+    //                 ])->save();
+    //             }
+    //         );
     
-            return $status === Password::PASSWORD_RESET
-                ? response()->json(['message' => 'Senha redefinida com sucesso!'])
-                : response()->json(['error' => 'Erro ao redefinir senha.'], 400);
-        }
-
+    //         if ($status === Password::PASSWORD_RESET) {
+    //             return response()->json(['message' => 'Senha redefinida com sucesso!'], 200);
+    //         }
+    
+    //         return response()->json(['message' => 'Erro ao redefinir senha', 'message_code' => 'redefinition_failed', 'error' => $status], 400);
+    //     } catch (ValidationException $e) {
+    //         return response()->json(['message' => 'validation error', 'message_code' => 'validation_error', 'errors' => $e->errors()], 422);
+    //     } catch (Exception $e) {
+    //         return response()->json(['message' => 'Erro interno no servidor.', 'message_code' => 'internal_error', 'error' => $e->getMessage()], 500);
+    //     }
+    // }
 }
