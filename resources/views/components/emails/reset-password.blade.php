@@ -7,23 +7,30 @@
             
 
         }
-        .btn {
-            border: 1px solid gray;
-            box-shadow: 5px 5px 10px gray;
-            background-color: white;
-            padding: 5px 10px;
+        .divContainer {
+            padding: 10px;
+        }
+        .link {
+            padding: 10px 25px;
+            margin: 10px auto;
+            background-color: rgb(60, 27, 245);
+            position: relative;
             text-decoration: none;
-            text-align: center
+            color: #333333;
+            border-radius: 30px;
+
         }
     </style>
 
     <div style="width: 100%; min-height: 200px; text-align: center;">
         <div class="flex ">
             <h1>Ciano</h1>
-            <h2>Redefinição de senha</h2>
+            <h3>Redefinição de senha</h3>
 
             <p>Você solicitou a redefinição de senha. Clique no link abaixo para redefinir:</p>
-            <a href="{{ url('/reset/'.$token) }}">Redefinir Senha</a>
+            <div class="divContainer">
+                <a href="{{ url('/reset/'.$token) }}" class="link">Redefinir Senha</a>
+            </div>
  
             <p>Se você não solicitou, ignore este e-mail.</p>
         </div>
