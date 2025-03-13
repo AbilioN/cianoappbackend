@@ -27,6 +27,11 @@ Route::get('/', function () {
 
 Route::get('/register', Register::class);
 Route::get('/login', Login::class);
+// Route::post('/forgot-password', [AuthenticationController::class, 'sendResetLink'])->name('password.email');
+Route::post('/reset-password', [AuthenticationController::class, 'resetPassword'])->name('password.update');
+Route::get('/reset/{token}/{email?}', function ($token) {
+    return view('components.auth.reset-password', ['token' => $token]);
+})->name('password.reset');
 Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');
 Route::post('/auth/login', [AuthenticationController::class, 'login'])->name('login');
 Route::post('/auth/logout', [AuthenticationController::class, 'logout'])->name('logout');

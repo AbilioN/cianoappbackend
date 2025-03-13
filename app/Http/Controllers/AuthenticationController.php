@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ResetPasswordMail;
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
+use PhpParser\Node\Stmt\TryCatch;
 
 class AuthenticationController extends Controller
 {
@@ -100,4 +105,88 @@ class AuthenticationController extends Controller
         return redirect($redirectRoute);
     }
 
+    // public function sendResetLink(Request $request)
+    // {
+    //     try {
+    //         $request->validate(['email' => 'required|email']);
+    
+    //         $status = Password::sendResetLink($request->only('email'));
+    
+    //         return $status === Password::RESET_LINK_SENT
+    //             ? redirect()->intended('/home')
+    //             : throw new Exception('Erro no envio do E-mail.');
+
+    //     } catch (Exception $e) {
+    //         dd($e->getMessage());
+    //     }
+    // }
+
+    public function resetPassword(Request $request)
+    {
+        $request->validate([
+            'token' => 'required',
+            'password' => 'required|min:8|confirmed',
+        ], [
+            'password' => 'Senha Inválida.',
+            'password.confirmed' => 'A senha não corresponde.',
+        ]);
+
+        try {
+            $user = $this->findUserByToken($request->token);
+            
+            if (!$user) {
+                return redirect()->back()->withErrors(['error' => 'Usuário não encontrado.']);
+            }
+            
+            // Valida se o token existe e é válido
+            if (!Password::tokenExists($user, $request->token)) {
+                return redirect()->back()->withErrors(['error' => 'Token inválido ou expirado.']);
+            }
+
+            $status = Password::reset([
+                    'email' => $user->email,
+                    'password' => $request->password,
+                    'password_confirmation' => $request->password_confirmation,
+                    'token' => $request->token,
+                ],
+                function ($user, $password) {
+                    $user->forceFill([
+                        'password' => Hash::make($password),
+                    ])->save();
+                }
+            );
+
+            if (!in_array($status, [
+                Password::PASSWORD_RESET,
+                Password::INVALID_USER,
+                Password::INVALID_TOKEN
+            ])) {
+                throw new Exception('Status inesperado: ' . $status);
+            }
+
+            if ($status === Password::PASSWORD_RESET) {
+                return redirect()->back()->with('success', 'Senha redefinida com sucesso!');
+            }
+
+            return redirect()->back()->withErrors(['status' => __($status)]);
+
+        } catch (Exception $e) {
+            return redirect()->back()->withErrors(['error' => 'Erro inesperado: ' . $e->getMessage()]);
+        }
+    }
+
+    public function findUserByToken($token)
+    {
+        $resetEntry = DB::table('password_reset_tokens')
+            ->whereRaw("1 = 1")
+            ->get()
+            ->first(fn ($entry) => Hash::check($token, $entry->token));
+    
+        if (!$resetEntry) {
+            throw new Exception('Token inválido. não encontrado nenhum token para este email.');
+            return null;
+        }
+    
+        return User::where('email', $resetEntry->email)->first();
+    }
 }

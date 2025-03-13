@@ -4,6 +4,8 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\AquariumController;
 use App\Http\Controllers\NotificationController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->group(function () {
@@ -18,17 +20,19 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('update-aquarium', [AquariumController::class, 'updateAquarium']);
     Route::delete('delete-aquarium', [AquariumController::class, 'deleteAquarium']);
     Route::post('aquarium/add-consumable', [AquariumController::class, 'addConsumable']);
-
-
     Route::get('notifications', [NotificationController::class, 'getNotifications']);
     Route::get('notification/{slug}', [NotificationController::class, 'getNotification']);
-
     Route::post('notification/activate', [NotificationController::class, 'activateNotification']);
     Route::get('aquarium-notifications/{aquariumSlug}', [NotificationController::class, 'getAquariumNotifications']);
     Route::put('notification/deactivate', [NotificationController::class, 'deactiveNotification']);
     Route::post('notification/read', [NotificationController::class, 'readNotification']);
+    Route::delete('aquarium-notifications/delete', [NotificationController::class, 'deleteNotification']);
+
     // Adicione outras rotas autenticadas aqui
 });
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+// Route::post('/reset-password', [AuthController::class, 'resetPassword']);
+Route::post('/forgot-password', [authController::class, 'sendResetLink'])->name('password.email');
+// Route::post('/reset-password', [AuthController::class, 'resetPassword'])->name('password.update');
