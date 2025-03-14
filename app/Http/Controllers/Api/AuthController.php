@@ -151,7 +151,6 @@ class AuthController extends Controller
             if (!$emailExists) {
                 return response()->json(['message' => 'Email do not exists', 'message_code' => 'email_not_found'], 404);
             }
-    
             $status = Password::sendResetLink($request->only('email'));
     
             return $status === Password::RESET_LINK_SENT
