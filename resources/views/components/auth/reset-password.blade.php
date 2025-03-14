@@ -17,10 +17,10 @@
     @endif
     
     <div class="w-full min-h-[100vh] flex align-items-center justify-center">
-        <div class="w-96 py-7 my-auto mx-auto bg-cyan-100 border border-gray shadow-md rounded-md flex flex-col text-center">
-            <h1 class="text-xl">Ciano</h1>
+        <div class="w-96 py-7 my-auto mx-auto text-[#0693e3] bg-cyan-200 border border-gray shadow-md rounded-md flex flex-col text-center justify-content-center">
+            <img src="{{ asset('main_logo.png') }}" alt="logo" class="max-w-[70%] self-center">
             
-            <h2 class="text-md">Recuperação de senha</h2>
+            <h2 class="text-lg mt-6">Recuperação de senha</h2>
             <form action="{{ route('password.update') }}" method="POST" class="mx-auto">
                 @csrf
                 
@@ -28,7 +28,7 @@
 
                 <div class="mt-5">
                     <small class="block text-start pl-1">senha: @if ($errors->has('password'))<span class="text-red-500 text-xs mt-1">*{{ $errors->first('password') }}</span>@endif</small>
-                    <input type="password" required name="password" class="rounded-[4px] w-full shadow-sm border border-gray-300 ">
+                    <input type="password" required name="password" class="rounded-[4px] w-full shadow-sm border border-gray-300 focus:outline-[#0693e3]">
                 </div>
                 
                 <div class="mt-5">
