@@ -154,7 +154,7 @@ class AuthController extends Controller
             $status = Password::sendResetLink($request->only('email'));
     
             return $status === Password::RESET_LINK_SENT
-                ? response()->json(['message' => 'E-mail de recuperação enviado!'])
+                ? response()->json(['message' => 'E-mail de recuperação enviado!', 'message_code' => 'email_sent'])
                 : response()->json(['message' => 'Erro ao enviar o email', 'message_code' => 'email_not_sent', 'error' => $status], 400);
         } catch (ValidationException $e) {
             return response()->json(['message' => 'validation error', 'message_code' => 'validation_error', 'errors' => $e->errors()], 422);

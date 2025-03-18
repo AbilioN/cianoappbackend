@@ -526,7 +526,7 @@ class DefaultNotificationsSeeder extends Seeder
             'slug' => slugify('WATER BIO-BACT M'),
             'code' => 'COM560023',
             'description' => 'Water bio-bact M',
-            'image_url' => 'https://picsum.photos/200/300',
+            'image_url' => 'https://app.ciano.pt/images/bio_bact_m.png',
         ]);
 
 
