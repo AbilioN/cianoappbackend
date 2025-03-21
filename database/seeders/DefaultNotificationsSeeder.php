@@ -24,10 +24,12 @@ class DefaultNotificationsSeeder extends Seeder
 
         $user = User::factory()->create([
             'name' => 'Test User',
-            'email' => 'default@email.com',
+            'email' => 'test@email.com',
             'password' => Hash::make('password'),
             'role_id' => 2,
         ]);
+
+        
         $mainAquarium1 = Aquarium::factory()->create([
             'user_id' => $user->id,
             'name' => 'Main Aquarium 1',
@@ -107,6 +109,136 @@ class DefaultNotificationsSeeder extends Seeder
         //         'body' => $notification['body'],
         //     ]);
         // }
+
+
+        
+        $consumableTest1 = Consumable::factory()->create([
+            'name' => 'TEST CONSUMABLE 1D',
+            'slug' => slugify('TEST CONSUMABLE 1D'),
+            'code' => 'TEST001',
+            'description' => 'Test consumable that lasts 1 day',
+            'image_url' => 'https://app.ciano.pt/images/test_consumable.png',
+        ]);
+
+        $notificationTest1 = Notification::create([
+            'name' => 'Test Consumable 1D',
+            'slug' => 'test-consumable-1d',
+            'duration_type' => 'days',
+            'duration_value' => 1,
+            'type' => 'single',
+        ]);
+
+        ConsumableNotification::create([
+            'consumable_id' => $consumableTest1->id,
+            'notification_id' => $notificationTest1->id,
+        ]);
+
+        $notificationsTest1 = [
+            'en' => [
+                'presentation' => 'Test Consumable 1D',
+                'title' => 'Test notification for {aquarium_name}',
+                'body' => 'This is a test notification that triggers after 1 day.',
+            ],
+            'pt' => [
+                'presentation' => 'Test Consumable 1D',
+                'title' => 'Notificação de teste para {aquarium_name}',
+                'body' => 'Esta é uma notificação de teste que dispara após 1 dia.',
+            ],
+            'it' => [
+                'presentation' => 'Test Consumable 1D',
+                'title' => 'Notificação di test per {aquarium_name}',
+                'body' => 'Questa è una notifica di test che si attiva dopo 1 giorno.',
+            ],
+            'es' => [
+                'presentation' => 'Test Consumable 1D',
+                'title' => 'Notificación de prueba para {aquarium_name}',
+                'body' => 'Esta es una notificación de prueba que se activa después de 1 día.',
+            ],
+            'de' => [
+                'presentation' => 'Test Consumable 1D',
+                'title' => 'Testbenachrichtigung für {aquarium_name}',
+                'body' => 'Dies ist eine Testbenachrichtigung, die nach 1 Tag ausgelöst wird.',
+            ],
+            'fr' => [   
+                'presentation' => 'Test Consumable 1D', 
+                'title' => 'Notification de test pour {aquarium_name}',
+                'body' => 'Cette notification est une notification de test qui se déclenche après 1 jour.',
+            ],
+        ];
+
+        foreach ($notificationsTest1 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => $notificationTest1->id,
+                'lang' => $lang,
+                'presentation' => $notification['presentation'],
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
+
+        $consumableTest2 = Consumable::factory()->create([
+            'name' => 'TEST CONSUMABLE 5M',
+            'slug' => slugify('TEST CONSUMABLE 5M'),
+            'code' => 'TEST002',
+            'description' => 'Test consumable that lasts 5 minutes',
+            'image_url' => 'https://app.ciano.pt/images/test_consumable.png',
+        ]);
+
+        $notificationTest2 = Notification::create([
+            'name' => 'Test Consumable 5M',
+            'slug' => 'test-consumable-5m',
+            'duration_type' => 'minutes',
+            'duration_value' => 5,
+            'type' => 'single',
+        ]);
+
+        ConsumableNotification::create([
+            'consumable_id' => $consumableTest2->id,
+            'notification_id' => $notificationTest2->id,
+        ]);
+
+        $notificationsTest2 = [
+            'en' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Test notification for {aquarium_name}',
+                'body' => 'This is a test notification that triggers after 5 minutes.',
+            ],
+            'pt' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Notificação de teste para {aquarium_name}',
+                'body' => 'Esta é uma notificação de teste que dispara após 5 minutos.',
+            ],
+            'it' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Notificação di test per {aquarium_name}',
+                'body' => 'Questa è una notifica di test che si attiva dopo 5 minuti.',
+            ],
+            'es' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Notificación de prueba para {aquarium_name}',
+                'body' => 'Esta es una notificación de prueba que se activa después de 5 minutos.',
+            ],
+            'de' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Testbenachrichtigung für {aquarium_name}',
+                'body' => 'Dies ist eine Testbenachrichtigung, die nach 5 Minuten ausgelöst wird.',
+            ],
+            'fr' => [
+                'presentation' => 'Test Consumable 5M',
+                'title' => 'Notification de test pour {aquarium_name}',
+                'body' => 'Cette notification est une notification de test qui se déclenche après 5 minutes.',
+            ],
+        ];
+
+        foreach ($notificationsTest2 as $lang => $notification) {
+            NotificationBody::create([
+                'notification_id' => $notificationTest2->id,
+                'lang' => $lang,
+                'presentation' => $notification['presentation'],
+                'title' => $notification['title'],
+                'body' => $notification['body'],
+            ]);
+        }
 
 
         $consumable2 = Consumable::factory()->create([
