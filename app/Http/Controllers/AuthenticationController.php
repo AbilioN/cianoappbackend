@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use PhpParser\Node\Stmt\TryCatch;
+use Illuminate\Support\Facades\Log;
 
 class AuthenticationController extends Controller
 {
@@ -132,43 +133,38 @@ class AuthenticationController extends Controller
         ]);
 
         try {
-            $user = $this->findUserByToken($request->token);
-            
-            if (!$user) {
-                return redirect()->back()->withErrors(['error' => 'Usuário não encontrado.']);
-            }
-            
-            // Valida se o token existe e é válido
-            if (!Password::tokenExists($user, $request->token)) {
+            // Primeiro encontramos o registro do reset
+            $resetEntry = DB::table('password_reset_tokens')
+                ->get()
+                ->first(function($entry) use ($request) {
+                    // O token no banco está hasheado, então precisamos verificar se o hash bate
+                    return Hash::check($request->token, $entry->token);
+                });
+
+            if (!$resetEntry) {
                 return redirect()->back()->withErrors(['error' => 'Token inválido ou expirado.']);
             }
 
-            $status = Password::reset([
-                    'email' => $user->email,
+            // Agora temos o email, podemos fazer o reset
+            $status = Password::reset(
+                [
+                    'email' => $resetEntry->email,
                     'password' => $request->password,
                     'password_confirmation' => $request->password_confirmation,
                     'token' => $request->token,
                 ],
                 function ($user, $password) {
                     $user->forceFill([
-                        'password' => Hash::make($password),
+                        'password' => Hash::make($password)
                     ])->save();
                 }
             );
-
-            if (!in_array($status, [
-                Password::PASSWORD_RESET,
-                Password::INVALID_USER,
-                Password::INVALID_TOKEN
-            ])) {
-                throw new Exception('Status inesperado: ' . $status);
-            }
 
             if ($status === Password::PASSWORD_RESET) {
                 return redirect()->back()->with('success', 'Senha redefinida com sucesso!');
             }
 
-            return redirect()->back()->withErrors(['status' => __($status)]);
+            return redirect()->back()->withErrors(['error' => __($status)]);
 
         } catch (Exception $e) {
             return redirect()->back()->withErrors(['error' => 'Erro inesperado: ' . $e->getMessage()]);
@@ -178,15 +174,15 @@ class AuthenticationController extends Controller
     public function findUserByToken($token)
     {
         $resetEntry = DB::table('password_reset_tokens')
-            ->whereRaw("1 = 1")
             ->get()
-            ->first(fn ($entry) => Hash::check($token, $entry->token));
-    
+            ->first(function($entry) use ($token) {
+                return hash_equals($entry->token, $token);
+            });
+
         if (!$resetEntry) {
-            throw new Exception('Token inválido. não encontrado nenhum token para este email.');
-            return null;
+            throw new Exception('Token inválido ou expirado.');
         }
-    
+
         return User::where('email', $resetEntry->email)->first();
     }
 }
