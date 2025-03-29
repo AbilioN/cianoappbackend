@@ -16,9 +16,16 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
+use App\Http\Controllers\GuideController;
 
 class AuthController extends Controller
 {
+    protected $guideController;
+
+    public function __construct(GuideController $guideController)
+    {
+        $this->guideController = $guideController;
+    }
 
     public function register(Request $request)
     {
@@ -122,6 +129,10 @@ class AuthController extends Controller
             return $aquarium->toDto();
         });
 
+        // Obtendo os guias
+        $guidesResponse = $this->guideController->getGuides();
+        $guides = $guidesResponse->original;
+
         // contando login
         LoginCounter::create([
             'user_id' => $user->id,
@@ -134,6 +145,7 @@ class AuthController extends Controller
             'user' => $user,
             'token' => $token,
             'aquariums' => $aquariums,
+            'guides' => $guides,
         ], 200);
     }
     public function logout(Request $request)
