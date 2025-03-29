@@ -27,16 +27,14 @@ class GuideController extends Controller
 
     private function loadGuideFile($language)
     {
-
+        $path = resource_path("guides/{$language}.json");
         
-        $path = "{$language}.json";
-        
-        if (!Storage::disk('guides')->exists($path)) {
-            Log::error("File not found at path: " . Storage::disk('guides')->path($path));
+        if (!file_exists($path)) {
+            Log::error("File not found at path: " . $path);
             return [];
         }
         
-        $content = Storage::disk('guides')->get($path);
+        $content = file_get_contents($path);
         return json_decode($content, true);
     }
 

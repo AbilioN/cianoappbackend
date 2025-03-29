@@ -1,0 +1,738 @@
+[
+    {
+        "title": "Guida all'Installazione degli Acquari",
+        "name": "Guida per Principianti agli Acquari",
+        "category": "fish_aquarium",
+        "notification": "fish_aquarium",
+        "pages": [
+            [
+                {
+                    "type": "ordered_list",
+                    "items": [
+                        "Aggiungi sabbia;",
+                        "Aggiungi decorazione (opzionale);",
+                        "Aggiungi acqua al tuo acquario;"
+                    ],
+                    "align": "left"
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/main_sand.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Aggiungi il dosatore <strong>Fish Protection</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/protector.png"
+                },
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=Ld5CXw4i07g"
+                },
+                {
+                    "type": "text",
+                    "value": "Introduzione - Senza Ventose"
+                },
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=wPXt1yDTnAg"
+                },
+                {
+                    "type": "text",
+                    "value": "Introduzione - Con Ventose"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "small_text",
+                    "value": "1) Posiziona il filtro e i <strong>cartridges</strong> filtranti;"
+                },
+                {
+                    "type": "small_text",
+                    "value": "2) Accendi il filtro"
+                },
+                {
+                    "type": "small_image",
+                    "url": "https://app.ciano.pt/images/filter.png"
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "small_text",
+                    "value": "Aggiungi i Codici dei Prodotti nell'App <strong>(cartridges e Dosatore)</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/guias_filtro_aquario.png"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/guia_doseador.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Aggiungi il contenuto di <strong>WATER CONDITIONER + WATER BIO-BACT 100ML</strong> all'acquario;"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>WATER CONDITIONER + WATER BIO-BACT 100ML</strong>"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/kit.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Aspetta almeno <strong>4 ore</strong> dopo aver aggiunto i <strong>liquidi</strong>"
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/wait.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Se hai già aspettato le 4 ore indicate nel passo precedente, <strong>aggiungi 1/3 dei pesci più resistenti</strong>;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/peixe.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Controlla i parametri con <strong>WATER TEST STRIPS</strong> seguendo la Guida al Trattamento dell'acqua;"
+                },
+                {
+                    "type": "text",
+                    "value": "2) Se questi <strong>valori</strong> sono conformi alle raccomandazioni, aggiungi i restanti <strong>Pesci</strong>;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Aggiungi</strong> una notifica per essere avvisato tra <strong>5 giorni!</strong>"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "fish-aquarium-step-4"
+                },
+                {
+                    "type": "divider"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Guida a Pesci e Piante",
+        "name": "Guida per Pesci e Piante",
+        "category": "fish_and_plants",
+        "notification": "fish_and_plants",
+        "pages": [
+            [
+                {
+                    "type": "ordered_list",
+                    "items": [
+                        "Posiziona il substrato, la sabbia e l'acqua fino a circa 1/3 dell'altezza dell'acquario;",
+                        "Posiziona le piante* (Controlla la compatibilità con i tuoi pesci, chiedi informazioni al tuo venditore di pesci.);",
+                        "Aggiungi decorazioni (opzionale);",
+                        "Aggiungi il volume rimanente di acqua;"
+                    ],
+                    "align": "left"
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/main_sand_2.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Aggiungi il dosatore <strong>Fish Protection</strong> o <strong>Plants Protection</strong>;"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/fish_plants_protection.png"
+                },
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=Ld5CXw4i07g"
+                },
+                {
+                    "type": "text",
+                    "value": "Introduzione - Senza Ventose"
+                },
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=wPXt1yDTnAg"
+                },
+                {
+                    "type": "text",
+                    "value": "Introduzione - Con Ventose"
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "*Si consiglia di utilizzare la versione piante del CIANO LED."
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/cianoled.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "small_text",
+                    "value": "1) Posiziona il filtro e le <strong>cartrucce</strong> filtranti;"
+                },
+                {
+                    "type": "small_text",
+                    "value": "2) Accendi il filtro"
+                },
+                {
+                    "type": "small_image",
+                    "url": "https://app.ciano.pt/images/filter.png"
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "small_text",
+                    "value": "Aggiungi i Codici dei Prodotti nell'App <strong>(cartrucce e Dosatore)</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/guias_filtro_aquario.png"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/guia_doseador.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Aggiungi il contenuto di <strong>WATER CONDITIONER + WATER BIO-BAKT 100ML</strong> all'acquario; <br> <ul><li> Dose <strong> Water Bio-Bact</strong> = 10ml per ogni 100 litri</li><li> Dose <strong> Water Conditioner</strong> = 10ml per ogni 40 litri</li></ul>  "
+                },
+                {
+                    "type": "medium_text",
+                    "value": "<strong>WATER CONDITIONER + WATER BIO-BAKT 100ML</strong>"
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/kit.png"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "fish-plants-aquarium-step-4"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Aspetta almeno <strong>4 ore</strong> dopo aver aggiunto i <strong>liquidi</strong>"
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/wait.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
+                    "value": "1) Controlla i parametri con <strong>WATER TEST STRIPS</strong> seguendo la Guida al Trattamento dell'acqua; </br> 2) Se questi <strong>valori</strong> sono conformi alle raccomandazioni, aggiungi i restanti <strong>Pesci</strong>;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Aggiungi</strong> una notifica per essere avvisato tra <strong>5 giorni!</strong>"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "fish-plants-aquarium-step-7"
+                },
+                {
+                    "type": "divider"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Guida per Pesci e Piante",
+        "name": "Guida per Pesci e Piante",
+        "category": "aquarium_maintenance",
+        "notification": "aquarium_maintenance",
+        "pages": [
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) <strong>Verifica;</strong><br> <ul><li>Controlla attentamente i tuoi pesci (respirazione accelerata, comportamento anomalo, ferite, macchie, ecc.);</li><li>L'aspetto visivo dell'acqua (torbidità);</li><li>Lo sviluppo delle alghe.</li></ul>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) Aggiungi <strong>Fish Protection</strong> e <strong>Plants Protection</strong> (se non usi i dosatori Ciano)."
+                },
+                {
+                    "type": "medium_text",
+                    "value": "3) Aggiungi <strong>WATER BIO-BACT.</strong>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "4) Sostituisci il <strong>WATER PAD.</strong>"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "maintenance-water-check"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Usa le <strong>Water Test Strips</strong> <br> <ul><li> Verifica i <strong>parametri</strong> dell'acqua;</li></ul>"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                },
+                {
+                    "type": "yes_or_no",
+                    "title": "I risultati sono conformi al riferimento?",
+                    "option_yes": [
+                        {
+                            "type": "text",
+                            "value": "1) Aggiungi <strong>WATER BIO-BACT</strong>; <br> <ul><li> Acquario in buone condizioni! Concludi aggiungendo <strong>WATER BIO-BACT</strong>.</li></ul>."
+                        },
+                        {
+                            "type": "image",
+                            "url": "https://app.ciano.pt/images/maintenance.png"
+                        }
+                    ],
+                    "option_no": [
+                        {
+                            "type": "text",
+                            "value": "Segui le istruzioni nella <strong>Guida al Trattamento dell'Acqua</strong>, trattamento dell'acqua."
+                        }
+                    ]
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "maintenance-water-check"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Effettua un cambio d'acqua del 25% <strong>Water Test Strips</strong> <br> <ul><li> Aggiungi <strong>WATER CONDITIONER</strong>;</li></ul>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) Pulisci <strong>Water Foam</strong> <br> <ul><li>Pulisci il <strong>WATER FOAM</strong> e tutto ciò che ritieni necessario.</li></ul>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "3) Sostituisci <strong>Water Clean & Protection</strong> <br> <ul><li>Sostituisci la cartuccia WATER CLEAR & PROTECTION se non la usi aggiungi WATER CLEAR & PROTECTION liquido.</li></ul>"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "maintenance-water-check"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Sostituisci il <strong>Fish Protection e Plants Protection</strong> <br> <ul><li> Sostituisci il <strong>Fish Protection</strong> e il <strong>Plants Protection</strong> (per acquari con piante);</li></ul>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/fish_plants_protection.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Sostituisci il <strong>Water Foam</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_foam_guide_kit.png"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) Sostituisci il <strong>Water Foam Course</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Sostituisci il <strong>Water Bio-Bact</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Sostituisci la cartuccia <strong>Water Bio-Bact</strong>"
+                },
+                {
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_bio_bact_cartucho.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Guida al Trattamento dell'Acqua",
+        "name": "Guida al Trattamento dell'Acqua",
+        "category": "water_treatment",
+        "notification": "water_treatment",
+        "pages": [
+            [
+                {
+                    "type": "medium_text",
+                    "value": "<strong>Se l'acqua dell'acquario è torbida:</strong>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "1) Aggiungere <strong>Water Clear & Protection</strong>."
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) Attendere <strong>24h</strong> dopo l'aggiunta e verificare nuovamente se ci sono miglioramenti nella trasparenza dell'acqua."
+                },
+                {
+                    "type": "medium_text",
+                    "value": "3) Ripetere questo passaggio ogni 24h fino a quando non si notano miglioramenti."
+                },
+                {
+                    "type": "medium_text",
+                    "value": "4) <strong>Quando si notano miglioramenti</strong>, aggiungere <strong>Water Bio-Bact</strong>."
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "maintenance-water-check"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "5) Dopo 15 giorni, verificare visivamente l'eliminazione delle alghe."
+                },
+                {
+                    "type": "medium_text",
+                    "value": "6) Se si nota l'eliminazione delle alghe, aggiungere <strong>WATER BIO-BACT</strong>, altrimenti, ripetere i passaggi precedenti."
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/water_algae_kit.png"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Consultare la tabella fornita e verificare se il pesce presenta i valori raccomandati,</a>"
+                },
+                {
+                    "type": "link_button",
+                    "text": "Clicca qui per vedere la tabella dei valori raccomandati",
+                    "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "I valori da controllare, oltre al pH e alla temperatura raccomandati nella tabella sopra, sono:"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "1) <strong>Nitrito (NO2-)</strong> e/o <strong>Nitrato (NO3-)</strong>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) <strong>GH</strong>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "3) <strong>KH</strong>"
+                },
+                {
+                    "type": "medium_text",
+                    "value": "4) <strong>Cloro</strong>"
+                },
+                {
+                    "type": "notification_button",
+                    "notificationName": "aquariums-values-check"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Utilizzare le <strong>Water Test Strips</strong>"
+                },
+                {
+                    "type": "unordered_list",
+                    "items": [
+                        "Nitrito (NO2-) e/o Nitrato (NO3-)",
+                        "Nitrato"
+                    ]
+                },
+                {
+                    "type": "medium_text",
+                    "value": "2) <strong>Ossigeno disciolto (DO)</strong>"
+                }
+            ],
+            [
+                {
+                    "type": "medium_text",
+                    "value": "1) Utilizzare le <strong>Water Test Strips</strong>"
+                },
+                {
+                    "type": "unordered_list",
+                    "items": [
+                        "Verificare i <strong>parametri</strong> dell'<strong>acqua</strong>."
+                    ]
+                },
+                {
+                    "type": "medium_image",
+                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                },
+                {
+                    "type": "yes_or_no",
+                    "title": "Ci sono valori fuori dall'intervallo raccomandato secondo le Water Test Strips?",
+                    "option_yes": [
+                        {
+                            "type": "text",
+                            "value": "1) Aggiungere <strong>WATER BIO-BACT</strong>."
+                        }
+                    ],
+                    "option_no": [
+                        {
+                            "type": "text",
+                            "value": "1) Seguire le istruzioni nella <strong>Guida al Trattamento dell'Acqua</strong>, trattamento dell'acqua."
+                        }
+                    ]
+                },
+                {
+                    "type": "divider"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Guida al Trattamento dei Pesci",
+        "name": "Guida al Trattamento dei Pesci",
+        "category": "fish_treatment",
+        "notification": "fish_treatment",
+        "pages": [
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnosi"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Piccoli punti bianchi sulla superficie del corpo del pesce",
+                        "Respirazione affannosa",
+                        "Perdita di peso"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Soluzione</strong>: Consultare il proprio rivenditore di pesci per il prodotto adeguato."
+                },
+                {
+                    "type": "text",
+                    "value": "Per la prevenzione e il rafforzamento del sistema immunitario raccomandiamo il <strong>FISH PROTECTION DOSATOR</strong>"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnosi"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Parassiti visibili",
+                        "Il pesce si sfrega contro gli oggetti",
+                        "Respirazione affannosa",
+                        "Perdita di peso (nonostante si alimenti normalmente)"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Soluzione</strong>: Consultare il proprio rivenditore di pesci per il prodotto adeguato."
+                },
+                {
+                    "type": "text",
+                    "value": "Per la prevenzione e per avere una <strong>barriera antiparassitaria nel vostro Pesce</strong>, raccomandiamo l'uso del <strong>FISH PROTECTION DOSATOR</strong>"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnosi"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Secrezioni biancastre o giallastre",
+                        "Infiammazioni sulla superficie della pelle, sanguinamento e perdita di squame",
+                        "Decomposizione delle membrane",
+                        "Pancia e occhi gonfi",
+                        "Il pesce non nuota correttamente"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Soluzione</strong>: Consultare il proprio rivenditore di pesci per il prodotto adeguato."
+                },
+                {
+                    "type": "text",
+                    "value": "Per la prevenzione e la difesa attiva contro parassiti e batteri raccomandiamo il <strong>FISH PROTECTION DOSATOR</strong>."
+                },
+                {
+                    "type": "divider"
+                }
+            ]   
+        ]
+    },
+    {
+        "title": "Guida al Trattamento delle Piante",
+        "name": "Guida al Trattamento delle Piante",
+        "category": "plant_treatment",
+        "notification": "plant_treatment",
+        "pages": [
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnosi"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Foglie ingiallite o rosicchiate",
+                        "Stelo e foglie fragili",
+                        "Parassiti"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Soluzione</strong>: Per queste e altre carenze o parassiti, consultare il proprio rivenditore di piante per il prodotto adeguato."
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Per fornire i nutrienti importanti per la crescita e lo sviluppo delle piante</strong>, raccomandiamo il <strong>PLANTS PROTECTION DOSATOR</strong> che contiene alcuni dei macronutrienti e micronutrienti più importanti per le piante."
+                },
+                {
+                    "type": "divider"
+                }
+            ]
+        ]
+    }
+]
