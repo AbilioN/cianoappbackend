@@ -175,7 +175,6 @@ class NotificationController extends Controller
         }
     }
 
-<<<<<<< HEAD
     public function readNotification(Request $request)
     {
 
@@ -211,46 +210,5 @@ class NotificationController extends Controller
        
     }
     
-=======
-    public function deleteNotification(Request $request)
-    {
-
-        try{
-
-            DB::beginTransaction();
-            $user = Auth::user();
-
-            $notification = Notification::find($request->notification_id);
-            if (!$notification) {
-                return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
-            }
-
-            $aquarium = Aquarium::find($request->aquarium_id);
-            if(!$aquarium){
-                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
-            }
-
-            if($aquarium->user_id != $user->id  ){
-                return response()->json(['message' => 'failed' , 'message_code' => 'notification_aquarium_not_found' ], 404);
-            }
-
-                $userAquariumNotification = AquariumNotification::where('aquarium_id', $aquarium->id)->where('notification_id', $notification->id)->first();
-
-            if (!$userAquariumNotification) {
-                return response()->json(['message' => 'failed' , 'message_code' => 'notification_not_found' ], 404);
-            }
-
-            $userAquariumNotification->delete();
-            DB::commit();
-            // Criar menssagem de sucesso no front-end
-            return response()->json(['message' => 'success' , 'message_code' => 'notification_delete_successfully']);
-
-        }catch(\Exception $e){
-            DB::rollBack();
-            // criar menssagem de erro no front-end
-            return response()->json(['message' => 'failed' , 'message_code' => 'notification_delete_failed' , 'errors' => $e->getMessage()], 500);
-        }
-    }
->>>>>>> origin/dev
 
 }
