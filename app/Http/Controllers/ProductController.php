@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -48,6 +49,13 @@ class ProductController extends Controller
                 'data' => []
             ], 500);
         }
+    }
+
+    public function index($lang)
+    {
+        // Temporariamente retornando sempre o conteúdo PT independente da língua solicitada
+        $content = Storage::get('resources/products/pt.json');
+        return response()->json(json_decode($content));
     }
 
     private function loadProductFile($language)
