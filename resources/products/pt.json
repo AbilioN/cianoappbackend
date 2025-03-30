@@ -2434,10 +2434,12 @@
             "type": "text",
             "value": "CFStone (opcional)"
         }
-    ],
-    "image": "https://app.ciano.pt/images/tartarium_60.png",
-    "name": "TARTARIUM 60",
-    "category": "tartariums",
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/tartarium_60.png",
+        "name": "TARTARIUM 60",
+        "category": "tartariums",
     "details": [
         {
             "type": "large_image",
@@ -2551,10 +2553,12 @@
             "type": "text",
             "value": "CFStone (opcional)"
         }
-    ],
-    "image": "https://app.ciano.pt/images/tartarium_80.png",
-    "name": "TARTARIUM 80",
-    "category": "tartariums",
+    ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/tartarium_80.png",
+        "name": "TARTARIUM 80",
+        "category": "tartariums",
     "details": [
         {
             "type": "large_image",
@@ -2669,4 +2673,5 @@
             "value": "CFStone (opcional)"
         }
     ]
-} 
+    }
+]

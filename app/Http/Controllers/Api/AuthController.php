@@ -137,6 +137,7 @@ class AuthController extends Controller
         $guides = $guidesResponse->original;
 
         $productsResponse = $this->productController->getProducts();
+        // $productsResponse = $this->productController->index('pt');
         $products = $productsResponse->original;
 
         // contando login
