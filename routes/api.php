@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\AquariumController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\GuideController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
@@ -30,6 +31,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('aquarium-notifications/delete', [NotificationController::class, 'deleteNotification']);
     Route::get('/guides', [GuideController::class, 'getGuides']);
     Route::get('/guides/{language}', [GuideController::class, 'getGuidesByLanguage']);
+    Route::get('products', [ProductController::class, 'getProducts']);
+    Route::get('products/{language}', [ProductController::class, 'getProductsByLanguage']);
 
     // Adicione outras rotas autenticadas aqui
 });

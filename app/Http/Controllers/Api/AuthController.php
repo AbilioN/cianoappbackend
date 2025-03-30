@@ -17,14 +17,17 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use App\Http\Controllers\GuideController;
+use App\Http\Controllers\ProductController;
 
 class AuthController extends Controller
 {
     protected $guideController;
+    protected $productController;
 
-    public function __construct(GuideController $guideController)
+    public function __construct(GuideController $guideController, ProductController $productController)
     {
         $this->guideController = $guideController;
+        $this->productController = $productController;
     }
 
     public function register(Request $request)
@@ -133,6 +136,9 @@ class AuthController extends Controller
         $guidesResponse = $this->guideController->getGuides();
         $guides = $guidesResponse->original;
 
+        $productsResponse = $this->productController->getProducts();
+        $products = $productsResponse->original;
+
         // contando login
         LoginCounter::create([
             'user_id' => $user->id,
@@ -146,6 +152,7 @@ class AuthController extends Controller
             'token' => $token,
             'aquariums' => $aquariums,
             'guides' => $guides,
+            'products' => $products,
         ], 200);
     }
     public function logout(Request $request)
