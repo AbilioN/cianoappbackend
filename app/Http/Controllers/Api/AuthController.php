@@ -136,7 +136,7 @@ class AuthController extends Controller
         $guidesResponse = $this->guideController->getGuides();
         $guides = $guidesResponse->original;
 
-        $productsResponse = $this->productController->getProducts();
+        $productsResponse = $this->productController->getProductsByLanguage('pt');
         // $productsResponse = $this->productController->index('pt');
         $products = $productsResponse->original;
 
