@@ -516,7 +516,7 @@
                 },
                 {
                     "type": "link_button",
-                    "text": "Clique aqui para ver a tabela de valores recomendados",
+                    "text": "Consulte aqui",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
@@ -553,18 +553,56 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Use o <strong>Water Test Strips 2 </strong>"
+                    "value": "1) Use o <strong>Water Test Strips</strong>"
                 },
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrito (NO2-) e/ou Nitrato (NO3-)",
-                        "Nitrato"
+                        "Verifique os <strong>parâmetros</strong> da <strong>água</strong>."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Oxigênio dissolvido (DO)</strong>"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
+                },
+                {
+                    "type": "yes_or_no",
+                    "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
+                    "option_yes": {
+                        "content": [
+                            {
+                                "type": "title",
+                                "text": "Para Nitritos (NO2-) e/ou Nitratos (NO3-)"
+                            },
+                            {
+                                "type": "ordered_list",
+                                "items": [
+                                    "Faça uma troca parcial de Água de 25%;",
+                                    "Adicone o Water Conditioner;",
+                                    "Reduza a adição de comida;",
+                                    "Adicione Water Bio-Bact"
+                                ]
+                            },
+                            {
+                                "type": "title_left",
+                                "text": "Para GH:"
+                            },
+                            {
+                                "type": "unordered_list",
+                                "items": [
+                                    "Adicione WaterGH"
+                                ]
+                            }
+                        ]
+                    },
+                    "option_no": {
+                        "content": [
+                            {
+                                "type": "text",
+                                "value": "<strong>Aquário em boas condições, mas nunca se esqueça de verificar frequentemente os valores do seu Aquário!</strong>"
+                            }
+                        ]
+                    }
                 }
             ],
             [
