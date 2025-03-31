@@ -581,41 +581,6 @@
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Use o <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Verifique os <strong>parâmetros</strong> da <strong>água</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
-                },
-                {
-                    "type": "yes_or_no",
-                    "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
-                    "option_yes": [
-                        {
-                            "type": "text",
-                            "value": "1) Adicione o <strong>WATER BIO-BACT</strong>."
-                        }
-                    ],
-                    "option_no": [
-                        {
-                            "type": "text",
-                            "value": "1) Siga as instruções em <strong>Guia de Tratamento de água</strong>, tratamento de água."
-                        }
-                    ]
-                },
-                {
-                    "type": "divider"
-                }
             ]
         ]
     },
