@@ -288,6 +288,19 @@
             [
                 {
                     "type": "text",
+                    "value": "1) Si ya has esperado las 4 horas indicadas en el paso anterior, <strong>agrega 1/3 de los peces más resistentes</strong>;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/peixe.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
                     "value": "1) Verifica los parámetros con <strong>WATER TEST STRIPS</strong> siguiendo la Guía de Tratamiento de agua; </br> 2) Si estos <strong>valores</strong> están de acuerdo con lo recomendado, agrega los restantes <strong>peces</strong>;"
                 },
                 {

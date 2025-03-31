@@ -288,6 +288,19 @@
             [
                 {
                     "type": "text",
+                    "value": "1) Se já reparou os 4h indicadas no passo anterior,<strong>adicione 1/3 dos peixes</strong> mais resistentes;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/peixe.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
                     "value": "1) Verificar os parâmetros com <strong> WATER TEST STRIPS </strong> seguindo o Guia de Tratamento de água; </br> 2) Se esses <strong>valores</strong> estiverem de acordo com o recomendado, adicionar os restantes <strong>Peixes</strong>;"
                 },
                 {
@@ -350,11 +363,11 @@
                 },
                 {
                     "type": "yes_or_no",
-                    "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
+                    "title": "Os resultados estão de acordo com a referência?",
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul><br><strong>Para KH:</strong><br><ul><li>Adicione WATER KH & pH</li></ul><br><strong>Para Cloro:</strong><br><ul><li>Adicione WATER CONDITIONER</li></ul><br><strong>Para pH:</strong><br><ul><li>Adicione Water KH & pH</li></ul>"
+                            "value": "1) Adicione o <strong>WATER BIO-BACT</strong>; <br> <ul><li> Aquário em boas condições! Finalize com adição de <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",

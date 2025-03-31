@@ -288,6 +288,19 @@
             [
                 {
                     "type": "text",
+                    "value": "1) If you have already waited the 4 hours indicated in the previous step, <strong>add 1/3 of the most resilient fish</strong>;"
+                },
+                {
+                    "type": "large_image",
+                    "url": "https://app.ciano.pt/images/peixe.png"
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "text",
                     "value": "1) Check the parameters with <strong>WATER TEST STRIPS</strong> following the Water Treatment Guide; </br> 2) If these <strong>values</strong> are in accordance with the recommendations, add the remaining <strong>Fish</strong>;"
                 },
                 {

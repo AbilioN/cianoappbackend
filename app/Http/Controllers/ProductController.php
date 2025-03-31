@@ -32,7 +32,7 @@ class ProductController extends Controller
     public function getProductsByLanguage($language)
     {
         try {
-            $products = $this->loadProductFile('pt');
+            $products = $this->loadProductFile($language);
 
             if (empty($products)) {
                 return response()->json([
