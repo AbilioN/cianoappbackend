@@ -380,7 +380,7 @@
                             "value": "Siga as instruções em <strong>Guia de Tratamento de água</strong>, tratamento de água."
                         },
                         {
-                            "type": "image",
+                            "type": "medium_image",
                             "url": "https://app.ciano.pt/images/water_treatment_icon.png"
                         }
                     ]
@@ -448,7 +448,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Substitua o cartucho 22<strong>Water Bio-Bact</strong>"
+                    "value": "1) Substitua o <strong>Water Bio-Bact</strong>"
                 },
                 {
                     "type": "image",
