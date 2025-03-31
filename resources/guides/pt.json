@@ -350,11 +350,11 @@
                 },
                 {
                     "type": "yes_or_no",
-                    "title": "Os resultados estão de acordo com a referência?",
+                    "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Adicione o <strong>WATER BIO-BACT</strong>; <br> <ul><li> Aquário em boas condições! Finalize com adição de <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul>"
                         },
                         {
                             "type": "image",
@@ -570,37 +570,17 @@
                     "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
                     "option_yes": [
                         {
-                            "type": "title",
-                                "text": "Para Nitritos (NO2-) e/ou Nitratos (NO3-)"
-                            },
-                            {
-                                "type": "ordered_list",
-                                "items": [
-                                    "Faça uma troca parcial de Água de 25%;",
-                                    "Adicone o Water Conditioner;",
-                                    "Reduza a adição de comida;",
-                                    "Adicione Water Bio-Bact"
-                                ]
-                            },
-                            {
-                                "type": "title_left",
-                                "text": "Para GH:"
-                            },
-                            {
-                                "type": "unordered_list",
-                                "items": [
-                                    "Adicione WaterGH"
-                                ]
-                            }
-                        ],
-                        "option_no": [
-                            {
-                                "type": "text",
-                                "value": "<strong>Aquário em boas condições, mas nunca se esqueça de verificar frequentemente os valores do seu Aquário!</strong>"
-                            }
-                        ]
+                            "type": "text",
+                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul>"
+                        }
+                    ],
+                    "option_no": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Aquário em boas condições, mas nunca se esqueça de verificar frequentemente os valores do seu Aquário!</strong>"
+                        }
+                    ]
                 }
-             
             ],
             [
                 {
