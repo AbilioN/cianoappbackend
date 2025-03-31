@@ -378,6 +378,10 @@
                         {
                             "type": "text",
                             "value": "Folgen Sie den Anweisungen im <strong>Wasserbehandlungsleitfaden</strong>, Wasserbehandlung."
+                        },
+                        {
+                            "type": "medium_image",
+                            "url": "https://app.ciano.pt/images/water_treatment_icon.png"
                         }
                     ]
                 },

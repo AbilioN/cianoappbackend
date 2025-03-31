@@ -378,6 +378,10 @@
                         {
                             "type": "text",
                             "value": "Suivez les instructions dans le <strong>Guide de Traitement de l'Eau</strong>, traitement de l'eau."
+                        },
+                        {
+                            "type": "medium_image",
+                            "url": "https://app.ciano.pt/images/water_treatment_icon.png"
                         }
                     ]
                 },
