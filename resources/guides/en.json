@@ -355,7 +355,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Use the <strong>Water Test Strips</strong> <br> <ul><li> Check the water <strong>parameters</strong>;</li></ul>"
+                    "value": "1) Use the <strong>Water Test Strips</strong> <br> <ul><li>Check the water <strong>parameters</strong>;</li></ul>"
                 },
                 {
                     "type": "large_image",
@@ -367,7 +367,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Add <strong>WATER BIO-BACT</strong>; <br> <ul><li> Aquarium in good condition! Finish by adding <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "1) Add <strong>WATER BIO-BACT</strong>; <br> <ul><li>Aquarium in good condition! Finish by adding <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",
@@ -383,7 +383,6 @@
                             "type": "medium_image",
                             "url": "https://app.ciano.pt/images/water_treatment_icon.png"
                         }
-                       
                     ]
                 },
                 {
@@ -394,7 +393,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Make a 25% water change <strong>Water Test Strips</strong> <br> <ul><li> Add <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Make a 25% water change <strong>Water Test Strips</strong> <br> <ul><li>Add <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -415,7 +414,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Replace <strong>Fish Protection and Plants Protection</strong> <br> <ul><li> Replace the <strong>Fish Protection</strong> and the <strong>Plants Protection</strong> (for aquariums with plants);</li></ul>"
+                    "value": "1) Replace <strong>Fish Protection and Plants Protection</strong> <br> <ul><li>Replace the <strong>Fish Protection</strong> and the <strong>Plants Protection</strong> (for aquariums with plants);</li></ul>"
                 },
                 {
                     "type": "image",
@@ -441,19 +440,6 @@
                 {
                     "type": "image",
                     "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
-                },
-                {
-                    "type": "divider"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Replace the <strong>Water Bio-Bact</strong>"
-                },
-                {
-                    "type": "image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
                 },
                 {
                     "type": "divider"

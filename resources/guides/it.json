@@ -330,7 +330,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) <strong>Verifica;</strong><br> <ul><li>Controlla attentamente i tuoi pesci (respirazione accelerata, comportamento anomalo, ferite, macchie, ecc.);</li><li>L'aspetto visivo dell'acqua (torbidità);</li><li>Lo sviluppo delle alghe.</li></ul>"
+                    "value": "1) <strong>Verifica;</strong><br> <ul><li>Controlla i tuoi pesci in dettaglio (respirazione accelerata, comportamento anomalo, ferite, macchie, ecc.);</li><li>L'aspetto visivo dell'acqua (torbidità);</li><li>Sviluppo delle alghe.</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -355,7 +355,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Usa le <strong>Water Test Strips</strong> <br> <ul><li> Verifica i <strong>parametri</strong> dell'acqua;</li></ul>"
+                    "value": "1) Usa le <strong>Water Test Strips</strong> <br> <ul><li>Controlla i <strong>parametri</strong> dell'acqua;</li></ul>"
                 },
                 {
                     "type": "large_image",
@@ -367,7 +367,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Aggiungi <strong>WATER BIO-BACT</strong>; <br> <ul><li> Acquario in buone condizioni! Concludi aggiungendo <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "1) Aggiungi <strong>WATER BIO-BACT</strong>; <br> <ul><li>Acquario in buone condizioni! Termina aggiungendo <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",
@@ -393,7 +393,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Effettua un cambio d'acqua del 25% <strong>Water Test Strips</strong> <br> <ul><li> Aggiungi <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Effettua un cambio d'acqua del 25% <strong>Water Test Strips</strong> <br> <ul><li>Aggiungi <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -414,7 +414,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Sostituisci il <strong>Fish Protection e Plants Protection</strong> <br> <ul><li> Sostituisci il <strong>Fish Protection</strong> e il <strong>Plants Protection</strong> (per acquari con piante);</li></ul>"
+                    "value": "1) Sostituisci <strong>Fish Protection e Plants Protection</strong> <br> <ul><li>Sostituisci il <strong>Fish Protection</strong> e il <strong>Plants Protection</strong> (per acquari con piante);</li></ul>"
                 },
                 {
                     "type": "image",
@@ -440,19 +440,6 @@
                 {
                     "type": "image",
                     "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
-                },
-                {
-                    "type": "divider"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Sostituisci il <strong>Water Bio-Bact</strong>"
-                },
-                {
-                    "type": "image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
                 },
                 {
                     "type": "divider"

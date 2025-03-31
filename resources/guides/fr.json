@@ -330,7 +330,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) <strong>Vérification;</strong><br> <ul><li>Examinez vos poissons en détail (respiration accélérée, comportement anormal, blessures, taches, etc.);</li><li>L'aspect visuel de l'eau (turbidité);</li><li>Le développement des algues.</li></ul>"
+                    "value": "1) <strong>Vérification;</strong><br> <ul><li>Vérifiez vos poissons en détail (respiration accélérée, comportement anormal, blessures, taches, etc.);</li><li>L'aspect visuel de l'eau (turbidité);</li><li>Développement des algues.</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -338,7 +338,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Ajoutez le <strong>WATER BIO-BACT.</strong>"
+                    "value": "3) Ajoutez <strong>WATER BIO-BACT.</strong>"
                 },
                 {
                     "type": "medium_text",
@@ -355,7 +355,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Utilisez les <strong>Water Test Strips</strong> <br> <ul><li> Vérifiez les <strong>paramètres</strong> de l'eau;</li></ul>"
+                    "value": "1) Utilisez les <strong>Water Test Strips</strong> <br> <ul><li>Vérifiez les <strong>paramètres</strong> de l'eau;</li></ul>"
                 },
                 {
                     "type": "large_image",
@@ -367,7 +367,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Ajoutez le <strong>WATER BIO-BACT</strong>; <br> <ul><li> Aquarium en bon état! Terminez en ajoutant le <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "1) Ajoutez <strong>WATER BIO-BACT</strong>; <br> <ul><li>Aquarium en bon état! Terminez en ajoutant <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",
@@ -393,15 +393,15 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Effectuez un changement d'eau de 25% <strong>Water Test Strips</strong> <br> <ul><li> Ajoutez le <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Effectuez un changement d'eau de 25% <strong>Water Test Strips</strong> <br> <ul><li>Ajoutez <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
-                    "value": "2) Nettoyez le <strong>Water Foam</strong> <br> <ul><li>Nettoyez le <strong>WATER FOAM</strong> et tout ce que vous jugez nécessaire.</li></ul>"
+                    "value": "2) Nettoyez <strong>Water Foam</strong> <br> <ul><li>Nettoyez le <strong>WATER FOAM</strong> et tout ce que vous jugez nécessaire.</li></ul>"
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Remplacez le <strong>Water Clean & Protection</strong> <br> <ul><li>Remplacez la cartouche WATER CLEAR & PROTECTION si vous ne l'utilisez pas, ajoutez le WATER CLEAR & PROTECTION liquide.</li></ul>"
+                    "value": "3) Remplacez <strong>Water Clean & Protection</strong> <br> <ul><li>Remplacez la cartouche WATER CLEAR & PROTECTION si vous ne l'utilisez pas ajoutez WATER CLEAR & PROTECTION liquide.</li></ul>"
                 },
                 {
                     "type": "notification_button",
@@ -414,7 +414,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Remplacez le <strong>Fish Protection et Plants Protection</strong> <br> <ul><li> Remplacez le <strong>Fish Protection</strong> et le <strong>Plants Protection</strong> (pour les aquariums avec plantes);</li></ul>"
+                    "value": "1) Remplacez <strong>Fish Protection et Plants Protection</strong> <br> <ul><li>Remplacez le <strong>Fish Protection</strong> et le <strong>Plants Protection</strong> (pour les aquariums avec plantes);</li></ul>"
                 },
                 {
                     "type": "image",
@@ -440,19 +440,6 @@
                 {
                     "type": "image",
                     "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
-                },
-                {
-                    "type": "divider"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Remplacez le <strong>Water Bio-Bact</strong>"
-                },
-                {
-                    "type": "image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
                 },
                 {
                     "type": "divider"

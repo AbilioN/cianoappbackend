@@ -330,7 +330,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) <strong>Überprüfung;</strong><br> <ul><li>Kontrollieren Sie Ihre Fische genau (beschleunigte Atmung, abnormales Verhalten, Wunden, Flecken usw.);</li><li>Das optische Erscheinungsbild des Wassers (Trübung);</li><li>Die Entwicklung von Algen.</li></ul>"
+                    "value": "1) <strong>Überprüfung;</strong><br> <ul><li>Überprüfen Sie Ihre Fische im Detail (beschleunigte Atmung, abnormales Verhalten, Wunden, Flecken, etc.);</li><li>Das visuelle Erscheinungsbild des Wassers (Trübung);</li><li>Algenentwicklung.</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -355,7 +355,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Verwenden Sie die <strong>Water Test Strips</strong> <br> <ul><li> Überprüfen Sie die <strong>Parameter</strong> des Wassers;</li></ul>"
+                    "value": "1) Verwenden Sie die <strong>Water Test Strips</strong> <br> <ul><li>Überprüfen Sie die Wasser<strong>parameter</strong>;</li></ul>"
                 },
                 {
                     "type": "large_image",
@@ -367,7 +367,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Fügen Sie <strong>WATER BIO-BACT</strong> hinzu; <br> <ul><li> Aquarium in gutem Zustand! Beenden Sie mit der Zugabe von <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "1) Fügen Sie <strong>WATER BIO-BACT</strong> hinzu; <br> <ul><li>Aquarium in gutem Zustand! Beenden Sie mit der Zugabe von <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",
@@ -393,7 +393,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Führen Sie einen 25%igen Wasserwechsel durch <strong>Water Test Strips</strong> <br> <ul><li> Fügen Sie <strong>WATER CONDITIONER</strong> hinzu;</li></ul>"
+                    "value": "1) Führen Sie einen 25%igen Wasserwechsel durch <strong>Water Test Strips</strong> <br> <ul><li>Fügen Sie <strong>WATER CONDITIONER</strong> hinzu;</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -414,7 +414,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Ersetzen Sie <strong>Fish Protection und Plants Protection</strong> <br> <ul><li> Ersetzen Sie <strong>Fish Protection</strong> und <strong>Plants Protection</strong> (für Aquarien mit Pflanzen);</li></ul>"
+                    "value": "1) Ersetzen Sie <strong>Fish Protection und Plants Protection</strong> <br> <ul><li>Ersetzen Sie <strong>Fish Protection</strong> und <strong>Plants Protection</strong> (für Aquarien mit Pflanzen);</li></ul>"
                 },
                 {
                     "type": "image",
@@ -440,19 +440,6 @@
                 {
                     "type": "image",
                     "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
-                },
-                {
-                    "type": "divider"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Ersetzen Sie den <strong>Water Bio-Bact</strong>"
-                },
-                {
-                    "type": "image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
                 },
                 {
                     "type": "divider"

@@ -330,7 +330,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) <strong>Verificación;</strong><br> <ul><li>Revise sus peces en detalle (respiración acelerada, comportamiento anormal, heridas, manchas, etc.);</li><li>El aspecto visual del agua (turbidez);</li><li>El desarrollo de algas.</li></ul>"
+                    "value": "1) <strong>Verificación;</strong><br> <ul><li>Verifique sus peces en detalle (respiración acelerada, comportamiento anormal, heridas, manchas, etc.);</li><li>El aspecto visual del agua (turbidez);</li><li>Desarrollo de algas.</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -355,7 +355,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Use las <strong>Water Test Strips</strong> <br> <ul><li> Verifique los <strong>parámetros</strong> del agua;</li></ul>"
+                    "value": "1) Use las <strong>Water Test Strips</strong> <br> <ul><li>Verifique los <strong>parámetros</strong> del agua;</li></ul>"
                 },
                 {
                     "type": "large_image",
@@ -367,7 +367,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Agregue <strong>WATER BIO-BACT</strong>; <br> <ul><li> ¡Acuario en buenas condiciones! Finalice agregando <strong>WATER BIO-BACT</strong>.</li></ul>."
+                            "value": "1) Agregue <strong>WATER BIO-BACT</strong>; <br> <ul><li>¡Acuario en buenas condiciones! Finalice agregando <strong>WATER BIO-BACT</strong>.</li></ul>."
                         },
                         {
                             "type": "image",
@@ -393,7 +393,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Realice un cambio de agua del 25% <strong>Water Test Strips</strong> <br> <ul><li> Agregue <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Realice un cambio de agua del 25% <strong>Water Test Strips</strong> <br> <ul><li>Agregue <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -401,7 +401,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Reemplace <strong>Water Clean & Protection</strong> <br> <ul><li>Reemplace el cartucho WATER CLEAR & PROTECTION si no lo usa, agregue WATER CLEAR & PROTECTION líquido.</li></ul>"
+                    "value": "3) Reemplace <strong>Water Clean & Protection</strong> <br> <ul><li>Reemplace el cartucho WATER CLEAR & PROTECTION si no lo usa agregue WATER CLEAR & PROTECTION líquido.</li></ul>"
                 },
                 {
                     "type": "notification_button",
@@ -414,7 +414,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Reemplace el <strong>Fish Protection y Plants Protection</strong> <br> <ul><li> Reemplace el <strong>Fish Protection</strong> y el <strong>Plants Protection</strong> (para acuarios con plantas);</li></ul>"
+                    "value": "1) Reemplace <strong>Fish Protection y Plants Protection</strong> <br> <ul><li>Reemplace el <strong>Fish Protection</strong> y el <strong>Plants Protection</strong> (para acuarios con plantas);</li></ul>"
                 },
                 {
                     "type": "image",
@@ -440,19 +440,6 @@
                 {
                     "type": "image",
                     "url": "https://app.ciano.pt/images/water_foam_course_kit.png"
-                },
-                {
-                    "type": "divider"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Reemplace el <strong>Water Bio-Bact</strong>"
-                },
-                {
-                    "type": "image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
                 },
                 {
                     "type": "divider"
