@@ -377,10 +377,10 @@
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "Siga as instruções em 22<strong>Guia de Tratamento de água</strong>, tratamento de água."
+                            "value": "Siga as instruções em 223<strong>Guia de Tratamento de água</strong>, tratamento de água."
                         },
                         {
-                            "type": "medium_image",
+                            "type": "image",
                             "url": "https://app.ciano.pt/images/water_treatment_icon.png"
                         }
                     ]
