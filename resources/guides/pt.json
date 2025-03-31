@@ -354,7 +354,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul>"
+                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul><br><strong>Para KH:</strong><br><ul><li>Adicione WATER KH & pH</li></ul><br><strong>Para Cloro:</strong><br><ul><li>Adicione WATER CONDITIONER</li></ul><br><strong>Para pH:</strong><br><ul><li>Adicione Water KH & pH</li></ul>"
                         },
                         {
                             "type": "image",
@@ -571,7 +571,7 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul>"
+                            "value": "<strong>Para Nitritos (NO2-) e/ou Nitratos (NO3-):</strong><br><ol><li>Faça uma troca parcial de Água de 25%;</li><li>Adicone o Water Conditioner;</li><li>Reduza a adição de comida;</li><li>Adicione Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Adicione WaterGH</li></ul><br><strong>Para KH:</strong><br><ul><li>Adicione WATER KH & pH</li></ul><br><strong>Para Cloro:</strong><br><ul><li>Adicione WATER CONDITIONER</li></ul><br><strong>Para pH:</strong><br><ul><li>Adicione Water KH & pH</li></ul>"
                         }
                     ],
                     "option_no": [
