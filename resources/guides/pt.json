@@ -568,10 +568,9 @@
                 {
                     "type": "yes_or_no",
                     "title": "Existem valores fora do recomendado segundo o Water Test Strips?",
-                    "option_yes": {
-                        "content": [
-                            {
-                                "type": "title",
+                    "option_yes": [
+                        {
+                            "type": "title",
                                 "text": "Para Nitritos (NO2-) e/ou Nitratos (NO3-)"
                             },
                             {
@@ -593,17 +592,15 @@
                                     "Adicione WaterGH"
                                 ]
                             }
-                        ]
-                    },
-                    "option_no": {
-                        "content": [
+                        ],
+                        "option_no": [
                             {
                                 "type": "text",
                                 "value": "<strong>Aquário em boas condições, mas nunca se esqueça de verificar frequentemente os valores do seu Aquário!</strong>"
                             }
                         ]
-                    }
                 }
+             
             ],
             [
                 {
