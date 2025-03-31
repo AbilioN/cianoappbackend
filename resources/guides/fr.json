@@ -477,15 +477,15 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Répétez cette étape toutes les 24h jusqu'à ce que vous observiez des améliorations."
+                    "value": "3) Répétez cette étape toutes les 24h jusqu'à ce que des améliorations soient constatées."
                 },
                 {
                     "type": "medium_text",
-                    "value": "4) <strong>Lorsque vous constatez des améliorations</strong>, ajoutez le <strong>Water Bio-Bact</strong>."
+                    "value": "4) <strong>Lorsqu'il y a</strong> des améliorations, ajoutez <strong>Water Bio-Bact</strong>."
                 },
                 {
                     "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                    "url": "https://app.ciano.pt/images/water_bio_bact_clear_protection_kit.png"
                 },
                 {
                     "type": "notification_button",
@@ -502,21 +502,21 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "6) Si vous constatez l'élimination des algues, ajoutez le <strong>WATER BIO-BACT</strong>, sinon, répétez les étapes précédentes."
+                    "value": "6) Si vous constatez l'élimination des algues, ajoutez <strong>WATER BIO-BACT</strong>, sinon, répétez les étapes précédentes."
                 },
                 {
-                    "type": "medium_image",
+                    "type": "large_image",
                     "url": "https://app.ciano.pt/images/water_algae_kit.png"
                 }
             ],
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Consultez le tableau fourni et vérifiez si votre poisson présente les valeurs recommandées,"
+                    "value": "1) Consultez le tableau fourni et vérifiez si votre poisson présente les valeurs recommandées,</a>"
                 },
                 {
                     "type": "link_button",
-                    "text": "Cliquez ici pour voir le tableau des valeurs recommandées",
+                    "text": "Consulter ici",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
@@ -558,29 +558,12 @@
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrite (NO2-) et/ou Nitrate (NO3-)",
-                        "Nitrate"
+                        "Vérifiez les <strong>paramètres</strong> de l'eau."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Oxygène dissous (DO)</strong>"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Utilisez les <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Vérifiez les <strong>paramètres</strong> de l'<strong>eau</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
                 },
                 {
                     "type": "yes_or_no",
@@ -588,18 +571,15 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Ajoutez le <strong>WATER BIO-BACT</strong>."
+                            "value": "<strong>Pour les Nitrites (NO2-) et/ou Nitrates (NO3-):</strong><br><ol><li>Effectuez un changement d'eau partiel de 25%;</li><li>Ajoutez Water Conditioner;</li><li>Réduisez l'ajout de nourriture;</li><li>Ajoutez Water Bio-Bact</li></ol><br><strong>Pour GH:</strong><br><ul><li>Ajoutez WaterGH</li></ul><br><strong>Pour KH:</strong><br><ul><li>Ajoutez WATER KH & pH</li></ul><br><strong>Pour le Chlore:</strong><br><ul><li>Ajoutez WATER CONDITIONER</li></ul><br><strong>Pour le pH:</strong><br><ul><li>Ajoutez Water KH & pH</li></ul>"
                         }
                     ],
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "1) Suivez les instructions dans le <strong>Guide de Traitement de l'Eau</strong>, traitement de l'eau."
+                            "value": "<strong>Aquarium en bon état, mais n'oubliez jamais de vérifier fréquemment les valeurs de votre Aquarium !</strong>"
                         }
                     ]
-                },
-                {
-                    "type": "divider"
                 }
             ]
         ]

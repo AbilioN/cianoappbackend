@@ -481,11 +481,11 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "4) <strong>Quando si notano miglioramenti</strong>, aggiungere <strong>Water Bio-Bact</strong>."
+                    "value": "4) <strong>Quando ci sono</strong> miglioramenti, aggiungere <strong>Water Bio-Bact</strong>."
                 },
                 {
                     "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                    "url": "https://app.ciano.pt/images/water_bio_bact_clear_protection_kit.png"
                 },
                 {
                     "type": "notification_button",
@@ -502,10 +502,10 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "6) Se si nota l'eliminazione delle alghe, aggiungere <strong>WATER BIO-BACT</strong>, altrimenti, ripetere i passaggi precedenti."
+                    "value": "6) Se si verifica l'eliminazione delle alghe aggiungere <strong>WATER BIO-BACT</strong>, altrimenti, ripetere i passaggi precedenti."
                 },
                 {
-                    "type": "medium_image",
+                    "type": "large_image",
                     "url": "https://app.ciano.pt/images/water_algae_kit.png"
                 }
             ],
@@ -516,7 +516,7 @@
                 },
                 {
                     "type": "link_button",
-                    "text": "Clicca qui per vedere la tabella dei valori raccomandati",
+                    "text": "Consulta qui",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
@@ -558,29 +558,12 @@
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrito (NO2-) e/o Nitrato (NO3-)",
-                        "Nitrato"
+                        "Controllare i <strong>parametri</strong> dell'acqua."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Ossigeno disciolto (DO)</strong>"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Utilizzare le <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Verificare i <strong>parametri</strong> dell'<strong>acqua</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
                 },
                 {
                     "type": "yes_or_no",
@@ -588,18 +571,15 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Aggiungere <strong>WATER BIO-BACT</strong>."
+                            "value": "<strong>Per Nitriti (NO2-) e/o Nitrati (NO3-):</strong><br><ol><li>Effettuare un cambio parziale dell'acqua del 25%;</li><li>Aggiungere Water Conditioner;</li><li>Ridurre l'aggiunta di cibo;</li><li>Aggiungere Water Bio-Bact</li></ol><br><strong>Per GH:</strong><br><ul><li>Aggiungere WaterGH</li></ul><br><strong>Per KH:</strong><br><ul><li>Aggiungere WATER KH & pH</li></ul><br><strong>Per il Cloro:</strong><br><ul><li>Aggiungere WATER CONDITIONER</li></ul><br><strong>Per il pH:</strong><br><ul><li>Aggiungere Water KH & pH</li></ul>"
                         }
                     ],
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "1) Seguire le istruzioni nella <strong>Guida al Trattamento dell'Acqua</strong>, trattamento dell'acqua."
+                            "value": "<strong>Acquario in buone condizioni, ma non dimenticare mai di controllare frequentemente i valori del tuo Acquario!</strong>"
                         }
                     ]
-                },
-                {
-                    "type": "divider"
                 }
             ]
         ]

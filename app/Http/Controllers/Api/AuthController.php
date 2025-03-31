@@ -141,10 +141,13 @@ class AuthController extends Controller
         $products = $productsResponse->original;
 
         // contando login
-        LoginCounter::create([
-            'user_id' => $user->id,
-            'datetime' => Carbon::now('Europe/Lisbon'),
-        ]);
+
+        if($user->email != 'admin@ciano.pt' && $user->email != 'test@email.com') {
+            LoginCounter::create([
+                'user_id' => $user->id,
+                'datetime' => Carbon::now('Europe/Lisbon'),
+            ]);
+        }
 
         return response()->json([
             'message' => 'Login realizado com sucesso',

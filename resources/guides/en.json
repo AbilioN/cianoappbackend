@@ -473,7 +473,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "2) Wait <strong>24h</strong> after adding and check again for improvements in water transparency."
+                    "value": "2) Wait <strong>24h</strong> after adding and check again if there are improvements in water transparency."
                 },
                 {
                     "type": "medium_text",
@@ -481,11 +481,11 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "4) <strong>When improvements are seen</strong>, add <strong>Water Bio-Bact</strong>."
+                    "value": "4) <strong>When there are</strong> improvements, add <strong>Water Bio-Bact</strong>."
                 },
                 {
                     "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                    "url": "https://app.ciano.pt/images/water_bio_bact_clear_protection_kit.png"
                 },
                 {
                     "type": "notification_button",
@@ -502,10 +502,10 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "6) If you notice algae elimination, add <strong>WATER BIO-BACT</strong>, otherwise, repeat the previous steps."
+                    "value": "6) If you verify the elimination of algae add <strong>WATER BIO-BACT</strong>, otherwise, repeat the previous steps."
                 },
                 {
-                    "type": "medium_image",
+                    "type": "large_image",
                     "url": "https://app.ciano.pt/images/water_algae_kit.png"
                 }
             ],
@@ -516,15 +516,11 @@
                 },
                 {
                     "type": "link_button",
-                    "text": "Click here to see the recommended values table",
+                    "text": "Check here",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
                     "type": "divider"
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_foam_guide_kit.png"
                 },
                 {
                     "type": "medium_text",
@@ -557,34 +553,17 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Use <strong>Water Test Strips</strong>"
+                    "value": "1) Use the <strong>Water Test Strips</strong>"
                 },
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrite (NO2-) and/or Nitrate (NO3-)",
-                        "Nitrate"
+                        "Check the water <strong>parameters</strong>."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Dissolved Oxygen (DO)</strong>"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Use <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Check the <strong>water parameters</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
                 },
                 {
                     "type": "yes_or_no",
@@ -592,18 +571,15 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Add <strong>WATER BIO-BACT</strong>."
+                            "value": "<strong>For Nitrites (NO2-) and/or Nitrates (NO3-):</strong><br><ol><li>Make a 25% partial water change;</li><li>Add Water Conditioner;</li><li>Reduce food addition;</li><li>Add Water Bio-Bact</li></ol><br><strong>For GH:</strong><br><ul><li>Add WaterGH</li></ul><br><strong>For KH:</strong><br><ul><li>Add WATER KH & pH</li></ul><br><strong>For Chlorine:</strong><br><ul><li>Add WATER CONDITIONER</li></ul><br><strong>For pH:</strong><br><ul><li>Add Water KH & pH</li></ul>"
                         }
                     ],
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "1) Follow the instructions in <strong>Water Treatment Guide</strong>, water treatment."
+                            "value": "<strong>Aquarium in good condition, but never forget to frequently check your Aquarium's values!</strong>"
                         }
                     ]
-                },
-                {
-                    "type": "divider"
                 }
             ]
         ]

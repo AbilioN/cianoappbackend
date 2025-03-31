@@ -59,8 +59,15 @@ class ProductController extends Controller
 
     public function index($lang)
     {
-        // Temporariamente retornando sempre o conteúdo PT independente da língua solicitada
+        // Temporariamente retornando sempre o conteúdo PT para todos os idiomas
         $content = Storage::get('resources/products/pt.json');
+        return response()->json(json_decode($content));
+    }
+
+    public function guides($lang)
+    {
+        // Temporariamente retornando sempre o conteúdo PT para todos os idiomas
+        $content = Storage::get('resources/guides/pt.json');
         return response()->json(json_decode($content));
     }
 

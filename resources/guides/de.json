@@ -457,8 +457,8 @@
         ]
     },
     {
-        "title": "Wasserbehandlungsanleitung",
-        "name": "Wasserbehandlungsanleitung",
+        "title": "Wasserpflegeanleitung",
+        "name": "Wasserpflegeanleitung",
         "category": "water_treatment",
         "notification": "water_treatment",
         "pages": [
@@ -473,19 +473,19 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "2) Warten Sie <strong>24 Stunden</strong> nach der Zugabe und überprüfen Sie erneut, ob sich die Wassertransparenz verbessert hat."
+                    "value": "2) Warten Sie <strong>24h</strong> nach der Zugabe und überprüfen Sie erneut, ob sich die Wasserklarheit verbessert hat."
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Wiederholen Sie diesen Schritt alle 24 Stunden, bis Verbesserungen zu sehen sind."
+                    "value": "3) Wiederholen Sie diesen Schritt alle 24h, bis Verbesserungen zu sehen sind."
                 },
                 {
                     "type": "medium_text",
-                    "value": "4) <strong>Wenn Verbesserungen sichtbar sind</strong>, fügen Sie <strong>Water Bio-Bact</strong> hinzu."
+                    "value": "4) <strong>Wenn</strong> Verbesserungen eintreten, fügen Sie <strong>Water Bio-Bact</strong> hinzu."
                 },
                 {
                     "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                    "url": "https://app.ciano.pt/images/water_bio_bact_clear_protection_kit.png"
                 },
                 {
                     "type": "notification_button",
@@ -502,21 +502,21 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "6) Wenn Sie die Algenbeseitigung feststellen, fügen Sie <strong>WATER BIO-BACT</strong> hinzu, andernfalls wiederholen Sie die vorherigen Schritte."
+                    "value": "6) Wenn Sie die Beseitigung der Algen feststellen, fügen Sie <strong>WATER BIO-BACT</strong> hinzu, andernfalls wiederholen Sie die vorherigen Schritte."
                 },
                 {
-                    "type": "medium_image",
+                    "type": "large_image",
                     "url": "https://app.ciano.pt/images/water_algae_kit.png"
                 }
             ],
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Überprüfen Sie die bereitgestellte Tabelle und stellen Sie fest, ob Ihr Fisch die empfohlenen Werte aufweist,"
+                    "value": "1) Überprüfen Sie die bereitgestellte Tabelle und stellen Sie fest, ob Ihr Fisch die empfohlenen Werte aufweist,</a>"
                 },
                 {
                     "type": "link_button",
-                    "text": "Klicken Sie hier, um die Tabelle der empfohlenen Werte anzuzeigen",
+                    "text": "Hier nachsehen",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
@@ -524,7 +524,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "Die Werte, die Sie neben dem in der obigen Tabelle empfohlenen pH-Wert und der Temperatur überprüfen sollten, sind:"
+                    "value": "Die zu überprüfenden Werte, neben dem in der obigen Tabelle empfohlenen pH-Wert und der Temperatur, sind:"
                 },
                 {
                     "type": "medium_text",
@@ -558,29 +558,12 @@
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrit (NO2-) und/oder Nitrat (NO3-)",
-                        "Nitrat"
+                        "Überprüfen Sie die Wasser<strong>parameter</strong>."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Gelöster Sauerstoff (DO)</strong>"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Verwenden Sie die <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Überprüfen Sie die <strong>Wasserparameter</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
                 },
                 {
                     "type": "yes_or_no",
@@ -588,18 +571,15 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Fügen Sie <strong>WATER BIO-BACT</strong> hinzu."
+                            "value": "<strong>Für Nitrite (NO2-) und/oder Nitrate (NO3-):</strong><br><ol><li>Führen Sie einen 25%igen Teilwasserwechsel durch;</li><li>Fügen Sie Water Conditioner hinzu;</li><li>Reduzieren Sie die Futterzugabe;</li><li>Fügen Sie Water Bio-Bact hinzu</li></ol><br><strong>Für GH:</strong><br><ul><li>Fügen Sie WaterGH hinzu</li></ul><br><strong>Für KH:</strong><br><ul><li>Fügen Sie WATER KH & pH hinzu</li></ul><br><strong>Für Chlor:</strong><br><ul><li>Fügen Sie WATER CONDITIONER hinzu</li></ul><br><strong>Für pH:</strong><br><ul><li>Fügen Sie Water KH & pH hinzu</li></ul>"
                         }
                     ],
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "1) Folgen Sie den Anweisungen in der <strong>Wasserbehandlungsanleitung</strong>, Wasserbehandlung."
+                            "value": "<strong>Aquarium in gutem Zustand, aber vergessen Sie nie, die Werte Ihres Aquariums regelmäßig zu überprüfen!</strong>"
                         }
                     ]
-                },
-                {
-                    "type": "divider"
                 }
             ]
         ]

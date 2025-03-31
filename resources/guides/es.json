@@ -473,19 +473,19 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "2) Espere <strong>24h</strong> después de añadirlo y vuelva a comprobar si hay mejoras en la transparencia del agua."
+                    "value": "2) Espere <strong>24h</strong> después de añadir y vuelva a comprobar si hay mejoras en la transparencia del agua."
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Repita este paso cada 24h hasta que observe mejoras."
+                    "value": "3) Repita este paso cada 24h hasta que se observen mejoras."
                 },
                 {
                     "type": "medium_text",
-                    "value": "4) <strong>Cuando observe mejoras</strong>, añada el <strong>Water Bio-Bact</strong>."
+                    "value": "4) <strong>Cuando haya</strong> mejoras, añada <strong>Water Bio-Bact</strong>."
                 },
                 {
                     "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_bio_bact_kit.png"
+                    "url": "https://app.ciano.pt/images/water_bio_bact_clear_protection_kit.png"
                 },
                 {
                     "type": "notification_button",
@@ -502,21 +502,21 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "6) Si observa la eliminación de las algas, añada el <strong>WATER BIO-BACT</strong>, de lo contrario, repita los pasos anteriores."
+                    "value": "6) Si verifica la eliminación de las algas añada <strong>WATER BIO-BACT</strong>, de lo contrario, repita los pasos anteriores."
                 },
                 {
-                    "type": "medium_image",
+                    "type": "large_image",
                     "url": "https://app.ciano.pt/images/water_algae_kit.png"
                 }
             ],
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Consulte la tabla proporcionada y verifique si su pez presenta los valores recomendados,</a>"
+                    "value": "1) Consulte la tabla proporcionada y verifique si su pez muestra los valores recomendados,</a>"
                 },
                 {
                     "type": "link_button",
-                    "text": "Haga clic aquí para ver la tabla de valores recomendados",
+                    "text": "Consultar aquí",
                     "url": "https://ciano.pt/wp-content/uploads/2020/02/CIANO-Tabela-de-Peixes-CIANO-Care-Tratamento-Curativo.jpg"
                 },
                 {
@@ -524,7 +524,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "Los valores que debe verificar, además del pH y la temperatura recomendados en la tabla anterior, son:"
+                    "value": "Los valores que debe comprobar, además del pH y la temperatura recomendados en la tabla anterior, son:"
                 },
                 {
                     "type": "medium_text",
@@ -558,29 +558,12 @@
                 {
                     "type": "unordered_list",
                     "items": [
-                        "Nitrito (NO2-) y/o Nitrato (NO3-)",
-                        "Nitrato"
+                        "Compruebe los <strong>parámetros</strong> del agua."
                     ]
                 },
                 {
-                    "type": "medium_text",
-                    "value": "2) <strong>Oxígeno disuelto (DO)</strong>"
-                }
-            ],
-            [
-                {
-                    "type": "medium_text",
-                    "value": "1) Use las <strong>Water Test Strips</strong>"
-                },
-                {
-                    "type": "unordered_list",
-                    "items": [
-                        "Verifique los <strong>parámetros</strong> del <strong>agua</strong>."
-                    ]
-                },
-                {
-                    "type": "medium_image",
-                    "url": "https://app.ciano.pt/images/water_trips_kit.png"
+                    "type": "image",
+                    "url": "https://app.ciano.pt/images/water_test_strips.png"
                 },
                 {
                     "type": "yes_or_no",
@@ -588,18 +571,15 @@
                     "option_yes": [
                         {
                             "type": "text",
-                            "value": "1) Añada el <strong>WATER BIO-BACT</strong>."
+                            "value": "<strong>Para Nitritos (NO2-) y/o Nitratos (NO3-):</strong><br><ol><li>Realice un cambio parcial de agua del 25%;</li><li>Añada Water Conditioner;</li><li>Reduzca la adición de comida;</li><li>Añada Water Bio-Bact</li></ol><br><strong>Para GH:</strong><br><ul><li>Añada WaterGH</li></ul><br><strong>Para KH:</strong><br><ul><li>Añada WATER KH & pH</li></ul><br><strong>Para Cloro:</strong><br><ul><li>Añada WATER CONDITIONER</li></ul><br><strong>Para pH:</strong><br><ul><li>Añada Water KH & pH</li></ul>"
                         }
                     ],
                     "option_no": [
                         {
                             "type": "text",
-                            "value": "1) Siga las instrucciones en la <strong>Guía de Tratamiento del Agua</strong>, tratamiento del agua."
+                            "value": "<strong>¡Acuario en buenas condiciones, pero nunca olvide comprobar frecuentemente los valores de su Acuario!</strong>"
                         }
                     ]
-                },
-                {
-                    "type": "divider"
                 }
             ]
         ]
