@@ -33,6 +33,7 @@ class ProductController extends Controller
     {
         try {
             $products = $this->loadProductFile($language);
+            // dd($products);
 
             if (empty($products)) {
                 return response()->json([
