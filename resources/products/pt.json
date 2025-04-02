@@ -10,7 +10,7 @@
             },
             {
                 "type": "title",
-                "text": "PORQUE medir estes parâmetros?"
+                "text": "PORQUÊ medir estes parâmetros?"
             },
             {
                 "type": "list",
@@ -72,7 +72,7 @@
             },
             {
                 "type": "title",
-                "text": "Em Destaque"
+                "text": "Em Destaque:"
             },
             {
                 "type": "small_image",
@@ -80,7 +80,7 @@
             },
             {
                 "type": "text",
-                "value": "6 testes numa Tira: NO3-, NO2-, GH, Cl2, pH e KH."
+                "value": "<strong>6 testes numa Tira:</strong> NO3-, NO2-, GH, Cl2, pH e KH."
             },
             {
                 "type": "small_image",
@@ -88,7 +88,7 @@
             },
             {
                 "type": "text",
-                "value": "50 Tiras: 300 Testes Individuais."
+                "value": "<strong>50 Tiras:</strong> 300 Testes Individuais."
             },
             {
                 "type": "small_image",
@@ -96,7 +96,7 @@
             },
             {
                 "type": "text",
-                "value": "Utilização: Fácil."
+                "value": "<strong>Utilização:</strong> Fácil."
             },
             {
                 "type": "small_image",
@@ -104,7 +104,7 @@
             },
             {
                 "type": "text",
-                "value": "Rápido: 1 minuto."
+                "value": "<strong>Rápido:</strong> 1 minuto."
             }
         ]
     },
