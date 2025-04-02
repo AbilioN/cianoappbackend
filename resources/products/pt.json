@@ -191,7 +191,7 @@
                 "text": "Em detalhe"
             },
             {
-                "type": "medium_image",
+                "type": "small_image",
                 "url": "https://app.ciano.pt/images/water_test_strips_second.png"
             },
             {
@@ -224,6 +224,895 @@
             }
         ]
     },
+    {
+        "image": "https://app.ciano.pt/images/water_clear_protection_s.png",
+        "name": "WATER CLEAR & PROTECTION \"S\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_clear_protection_s.png"
+            },
+            {
+                "type": "text",
+                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Química;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Mantém a água cristalina."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/prevencao.png"
+            },
+            {
+                "type": "text",
+                "value": "Prevenção: Previne e elimina a cor e os odores."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/algas.png"
+            },
+            {
+                "type": "text",
+                "value": "Algas: Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 30 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_clear_protection_m.png",
+        "name": "WATER CLEAR & PROTECTION \"M\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_clear_protection_m.png"
+            },
+            {
+                "type": "text",
+                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Química;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CF80, CFSTONE80, CFBIO150&250, Magi380*, SuperClean60&90*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Mantém a água cristalina."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/prevencao.png"
+            },
+            {
+                "type": "text",
+                "value": "Prevenção: Previne e elimina a cor e os odores."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/algas.png"
+            },
+            {
+                "type": "text",
+                "value": "Algas: Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 30 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_clear_protection_l.png",
+        "name": "WATER CLEAR & PROTECTION \"L\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_clear_protection_l.png"
+            },
+            {
+                "type": "text",
+                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Química;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CFBIO L CFBIO150&250*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Verificar o tamanho no suporte dos cartuchos"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Mantém a água cristalina."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/prevencao.png"
+            },
+            {
+                "type": "text",
+                "value": "Prevenção: Previne e elimina a cor e os odores."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/algas.png"
+            },
+            {
+                "type": "text",
+                "value": "Algas: Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 30 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_clear_protection_xl.png",
+        "name": "WATER CLEAR & PROTECTION \"XL\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_clear_protection_xl.png"
+            },
+            {
+                "type": "text",
+                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Química;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CFBIO XL"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Mantém a água cristalina."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/prevencao.png"
+            },
+            {
+                "type": "text",
+                "value": "Prevenção: Previne e elimina a cor e os odores."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/algas.png"
+            },
+            {
+                "type": "text",
+                "value": "Algas: Ação preventiva no aparecimento de algas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 30 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_s.png",
+        "name": "WATER BIO-BACT \"S\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_bio_bact_s.png"
+            },
+            {
+                "type": "text",
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Química;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "In detail"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/ecossistema.png"
+            },
+            {
+                "type": "text",
+                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/bacteria.png"
+            },
+            {
+                "type": "text",
+                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 140 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_m.png",
+        "name": "WATER BIO-BACT \"M\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_bio_bact_m.png"
+            },
+            {
+                "type": "text",
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Biológica;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "In detail"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/ecossistema.png"
+            },
+            {
+                "type": "text",
+                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/bacteria.png"
+            },
+            {
+                "type": "text",
+                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 140 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_l.png",
+        "name": "WATER BIO-BACT \"L\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_bio_bact_l.png"
+            },
+            {
+                "type": "text",
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Biológica;",
+                    "Deve ser utilizado diariamente;",
+                    "Compatível com os filtros: CFBIO L, CFBIO150*&250*"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\nVerificar o tamanho no suporte dos cartuchos"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "In detail"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/ecossistema.png"
+            },
+            {
+                "type": "text",
+                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/bacteria.png"
+            },
+            {
+                "type": "text",
+                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade do cartucho: 140 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_foam_xl.png",
+        "name": "WATER FOAM \"XL\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_foam_xl.png"
+            },
+            {
+                "type": "text",
+                "value": "Retém partículas e matéria orgânica existentes na água"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Mecânica;",
+                    "Deve ser utilizado diariamente para uma água sem impurezas;",
+                    "Compatível com os filtros: CFBIO XL"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Retém partículas e matéria orgânica existentes"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/densidade.png"
+            },
+            {
+                "type": "text",
+                "value": "Densidade: 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/esponja.png"
+            },
+            {
+                "type": "text",
+                "value": "Qualidade: Esponja com materias de alta qualidade."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade da esponja: 90 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_foam_coarse_xl.png",
+        "name": "WATER FOAM COARSE \"XL\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_foam_coarse_xl.png"
+            },
+            {
+                "type": "text",
+                "value": "Remove as pequenas e micro partículas presentes na água"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Mecânica;",
+                    "Deve ser utilizado diariamente para uma água sem impurezas;",
+                    "Compatível com os filtros: CFBIO XL"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/agua.png"
+            },
+            {
+                "type": "text",
+                "value": "Água: Retém partículas e matéria orgânica existentes"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/densidade_20.png"
+            },
+            {
+                "type": "text",
+                "value": "Densidade: 20PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade da esponja: 90 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_pad_xl.png",
+        "name": "WATER PAD \"XL\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_pad_xl.png"
+            },
+            {
+                "type": "text",
+                "value": "Remove as pequenas e micro partículas presentes na água"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Filtração Mecânica;",
+                    "Deve ser utilizado diariamente para uma água sem impurezas;",
+                    "Compatível com os filtros: CFBIO XL"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Ao pormenor"
+            },
+            {
+                "type": "text",
+                "value": "Água: Retém partículas e matéria orgânica existentes\nMicro-Filtration: Micro Filtration Pad"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+            },
+            {
+                "type": "text",
+                "value": "Durabilidade da esponja: 15 dias."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_s.png",
+        "name": "FISH PROTECTION DOSATOR \"S\"",
+        "category": "ciano_care",
+        "details": [
+                {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/fish_protection_dosator_s.png"
+                },
+                {
+                "type": "text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+                },
+                {
+                "type": "divider"
+                },
+                {
+                "type": "title",
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®? "
+                },
+                {
+                "type": "text",
+                "value": "Protege as Brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+                },
+                {
+                "type": "divider"
+                },
+                {
+                "type": "title",
+                "text": "Características principais"
+                },
+                {
+                "type": "list",
+                "items": [
+                    "Volume mínimo: 5 L",
+                    "Volume máximo: 40 L",
+                    "Universal com instalação fácil"
+                ]
+                },
+                {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+                },
+                {
+                "type": "text",
+                "value": "O Doseador Fish Protection é UNIVERSAL."
+                },
+                {
+                "type": "list",
+                "items": [
+                    "Proteção contínua com mais eficiência"
+                ]
+                },
+                {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+                },
+                {
+                "type": "text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+                },
+                {
+                "type": "list",
+                "items": [
+                    "Sem consumo de energia!"
+                ]
+                },
+                {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+                },
+                {
+                "type": "text",
+                "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+                },
+                {
+                "type": "youtube",
+                "url": "https://youtu.be/Ld5CXw4i07g?si=93dHdBgJQlxHZQfj"
+                },
+                {
+                "type": "list",
+                "items": [
+                    "Instrução (Aqua+Aquarium)"
+                ]
+                },
+                {
+                "type": "youtube",
+                "url": "https://youtu.be/wPXt1yDTnAg?si=smH9q5_1ofwrhP6Q"
+                },
+                {
+                "type": "list",
+                "items": [
+                    "Instrução (Emotions & Universal)"
+                ]
+                }
+            ]
+        },
+        {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_m.png",
+        "name": "FISH PROTECTION DOSATOR \"M\"",
+        "category": "ciano_care",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/fish_protection_dosator_m.png"
+            },
+            {
+            "type": "text",
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            },
+            {
+            "type": "text",
+            "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Características principais"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Volume mínimo: 40 L",
+                "Volume máximo: 80 L",
+                "Universal com instalação fácil"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            },
+            {
+            "type": "text",
+            "value": "O Doseador Fish Protection é UNIVERSAL."
+            },
+            {
+            "type": "list",
+            "items": [
+                "Proteção contínua com mais eficiência"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            },
+            {
+            "type": "text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Sem consumo de energia!"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+            },
+            {
+            "type": "text",
+            "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+            },
+            {
+            "type": "youtube",
+            "url": "https://youtu.be/Ld5CXw4i07g?si=7xO56TbBD_Jnlv-U"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Instrução (Aqua+Aquarium)"
+            ]
+            },
+            {
+            "type": "youtube",
+            "url": "https://youtu.be/wPXt1yDTnAg?si=3RUv7OdXE7pPYsnB"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Instrução (Emotions & Universal)"
+            ]
+            }
+        ]
+        },
+        {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_l.png",
+        "name": "FISH PROTECTION DOSATOR \"L\"",
+        "category": "ciano_care",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/fish_protection_dosator_l.png"
+            },
+            {
+            "type": "text",
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            },
+            {
+            "type": "text",
+            "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Características principais"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Volume mínimo: 60 L",
+                "Volume máximo: 100 L",
+                "Universal com instalação fácil"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            },
+            {
+            "type": "text",
+            "value": "O Doseador Fish Protection é UNIVERSAL."
+            },
+            {
+            "type": "list",
+            "items": [
+                "Proteção contínua com mais eficiência"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            },
+            {
+            "type": "text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Sem consumo de energia!"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+            },
+            {
+            "type": "text",
+            "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+            },
+            {
+            "type": "youtube",
+            "url": "https://youtu.be/Ld5CXw4i07g?si=fFW28g4brUWsHVQ7"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Instrução (Aqua+Aquarium)"
+            ]
+            },
+            {
+            "type": "youtube",
+            "url": "https://youtu.be/wPXt1yDTnAg?si=nTlHEQ6Ok71IZUrv"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Instrução (Emotions & Universal)"
+            ]
+            }
+        ]
+    },
+
+    
     {
         "image": "https://app.ciano.pt/images/emotions_one_100.png",
         "name": "EMOTIONS ONE 100",
@@ -1880,444 +2769,7 @@
         ]
     },
     
-    {
-        "image": "https://app.ciano.pt/images/water_clear_protection_s.png",
-        "name": "WATER CLEAR & PROTECTION \"S\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_clear_protection_s.png"
-            },
-            {
-                "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Química;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Ao pormenor"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
-            },
-            {
-                "type": "text",
-                "value": "Água: Mantém a água cristalina."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/prevencao.png"
-            },
-            {
-                "type": "text",
-                "value": "Prevenção: Previne e elimina a cor e os odores."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/algas.png"
-            },
-            {
-                "type": "text",
-                "value": "Algas: Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 30 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_clear_protection_m.png",
-        "name": "WATER CLEAR & PROTECTION \"M\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_clear_protection_m.png"
-            },
-            {
-                "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Química;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CF80, CFSTONE80, CFBIO150&250, Magi380*, SuperClean60&90*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Ao pormenor"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
-            },
-            {
-                "type": "text",
-                "value": "Água: Mantém a água cristalina."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/prevencao.png"
-            },
-            {
-                "type": "text",
-                "value": "Prevenção: Previne e elimina a cor e os odores."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/algas.png"
-            },
-            {
-                "type": "text",
-                "value": "Algas: Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 30 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_clear_protection_l.png",
-        "name": "WATER CLEAR & PROTECTION \"L\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_clear_protection_l.png"
-            },
-            {
-                "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Química;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CFBIO L CFBIO150&250*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Verificar o tamanho no suporte dos cartuchos"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Ao pormenor"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
-            },
-            {
-                "type": "text",
-                "value": "Água: Mantém a água cristalina."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/prevencao.png"
-            },
-            {
-                "type": "text",
-                "value": "Prevenção: Previne e elimina a cor e os odores."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/algas.png"
-            },
-            {
-                "type": "text",
-                "value": "Algas: Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 30 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_clear_protection_xl.png",
-        "name": "WATER CLEAR & PROTECTION \"XL\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_clear_protection_xl.png"
-            },
-            {
-                "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Química;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CFBIO XL"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Ao pormenor"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
-            },
-            {
-                "type": "text",
-                "value": "Água: Mantém a água cristalina."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/prevencao.png"
-            },
-            {
-                "type": "text",
-                "value": "Prevenção: Previne e elimina a cor e os odores."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/algas.png"
-            },
-            {
-                "type": "text",
-                "value": "Algas: Ação preventiva no aparecimento de algas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 30 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_bio_bact_s.png",
-        "name": "WATER BIO-BACT \"S\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_bio_bact_s.png"
-            },
-            {
-                "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Química;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "In detail"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/ecossistema.png"
-            },
-            {
-                "type": "text",
-                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/bacteria.png"
-            },
-            {
-                "type": "text",
-                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 140 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_bio_bact_m.png",
-        "name": "WATER BIO-BACT \"M\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_bio_bact_m.png"
-            },
-            {
-                "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Biológica;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "In detail"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/ecossistema.png"
-            },
-            {
-                "type": "text",
-                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/bacteria.png"
-            },
-            {
-                "type": "text",
-                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 140 dias."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/water_bio_bact_l.png",
-        "name": "WATER BIO-BACT \"L\"",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_bio_bact_l.png"
-            },
-            {
-                "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Filtração Biológica;",
-                    "Deve ser utilizado diariamente;",
-                    "Compatível com os filtros: CFBIO L, CFBIO150*&250*"
-                ]
-            },
-            {
-                "type": "text",
-                "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\nVerificar o tamanho no suporte dos cartuchos"
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "In detail"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/ecossistema.png"
-            },
-            {
-                "type": "text",
-                "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/bacteria.png"
-            },
-            {
-                "type": "text",
-                "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
-            },
-            {
-                "type": "text",
-                "value": "Durabilidade do cartucho: 140 dias."
-            }
-        ]
-    },
+ 
     {
         "image": "https://app.ciano.pt/images/tartarium_40.png",
         "name": "TARTARIUM 40",
@@ -2674,5 +3126,296 @@
             "value": "CFStone (opcional)"
         }
     ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_s.png",
+        "name": "FISH PROTECTION DOSATOR \"S\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/fish_protection_dosator_s.png"
+            },
+            {
+                "type": "text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®? "
+            },
+            {
+                "type": "text",
+                "value": "Protege as Brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Características principais"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Volume mínimo: 5 L",
+                    "Volume máximo: 40 L",
+                    "Universal com instalação fácil"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish Protection é UNIVERSAL."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Proteção contínua com mais eficiência"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            },
+            {
+                "type": "text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Sem consumo de energia!"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/Ld5CXw4i07g?si=93dHdBgJQlxHZQfj"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Aqua+Aquarium)"
+                ]
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/wPXt1yDTnAg?si=smH9q5_1ofwrhP6Q"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Emotions & Universal)"
+                ]
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_m.png",
+        "name": "FISH PROTECTION DOSATOR \"M\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/fish_protection_dosator_m.png"
+            },
+            {
+                "type": "text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            },
+            {
+                "type": "text",
+                "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Características principais"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Volume mínimo: 40 L",
+                    "Volume máximo: 80 L",
+                    "Universal com instalação fácil"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish Protection é UNIVERSAL."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Proteção contínua com mais eficiência"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            },
+            {
+                "type": "text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Sem consumo de energia!"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/Ld5CXw4i07g?si=7xO56TbBD_Jnlv-U"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Aqua+Aquarium)"
+                ]
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/wPXt1yDTnAg?si=3RUv7OdXE7pPYsnB"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Emotions & Universal)"
+                ]
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/fish_protection_dosator_l.png",
+        "name": "FISH PROTECTION DOSATOR \"L\"",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/fish_protection_dosator_l.png"
+            },
+            {
+                "type": "text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            },
+            {
+                "type": "text",
+                "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Características principais"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Volume mínimo: 60 L",
+                    "Volume máximo: 100 L",
+                    "Universal com instalação fácil"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish Protection é UNIVERSAL."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Proteção contínua com mais eficiência"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            },
+            {
+                "type": "text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Sem consumo de energia!"
+                ]
+            },
+            {
+                "type": "medium_image",
+                "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
+            },
+            {
+                "type": "text",
+                "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/Ld5CXw4i07g?si=fFW28g4brUWsHVQ7"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Aqua+Aquarium)"
+                ]
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/wPXt1yDTnAg?si=nTlHEQ6Ok71IZUrv"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Instrução (Emotions & Universal)"
+                ]
+            }
+        ]
     }
 ]
