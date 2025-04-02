@@ -393,7 +393,7 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Effettua un cambio d'acqua del 25% <strong>Water Test Strips</strong> <br> <ul><li>Aggiungi <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Effettua un cambio d'acqua del 25% <br> <ul><li>Aggiungi <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
@@ -401,7 +401,7 @@
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Sostituisci <strong>Water Clean & Protection</strong> <br> <ul><li>Sostituisci la cartuccia WATER CLEAR & PROTECTION se non la usi aggiungi WATER CLEAR & PROTECTION liquido.</li></ul>"
+                    "value": "3) Sostituisci <strong>Water Clear & Protection</strong> <br> <ul><li>Sostituisci la cartuccia WATER CLEAR & PROTECTION se non la usi aggiungi WATER CLEAR & PROTECTION liquido.</li></ul>"
                 },
                 {
                     "type": "notification_button",

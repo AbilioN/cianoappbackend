@@ -393,15 +393,15 @@
             [
                 {
                     "type": "medium_text",
-                    "value": "1) Faça uma troca de água de 25% <strong>Water Test Strips</strong> <br> <ul><li> Adicione o <strong>WATER CONDITIONER</strong>;</li></ul>"
+                    "value": "1) Faça uma troca de água de 25% <br> <ul><li> Adicione o <strong>WATER CONDITIONER</strong>;</li></ul>"
                 },
                 {
                     "type": "medium_text",
-                    "value": "2) Limpe <strong>Water Foam</strong> <br> <ul><li>Limpe a <strong>WATER FOAM</strong> e tudo oque achar necessário.</li></ul>"
+                    "value": "2) Limpe <strong>Water Foam</strong> <br> <ul><li>Limpe a <strong>WATER FOAM</strong> e tudo o que achar necessário.</li></ul>"
                 },
                 {
                     "type": "medium_text",
-                    "value": "3) Substitua o  <strong>Water Clean & Protection</strong> <br> <ul><li>Substitua o cartucho WATER CLEAR & PROTECTION se não utiliza adicione WATER CLEAR & PROTECTION líquido.</li></ul>"
+                    "value": "3) Substitua o  <strong>Water Clear & Protection</strong> <br> <ul><li>Substitua o cartucho WATER CLEAR & PROTECTION se não utiliza adicione WATER CLEAR & PROTECTION líquido.</li></ul>"
                 },
                 {
                     "type": "notification_button",
