@@ -1,6 +1,115 @@
 [
     {
         "image": "https://app.ciano.pt/images/water_test_strips.png",
+        "name": "WATER TEST STRIPS 6 IN 1",
+        "category": "ciano_care",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/water_test_strips.png"
+            },
+            {
+                "type": "title",
+                "text": "PORQUE medir estes parâmetros?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "NO3- (Nitrato) e NO2- (Nitrito): Indicação do funcionamento dos processos de filtração bilógica.",
+                    "GH (Dureza Geral): Indicação do conteúdo em substâncias minerais (magnésio e cálcio).",
+                    "Cl2 (Cloro): Indicação do teor de cloro contido na água da torneira prejudicial aos peixes.",
+                    "pH: O valor de pH indica o grau de acidez na água.",
+                    "KH: (Dureza carbonatada): Importante na estabilização do valor de pH."
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "COMO medir?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "1) Mergulhar a tira de teste por 5 segundos;",
+                    "2) Sacudir a tira de teste para remover o excesso de água;",
+                    "3) Aguardar 30 segundos;",
+                    "4) Posicionar a tira de teste na zona correta do frasco e fazer a leitura dos valores comparando as cores obtidas com a escala de cores do frasco. Verificar o significado dos valores obtidos na tabela incluída e conselhos para ações corretivas. Para informação mais detalhada, consultar o guia 'CIANO CARE';"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "QUANDO medir?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Fazer medição da água, no mínimo, a cada 15 dias.",
+                    "Seguir indicações do guia 'CIANO CARE'."
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Informação técnica?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Quantidade: 50 unidades.",
+                    "Água: Água doce.",
+                    "Contém: 300 testes individuais."
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Em Destaque"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/6_em_1.png"
+            },
+            {
+                "type": "text",
+                "value": "6 testes numa Tira: NO3-, NO2-, GH, Cl2, pH e KH."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/50_tiras.png"
+            },
+            {
+                "type": "text",
+                "value": "50 Tiras: 300 Testes Individuais."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/facil.png"
+            },
+            {
+                "type": "text",
+                "value": "Utilização: Fácil."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/rapido.png"
+            },
+            {
+                "type": "text",
+                "value": "Rápido: 1 minuto."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_test_strips.png",
         "name": "WATER TEST STRIPS",
         "category": "ciano_care",
         "details": [
@@ -1770,115 +1879,7 @@
             }
         ]
     },
-    {
-        "image": "https://app.ciano.pt/images/water_test_strips.png",
-        "name": "WATER TEST STRIPS 6 IN 1",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/water_test_strips.png"
-            },
-            {
-                "type": "title",
-                "text": "PORQUE medir estes parâmetros?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "NO3- (Nitrato) e NO2- (Nitrito): Indicação do funcionamento dos processos de filtração bilógica.",
-                    "GH (Dureza Geral): Indicação do conteúdo em substâncias minerais (magnésio e cálcio).",
-                    "Cl2 (Cloro): Indicação do teor de cloro contido na água da torneira prejudicial aos peixes.",
-                    "pH: O valor de pH indica o grau de acidez na água.",
-                    "KH: (Dureza carbonatada): Importante na estabilização do valor de pH."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "COMO medir?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "1) Mergulhar a tira de teste por 5 segundos;",
-                    "2) Sacudir a tira de teste para remover o excesso de água;",
-                    "3) Aguardar 30 segundos;",
-                    "4) Posicionar a tira de teste na zona correta do frasco e fazer a leitura dos valores comparando as cores obtidas com a escala de cores do frasco. Verificar o significado dos valores obtidos na tabela incluída e conselhos para ações corretivas. Para informação mais detalhada, consultar o guia 'CIANO CARE';"
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "QUANDO medir?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Fazer medição da água, no mínimo, a cada 15 dias.",
-                    "Seguir indicações do guia 'CIANO CARE'."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Informação técnica?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Quantidade: 50 unidades.",
-                    "Água: Água doce.",
-                    "Contém: 300 testes individuais."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Em Destaque"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/6_em_1.png"
-            },
-            {
-                "type": "text",
-                "value": "6 testes numa Tira: NO3-, NO2-, GH, Cl2, pH e KH."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/50_tiras.png"
-            },
-            {
-                "type": "text",
-                "value": "50 Tiras: 300 Testes Individuais."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/facil.png"
-            },
-            {
-                "type": "text",
-                "value": "Utilização: Fácil."
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/rapido.png"
-            },
-            {
-                "type": "text",
-                "value": "Rápido: 1 minuto."
-            }
-        ]
-    },
+    
     {
         "image": "https://app.ciano.pt/images/water_clear_protection_s.png",
         "name": "WATER CLEAR & PROTECTION \"S\"",

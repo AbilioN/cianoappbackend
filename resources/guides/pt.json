@@ -560,7 +560,7 @@
                     "value": "1) Use o <strong>Water Test Strips</strong>"
                 },
                 {
-                    "type": "unordered_list",
+                    "type": "list",
                     "items": [
                         "Verifique os <strong>parâmetros</strong> da <strong>água</strong>."
                     ]
