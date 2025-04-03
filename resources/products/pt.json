@@ -109,122 +109,6 @@
         ]
     },
     {
-        "image": "https://app.ciano.pt/images/water_test_strips.png",
-        "name": "WATER TEST STRIPS",
-        "category": "ciano_care",
-        "details": [
-            {
-                "type": "image",
-                "url": "https://app.ciano.pt/images/water_test_strips.png"
-            },
-            {
-                "type": "text",
-                "value": "O CIANO® 6 in 1 TEST STRIPS é um método simples, rápido e preciso para determinar os 6 parâmetros mais importantes da água do aquário de água doce: NO3-, NO2-, GH, Cl2, pH e KH."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "PORQUE é que estes parâmetros devem ser medidos?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "NO3-(Nitrato) e NO2-(Nitrito): indicação do funcionamento dos processos de filtração biológica.",
-                    "GH (Dureza Geral): indicação do teor em substâncias minerais (magnésio e cálcio).",
-                    "Cl2 (Cloro): indicação do teor de cloro na água da torneira que é nocivo para os peixes.",
-                    "pH: o valor do pH indica a acidez da água.",
-                    "KH (Dureza Carbonatada): importante na estabilização do valor do pH."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "COMO é que se mede?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "1. Mergulhar uma tira na água para testar durante 5 segundos;",
-                    "2. Agitar a tira para retirar o excesso de água;",
-                    "3. Aguardar 30 segundos;",
-                    "4. Colocar a tira de teste na posição correta no frasco para fazer a leitura, comparando as cores obtidas com a escala de cores do frasco. Verificar o significado das leituras na tabela incluída e ler os conselhos sobre as medidas corretivas a tomar. Para informações mais pormenorizadas, consultar o guia \"CIANO CARE\"."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "QUANDO é que se deve medir?"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Medir os parâmetros da água pelo menos uma vez de 15 em 15 dias;",
-                    "Seguir o guia \"CIANO CARE\"."
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Informações técnicas"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "Quantidade: 50un",
-                    "Água: Água doce",
-                    "Para: 300 testes individuais"
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Em detalhe"
-            },
-            {
-                "type": "small_image",
-                "url": "https://app.ciano.pt/images/water_test_strips_second.png"
-            },
-            {
-                "type": "title",
-                "text": "6 testes em tira: NO3-, NO2-, GH, Cl2, pH e KH"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/water_test_strips_third.png"
-            },
-            {
-                "type": "title",
-                "text": "50 tiras: 300 testes individuais"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/water_test_strips_fourth.png"
-            },
-            {
-                "type": "title",
-                "text": "Utilização: Fácil"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/water_test_strips_fifth.png"
-            },
-            {
-                "type": "title",
-                "text": "Rápido: 1 minuto"
-            }
-        ]
-    },
-    {
         "image": "https://app.ciano.pt/images/water_clear_protection_s.png",
         "name": "WATER CLEAR & PROTECTION \"S\"",
         "category": "ciano_care",
@@ -234,7 +118,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_s.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -660,6 +544,64 @@
                 "type": "text",
                 "value": "Durabilidade do cartucho: 140 dias."
             }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_xl.png",
+        "name": "WATER BIO-BACT \"XL\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_xl.png"
+          },
+          {
+            "type": "text",
+            "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Biológica;",
+              "Deve ser utilizado diariamente;",
+              "Compatível com os filtros: CFBIO XL"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "In detail"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "Ecossistema: Ecossistema perfeito para os peixes e plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bactéria.png"
+          },
+          {
+            "type": "text",
+            "value": "Bactéria: Excelente habitat para bactérias nitrificantes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "Durabilidade do cartucho: 140 dias."
+          }
         ]
     },
     {
