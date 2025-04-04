@@ -10,7 +10,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "PORQUÊ medir estes parâmetros?"
+                "text": "PORQUÊ medir estes parâmetros?"
             },
             {
                 "type": "list",
@@ -27,7 +27,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "COMO medir?"
+                "text": "COMO medir?"
             },
             {
                 "type": "list",
@@ -43,7 +43,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "QUANDO medir?"
+                "text": "QUANDO medir?"
             },
             {
                 "type": "list",
@@ -57,7 +57,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Informação técnica?"
+                "text": "Informação técnica?"
             },
             {
                 "type": "list",
@@ -72,14 +72,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Em Destaque:"
+                "text": "Em Destaque:"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/6_em_1.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>6 testes numa Tira:</strong> NO3-, NO2-, GH, Cl2, pH e KH."
             },
             {
@@ -87,7 +87,7 @@
                 "url": "https://app.ciano.pt/images/50_tiras.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>50 Tiras:</strong> 300 Testes Individuais."
             },
             {
@@ -95,7 +95,7 @@
                 "url": "https://app.ciano.pt/images/facil.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Utilização:</strong> Fácil."
             },
             {
@@ -103,7 +103,7 @@
                 "url": "https://app.ciano.pt/images/rapido.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Rápido:</strong> 1 minuto."
             }
         ]
@@ -118,7 +118,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_s.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -138,14 +138,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -153,7 +153,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -161,7 +161,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -169,7 +169,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -184,7 +184,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_m.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -204,14 +204,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -219,7 +219,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -227,7 +227,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -235,7 +235,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -250,7 +250,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_l.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -270,14 +270,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -285,7 +285,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -293,7 +293,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -301,7 +301,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -316,7 +316,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_xl.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -336,14 +336,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -351,7 +351,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -359,7 +359,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -367,7 +367,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -382,7 +382,7 @@
                 "url": "https://app.ciano.pt/images/water_bio_bact_s.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
             },
             {
@@ -402,14 +402,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "In detail"
+                "text": "In detail"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -417,7 +417,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -425,7 +425,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -440,7 +440,7 @@
                 "url": "https://app.ciano.pt/images/water_bio_bact_m.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
             },
             {
@@ -460,14 +460,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "In detail"
+                "text": "In detail"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -475,7 +475,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -483,7 +483,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -498,7 +498,7 @@
                 "url": "https://app.ciano.pt/images/water_bio_bact_l.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
             },
             {
@@ -518,14 +518,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "In detail"
+                "text": "In detail"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -533,7 +533,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -541,7 +541,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -556,7 +556,7 @@
             "url": "https://app.ciano.pt/images/water_bio_bact_xl.png"
           },
           {
-            "type": "medium_text",
+            "type": "text",
             "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
           },
           {
@@ -576,14 +576,14 @@
           },
           {
             "type": "title",
-            "medium_text": "In detail"
+            "text": "In detail"
           },
           {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/ecossistema.png"
           },
           {
-            "type": "medium_text",
+            "type": "text",
             "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
           },
           {
@@ -591,7 +591,7 @@
             "url": "https://app.ciano.pt/images/bacteria.png"
           },
           {
-            "type": "medium_text",
+            "type": "text",
             "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
           },
           {
@@ -599,7 +599,7 @@
             "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
           },
           {
-            "type": "medium_text",
+            "type": "text",
             "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
           }
         ]
@@ -812,7 +812,7 @@
                 "url": "https://app.ciano.pt/images/water_foam_xl.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Retém partículas e matéria orgânica existentes na água"
             },
             {
@@ -828,14 +828,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
             },
             {
@@ -851,7 +851,7 @@
                 "url": "https://app.ciano.pt/images/esponja.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
             },
             {
@@ -859,7 +859,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
             }
         ]
@@ -874,7 +874,7 @@
                 "url": "https://app.ciano.pt/images/water_foam_coarse_xl.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Remove as pequenas e micro partículas presentes na água"
             },
             {
@@ -890,14 +890,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Água: Retém partículas e matéria orgânica existentes"
             },
             {
@@ -905,7 +905,7 @@
                 "url": "https://app.ciano.pt/images/densidade_20.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Densidade: 20PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
             },
             {
@@ -913,7 +913,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Durabilidade da esponja: 90 dias."
             }
         ]
@@ -928,7 +928,7 @@
                 "url": "https://app.ciano.pt/images/water_pad_xl.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Remove as pequenas e micro partículas presentes na água"
             },
             {
@@ -944,10 +944,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao pormenor"
+                "text": "Ao pormenor"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes\n<strong>Micro-Filtration:</strong> Micro Filtration Pad"
             },
             {
@@ -955,7 +955,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Durabilidade da esponja:</strong> 15 dias."
             }
         ]
@@ -970,7 +970,7 @@
                 "url": "https://app.ciano.pt/images/fish_protection_dosator_s.png"
                 },
                 {
-                "type": "medium_text",
+                "type": "text",
                 "value": "<strong>Proteção:</strong> de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
                 },
                 {
@@ -978,10 +978,10 @@
                 },
                 {
                 "type": "title",
-                "medium_text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®? "
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®? "
                 },
                 {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Protege as Brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
                 },
                 {
@@ -989,7 +989,7 @@
                 },
                 {
                 "type": "title",
-                "medium_text": "Características principais"
+                "text": "Características principais"
                 },
                 {
                 "type": "list",
@@ -1004,7 +1004,7 @@
                 "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
                 },
                 {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Fish Protection é UNIVERSAL."
                 },
                 {
@@ -1018,7 +1018,7 @@
                 "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
                 },
                 {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
                 },
                 {
@@ -1032,7 +1032,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
                 },
                 {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
                 },
                 {
@@ -1067,7 +1067,7 @@
             "url": "https://app.ciano.pt/images/fish_protection_dosator_m.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
             },
             {
@@ -1075,10 +1075,10 @@
             },
             {
             "type": "title",
-            "medium_text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
             },
             {
@@ -1086,7 +1086,7 @@
             },
             {
             "type": "title",
-            "medium_text": "Características principais"
+            "text": "Características principais"
             },
             {
             "type": "list",
@@ -1101,7 +1101,7 @@
             "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1115,7 +1115,7 @@
             "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1129,7 +1129,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1164,7 +1164,7 @@
             "url": "https://app.ciano.pt/images/fish_protection_dosator_l.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
             },
             {
@@ -1172,10 +1172,10 @@
             },
             {
             "type": "title",
-            "medium_text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+            "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
             },
             {
@@ -1183,7 +1183,7 @@
             },
             {
             "type": "title",
-            "medium_text": "Características principais"
+            "text": "Características principais"
             },
             {
             "type": "list",
@@ -1198,7 +1198,7 @@
             "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1212,7 +1212,7 @@
             "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1226,7 +1226,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1261,7 +1261,7 @@
                 "url": "https://app.ciano.pt/images/fish_protection_dosator_xl.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
             },
             {
@@ -1269,10 +1269,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
+                "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
             },
             {
@@ -1280,7 +1280,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Características principais"
+                "text": "Características principais"
             },
             {
                 "type": "list",
@@ -1295,7 +1295,7 @@
                 "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1309,7 +1309,7 @@
                 "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1323,7 +1323,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1359,14 +1359,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Um reforço para todos os tipos de plantas."
+                "text": "Um reforço para todos os tipos de plantas."
             },
             {
                 "type": "divider"
             },
             {
                 "type": "title",
-                "medium_text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
+                "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
                 "type": "list",
@@ -1382,7 +1382,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Características principais"
+                "text": "Características principais"
             },
             {
                 "type": "list",
@@ -1397,7 +1397,7 @@
                 "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1411,7 +1411,7 @@
                 "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1425,7 +1425,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1461,14 +1461,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Um reforço para todos os tipos de plantas."
+                "text": "Um reforço para todos os tipos de plantas."
             },
             {
                 "type": "divider"
             },
             {
                 "type": "title",
-                "medium_text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
+                "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
                 "type": "list",
@@ -1484,7 +1484,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Características principais"
+                "text": "Características principais"
             },
             {
                 "type": "list",
@@ -1499,7 +1499,7 @@
                 "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1513,7 +1513,7 @@
                 "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1527,7 +1527,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1563,14 +1563,14 @@
             },
             {
             "type": "title",
-            "medium_text": "Um reforço para todos os tipos de plantas."
+            "text": "Um reforço para todos os tipos de plantas."
             },
             {
             "type": "divider"
             },
             {
             "type": "title",
-            "medium_text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
+            "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
             "type": "list",
@@ -1586,7 +1586,7 @@
             },
             {
             "type": "title",
-            "medium_text": "Características principais"
+            "text": "Características principais"
             },
             {
             "type": "list",
@@ -1601,7 +1601,7 @@
             "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1615,7 +1615,7 @@
             "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1629,7 +1629,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1665,14 +1665,14 @@
             },
             {
             "type": "title",
-            "medium_text": "Um reforço para todos os tipos de plantas."
+            "text": "Um reforço para todos os tipos de plantas."
             },
             {
             "type": "divider"
             },
             {
             "type": "title",
-            "medium_text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
+            "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
             "type": "list",
@@ -1688,7 +1688,7 @@
             },
             {
             "type": "title",
-            "medium_text": "Características principais"
+            "text": "Características principais"
             },
             {
             "type": "list",
@@ -1703,7 +1703,7 @@
             "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1717,7 +1717,7 @@
             "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
             },
             {
@@ -1731,7 +1731,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1766,15 +1766,15 @@
             "url": "https://app.ciano.pt/images/water_clear_&_protection.png"
             },
             {
-            "type": "medium_text",
-            "medium_text": "Water Clear & Protection transforma rapidamente a água turva cristalina, própria para o aquário."
+            "type": "text",
+            "text": "Water Clear & Protection transforma rapidamente a água turva cristalina, própria para o aquário."
             },
             {
             "type": "divider"
             },
             {
             "type": "title",
-            "medium_text": "PORQUÊ utilizar WATER CLEAR & PROTECTION CIANO®?"
+            "text": "PORQUÊ utilizar WATER CLEAR & PROTECTION CIANO®?"
             },
             {
             "type": "list",
@@ -1787,7 +1787,7 @@
             },
             {
             "type": "title",
-            "medium_text": "COMO utilizar?"
+            "text": "COMO utilizar?"
             },
             {
             "type": "list",
@@ -1801,14 +1801,14 @@
             },
             {
             "type": "title",
-            "medium_text": "Ao pormenor"
+            "text": "Ao pormenor"
             },
             {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/agua_cristalina.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Água: Mantém a água cristalina."
             },
             {
@@ -1816,7 +1816,7 @@
             "url": "https://app.ciano.pt/images/turbidez.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Turbidez: Remove a turbidez microfina."
             },
             {
@@ -1824,7 +1824,7 @@
             "url": "https://app.ciano.pt/images/prevenção_cores.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Prevenção: Previne e elimina as cores da água"
             },
             {
@@ -1832,7 +1832,7 @@
             "url": "https://app.ciano.pt/images/uso_regular.png"
             },
             {
-            "type": "medium_text",
+            "type": "text",
             "value": "Uso regular: Mensalmente"
             }
         ]
@@ -1847,7 +1847,7 @@
                 "url": "https://app.ciano.pt/images/emotions_one_100.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Emotions Nature One 100 é um aquário de excelência totalmente equipado, detentor de um design único e materiais de alta qualidade. O Emotions One surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa friltração mecânica, biologica e química. Incluem um sistema de iluminação com LED mais econômico e qualidade de luz. Os seus detalhes fazem do Emotions One um aquário ímpar no mundo da aquariofilia."
             },
             {
@@ -1881,7 +1881,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Tampa inovadora e sofisticada"
+                "text": "Tampa inovadora e sofisticada"
             }
         ]
     },
@@ -1895,7 +1895,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_40.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 40 reafirma a sua linha de aquário e combina elegância com tecnologia. A filtração CFBIO 'L' Ciano® assegura uma ótima renovação de água e uma manutenção perfeita do equilíbrio aquático. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k. O tamanho do Emotions Pro 40 adapta-se a qualquer espaço da sua casa."
             },
             {
@@ -1903,7 +1903,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -1928,10 +1928,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de Filtração CFBIO L"
+                "text": "Sistema de Filtração CFBIO L"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário é equipado com um sistema de filtração biológico CFBIO 'L' Ciano®, com mais poder de filtração devido à sua filtração horizontal (massas filtrantes). O filtro é equipado com um motor de alta performance 260 l/h, um aquecedor eficiente de 50W e os consumíveis (1 Water Clear & Protection 'L', 1 Water Bio-Bact 'L' e 1 Water Foam 'L') para uma filtração química, biológica e mecânica. Como opção é possível juntar um termómetro digital completamente imersível com sensor integrado."
             },
             {
@@ -1943,10 +1943,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económico, Potente, Regulável e Universal são as características do novo CLE40 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
             },
             {
@@ -1958,10 +1958,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário, facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -1976,7 +1976,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_150.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 150 reafirma a sua linha de aquário e combina elegância com tecnologia. O Emotions Pro surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa filtração mecânica, biológica e química. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k."
             },
             {
@@ -1984,7 +1984,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2011,10 +2011,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de Filtração CFBIO XL"
+                "text": "Sistema de Filtração CFBIO XL"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário é equipado com o nosso potente sistema de filtração biológico CFBIO XL Ciano®, com uma maior capacidade de filtração e eficiência. O filtro é totalmente equipado com um motor de alta performance MÁX. 850 l/h, um aquecedor eficiente, um termómetro digital completamente imersível com sensor integrado (opção) e os consumíveis (2 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\", and 1 x Water Pad \"XL\"), para uma filtração química, biológica e mecânica."
             },
             {
@@ -2026,10 +2026,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económico, Potente, Regulável e Universal são as características do novo CLE150 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
             },
             {
@@ -2041,10 +2041,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -2059,7 +2059,7 @@
                 "url": "https://app.ciano.pt/images/nexus_pure_15.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Pureza, elegância, harmonia, decoração e inovação: a fusão destas palavras dá origem ao aquário Nexus Pure 15, criado a pensar em si e no seu bem-estar. Equipado com a mais recente tecnologia, o Nexus Pure 15 inclui iluminação LED e um sistema de filtragem muito eficiente Ciano®."
             },
             {
@@ -2067,7 +2067,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2084,7 +2084,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "CARACTERÍSTICAS PRINCIPAIS"
+                "text": "CARACTERÍSTICAS PRINCIPAIS"
             },
             {
                 "type": "medium_image",
@@ -2092,10 +2092,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Design elegante, harmonioso e decorativo"
+                "text": "Design elegante, harmonioso e decorativo"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Destaca-se o seu design em forma de cubo com cantos polidos, o que mostra a sua excelência em qualidade e decoração, que transmitirá tranquilidade em qualquer lugar, seja numa sala de casa ou no local de trabalho."
             },
             {
@@ -2107,10 +2107,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de filtragem de alto rendimento"
+                "text": "Sistema de filtragem de alto rendimento"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Para uma manutenção fácil, o Nexus 15 está equipado com o sistema de filtragem interna CF40 Ciano®, optimizado para reduzir o stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e uma maior oxigenação."
             },
             {
@@ -2122,10 +2122,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Suporte de iluminação simples e elegante"
+                "text": "Suporte de iluminação simples e elegante"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Integrado no Nexus 15 está um suporte de iluminação LED, que inclui o CLA20 Ciano®, um sistema de iluminação de baixa tensão certificado para total segurança, garantindo uma iluminação natural e um baixo consumo de energia."
             }
         ]
@@ -2140,7 +2140,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_60.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 60 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K. O tamanho do Emotions® PRO 60 adapta-se a qualquer espaço da sua casa."
             },
             {
@@ -2148,7 +2148,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos incluídos"
+                "text": "Equipamentos incluídos"
             },
             {
                 "type": "list",
@@ -2175,10 +2175,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de Filtração CFBIO XL"
+                "text": "Sistema de Filtração CFBIO XL"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário está equipado com o nosso potente sistema de filtragem biológica CFBIO XL Ciano®, com maior capacidade de filtragem e eficiência. O filtro está totalmente equipado com um motor de alto desempenho MAX 850 L/H , um aquecedor eficiente, um termómetro digital totalmente imersível com um sensor integrado (opção) e consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\" e 1 x Water Pad \"XL\"), para filtragem química, biológica e mecânica."
             },
             {
@@ -2190,10 +2190,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE60 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
             },
             {
@@ -2205,10 +2205,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é caraterístico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, em que se destacam as caixilharias em alumínio lacado. A tampa permite o acesso total ao aquário, facilitando a sua manutenção. Como opção, pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -2223,7 +2223,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_80.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 80 reafirma a sua linha de aquário e combina elegância com tecnologia. O Emotions Pro surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa filtração mecânica, biológica e química. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k."
             },
             {
@@ -2231,7 +2231,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos incluídos"
+                "text": "Equipamentos incluídos"
             },
             {
                 "type": "list",
@@ -2258,10 +2258,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de Filtração CFBIO XL"
+                "text": "Sistema de Filtração CFBIO XL"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário é equipado com o nosso potente sistema de filtração biológico CFBIO XL Ciano®, com uma maior capacidade de filtração e eficiência. O filtro é totalmente equipado com um motor de alta performance MÁX. 850 l/h, um aquecedor eficiente, um termómetro digital completamente imersível com sensor integrado (opção) e os consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\", and 1 x Water Pad \"XL\"), para uma filtração química, biológica e mecânica."
             },
             {
@@ -2273,10 +2273,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económico, Potente, Regulável e Universal são as características do novo CLE80 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
             },
             {
@@ -2288,10 +2288,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -2306,7 +2306,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_100.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 100 reafirma a sua linha de aquário e combina elegância com tecnologia. O Emotions Pro surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa filtração mecânica, biológica e química. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k."
             },
             {
@@ -2314,7 +2314,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos incluídos"
+                "text": "Equipamentos incluídos"
             },
             {
                 "type": "list",
@@ -2341,10 +2341,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de Filtração CFBIO XL"
+                "text": "Sistema de Filtração CFBIO XL"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário é equipado com o nosso potente sistema de filtração biológico CFBIO XL Ciano®, com uma maior capacidade de filtração e eficiência. O filtro é totalmente equipado com um motor de alta performance MÁX. 850 l/h, um aquecedor eficiente, um termómetro digital completamente imersível com sensor integrado (opção) e os consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\", and 1 x Water Pad \"XL\"), para uma filtração química, biológica e mecânica."
             },
             {
@@ -2356,10 +2356,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económico, Potente, Regulável e Universal são as características do novo CLE100 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
             },
             {
@@ -2371,10 +2371,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -2389,7 +2389,7 @@
                 "url": "https://app.ciano.pt/images/emotions_pro_120.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O novo Emotions Pro 120 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K."
             },
             {
@@ -2397,7 +2397,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos incluídos"
+                "text": "Equipamentos incluídos"
             },
             {
                 "type": "list",
@@ -2424,10 +2424,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema de filtragem CFBIO XL"
+                "text": "Sistema de filtragem CFBIO XL"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O aquário está equipado com o nosso potente sistema de filtragem biológica CFBIO XL Ciano®, com maior capacidade de filtragem e eficiência. O filtro está totalmente equipado com um motor de alto desempenho MAX 850 L/H , um aquecedor eficiente, um termómetro digital totalmente imersível com um sensor integrado (opção) e consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\" e 1 x Water Pad \"XL\"), para filtragem química, biológica e mecânica."
             },
             {
@@ -2439,10 +2439,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema LED Ciano®"
+                "text": "Sistema LED Ciano®"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE120 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
             },
             {
@@ -2454,10 +2454,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Aquário elegante e funcional"
+                "text": "Aquário elegante e funcional"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Como já é caraterístico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, em que se destacam as caixilharias em alumínio lacado. A tampa permite o acesso total ao aquário, facilitando a sua manutenção. Como opção, pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
             }
         ]
@@ -2472,7 +2472,7 @@
                 "url": "https://app.ciano.pt/images/cle_150.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE150. O sistema de iluminação CLE150 está disponível na cor preto, e é compatível com o Emotions PRO 150."
             },
             {
@@ -2480,7 +2480,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2509,7 +2509,7 @@
                 "url": "https://app.ciano.pt/images/cle_150_plants.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE150 Plants. O sistema de iluminação CLE150 Plants está disponível nas cores preto e é compatível com o Emotions PRO 150. "
             },
             {
@@ -2517,7 +2517,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2546,7 +2546,7 @@
                 "url": "https://app.ciano.pt/images/cle_40_plants.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE40 Plants. O sistema de iluminação CLE40 Plants está disponível em preto, e é compatível com o Emotions PRO 40. "
             },
             {
@@ -2554,7 +2554,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2583,7 +2583,7 @@
                 "url": "https://app.ciano.pt/images/cle_40.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE40. O sistema de iluminação CLE40 está disponível em preto, e é compatível com o Emotions PRO 40. "
             },
             {
@@ -2591,7 +2591,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2620,7 +2620,7 @@
                 "url": "https://app.ciano.pt/images/cle_80_plants.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE80 Plants. O sistema de iluminação CLE80 está disponível nas cores preto e branco, e é compatível com o Emotions PRO 80, Emotions One 80 e Emotions One 100. "
             },
             {
@@ -2628,7 +2628,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2657,7 +2657,7 @@
                 "url": "https://app.ciano.pt/images/cle_120_plants.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE120 Plants. O sistema de iluminação CLE120 Plants está disponível nas cores preto e branco, e é compatível com o Emotions PRO 120. "
             },
             {
@@ -2665,7 +2665,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2695,7 +2695,7 @@
                 "url": "https://app.ciano.pt/images/cle_120.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE120. O sistema de iluminação CLE120 está disponível nas cores preto e branco, e é compatível com o Emotions PRO 120. "
             },
             {
@@ -2703,7 +2703,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2732,7 +2732,7 @@
                 "url": "https://app.ciano.pt/images/cle_100_plants.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE100 Plants. O sistema de iluminação CLE100 Plants está disponível nas cores preto e branco, e é compatível com o Emotions PRO 100 e Emotions ONE 100. "
             },
             {
@@ -2740,7 +2740,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2769,7 +2769,7 @@
                 "url": "https://app.ciano.pt/images/cle_100.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE100. O sistema de iluminação CLE100 está disponível nas cores preto e branco, e é compatível com o Emotions PRO 100 e Emotions ONE 100. "
             },
             {
@@ -2777,7 +2777,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2807,7 +2807,7 @@
                 "url": "https://app.ciano.pt/images/cle_80.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE80. O sistema de iluminação CLE80 está disponível na cor preto, e é compatível com o Emotions PRO 80, Emotions One 80 e Emotions One 100."
             },
             {
@@ -2815,7 +2815,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2845,7 +2845,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2859,14 +2859,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Funcionalidade RGB"
+                "text": "Funcionalidade RGB"
             },
             {
                 "type": "medium_image",
                 "url": "https://app.ciano.pt/images/funcionalidade_rgb.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O sistema de iluminação é tátil, liga com um pequeno toque. Para ativar o modo RGB tocar novamente. Depois de ativo, o modo RGB funciona de forma automática e repetida, transitando de cor de hora em hora (1º vermelho, 2º verde, 3º azul). A transição de cor pode ser feita manualmente. Nota: Se tocar com a cor azul ligada o modo RGB será desativado voltando a cor branca. O sistema liga sempre com a cor branca. Para desligar o LED, tocar durante 3 segundos."
             },
             {
@@ -2878,10 +2878,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Sistema RGB"
+                "text": "Sistema RGB"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Transição das cores, vermelho, verde e azul"
             },
             {
@@ -2890,10 +2890,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Baixo Consumo"
+                "text": "Baixo Consumo"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "1,5 W."
             }
         ]
@@ -2908,7 +2908,7 @@
                 "url": "https://app.ciano.pt/images/cf_20.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CF20 Ciano® é um filtro interior para pequenos aquários. Equipado com um regulador de débito que o torna ótimo para pequenos peixes como o Betta Splendens. É um sistema de filtração de alta-performance, de fácil instalação e manutenção reduzida. Ideal para aquários entre 5 e 20 litros."
             },
             {
@@ -2916,7 +2916,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -2931,10 +2931,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "CARACTERISTICAS PRINCIPAIS"
+                "text": "CARACTERISTICAS PRINCIPAIS"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Regulador de débito"
             },
             {
@@ -2942,7 +2942,7 @@
                 "url": "https://app.ciano.pt/images/regulador_de_debito.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Este regulador faz com que seja indicado para peixes pequenos como os Betta Splndens, uma vez que permite o controlo do fluxo da água possibilitando que este seja quase nulo, evitando o estress dos peixes."
             },
             {
@@ -2950,7 +2950,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "AO PORMENOR"
+                "text": "AO PORMENOR"
             },
             {
                 "type": "large_image",
@@ -2958,10 +2958,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Regulador"
+                "text": "Regulador"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": ": Fluxo de água regulável."
             },
             {
@@ -2970,10 +2970,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Betta Splendens"
+                "text": "Betta Splendens"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": ": Ótimo para pequenos peixes como o Betta Splendens."
             },
             {
@@ -2982,10 +2982,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Fácil"
+                "text": "Fácil"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": ": Instalação e manutenção."
             }
         ]
@@ -3000,7 +3000,7 @@
                 "url": "https://app.ciano.pt/images/cf_40.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CF40 Ciano® é um filtro interior de alta-performance, de fácil instalação e manutenção reduzida. Otimizado para um menor stress do seu peixe. Ideal para aquários entre 20 e 40 litros."
             },
             {
@@ -3008,7 +3008,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3023,7 +3023,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Características Principais"
+                "text": "Características Principais"
             },
             {
                 "type": "list",
@@ -3037,7 +3037,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Informação Técnica"
+                "text": "Informação Técnica"
             },
             {
                 "type": "list",
@@ -3053,7 +3053,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Ao detalle"
+                "text": "Ao detalle"
             },
             {
                 "type": "small_image",
@@ -3061,10 +3061,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Barra de Pulverização"
+                "text": "Barra de Pulverização"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Distribuição mais uniforme da água e aumento da oxigenação."
             },
             {
@@ -3073,10 +3073,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Stress do peixe"
+                "text": "Stress do peixe"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Otimizado para um menor stress do piexe."
             },
             {
@@ -3085,10 +3085,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Tripla Filtração"
+                "text": "Tripla Filtração"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Mecânica, Biológica e Química"
             },
             {
@@ -3097,10 +3097,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Fácil"
+                "text": "Fácil"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Instalação e manutenção"
             }
         ]
@@ -3115,7 +3115,7 @@
                 "url": "https://app.ciano.pt/images/cf_80.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CF80 Ciano® é um filtro interior de alta-performance, de fácil instalação e manutenção reduzida. Otimizado para um menor stress do seu peixe. Ideal para aquários entre 40 e 80 litros."
             },
             {
@@ -3123,7 +3123,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3138,14 +3138,14 @@
             },
             {
                 "type": "title",
-                "medium_text": "Características Principais"
+                "text": "Características Principais"
             },
             {
                 "type": "large_image",
                 "url": "https://app.ciano.pt/images/tripla_filtração.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Tripla filtração: Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água."
             },
             {
@@ -3157,10 +3157,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Barra de Pulverização"
+                "text": "Barra de Pulverização"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Distribuição mais uniforme da água e aumento da oxigenação."
             },
             {
@@ -3169,10 +3169,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Stress do peixe"
+                "text": "Stress do peixe"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Otimizado para um menor stress do piexe."
             },
             {
@@ -3181,10 +3181,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Tripla Filtração"
+                "text": "Tripla Filtração"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Mecânica, Biológica e Química"
             },
             {
@@ -3193,10 +3193,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Fácil"
+                "text": "Fácil"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Instalação e manutenção"
             }
         ]
@@ -3211,7 +3211,7 @@
                 "url": "https://app.ciano.pt/images/cf_stone_40.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CFSTONE 40 Ciano® é um filtro interior de nova generação. O seu design em forma de pedra, faz com que se \"misture\" com a decoração do aquário. É um sistema de filtração de alta performance, de fácil instalação e manutenção reduzida. Os seus dois circuitos de água independentes asseguram a limpeza, tratamento da água e garantem a colonização de bactérias. Ideal para aquários entre 20 e 40 Litros com altura máxima até 35cm."
             },
             {
@@ -3219,7 +3219,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3235,7 +3235,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "CARACTERISTICAS PRINCIPAIS"
+                "text": "CARACTERISTICAS PRINCIPAIS"
             },
             {
                 "type": "list",
@@ -3248,7 +3248,7 @@
                 "url": "https://app.ciano.pt/images/pedra_decorativo.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CFSTONE não é apenas um filtro, o seu design invoador faz com que seja confundido com a decoração do aquário, devido a sua semelhança com uma pedra e á camuflagem do cabo elétrico."
             },
             {
@@ -3263,7 +3263,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
+                "text": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
             },
             {
                 "type": "divider"
@@ -3274,10 +3274,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Design"
+                "text": "Design"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Filtro inovador em forma de pedra."
             },
             {
@@ -3286,10 +3286,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "2 circuitos de água"
+                "text": "2 circuitos de água"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "1º Assegura a limpeza e tratamento da água. 2º Garante a colonização de bactéria."
             },
             {
@@ -3298,10 +3298,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "2 saídas de água"
+                "text": "2 saídas de água"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "2 opções para saída de água"
             },
             {
@@ -3310,10 +3310,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Barra de pulverização regulável"
+                "text": "Barra de pulverização regulável"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Regulável até 35cm"
             }
         ]
@@ -3328,7 +3328,7 @@
                 "url": "https://app.ciano.pt/images/cf_stone_80.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CFSTONE 80 Ciano® é um filtro interior de nova generação. O seu design em forma de pedra, faz com que se \"misture\" com a decoração do aquário. É um sistema de filtração de alta performance, de fácil instalação e manutenção reduzida. Os seus dois circuitos de água independentes asseguram a limpeza, tratamento da água e garantem a colonização de bactérias. Ideal para aquários entre 40 e 80 Litros com altura máxima até 60cm."
             },
             {
@@ -3336,7 +3336,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3352,7 +3352,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "CARACTERISTICAS PRINCIPAIS"
+                "text": "CARACTERISTICAS PRINCIPAIS"
             },
             {
                 "type": "list",
@@ -3363,7 +3363,7 @@
                 "url": "https://app.ciano.pt/images/pedra_decorativo.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O CFSTONE não é apenas um filtro, o seu design invoador faz com que seja confundido com a decoração do aquário, devido a sua semelhança com uma pedra e á camuflagem do cabo elétrico."
             },
             {
@@ -3375,7 +3375,7 @@
                 "url": "https://app.ciano.pt/images/tripla_filtração.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
             },
             {
@@ -3387,10 +3387,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Design"
+                "text": "Design"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Filtro inovador em forma de pedra."
             },
             {
@@ -3399,10 +3399,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "2 circuitos de água"
+                "text": "2 circuitos de água"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "1º Assegura a limpeza e tratamento da água. 2º Garante a colonização de bactéria."
             },
             {
@@ -3411,10 +3411,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "2 saídas de água"
+                "text": "2 saídas de água"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "2 opções para saída de água"
             },
             {
@@ -3423,10 +3423,10 @@
             },
             {
                 "type": "title",
-                "medium_text": "Barra de pulverização regulável"
+                "text": "Barra de pulverização regulável"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Regulável até 35cm"
             }
         ]
@@ -3441,7 +3441,7 @@
                 "url": "https://app.ciano.pt/images/suction_cups.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "Cada embalagem é composta por 6 ventosas de 16,8mm, para poder substituir sempre que precisar. São de fixação simple, basta colocar na posição pretendida e pressionar contra o vidro. São compatíveis com os filtros internos CF da Ciano® e com todos os acessórios com encaixes da mesma dimensão."
             },
             {
@@ -3449,7 +3449,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3474,7 +3474,7 @@
                 "url": "https://app.ciano.pt/images/thermometer_cfbio.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O THERMOMETER Ciano®, é um termómetro digital de alta-precisão, completamente imersível, com sensor integrado e sem fios. O THERMOMETER é compatível com os filtros Ciano® CFBIO 150, CFBIO 250, CFBIO L e CFBIO XL."
             },
             {
@@ -3482,7 +3482,7 @@
             },
             {
                 "type": "title",
-                "medium_text": "Equipamentos Incluídos"
+                "text": "Equipamentos Incluídos"
             },
             {
                 "type": "list",
@@ -3504,7 +3504,7 @@
                 "url": "https://app.ciano.pt/images/tartarium_40.png"
             },
             {
-                "type": "medium_text",
+                "type": "text",
                 "value": "O Tartarium 40, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
         },
         {
@@ -3512,7 +3512,7 @@
         },
         {
             "type": "title",
-            "medium_text": "Equipamentos Incluídos"
+            "text": "Equipamentos Incluídos"
         },
         {
             "type": "list",
@@ -3526,10 +3526,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Design atrativo e inovador"
+            "text": "Design atrativo e inovador"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
         },
         {
@@ -3538,10 +3538,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Zona seca prática e elegante"
+            "text": "Zona seca prática e elegante"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 40 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
         },
         {
@@ -3550,10 +3550,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração de nova geração (opcional)"
+            "text": "Filtração de nova geração (opcional)"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Como opção está disponível o CFSTONE 40, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
         },
         {
@@ -3561,7 +3561,7 @@
         },
         {
             "type": "title",
-            "medium_text": "AO PORMENOR"
+            "text": "AO PORMENOR"
         },
         {
             "type": "small_image",
@@ -3569,10 +3569,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Qualidade"
+            "text": "Qualidade"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Apoios em plástico branco com alto brilho."
         },
         {
@@ -3581,10 +3581,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Segurança"
+            "text": "Segurança"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Tampa transparente para tartarugas não saltarem"
         },
         {
@@ -3593,10 +3593,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Conforto"
+            "text": "Conforto"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Zona seca para descanso e exposição solar"
         },
         {
@@ -3605,10 +3605,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração Nova Geração"
+            "text": "Filtração Nova Geração"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "CFStone (opcional)"
         }
         ]
@@ -3623,7 +3623,7 @@
             "url": "https://app.ciano.pt/images/tartarium_60.png"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Tartarium 60, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
         },
         {
@@ -3631,7 +3631,7 @@
         },
         {
             "type": "title",
-            "medium_text": "Equipamentos Incluídos"
+            "text": "Equipamentos Incluídos"
         },
         {
             "type": "list",
@@ -3645,10 +3645,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Design atrativo e inovador"
+            "text": "Design atrativo e inovador"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
         },
         {
@@ -3657,10 +3657,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Zona seca prática e elegante"
+            "text": "Zona seca prática e elegante"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 60 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
         },
         {
@@ -3669,10 +3669,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração de nova geração (opcional)"
+            "text": "Filtração de nova geração (opcional)"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Como opção está disponível o CFSTONE 60, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
         },
         {
@@ -3680,7 +3680,7 @@
         },
         {
             "type": "title",
-            "medium_text": "AO PORMENOR"
+            "text": "AO PORMENOR"
         },
         {
             "type": "small_image",
@@ -3688,10 +3688,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Qualidade"
+            "text": "Qualidade"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Apoios em plástico branco com alto brilho."
         },
         {
@@ -3700,10 +3700,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Segurança"
+            "text": "Segurança"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Tampa transparente para tartarugas não saltarem"
         },
         {
@@ -3712,10 +3712,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Conforto"
+            "text": "Conforto"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Zona seca para descanso e exposição solar"
         },
         {
@@ -3724,10 +3724,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração Nova Geração"
+            "text": "Filtração Nova Geração"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "CFStone (opcional)"
         }
     ]
@@ -3742,7 +3742,7 @@
             "url": "https://app.ciano.pt/images/tartarium_80.png"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "O Tartarium 80, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
         },
         {
@@ -3750,7 +3750,7 @@
         },
         {
             "type": "title",
-            "medium_text": "Equipamentos Incluídos"
+            "text": "Equipamentos Incluídos"
         },
         {
             "type": "list",
@@ -3764,10 +3764,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Design atrativo e inovador"
+            "text": "Design atrativo e inovador"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
         },
         {
@@ -3776,10 +3776,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Zona seca prática e elegante"
+            "text": "Zona seca prática e elegante"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 80 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
         },
         {
@@ -3788,10 +3788,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração de nova geração (opcional)"
+            "text": "Filtração de nova geração (opcional)"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Como opção está disponível o CFSTONE 80, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
         },
         {
@@ -3799,7 +3799,7 @@
         },
         {
             "type": "title",
-            "medium_text": "AO PORMENOR"
+            "text": "AO PORMENOR"
         },
         {
             "type": "small_image",
@@ -3807,10 +3807,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Qualidade"
+            "text": "Qualidade"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Apoios em plástico branco com alto brilho."
         },
         {
@@ -3819,10 +3819,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Segurança"
+            "text": "Segurança"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Tampa transparente para tartarugas não saltarem"
         },
         {
@@ -3831,10 +3831,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Conforto"
+            "text": "Conforto"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "Zona seca para descanso e exposição solar"
         },
         {
@@ -3843,10 +3843,10 @@
         },
         {
             "type": "title",
-            "medium_text": "Filtração Nova Geração"
+            "text": "Filtração Nova Geração"
         },
         {
-            "type": "medium_text",
+            "type": "text",
             "value": "CFStone (opcional)"
         }
         ]
