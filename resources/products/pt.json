@@ -626,8 +626,8 @@
             ]
           },
           {
-            "type": "text",
-            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
+            "type": "small_text",
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
           },
           {
             "type": "divider"
@@ -642,7 +642,7 @@
           },
           {
             "type": "text",
-            "value": "Fosfatos: Elimina Fosfatos."
+            "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
           },
           {
             "type": "small_image",
@@ -650,7 +650,7 @@
           },
           {
             "type": "text",
-            "value": "Nitratos: Elimina Nitratos."
+            "value": "<strong>Nitratos:</strong> Elimina Nitratos."
           },
           {
             "type": "small_image",
@@ -658,7 +658,7 @@
           },
           {
             "type": "text",
-            "value": "Algas: Combate e elimina as algas."
+            "value": "<strong>Algas:</strong> Combate e elimina as algas."
           },
           {
             "type": "small_image",
@@ -666,7 +666,7 @@
           },
           {
             "type": "text",
-            "value": "Durabilidade do cartucho: 45 dias."
+            "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
           }
         ]
       },
@@ -759,7 +759,7 @@
           },
           {
             "type": "text",
-            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Verificar o tamanho no suporte dos cartuchos"
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Verificar o tamanho no suporte dos cartuchos"
           },
           {
             "type": "divider"
@@ -774,7 +774,7 @@
           },
           {
             "type": "text",
-            "value": "Fosfatos: Elimina Fosfatos."
+            "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
           },
           {
             "type": "small_image",
@@ -782,7 +782,7 @@
           },
           {
             "type": "text",
-            "value": "Nitratos: Elimina Nitratos."
+            "value": "<strong>Nitratos:</strong> Elimina Nitratos."
           },
           {
             "type": "small_image",
@@ -790,7 +790,7 @@
           },
           {
             "type": "text",
-            "value": "Algas: Combate e elimina as algas."
+            "value": "<strong>Algas:</strong> Combate e elimina as algas."
           },
           {
             "type": "small_image",
@@ -798,7 +798,73 @@
           },
           {
             "type": "text",
-            "value": "Durabilidade do cartucho: 45 dias."
+            "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_algae_xl.png",
+        "name": "WATER ALGAE \"XL\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_algae_xl.png"
+          },
+          {
+            "type": "text",
+            "value": "Combate as algas do seu aquário"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Química;",
+              "Deve ser usado como tratamiento ocasional;",
+              "Compatível com os filtros: CFBIO XL"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/fosfatos.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/nitratos.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Nitratos:</strong> Elimina Nitratos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/algas.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Algas:</strong> Combate e elimina as algas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
           }
         ]
     },
@@ -832,7 +898,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
+                "url": "https://app.ciano.pt/images/no_wast.png"
             },
             {
                 "type": "text",
@@ -856,7 +922,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+                "url": "https://app.ciano.pt/images/durabilidade.png"
             },
             {
                 "type": "text",
@@ -894,27 +960,27 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/agua.png"
+                "url": "https://app.ciano.pt/images/no_wast.png"
             },
             {
                 "type": "text",
-                "value": "Água: Retém partículas e matéria orgânica existentes"
+                "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/densidade_20.png"
+                "url": "https://app.ciano.pt/images/densidade.png"
             },
             {
                 "type": "text",
-                "value": "Densidade: 20PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+                "value": "<strong>Densidade:</strong> 20PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+                "url": "https://app.ciano.pt/images/durabilidade.png"
             },
             {
                 "type": "text",
-                "value": "Durabilidade da esponja: 90 dias."
+                "value": "<strong>Durabilidade:</strong> 90 dias."
             }
         ]
     },
