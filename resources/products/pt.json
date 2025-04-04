@@ -605,6 +605,204 @@
         ]
     },
     {
+        "image": "https://app.ciano.pt/images/water_algae_s.png",
+        "name": "WATER ALGAE \"S\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_algae_s.png"
+          },
+          {
+            "type": "text",
+            "value": "Combate as algas do seu aquário"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Química;",
+              "Deve ser usado como tratamiento ocasional;",
+              "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/fosfatos.png"
+          },
+          {
+            "type": "text",
+            "value": "Fosfatos: Elimina Fosfatos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/nitratos.png"
+          },
+          {
+            "type": "text",
+            "value": "Nitratos: Elimina Nitratos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/algas.png"
+          },
+          {
+            "type": "text",
+            "value": "Algas: Combate e elimina as algas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "Durabilidade do cartucho: 45 dias."
+          }
+        ]
+      },
+      {
+        "image": "https://app.ciano.pt/images/water_algae_m.png",
+        "name": "WATER ALGAE \"M\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_algae_m.png"
+          },
+          {
+            "type": "text",
+            "value": "Combate as algas do seu aquário"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Química;",
+              "Deve ser usado como tratamiento ocasional;",
+              "Compatível com os filtros: CF80, CFSTONE80, CFBIO150&250, Magi380*, SuperClean60&90*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/fosfatos.png"
+          },
+          {
+            "type": "text",
+            "value": "Fosfatos: Elimina Fosfatos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/nitratos.png"
+          },
+          {
+            "type": "text",
+            "value": "Nitratos: Elimina Nitratos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/algas.png"
+          },
+          {
+            "type": "text",
+            "value": "Algas: Combate e elimina as algas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "Durabilidade do cartucho: 45 dias."
+          }
+        ]
+      },
+      {
+        "image": "https://app.ciano.pt/images/water_algae_l.png",
+        "name": "WATER ALGAE \"L\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_algae_l.png"
+          },
+          {
+            "type": "text",
+            "value": "Combate as algas do seu aquário"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Química;",
+              "Deve ser usado como tratamiento ocasional;",
+              "Compatível com os filtros: CFBIO L, CFBIO 150*&250*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Verificar o tamanho no suporte dos cartuchos"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/fosfatos.png"
+          },
+          {
+            "type": "text",
+            "value": "Fosfatos: Elimina Fosfatos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/nitratos.png"
+          },
+          {
+            "type": "text",
+            "value": "Nitratos: Elimina Nitratos."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/algas.png"
+          },
+          {
+            "type": "text",
+            "value": "Algas: Combate e elimina as algas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "Durabilidade do cartucho: 45 dias."
+          }
+        ]
+    },
+    {
         "image": "https://app.ciano.pt/images/water_foam_xl.png",
         "name": "WATER FOAM \"XL\"",
         "category": "ciano_care",
