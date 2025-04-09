@@ -2943,7 +2943,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/bactéria.png"
+            "url": "https://app.ciano.pt/images/bacteria.png"
           },
           {
             "type": "text",
@@ -3312,86 +3312,268 @@
         ]
     },
     {
-        "image": "https://app.ciano.pt/images/emotions_pro_60.png",
-        "name": "EMOTIONS PRO 60",
+        "image": "https://app.ciano.pt/images/emotions_one_80.png",
+        "name": "EMOTIONS ONE 80",
         "category": "aquariums",
         "details": [
-            {
-                "type": "image",
-                "url": "https://app.ciano.pt/images/emotions_pro_60.png"
-            },
-            {
-                "type": "text",
-                "value": "O novo Emotions Pro 60 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K. O tamanho do Emotions® PRO 60 adapta-se a qualquer espaço da sua casa."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Equipamentos incluídos"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "1 Filtro biológico CFBIO XL Ciano®;",
-                    "1 Sistema de iluminação LED CLE60 Ciano® (LED + Conversor 17W – 24VDC);",
-                    "1 Conversor LED (24VDC);",
-                    "1 Bomba de água MÁX. 850 l/h;",
-                    "1 Aquecedor 100W;",
-                    "1 Dose de Water Clear & Protection \"XL\" Ciano®;",
-                    "2 Doses Water Bio-Bact \"XL\" Ciano®;",
-                    "1 Water Foam \"XL\" Ciano®;",
-                    "1 Water Foam Coarse \"XL\" Ciano®;",
-                    "1 Water Pad \"XL\" Ciano®;",
-                    "Opcional - 1 Termómetro digital"
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_60_second.png"
-            },
-            {
-                "type": "title",
-                "text": "Sistema de Filtração CFBIO XL"
-            },
-            {
-                "type": "text",
-                "value": "O aquário está equipado com o nosso potente sistema de filtragem biológica CFBIO XL Ciano®, com maior capacidade de filtragem e eficiência. O filtro está totalmente equipado com um motor de alto desempenho MAX 850 L/H , um aquecedor eficiente, um termómetro digital totalmente imersível com um sensor integrado (opção) e consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\" e 1 x Water Pad \"XL\"), para filtragem química, biológica e mecânica."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_60_third.png"
-            },
-            {
-                "type": "title",
-                "text": "Sistema de LED Ciano®"
-            },
-            {
-                "type": "text",
-                "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE60 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_60_fourth.png"
-            },
-            {
-                "type": "title",
-                "text": "Aquário elegante e funcional"
-            },
-            {
-                "type": "text",
-                "value": "Como já é caraterístico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, em que se destacam as caixilharias em alumínio lacado. A tampa permite o acesso total ao aquário, facilitando a sua manutenção. Como opção, pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
-            }
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_one_80.png"
+          },
+          {
+            "type": "text",
+            "value": "O Emotions Nature® ONE 80 é um aquário de excelência totalmente equipado com um design único e materiais de alta qualidade. O Emotions® ONE vem equipado com a nova filtragem CFBIO XL, com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Inclui um sistema de iluminação LED mais económico e de qualidade luminosa. Os seus pormenores fazem do Emotions® ONE um aquário único no mundo da aquariofilia."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro biológico CFBIO XL Ciano®;",
+              "1 Sistema de iluminação LED CLE80 Ciano® (24W - 38VDC);",
+              "1 Conversor LED (27 - 40VDC);",
+              "1 Bomba de água MAX 850 l/h;",
+              "1 Aquecedor 150W;",
+              "1 Armário com portas lacadas e com relevo;",
+              "1 Água Clear & Protection \"XL\" Ciano®;",
+              "2 Águas Bio-Bact \"XL\" Ciano®;",
+              "1 Água Espuma \"XL\" Ciano®;",
+              "1 Espuma de água grossa \"XL\" Ciano®;",
+              "1 Water Pad \"XL\" Ciano®;",
+              "1 Termómetro digital"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_one_80_second.png"
+          },
+          {
+            "type": "title",
+            "text": "Tampa inovadora e sofisticada"
+          },
+          {
+            "type": "text",
+            "value": "O Emotions One é dotado de uma tampa de vidro com acabamentos em alumínio, um design elegante e sofisticado, gravação a laser e dobradiças em aço inoxidável. A versatilidade e a comodidade estão também presentes na tampa, uma vez que esta permite o acesso total ao aquário, mas comporta uma pequena tampa de comida optimizada para um alimentador automático."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_one_80_third.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação económica e potente"
+          },
+          {
+            "type": "text",
+            "value": "Equipado com um sistema de iluminação LED Ciano® certificado CLE80, que proporciona uma iluminação económica e potente."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_one_80_fourth.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtragem biológica eficiente e funcional"
+          },
+          {
+            "type": "text",
+            "value": "O aquário está equipado com o nosso potente sistema de filtragem biológica CFBIO XL Ciano®, com maior capacidade de filtragem e eficiência. O filtro está totalmente equipado com um motor de alto desempenho MAX 850 L/H , um aquecedor eficiente de 150W, um termómetro digital totalmente imersível com sensor integrado (opção) e consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\" e 1 x Water Pad \"XL\"), para filtragem química, biológica e mecânica."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_one_80_fifth.png"
+          },
+          {
+            "type": "title",
+            "text": "Mobiliário robusto e moderno"
+          },
+          {
+            "type": "text",
+            "value": "Especialmente concebido para a Emotions One, é um móvel de linhas modernas que premeia pela sua robustez e acabamentos, possui duas portas lacadas e elevadas equipadas com um sistema push-pull."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/emotions_pro_120.png",
+        "name": "EMOTIONS PRO 120",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_120.png"
+          },
+          {
+            "type": "text",
+            "value": "O novo Emotions Pro 120 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro biológico CFBIO XL Ciano®;",
+              "1 Sistema de iluminação LED CLE120 Ciano® (LED + conversor 39W - 24VDC);",
+              "1 LED conversor (24 VDC);",
+              "1 Bomba de água MAX 850 L/H;",
+              "1 Aquecedor 200W;",
+              "1 Água Limpa e Proteção \"XL\" Ciano®;",
+              "2 Água Bio-Bact \"XL\" Ciano®;",
+              "1 Espuma de água \"XL\" Ciano®;",
+              "1 Espuma de água grossa \"XL\" Ciano®;",
+              "1 Almofada de água \"XL\" Ciano®;",
+              "Opcional - 1 termómetro digital"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_120_second.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtragem CFBIO XL"
+          },
+          {
+            "type": "text",
+            "value": "O aquário está equipado com o nosso potente sistema de filtragem biológica CFBIO XL Ciano®, com maior capacidade de filtragem e eficiência. O filtro está totalmente equipado com um motor de alto desempenho MAX 850 L/H , um aquecedor eficiente, um termómetro digital totalmente imersível com um sensor integrado (opção) e consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\" e 1 x Water Pad \"XL\"), para filtragem química, biológica e mecânica."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_120_third.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema LED Ciano®"
+          },
+          {
+            "type": "text",
+            "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE120 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_120_fourth.png"
+          },
+          {
+            "type": "title",
+            "text": "Aquário elegante e funcional"
+          },
+          {
+            "type": "text",
+            "value": "Como já é caraterístico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, em que se destacam as caixilharias em alumínio lacado. A tampa permite o acesso total ao aquário, facilitando a sua manutenção. Como opção, pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/emotions_pro_100.png",
+        "name": "EMOTIONS PRO 100",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_100.png"
+          },
+          {
+            "type": "text",
+            "value": "O novo Emotions Pro 100 reafirma a sua linha de aquário e combina elegância com tecnologia. O Emotions Pro surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa filtração mecânica, biológica e química. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro biológico CFBIO XL Ciano®;",
+              "1 Sistema de iluminação LED CLE100 Ciano® (LED + Conversor 31W – 24VDC);",
+              "1 Conversor LED (24VDC);",
+              "1 Bomba de água MÁX. 850 l/h;",
+              "1 Aquecedor 200W;",
+              "1 Water Clear & Protection \"XL\" Ciano®;",
+              "2 Water Bio-Bact \"XL\" Ciano®;",
+              "1 Water Foam \"XL\" Ciano®;",
+              "1 Water Foam Coarse \"XL\" Ciano®;",
+              "1 Water Pad \"XL\" Ciano®;",
+              "Opcional - 1 Termómetro digital"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_100_second.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Filtração CFBIO XL"
+          },
+          {
+            "type": "text",
+            "value": "O aquário é equipado com o nosso potente sistema de filtração biológico CFBIO XL Ciano®, com uma maior capacidade de filtração e eficiência. O filtro é totalmente equipado com um motor de alta performance MÁX. 850 l/h, um aquecedor eficiente, um termómetro digital completamente imersível com sensor integrado (opção) e os consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\", and 1 x Water Pad \"XL\"), para uma filtração química, biológica e mecânica."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_100_third.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de LED Ciano®"
+          },
+          {
+            "type": "text",
+            "value": "Económico, Potente, Regulável e Universal são as características do novo CLE100 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/emotions_pro_100_fourth.png"
+          },
+          {
+            "type": "title",
+            "text": "Aquário elegante e funcional"
+          },
+          {
+            "type": "text",
+            "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
+          }
         ]
     },
     {
@@ -3478,17 +3660,17 @@
         ]
     },
     {
-        "image": "https://app.ciano.pt/images/emotions_pro_100.png",
-        "name": "EMOTIONS PRO 100",
+        "image": "https://app.ciano.pt/images/emotions_pro_60.png",
+        "name": "EMOTIONS PRO 60",
         "category": "aquariums",
         "details": [
             {
                 "type": "image",
-                "url": "https://app.ciano.pt/images/emotions_pro_100.png"
+                "url": "https://app.ciano.pt/images/emotions_pro_60.png"
             },
             {
                 "type": "text",
-                "value": "O novo Emotions Pro 100 reafirma a sua linha de aquário e combina elegância com tecnologia. O Emotions Pro surge com a nova filtração CFBIO XL com a capacidade de uma maior e mais completa filtração mecânica, biológica e química. Inclui um sistema de iluminação LED económico com Lightboost combinando 9000K e 6500k."
+                "value": "O novo Emotions Pro 60 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K. O tamanho do Emotions® PRO 60 adapta-se a qualquer espaço da sua casa."
             },
             {
                 "type": "divider"
@@ -3501,12 +3683,12 @@
                 "type": "list",
                 "items": [
                     "1 Filtro biológico CFBIO XL Ciano®;",
-                    "1 Sistema de iluminação LED CLE100 Ciano® (LED + Conversor 31W – 24VDC);",
+                    "1 Sistema de iluminação LED CLE60 Ciano® (LED + Conversor 17W – 24VDC);",
                     "1 Conversor LED (24VDC);",
                     "1 Bomba de água MÁX. 850 l/h;",
-                    "1 Aquecedor 200W;",
-                    "1 Water Clear & Protection \"XL\" Ciano®;",
-                    "2 Water Bio-Bact \"XL\" Ciano®;",
+                    "1 Aquecedor 100W;",
+                    "1 Dose de Water Clear & Protection \"XL\" Ciano®;",
+                    "2 Doses Water Bio-Bact \"XL\" Ciano®;",
                     "1 Water Foam \"XL\" Ciano®;",
                     "1 Water Foam Coarse \"XL\" Ciano®;",
                     "1 Water Pad \"XL\" Ciano®;",
@@ -3518,94 +3700,11 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_100_second.png"
+                "url": "https://app.ciano.pt/images/emotions_pro_60_second.png"
             },
             {
                 "type": "title",
                 "text": "Sistema de Filtração CFBIO XL"
-            },
-            {
-                "type": "text",
-                "value": "O aquário é equipado com o nosso potente sistema de filtração biológico CFBIO XL Ciano®, com uma maior capacidade de filtração e eficiência. O filtro é totalmente equipado com um motor de alta performance MÁX. 850 l/h, um aquecedor eficiente, um termómetro digital completamente imersível com sensor integrado (opção) e os consumíveis (1 x Water Clear & Protection \"XL\", 2 x Water Bio-Bact \"XL\", 1 x Water Foam \"XL\", 1 x Water Foam Coarse \"XL\", and 1 x Water Pad \"XL\"), para uma filtração química, biológica e mecânica."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_100_third.png"
-            },
-            {
-                "type": "title",
-                "text": "Sistema de LED Ciano®"
-            },
-            {
-                "type": "text",
-                "value": "Económico, Potente, Regulável e Universal são as características do novo CLE100 Ciano®. O novo sistema de iluminação da Ciano® assegura uma maior luminosidade com um menor consumo de recursos."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_100_fourth.png"
-            },
-            {
-                "type": "title",
-                "text": "Aquário elegante e funcional"
-            },
-            {
-                "type": "text",
-                "value": "Como já é característico da Ciano, o Emotions Pro é fabricado com materiais de excelente qualidade, onde destacam-se os caixilhos em alumínio lacado. A tampa permite o acesso total ao aquário facilitando a sua manutenção. Como opção pode adquirir um móvel Emotions Pro desenvolvido com as mesmas linhas que proporcionam um conjunto perfeito."
-            }
-        ]
-    },
-    {
-        "image": "https://app.ciano.pt/images/emotions_pro_120.png",
-        "name": "EMOTIONS PRO 120",
-        "category": "aquariums",
-        "details": [
-            {
-                "type": "image",
-                "url": "https://app.ciano.pt/images/emotions_pro_120.png"
-            },
-            {
-                "type": "text",
-                "value": "O novo Emotions Pro 120 reafirma a sua linha de aquários e alia a elegância à tecnologia. O Emotions Pro vem equipado com a nova filtragem CFBIO XL com capacidade para uma maior e mais completa filtragem mecânica, biológica e química. Incluem um sistema de iluminação LED económico com Lightboost que combina 9000K com 6500K."
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "title",
-                "text": "Equipamentos incluídos"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "1 Filtro biológico CFBIO XL Ciano®;",
-                    "1 Sistema de iluminação LED CLE120 Ciano® (LED + conversor 39W - 24VDC);",
-                    "1 LED conversor (24 VDC);",
-                    "1 Bomba de água MAX 850 L/H;",
-                    "1 Aquecedor 200W;",
-                    "1 Água Limpa e Proteção \"XL\" Ciano®;",
-                    "2 Água Bio-Bact \"XL\" Ciano®;",
-                    "1 Espuma de água \"XL\" Ciano®;",
-                    "1 Espuma de água grossa \"XL\" Ciano®;",
-                    "1 Almofada de água \"XL\" Ciano®;",
-                    "Opcional - 1 termómetro digital"
-                ]
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_120_second.png"
-            },
-            {
-                "type": "title",
-                "text": "Sistema de filtragem CFBIO XL"
             },
             {
                 "type": "text",
@@ -3616,22 +3715,22 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_120_third.png"
+                "url": "https://app.ciano.pt/images/emotions_pro_60_third.png"
             },
             {
                 "type": "title",
-                "text": "Sistema LED Ciano®"
+                "text": "Sistema de LED Ciano®"
             },
             {
                 "type": "text",
-                "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE120 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
+                "value": "Económica, potente, regulável e universal são as caraterísticas da nova CLE60 Ciano®. O novo sistema de iluminação da Ciano® garante maior luminosidade com menor consumo de recursos."
             },
             {
                 "type": "divider"
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/emotions_pro_120_fourth.png"
+                "url": "https://app.ciano.pt/images/emotions_pro_60_fourth.png"
             },
             {
                 "type": "title",
@@ -3643,6 +3742,79 @@
             }
         ]
     },
+    {
+        "image": "https://app.ciano.pt/images/cube_15.png",
+        "name": "CUBE 15",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cube_15.png"
+          },
+          {
+            "type": "text",
+            "value": "O CUBE 15 é um pequeno aquário em vidro de fácil utilização, que se adaptará facilmente a qualquer divisão da sua casa."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 filtro interno CF20 Ciano®;",
+              "1 Water CLEAR & PROTECTION tamanho S;",
+              "1 Foam tamanho S;",
+              "1 Tampa de Vidro;",
+              "1 LED CLA2O Universal Ciano® (1,5W - 12VDC)"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_funcional.png"
+          },
+          {
+            "type": "text",
+            "value": "Destaca-se o seu design em forma de cubo totalmente em vidro com cantos polidos, que mostra a sua excelência em qualidade e decoração que transmitirá tranquilidade em qualquer sítio que se encontre seja numa divisão de casa ou no local de trabalho"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Suporte de iluminação simples e elegantes"
+          },
+          {
+            "type": "text",
+            "value": "Integrado no Cube 15, está um suporte para iluminação LED, que inclui o CLA20 Universal Ciano®, um sistema de iluminação certificado de baixa tensão, para um segurança total, garantindo uma iluminação natural e de baixo consumo energético"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtração de alta-performance"
+          },
+          {
+            "type": "text",
+            "value": "O filtro interior CF20 Ciano®, é dotado com um regulador de débito que o torna ótimo para pequenos peixes como Betta Splendens. A capacidade de filtração irá manter a água cristalina e sem cheiro"
+          }
+        ]
+    },
+
+
     {
         "image": "https://app.ciano.pt/images/cle_150.png",
         "name": "CLE 150",
