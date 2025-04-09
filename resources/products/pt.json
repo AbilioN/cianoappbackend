@@ -3813,7 +3813,929 @@
           }
         ]
     },
-
+    {
+        "image": "https://app.ciano.pt/images/cube_10.png",
+        "name": "CUBE 10",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cube_10.png"
+          },
+          {
+            "type": "text",
+            "value": "O CUBE 10 é um pequeno aquário em vidro de fácil utilização, que se adaptará facilmente a qualquer divisão da sua casa."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 filtro interno CF20 Ciano®;",
+              "1 Water CLEAR & PROTECTION tamanho S;",
+              "1 Foam tamanho S;",
+              "1 Tampa de Vidro;",
+              "1 LED CLA2O Universal Ciano® (1,5W - 12VDC)"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_funcional.png"
+          },
+          {
+            "type": "text",
+            "value": "Destaca-se o seu design em forma de cubo totalmente em vidro com cantos polidos, que mostra a sua excelência em qualidade e decoração que transmitirá tranquilidade em qualquer sítio que se encontre seja numa divisão de casa ou no local de trabalho"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Suporte de iluminação simples e elegantes"
+          },
+          {
+            "type": "text",
+            "value": "Integrado no Cube 10, está um suporte para iluminação LED, que inclui o CLA20 Universal Ciano®, um sistema de iluminação certificado de baixa tensão, para um segurança total, garantindo uma iluminação natural e de baixo consumo energético"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtração de alta-performance"
+          },
+          {
+            "type": "text",
+            "value": "O filtro interior CF20 Ciano®, é dotado com um regulador de débito que o torna ótimo para pequenos peixes como Betta Splendens. A capacidade de filtração irá manter a água cristalina e sem cheiro"
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/nexus_pure_25.png",
+        "name": "NEXUS PURE 25",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/nexus_pure_25.png"
+          },
+          {
+            "type": "text",
+            "value": "Pureza, Elegancia, Harmonia, Decoração e Inovação, da fusão destas palavras nasceu o aquário Nexus Pure 25. Criado a pensar em si e no seu bem-estar. Equipado com a mais recente tecnologia, o Nexus Pure 25 inclui um sistema de iluminação LED e um sistema de filtração Ciano® muito eficaz"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Sistema de Iluminação LED (2,5W - 12V);",
+              "1 Conversor LED (12V);",
+              "1 Filtro Interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/design.png"
+          },
+          {
+            "type": "title",
+            "text": "Design elegante, harmonioso e decorativo"
+          },
+          {
+            "type": "text",
+            "value": "Destaca-se o seu design em forma de cubo totalmente em vidro com cantos polidos, que mostra a sua excelência em qualidade e decoração que transmitirá tranquilidade em qualquer sítio que se encontre seja numa divisão de casa ou no local de trabalho"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Nexus 25 é equipado com o sistema de filtração interno CF40 Ciano®, otimizado para um menor stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação."
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/suporte_de_iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Suporte de iluminação simples e elegante"
+          },
+          {
+            "type": "text",
+            "value": "Integrado no Nexus 25, está um suporte para iluminação LED, com um sistema de iluminação LED (2,5W - 12V) incluído e a possibilidade de colocar um segundo, potente e económico, realça o brilho do aquário e o dos seus peixes."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_15c.png",
+        "name": "AQUA 15C",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_15c.png"
+          },
+          {
+            "type": "text",
+            "value": "O AQUA 15 Classic, um pequeno aquário em vidro de fácil manutenção e bonito, equipado com uma tampa de proteção para impedir os peixes de saltar e um sistema de filtração Ciano® de alta performance para conservar uma água cristalina o mais tempo possível e com um mínimo de esforço"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 15C prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque e uma tampa de proteção para impedir os peixes de saltar"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Aqua 15C é equipado com o sistema de filtração interno CF40 Ciano®, otimizado para um menor estress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "AO PORMENOR"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/design_aqua.png"
+          },
+          {
+            "type": "title",
+            "text": "Design"
+          },
+          {
+            "type": "text",
+            "value": "Elegante e funcional"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/qualidade_.png"
+          },
+          {
+            "type": "title",
+            "text": "Qualidade"
+          },
+          {
+            "type": "text",
+            "value": "Caixilhos em plástico antichoque"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/tampa_.png"
+          },
+          {
+            "type": "title",
+            "text": "Tampa"
+          },
+          {
+            "type": "text",
+            "value": "De proteção para evitar que os peixes saltem."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/comodidade.png"
+          },
+          {
+            "type": "title",
+            "text": "Comodidade"
+          },
+          {
+            "type": "text",
+            "value": "Tampa com apoio de descanso"
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/nexus_pure_15c.png",
+        "name": "NEXUS PURE 15C",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/nexus_pure_15c.png"
+          },
+          {
+            "type": "text",
+            "value": "Pureza, Elegancia, Harmonia, Decoração e Inovação, da fusão destas palavras nasceu o aquário Nexus Pure 15. Criado a pensar em si e no seu bem-estar. Equipado com a mais recente tecnologia, o Nexus Pure 15 inclui um sistema de iluminação LED e um sistema de filtração Ciano® muito eficaz"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro Interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;",
+              "1 Tampa em plástico"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/design_elegante.png"
+          },
+          {
+            "type": "title",
+            "text": "Design elegante, harmonioso e decorativo"
+          },
+          {
+            "type": "text",
+            "value": "Destaca-se o seu design em forma de cubo totalmente em vidro com cantos polidos, que mostra a sua excelência em qualidade e decoração que transmitirá tranquilidade em qualquer sítio que se encontre seja numa divisão de casa ou no local de trabalho"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Nexus 15C é equipado com o sistema de filtração interno CF40 Ciano®, otimizado para um menor stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação."
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/suporte_nexus_15c.png"
+          },
+          {
+            "type": "title",
+            "text": "Suporte Aquário práctico e cómodo"
+          },
+          {
+            "type": "text",
+            "value": "O Nexus 15C, é composto por um suporte que eleva o aquário dando a sensação que este está suspenso"
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/nexus_pure_14c.png",
+        "name": "NEXUS PURE 14C",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/nexus_pure_14c.png"
+          },
+          {
+            "type": "text",
+            "value": "O Nexus Pure 14C Diamond é um aquário em vidro com um design arrojado e atrativo em forma de diamante, desenvolvido com materiais de alta-qualidade, ao qual, a gama Nexus já nos habituou"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Tampa de Proteção preparada para o LED CLN5 RGB Ciano®;",
+              "Suporte filtro CF20 Ciano®;",
+              "1 Filtro interno CF20 Ciano®;",
+              "1 WATER CLEAR \"S\" Ciano®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/nexus_pure_14c.png"
+          },
+          {
+            "type": "title",
+            "text": "Design arrojado"
+          },
+          {
+            "type": "text",
+            "value": "O Nexus Pure 14C destaca-se pelo seu design exclusivo, arrojado e moderno em forma de diamante. A sua forma e tamanho, permitem que se adapte a qualquer divisão de sua casa ou local de trabalho, tornando-a mais atrativa e relaxante. O Nexus Pure 14C inclui um suporte para o filtro CF20 Ciano Filter® e uma tampa de proteção com dobradiças, preparada para o sistema de iluminação táti, CLN5 RGB Ciano®"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtração de alta-performance"
+          },
+          {
+            "type": "text",
+            "value": "O Nexus Pure 14C é équipado com o filtro interior CF20 Ciano® com um regulador de débito que o torna ótimo para pequenos peixes. Com uma capacidade de tripla filtração irá manter a água cristalina e sem cheiro."
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/iluminacao_atrativa.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação atrativa (opcional)"
+          },
+          {
+            "type": "text",
+            "value": "É ainda possível complementar o Nexus Pure 14C com um sistema de iluminação LED, o CLN5 RGB Ciano®, um sistema tátil e certificado, que oferece um ótimo desempenho com um consumo energético reduzido. Com o CLN5 RGB pode optar pela iluminação branca ou ativar o sistema RGB que lhe proporciona uma iluminação distinta através da transição automática de cor (Vermelho, Verde e Azul)."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_80.png",
+        "name": "AQUA 80",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_80.png"
+          },
+          {
+            "type": "text",
+            "value": "Um aquário dotado de um equipamento completo para descobrir a aquarofilia com toda a confiança, equipado de motor, aqucedor, pré-instalação de bomba de ar e de um filtro biológico. A FOAM (esponja) de 30PPI e o filtro CFBIO 150 Ciano® assegura uma ótima renovação de água e uma manutenção perfeita do equilibrio aquático, a dose WATER CLEAR Ciano® torna a água cristalina e elimina os odores"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro biológico CFBIO150 Ciano®;",
+              "1 Sistema de iluminação LED CLA60 Ciano® (8W - 18VDC);",
+              "1 Bomba de água 206 l/h Ciano®;",
+              "1 Aquecedor 100W;",
+              "1 Dose WATER CLEAR \"L\" Ciano ®;",
+              "1 FOAM \"L\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente_.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 80 prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque, os cantos polidos e a sua tampa com dobradiças"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao_bio.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtração biológica eficiente e funcional"
+          },
+          {
+            "type": "text",
+            "value": "O aquário é equipado com um sistema de filtração biológico CFBIO150 Ciano®, com mais poder de filtração  devido a sua filtração horizontal (massas filtrantes). O filtro é equipado com um motor de alta performance 260 l/h, um aquecedor eficiente de 100W e os consumíveis (1 Water Clear \"L\" e 1 FOAM \"L\"), para uma filtração química, biológica e mecanica. Como opção é possível juntar um termómetro digital completamente imersível com sensor integrado."
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/iluminacao_natural.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação potente e económica"
+          },
+          {
+            "type": "text",
+            "value": "O Aqua 80 dispõe do CLA60 Ciano®, um sistema de iluminação certificado de baixa tensão, para uma segurança total, garantindo uma iluminação natural e de baixo consumo energético."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_60.png",
+        "name": "AQUA 60",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_60.png"
+          },
+          {
+            "type": "text",
+            "value": "Um aquário dotado de um equipamento completo para descobrir a aquarofilia com toda a confiança, equipado de motor, aqucedor, pré-instalação de bomba de ar e de um filtro biológico. A FOAM (esponja) de 30PPI e o filtro CFBIO 150 Ciano® assegura uma ótima renovação de água e uma manutenção perfeita do equilibrio aquático, a dose WATER CLEAR Ciano® torna a água cristalina e elimina os odores"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro biológico CFBIO150 Ciano®;",
+              "1 Sistema de iluminação LED CLA60 Ciano® (8W - 18VDC);",
+              "1 Conversor LED (18VDC);",
+              "1 Bomba de água 206 l/h Ciano®;",
+              "1 Aquecedor 50W;",
+              "1 Dose WATER CLEAR \"L\" Ciano ®;",
+              "1 FOAM \"L\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente_aqua.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 60 prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque, os cantos polidos e a sua tampa com dobradiças"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/filtracao_bio.png"
+          },
+          {
+            "type": "title",
+            "text": "Filtração biológica eficiente e funcional"
+          },
+          {
+            "type": "text",
+            "value": "O aquário é equipado com um sistema de filtração biológico CFBIO150 Ciano®, com mais poder de filtração  devido a sua filtração horizontal (massas filtrantes). O filtro é equipado com um motor de alta performance 260 l/h, um aquecedor eficiente de 50W e os consumíveis (1 Water Clear \"L\" e 1 FOAM \"L\"), para uma filtração química, biológica e mecanica. Como opção é possível juntar um termómetro digital completamente imersível com sensor integrado."
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/iluminacao_natural.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação natural de alta qualidade"
+          },
+          {
+            "type": "text",
+            "value": "O Aqua 60 dispõe do CLA60 Ciano®, um sistema de iluminação certificado de baixa tensão, para uma segurança total, garantindo uma iluminação natural e de baixo consumo energético."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_30.png",
+        "name": "AQUA 30",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_30.png"
+          },
+          {
+            "type": "text",
+            "value": "Um aquário todo equipado, decorativo e de simples utilização para os pequenos e os grandes! Equipado de uma tampa com dobradiças para uma fácil utilização e com um sistema de iluminação de baixa tensão, para uma segurança total. Dotado de um sistema de filtração Ciano® de alta performance para conservar uma água cristalina o mais tempo possível e com um mínimo de esforço."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Sistema de iluminação LED CLA20 Ciano® (1,5W - 12VDC);",
+              "1 Conversor LED (12VDC);",
+              "1 Filtro interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano ®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 30 prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque, os cantos polidos e a sua tampa com dobradiças"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/filtracao_bio.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Aqua 30 é equipado com o sistema de filtração interno CF40 Ciano, otimizando para um menor stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação"
+          },
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/iluminacao_natural.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação potente e económica (opcional)"
+          },
+          {
+            "type": "text",
+            "value": "O Aqua 30 dispõe do CLA20 Ciano®, um sistema de iluminação certificado de baixa tensão, para uma segurança total, garantindo uma iluminação natural e de baixo consumo energético."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/design_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Design"
+          },
+          {
+            "type": "text",
+            "value": "Elegante e funcional."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/qualidade_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Qualidade"
+          },
+          {
+            "type": "text",
+            "value": "Caixilhos em plástico antichoque."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Iluminação"
+          },
+          {
+            "type": "text",
+            "value": "CLA20 Ciano (opcional)"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Filtração"
+          },
+          {
+            "type": "text",
+            "value": "De alto rendimento"
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_20.png",
+        "name": "AQUA 20",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_20.png"
+          },
+          {
+            "type": "text",
+            "value": "Prenda ideal para iniciar no mundo da aquariofilia, o AQUA 20 é um pequeno aquário em vidro de fácil utilização, equipado de uma tampa com dobradiças e com um sistema de iluminação de baixa tensão, para uma segurança total. Dotado de um sistema de filtração Ciano® de alta performance para conservar uma água cristalina o mais tempo possível e com um mínimo de esforço"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Sistema de iluminação LED CLA20 Ciano® (1,5W - 12VDC);",
+              "1 Conversor LED (12VDC);",
+              "1 Filtro interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano ®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente_aqua_20.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 20 prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque, os cantos polidos e a sua tampa com dobradiças"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao_bio.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Aqua 20 é equipado com o sistema de filtração interno CF40 Ciano, otimizando para um menor stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/iluminacao_natural.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação potente e económica (opcional)"
+          },
+          {
+            "type": "text",
+            "value": "O Aqua 20 dispõe do CLA20 Ciano®, um sistema de iluminação certificado de baixa tensão, para uma segurança total, garantindo uma iluminação natural e de baixo consumo energético."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/design_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Design"
+          },
+          {
+            "type": "text",
+            "value": "Elegante e funcional."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/qualidade_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Qualidade"
+          },
+          {
+            "type": "text",
+            "value": "Caixilhos em plástico antichoque."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Iluminação"
+          },
+          {
+            "type": "text",
+            "value": "CLA20 Ciano (opcional)"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Filtração"
+          },
+          {
+            "type": "text",
+            "value": "De alto rendimento"
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/aqua_20c.png",
+        "name": "AQUA 20C",
+        "category": "aquariums",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/aqua_20c.png"
+          },
+          {
+            "type": "text",
+            "value": "O AQUA 20 Classic, é um pequeno aquário em vidro equipado com uma tampa com dobradiças e um sistema de filtração Ciano® de alta performance para conservar uma água cristalina o mais tempo possível e com um mínimo de esforço."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1 Filtro interior CF40 Ciano®;",
+              "1 Dose WATER CLEAR \"S\" Ciano ®;",
+              "1 FOAM \"S\" (esponja) 30PPI Ciano®;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "CARACTERÍSTICAS PRINCIPAIS"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/elegante_e_resistente_aqua_20.png"
+          },
+          {
+            "type": "title",
+            "text": "Elegante e resistente"
+          },
+          {
+            "type": "text",
+            "value": "Com acabamentos perfeitos e resistentes, o Aqua 20C prima pela sua elegancia e segurança, com os caixilhos em plástico antichoque, os cantos polidos e a sua tampa com dobradiças"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/filtracao_bio.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de filtração de alto rendimento"
+          },
+          {
+            "type": "text",
+            "value": "Para uma fácil manutenção o Aqua 20C é equipado com o sistema de filtração interno CF40 Ciano®, otimizando para um menor stress dos peixes e com uma barra de pulverização que permite uma distribuição mais uniforme da água e o aumento da oxigenação"
+          },
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/iluminacao_natural.png"
+          },
+          {
+            "type": "title",
+            "text": "Iluminação potente e económica (opcional)"
+          },
+          {
+            "type": "text",
+            "value": "O Aqua 20C dispõe do CLA20 Ciano®, um sistema de iluminação certificado de baixa tensão, para uma segurança total, garantindo uma iluminação natural e de baixo consumo energético."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/design_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Design"
+          },
+          {
+            "type": "text",
+            "value": "Elegante e funcional."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/qualidade_aqua_30.png"
+          },
+          {
+            "type": "title",
+            "text": "Qualidade"
+          },
+          {
+            "type": "text",
+            "value": "Caixilhos em plástico antichoque."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_iluminacao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Iluminação"
+          },
+          {
+            "type": "text",
+            "value": "CLA20 Ciano (opcional)"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+          },
+          {
+            "type": "title",
+            "text": "Sistema de Filtração"
+          },
+          {
+            "type": "text",
+            "value": "De alto rendimento"
+          }
+        ]
+    },
 
     {
         "image": "https://app.ciano.pt/images/cle_150.png",
@@ -3986,7 +4908,9 @@
             {
                 "type": "list",
                 "items": [
+                    
                     "Sistema de iluminação CLE80 Plants Ciano® (21W - 24VDC);",
+                    "Conversor LED (24 VDC);",
                     "2 Travões para Emotions ONE;",
                     "2 Suportes Universais.;"
                 ]
@@ -3998,6 +4922,45 @@
                 "type": "youtube",
                 "url": "https://youtu.be/ha0nyPE5_Xg?si=mbUQCKkW5fU0f08e"
             }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cle_60_plants.png",
+        "name": "CLE 60 PLANTS",
+        "category": "lighting",
+        "details": [
+          {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/cle_60_plants.png"
+          },
+          {
+            "type": "text",
+            "value": "É um sistema de iluminação certificado, com uma grande potência e com um consumo reduzido, Green Energy. Para além de possuir uma compatibilidade para a maioria dos controladores do mercado, também consegue adaptar-se a qualquer aquário através dos Suportes Universais incluídos no CLE60 Plants. O sistema de iluminação CLE60 Plants está disponível nas cores, preto e branco, e é compatível com o Emotions PRO 60 e Emotions One 80."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Equipamentos Incluídos"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sistema de iluminação CLE60 Plants Ciano® (14W - 24VDC);",
+              "Conversor LED (24 VDC);",
+              "4 tampas Emotions PRO;",
+              "2 travões para Emotions ONE;",
+              "2 Suportes Universais;"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "youtube",
+            "url": "https://youtu.be/ha0nyPE5_Xg?si=9BR72beDT9YKMB1E"
+          }
         ]
     },
     {
@@ -4306,7 +5269,7 @@
                 "text": "AO PORMENOR"
             },
             {
-                "type": "large_image",
+                "type": "small_image",
                 "url": "https://app.ciano.pt/images/regulador_cf_20.png"
             },
             {
