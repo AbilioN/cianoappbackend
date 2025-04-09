@@ -869,6 +869,204 @@
         ]
     },
     {
+        "image": "https://app.ciano.pt/images/water_foam_s.png",
+        "name": "WATER FOAM \"S\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_foam_s.png"
+          },
+          {
+            "type": "text",
+            "value": "Retém partículas e matéria orgânica existentes na água"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Mecânica;",
+              "Deve ser utilizado diariamente para uma água sem impurezas;",
+              "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Comprado até 2014"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/agua.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/densidade.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_foam_m_rotacao.png",
+        "name": "WATER FOAM \"M\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_foam_m_rotacao.png"
+          },
+          {
+            "type": "text",
+            "value": "Retém partículas e matéria orgânica existentes na água"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Mecânica;",
+              "Deve ser utilizado diariamente para uma água sem impurezas;",
+              "Compatível com os filtros: CF80, CFSTONE80, Magi380*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Comprado até 2014"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/agua.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/densidade.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
+          }
+            ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_foam_l.png",
+        "name": "WATER FOAM \"L\"",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_foam_l.png"
+          },
+          {
+            "type": "text",
+            "value": "Retém partículas e matéria orgânica existentes na água"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Mecânica;",
+              "Deve ser utilizado diariamente para uma água sem impurezas;",
+              "Compatível com os filtros: CFBIO L, CFBIO150*&250*"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Para filtro com cartucho L"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/agua.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/densidade.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
+          }
+            ]
+    },
+    {
         "image": "https://app.ciano.pt/images/water_foam_xl.png",
         "name": "WATER FOAM \"XL\"",
         "category": "ciano_care",
@@ -922,13 +1120,13 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/durabilidade.png"
+                "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
                 "type": "text",
                 "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/water_foam_coarse_xl.png",
@@ -982,7 +1180,7 @@
                 "type": "text",
                 "value": "<strong>Durabilidade:</strong> 90 dias."
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/water_pad_xl.png",
@@ -1024,7 +1222,7 @@
                 "type": "text",
                 "value": "<strong>Durabilidade da esponja:</strong> 15 dias."
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_s.png",
@@ -1122,8 +1320,8 @@
                 ]
                 }
             ]
-        },
-        {
+    },
+    {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_m.png",
         "name": "FISH PROTECTION DOSATOR \"M\"",
         "category": "ciano_care",
@@ -1218,9 +1416,9 @@
                 "Instrução (Emotions & Universal)"
             ]
             }
-        ]
-        },
-        {
+            ]
+    },
+    {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_l.png",
         "name": "FISH PROTECTION DOSATOR \"L\"",
         "category": "ciano_care",
@@ -1315,7 +1513,7 @@
                 "Instrução (Emotions & Universal)"
             ]
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_xl.png",
@@ -1412,7 +1610,7 @@
                     "Instrução (Emotions & Universal)"
                 ]
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_s.png",
@@ -1514,7 +1712,7 @@
                     "Instrução (Emotions & Universal)"
                 ]
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_m.png",
@@ -1616,7 +1814,7 @@
                     "Instrução (Emotions & Universal)"
                 ]
             }
-        ]
+            ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_l.png",
@@ -1718,9 +1916,9 @@
                 "Instrução (Emotions & Universal)"
             ]
             }
-        ]
-        },
-        {
+            ]
+    },
+    {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_xl.png",
         "name": "PLANTS PROTECTION DOSATOR \"XL\"",
         "category": "ciano_care",
@@ -1821,15 +2019,15 @@
             ]
             }
         ]
-        },
-        {
-        "image": "https://app.ciano.pt/images/water_clear_&_protection_xl_frente.png",
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_clear_&_protection_100ml.png",
         "name": "WATER CLEAR & PROTECTION 100ml",
         "category": "ciano_care",
         "details": [
             {
             "type": "large_image",
-            "url": "https://app.ciano.pt/images/water_clear_&_protection.png"
+            "url": "https://app.ciano.pt/images/water_clear_&_protection_100ml.png"
             },
             {
             "type": "text",
@@ -1903,6 +2101,923 @@
             }
         ]
     },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_100.png",
+        "name": "WATER BIO-BACT 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_100.png"
+          },
+          {
+            "type": "text",
+            "value": "Bactérias vivas para um ecossistema de aquário perfeito."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar WATER BIO-BACT CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Otimiza a filtração biológica e a qualidade da água para o bem-estar de todo o ecossistema do aquário",
+              "Mistura de diferentes bactérias vivas que degradam naturalmente armónia e nitrito",
+              "Suporte para iniciação correta do aquário"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de WATER BIO-BACT de preferência na saída de água do filtro.",
+              "Contem bactérias vivas, armazenar numm local com temperatura entre +4°/+35°C",
+              "Dose: 10mL para 100L (manutenção); 10mL para 40L (iniciação do aquário e após tratamento de uma doença). Sempre para o volume total de água do aquário.",
+              "Sobredosagem não provoca problemas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fazer mediação da água com 'WATER TEST STRIPS' 6 em 1 CIANO®, no mínimo, a cada 15 dias",
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bacterias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Bactérias:</strong> Bactérias vivas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ecossistema:</strong> Ecossistema de aquário perfeito"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/amonia_e_nitrito.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Elimina:</strong> Amónia e Nitrito"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/15_dias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Uso regular:</strong> A cada 15 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/fish_protection_100.png",
+        "name": "FISH PROTECTION 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/fish_protection_100.png"
+          },
+          {
+            "type": "text",
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar FISH PROTECTION CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural.",
+              "Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de FISH PROTECTION de preferência na saída de água do filtro.",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário)",
+              "Aconselha-se o uso do doseador FISH PROTECTION para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/protecao.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Proteção:</strong> Todo o tipo de peixes"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/extratos.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Extratos:</strong> Plantas naturais"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/doencas.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Doenças:</strong> Reduz o risco de doenças."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/15_dias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Uso regular:</strong> A cada 15 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/plants_protection_100.png",
+        "name": "PLANTS PROTECTION 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/plants_protection_100.png"
+          },
+          {
+            "type": "text",
+            "value": "Um reforço para todos os tipos de plantas."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar PLANTS PROTECTION CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fornece ás plantas diversos minerais e elemntos essencias, facilmente assimilável pelas plantas,",
+              "Previne e corrige deficiências como a falta de ferro e potássio.",
+              "Previne o crescimento das algas, uma vez que estimula o ótimo crescimento das plantas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de PLANTS PROTECTION de preferência na saída de água do filtro.",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário)",
+              "Aconselha-se o uso do doseador PLANTS PROTECTION para uma adição controlada, contínua e sem preocupações do líquido ao longo do tempo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/protecao_plantas.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Proteção:</strong> Reforço para todos os tipos de plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/plantas.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Plantas:</strong> Minerais e elementos essenciais."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/deficiencias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Deficiências:</strong> Previne e corrige."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/15_dias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Uso regular:</strong> A cada 15 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_conditioner_100.png",
+        "name": "WATER CONDITIONER 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_conditioner_100.png"
+          },
+          {
+            "type": "text",
+            "value": "Transforma rapidamente a água da torneira em água própria para o aquário."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar WATER CONDITIONER CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Neutraliza rápida e duradouramente substâncias tóxicas como cloro, cloramina e metais pesados.",
+              "Protege as brânquias, pele e barbatanas dos peixes com extratos de substâncias naturais e vitaminas indispensáveis ás quais estão habituados no seu biótopo natural.",
+              "Reduz o stress e o risco de doenças nos peixes.",
+              "Suporte para iniciação correta do aquário."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de WATER CONDITIONER de preferência na saída de água do filtro.",
+              "Dose: 10mL para 40L de água a tratar. (Se estiver a iniciar um aquário, adicionar a dose correspondente ao volume total do aquário.",
+              "Para trocas parciais de água, adicionar a dose correspondente ao volume de água trocada (se adicionar para todo o volume de água não traz desvantagens)."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/transforma_rapidamente.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Transforma rapidamente:</strong> Água da torneira em água própria para o aquário."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/protecao_peixe.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Proteção:</strong> Reduz o stress e o risco de doenças nos peixes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/substancias_toxicas.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Deficiências:</strong> Previne e corrige."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/15_dias.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Substâncias tóxicas:</strong> Neutraliza rápida e duradouramente."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/aquario.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Aquário:</strong> Suporte para iniciação correta."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_algae_100.png",
+        "name": "WATER ALGAE 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_algae_100.png"
+          },
+          {
+            "type": "text",
+            "value": "Complexo líquido anti-fosfato para aquário de água doce."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar WATER ALGAE CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "O WATER ALGAE bloqueia o fosfato presente na água tornando-o indisponível para as algas.",
+              "O WATER ALGAE não é um biocida segundo o regulamento n° 528/2012."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Recomenda-se uma remoção inicial das algas presas ao vidro, a objetos e a tudo o que achar necessário. Fazer uma troca de água de 25% antes da utilização (recomenda-se a adição de WATER CONDITIONER)",
+              "Adicionar a dose de WATER ALGAE de preferência na saída de água do filtro",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário).",
+              "Limpar a esponja a meio do tratamento.",
+              "Se o problema persistir ao fim de 15 dias, repetir o procedimento. Recomenda-se a adição de WATER BIO-BACT no final do tratamento de forma a fortalecer a filtração biológica."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fazer mediação da água com 'WATER TEST STRIPS' 6 em 1 CIANO®, no mínimo, a cada 15 dias.",
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/anti_fosfato.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Anti-fosfato:</strong> Bloqueia o fosfato presente na água."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/efeito.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Efeito:</strong> Longo."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/acao.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ação:</strong> Rápida."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_kh_&_ph.png",
+        "name": "WATER KH & pH 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_kh_&_ph.png"
+          },
+          {
+            "type": "text",
+            "value": "Eleva de forma controlada a dureza carbonatada da água e estabiliza o pH."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar WATER KH&pH CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "O KH representa o poder tampão da água, isto é, a capacidade da água em se opor ás variações do pH, extremamente prejudicial aos peixes.",
+              "O valor do KH deve ser superior a 3°dH e adaptado ao biótopo do aquário."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de WATER KH & pH de preferência na saída de água do filtro.",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário).",
+              "Uma dose de WATER KH & pH aumenta 1°dH e 0,1 pH.",
+              "Dobrar a dose se pretender um aumento de 2°dH e 0,2 pH.",
+              "Aumento máximo por dia de 2°dH."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fazer mediação da água com 'WATER TEST STRIPS' 6 em 1 CIANO®, no mínimo, a cada 15 dias.",
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ph.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>pH:</strong> Estabiliza o pH."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/dureza_carbonatada.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Dureza de carbonatada:</strong> Permite regular."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/acao.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ação:</strong> Rápida e duradoura."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/inofensivo.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Inofensivo:</strong> Para peixes, caracóis, camarões e filtro."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_gh.png",
+        "name": "WATER GH 100ml",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_gh.png"
+          },
+          {
+            "type": "text",
+            "value": "Eleva de forma controlada a dureza total da água."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "PORQUÊ utilizar WATER GH CIANO®?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Adiciona minerais indispensáveis para uma boa qualidade da água e saúde dos peixes.",
+              "O valor do GH deve ser superior a 3°dH e adaptado ao do biótopo do aquário."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "COMO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agitar antes de usar. Adicionar a dose de WATER GH de preferência na saída de água do filtro.",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário).",
+              "Uma dose de WATER GH aumenta 1°dH.",
+              "Dobrar a dose se pretender um aumento de 2°dH.",
+              "Aumento máximo por dia de 2°dH."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "QUANDO utilizar?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fazer mediação da água com 'WATER TEST STRIPS' 6 em 1 CIANO®, no mínimo, a cada 15 dias.",
+              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Ao pormenor"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/agua_gh.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Água:</strong> Eleva e segura dureza total da água."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/calcio.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Cálcio:</strong> Adiciona cálcio a água"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/magnesio.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Magnésio:</strong> Adiciona Magnésio a água."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/acao_rapida.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ação:</strong> Rápida e duradoura."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_s_pack.png",
+        "name": "WATER BIO-BACT \"S\" (Pack)",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_s_pack.png"
+          },
+          {
+            "type": "text",
+            "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Biológica;",
+              "Deve ser utilizado diariamente;"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Em detalhe"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bacteria.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade do cartucho:</strong> 90 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_m_pack.png",
+        "name": "WATER BIO-BACT \"M\" (Pack)",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_m_pack.png"
+          },
+          {
+            "type": "text",
+            "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Biológica;",
+              "Deve ser utilizado diariamente;"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Em detalhe"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bacteria.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade do cartucho:</strong> 90 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_l_pack.png",
+        "name": "WATER BIO-BACT \"L\" (Pack)",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_l_pack.png"
+          },
+          {
+            "type": "text",
+            "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Biológica;",
+              "Deve ser utilizado diariamente;"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Em detalhe"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bactéria.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade do cartucho:</strong> 90 dias."
+          }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/water_bio_bact_xl_pack.png",
+        "name": "WATER BIO-BACT \"XL\" (Pack)",
+        "category": "ciano_care",
+        "details": [
+          {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/water_bio_bact_xl_pack.png"
+          },
+          {
+            "type": "text",
+            "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Filtração Biológica;",
+              "Deve ser utilizado diariamente;"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title",
+            "text": "Em detalhe"
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/ecossistema.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/bacteria.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
+          },
+          {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
+          },
+          {
+            "type": "text",
+            "value": "<strong>Durabilidade do cartucho:</strong> 90 dias."
+          }
+        ]
+    },
+
+
     {
         "image": "https://app.ciano.pt/images/emotions_one_100.png",
         "name": "EMOTIONS ONE 100",
@@ -3683,239 +4798,239 @@
         "image": "https://app.ciano.pt/images/tartarium_60.png",
         "name": "TARTARIUM 60",
         "category": "tartariums",
-    "details": [
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/tartarium_60.png"
-        },
-        {
-            "type": "text",
-            "value": "O Tartarium 60, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "Equipamentos Incluídos"
-        },
-        {
-            "type": "list",
-            "items": [
-                "1 Rampa em plástico de alta qualidade;"
-            ]
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/design_atrativo_e_inovador.png"
-        },
-        {
-            "type": "title",
-            "text": "Design atrativo e inovador"
-        },
-        {
-            "type": "text",
-            "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/zona_seca_pratica_e_elegante.png"
-        },
-        {
-            "type": "title",
-            "text": "Zona seca prática e elegante"
-        },
-        {
-            "type": "text",
-            "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 60 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/filtracao_nova_geracao_opcional.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração de nova geração (opcional)"
-        },
-        {
-            "type": "text",
-            "value": "Como opção está disponível o CFSTONE 60, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "AO PORMENOR"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/qualidade.png"
-        },
-        {
-            "type": "title",
-            "text": "Qualidade"
-        },
-        {
-            "type": "text",
-            "value": "Apoios em plástico branco com alto brilho."
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/seguranca.png"
-        },
-        {
-            "type": "title",
-            "text": "Segurança"
-        },
-        {
-            "type": "text",
-            "value": "Tampa transparente para tartarugas não saltarem"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/conforto.png"
-        },
-        {
-            "type": "title",
-            "text": "Conforto"
-        },
-        {
-            "type": "text",
-            "value": "Zona seca para descanso e exposição solar"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração Nova Geração"
-        },
-        {
-            "type": "text",
-            "value": "CFStone (opcional)"
-        }
-    ]
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/tartarium_60.png"
+            },
+            {
+                "type": "text",
+                "value": "O Tartarium 60, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Equipamentos Incluídos"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "1 Rampa em plástico de alta qualidade;"
+                ]
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/design_atrativo_e_inovador.png"
+            },
+            {
+                "type": "title",
+                "text": "Design atrativo e inovador"
+            },
+            {
+                "type": "text",
+                "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/zona_seca_pratica_e_elegante.png"
+            },
+            {
+                "type": "title",
+                "text": "Zona seca prática e elegante"
+            },
+            {
+                "type": "text",
+                "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 60 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/filtracao_nova_geracao_opcional.png"
+            },
+            {
+                "type": "title",
+                "text": "Filtração de nova geração (opcional)"
+            },
+            {
+                "type": "text",
+                "value": "Como opção está disponível o CFSTONE 60, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "AO PORMENOR"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/qualidade.png"
+            },
+            {
+                "type": "title",
+                "text": "Qualidade"
+            },
+            {
+                "type": "text",
+                "value": "Apoios em plástico branco com alto brilho."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/seguranca.png"
+            },
+            {
+                "type": "title",
+                "text": "Segurança"
+            },
+            {
+                "type": "text",
+                "value": "Tampa transparente para tartarugas não saltarem"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/conforto.png"
+            },
+            {
+                "type": "title",
+                "text": "Conforto"
+            },
+            {
+                "type": "text",
+                "value": "Zona seca para descanso e exposição solar"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
+            },
+            {
+                "type": "title",
+                "text": "Filtração Nova Geração"
+            },
+            {
+                "type": "text",
+                "value": "CFStone (opcional)"
+            }
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/tartarium_80.png",
         "name": "TARTARIUM 80",
         "category": "tartariums",
-    "details": [
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/tartarium_80.png"
-        },
-        {
-            "type": "text",
-            "value": "O Tartarium 80, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "Equipamentos Incluídos"
-        },
-        {
-            "type": "list",
-            "items": [
-                "1 Rampa em plástico de alta qualidade;"
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/tartarium_80.png"
+            },
+            {
+                "type": "text",
+                "value": "O Tartarium 80, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Equipamentos Incluídos"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "1 Rampa em plástico de alta qualidade;"
+                ]
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/design_atrativo_e_inovador.png"
+            },
+            {
+                "type": "title",
+                "text": "Design atrativo e inovador"
+            },
+            {
+                "type": "text",
+                "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/zona_seca_pratica_e_elegante.png"
+            },
+            {
+                "type": "title",
+                "text": "Zona seca prática e elegante"
+            },
+            {
+                "type": "text",
+                "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 80 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
+            },
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/filtracao_de_nova_geracao_opcional.png"
+            },
+            {
+                "type": "title",
+                "text": "Filtração de nova geração (opcional)"
+            },
+            {
+                "type": "text",
+                "value": "Como opção está disponível o CFSTONE 80, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "AO PORMENOR"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/qualidade.png"
+            },
+            {
+                "type": "title",
+                "text": "Qualidade"
+            },
+            {
+                "type": "text",
+                "value": "Apoios em plástico branco com alto brilho."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/seguranca.png"
+            },
+            {
+                "type": "title",
+                "text": "Segurança"
+            },
+            {
+                "type": "text",
+                "value": "Tampa transparente para tartarugas não saltarem"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/conforto.png"
+            },
+            {
+                "type": "title",
+                "text": "Conforto"
+            },
+            {
+                "type": "text",
+                "value": "Zona seca para descanso e exposição solar"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
+            },
+            {
+                "type": "title",
+                "text": "Filtração Nova Geração"
+            },
+            {
+                "type": "text",
+                "value": "CFStone (opcional)"
+            }
             ]
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/design_atrativo_e_inovador.png"
-        },
-        {
-            "type": "title",
-            "text": "Design atrativo e inovador"
-        },
-        {
-            "type": "text",
-            "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/zona_seca_pratica_e_elegante.png"
-        },
-        {
-            "type": "title",
-            "text": "Zona seca prática e elegante"
-        },
-        {
-            "type": "text",
-            "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 80 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/filtracao_de_nova_geracao_opcional.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração de nova geração (opcional)"
-        },
-        {
-            "type": "text",
-            "value": "Como opção está disponível o CFSTONE 80, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "AO PORMENOR"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/qualidade.png"
-        },
-        {
-            "type": "title",
-            "text": "Qualidade"
-        },
-        {
-            "type": "text",
-            "value": "Apoios em plástico branco com alto brilho."
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/seguranca.png"
-        },
-        {
-            "type": "title",
-            "text": "Segurança"
-        },
-        {
-            "type": "text",
-            "value": "Tampa transparente para tartarugas não saltarem"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/conforto.png"
-        },
-        {
-            "type": "title",
-            "text": "Conforto"
-        },
-        {
-            "type": "text",
-            "value": "Zona seca para descanso e exposição solar"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração Nova Geração"
-        },
-        {
-            "type": "text",
-            "value": "CFStone (opcional)"
-        }
-        ]
     }
    
 ]
