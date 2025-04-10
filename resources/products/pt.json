@@ -3935,7 +3935,7 @@
           },
           {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/sistema_filtracao.png"
+            "url": "https://app.ciano.pt/images/filtracao.png"
           },
           {
             "type": "title",
@@ -5432,7 +5432,7 @@
             },
             {
                 "type": "text",
-                "value": "O CF80 Ciano® é um filtro interior de alta-performance, de fácil instalação e manutenção reduzida. Otimizado para um menor stress do seu peixe. Ideal para aquários entre 40 e 80 litros."
+                "value": "<strong>O CF80 Ciano® é um filtro interior de alta-performance, de fácil instalação e manutenção reduzida. Otimizado para um menor stress do seu peixe. Ideal para aquários entre 40 e 80 litros. </strong>"
             },
             {
                 "type": "divider"
@@ -5457,7 +5457,7 @@
                 "text": "Características Principais"
             },
             {
-                "type": "large_image",
+                "type": "medium_image",
                 "url": "https://app.ciano.pt/images/tripla_filtração.png"
             },
             {
@@ -5527,7 +5527,7 @@
                 "url": "https://app.ciano.pt/images/cf_stone_40.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O CFSTONE 40 Ciano® é um filtro interior de nova generação. O seu design em forma de pedra, faz com que se \"misture\" com a decoração do aquário. É um sistema de filtração de alta performance, de fácil instalação e manutenção reduzida. Os seus dois circuitos de água independentes asseguram a limpeza, tratamento da água e garantem a colonização de bactérias. Ideal para aquários entre 20 e 40 Litros com altura máxima até 35cm."
             },
             {
@@ -5578,7 +5578,7 @@
                 "url": "https://app.ciano.pt/images/tripla_filtração.png"
             },
             {
-                "type": "title",
+                "type": "medium_text",
                 "text": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
             },
             {
@@ -5862,7 +5862,7 @@
         },
         {
             "type": "large_image",
-            "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
+            "url": "https://app.ciano.pt/images/filtracao_de_nova_geracao_opcional.png"
         },
         {
             "type": "title",
