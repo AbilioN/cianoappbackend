@@ -30,12 +30,12 @@
                 "text": "COMO medir?"
             },
             {
-                "type": "list",
+                "type": "ordered_list",
                 "items": [
-                    "1) Mergulhar a tira de teste por 5 segundos;",
-                    "2) Sacudir a tira de teste para remover o excesso de água;",
-                    "3) Aguardar 30 segundos;",
-                    "4) Posicionar a tira de teste na zona correta do frasco e fazer a leitura dos valores comparando as cores obtidas com a escala de cores do frasco. Verificar o significado dos valores obtidos na tabela incluída e conselhos para ações corretivas. Para informação mais detalhada, consultar o guia 'CIANO CARE';"
+                    "Mergulhar a tira de teste por 5 segundos;",
+                    "Sacudir a tira de teste para remover o excesso de água;",
+                    "Aguardar 30 segundos;",
+                    "Posicionar a tira de teste na zona correta do frasco e fazer a leitura dos valores comparando as cores obtidas com a escala de cores do frasco. Verificar o significado dos valores obtidos na tabela incluída e conselhos para ações corretivas. Para informação mais detalhada, consultar o guia 'CIANO CARE';"
                 ]
             },
             {
@@ -49,7 +49,7 @@
                 "type": "list",
                 "items": [
                     "Fazer medição da água, no mínimo, a cada 15 dias.",
-                    "Seguir indicações do guia 'CIANO CARE'."
+                    "Seguir indicações do guia CIANO CARE."
                 ]
             },
             {
@@ -119,7 +119,7 @@
             },
             {
                 "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+                "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
                 "type": "list",
@@ -131,7 +131,11 @@
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION."
+            },
+            {
+              "type": "small_text",
+              "value": "*Comprado até 2014"
             },
             {
                 "type": "divider"
@@ -184,8 +188,8 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_m.png"
             },
             {
-                "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+                "type": "medium_text",
+                "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
                 "type": "list",
@@ -197,7 +201,11 @@
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Comprado até 2014"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION."
+            },
+            {
+              "type": "small_text",
+              "value": "*Comprado até 2014"
             },
             {
                 "type": "divider"
@@ -211,7 +219,7 @@
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -219,7 +227,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -227,7 +235,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -235,7 +243,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -251,7 +259,7 @@
             },
             {
                 "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+                "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
                 "type": "list",
@@ -263,7 +271,11 @@
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION\n*Verificar o tamanho no suporte dos cartuchos"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER CLEAR & PROTECTION."
+            },
+            {
+              "type": "small_text",
+              "value": "*Verificar o tamanho no suporte dos cartuchos"
             },
             {
                 "type": "divider"
@@ -317,7 +329,7 @@
             },
             {
                 "type": "text",
-                "value": "Elimina substâncias prejudicias aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
+                "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
                 "type": "list",
@@ -382,34 +394,38 @@
                 "url": "https://app.ciano.pt/images/water_bio_bact_s.png"
             },
             {
-                "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+                "type": "medium_text",
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito."
             },
             {
                 "type": "list",
                 "items": [
-                    "Filtração Química;",
+                    "Filtração Biológica;",
                     "Deve ser utilizado diariamente;",
                     "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
                 ]
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT."
+            },
+            {
+              "type": "small_text",
+              "value": "*Comprado até 2014"
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
-                "text": "In detail"
+                "type": "title_left",
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -417,7 +433,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -425,7 +441,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -440,8 +456,8 @@
                 "url": "https://app.ciano.pt/images/water_bio_bact_m.png"
             },
             {
-                "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+                "type": "medium_text",
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito."
             },
             {
                 "type": "list",
@@ -453,21 +469,25 @@
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\n*Comprado até 2014"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+            },
+            {
+              "type": "small_text",
+              "value": "*Comprado até 2014"
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
-                "text": "In detail"
+                "type": "title_left",
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -475,7 +495,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -483,7 +503,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -499,7 +519,7 @@
             },
             {
                 "type": "text",
-                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
+                "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito."
             },
             {
                 "type": "list",
@@ -511,21 +531,25 @@
             },
             {
                 "type": "small_text",
-                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT\nVerificar o tamanho no suporte dos cartuchos"
+                "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT."
+            },
+            {
+              "type": "small_text",
+              "value": "*Verificar o tamanho no suporte dos cartuchos"
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
-                "text": "In detail"
+                "type": "title_left",
+                "text": "Ao pormenor"
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/ecossistema.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
             },
             {
@@ -533,7 +557,7 @@
                 "url": "https://app.ciano.pt/images/bacteria.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
             },
             {
@@ -541,7 +565,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
             }
         ]
@@ -556,7 +580,7 @@
             "url": "https://app.ciano.pt/images/water_bio_bact_xl.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Para uma filtração biológica eficaz, mantendo o ecossistema do seu aquário perfeito"
           },
           {
@@ -569,21 +593,21 @@
           },
           {
             "type": "small_text",
-            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT"
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER BIO-BACT."
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
-            "text": "In detail"
+            "type": "title_left",
+            "text": "Ao pormenor"
           },
           {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/ecossistema.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Ecossistema:</strong> Ecossistema perfeito para os peixes e plantas."
           },
           {
@@ -591,7 +615,7 @@
             "url": "https://app.ciano.pt/images/bacteria.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Bactéria:</strong> Excelente habitat para bactérias nitrificantes."
           },
           {
@@ -599,7 +623,7 @@
             "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade do cartucho:</strong> 140 dias."
           }
         ]
@@ -614,8 +638,8 @@
             "url": "https://app.ciano.pt/images/water_algae_s.png"
           },
           {
-            "type": "text",
-            "value": "Combate as algas do seu aquário"
+            "type": "medium_text",
+            "value": "Combate as algas do seu aquário."
           },
           {
             "type": "list",
@@ -627,13 +651,17 @@
           },
           {
             "type": "small_text",
-            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
+          },
+          {
+            "type": "small_text",
+            "value": "*Comprado até 2014"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -680,8 +708,8 @@
             "url": "https://app.ciano.pt/images/water_algae_m.png"
           },
           {
-            "type": "text",
-            "value": "Combate as algas do seu aquário"
+            "type": "medium_text",
+            "value": "Combate as algas do seu aquário."
           },
           {
             "type": "list",
@@ -692,8 +720,12 @@
             ]
           },
           {
-            "type": "text",
-            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Comprado até 2014"
+            "type": "medium_text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
+          },
+          {
+            "type": "small_text",
+            "value": "*Comprado até 2014"
           },
           {
             "type": "divider"
@@ -746,7 +778,7 @@
             "url": "https://app.ciano.pt/images/water_algae_l.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Combate as algas do seu aquário"
           },
           {
@@ -758,14 +790,18 @@
             ]
           },
           {
-            "type": "text",
-            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE\n*Verificar o tamanho no suporte dos cartuchos"
+            "type": "medium_text",
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
+          },
+          {
+            "type": "small_text",
+            "value": "*Verificar o tamanho no suporte dos cartuchos"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -773,7 +809,7 @@
             "url": "https://app.ciano.pt/images/fosfatos.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
           },
           {
@@ -781,7 +817,7 @@
             "url": "https://app.ciano.pt/images/nitratos.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Nitratos:</strong> Elimina Nitratos."
           },
           {
@@ -789,7 +825,7 @@
             "url": "https://app.ciano.pt/images/algas.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Algas:</strong> Combate e elimina as algas."
           },
           {
@@ -797,7 +833,7 @@
             "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
           }
         ]
@@ -812,7 +848,7 @@
             "url": "https://app.ciano.pt/images/water_algae_xl.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Combate as algas do seu aquário"
           },
           {
@@ -824,14 +860,14 @@
             ]
           },
           {
-            "type": "text",
-            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE"
+            "type": "medium_text",
+            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -839,7 +875,7 @@
             "url": "https://app.ciano.pt/images/fosfatos.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
           },
           {
@@ -847,7 +883,7 @@
             "url": "https://app.ciano.pt/images/nitratos.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Nitratos:</strong> Elimina Nitratos."
           },
           {
@@ -855,7 +891,7 @@
             "url": "https://app.ciano.pt/images/algas.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Algas:</strong> Combate e elimina as algas."
           },
           {
@@ -863,7 +899,7 @@
             "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
           }
         ]
@@ -878,8 +914,8 @@
             "url": "https://app.ciano.pt/images/water_foam_s.png"
           },
           {
-            "type": "text",
-            "value": "Retém partículas e matéria orgânica existentes na água"
+            "type": "medium_text",
+            "value": "Retém partículas e matéria orgânica existentes na água."
           },
           {
             "type": "list",
@@ -890,22 +926,22 @@
             ]
           },
           {
-            "type": "text",
-            "value": "Comprado até 2014"
+            "type": "small_text",
+            "value": "*Comprado até 2014"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/agua.png"
+            "url": "https://app.ciano.pt/images/no_wast.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
           },
           {
@@ -913,7 +949,7 @@
             "url": "https://app.ciano.pt/images/densidade.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
           },
           {
@@ -921,7 +957,7 @@
             "url": "https://app.ciano.pt/images/esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
           },
           {
@@ -929,7 +965,7 @@
             "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
           }
         ]
@@ -944,7 +980,7 @@
             "url": "https://app.ciano.pt/images/water_foam_m_rotacao.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Retém partículas e matéria orgânica existentes na água"
           },
           {
@@ -956,22 +992,22 @@
             ]
           },
           {
-            "type": "text",
+            "type": "small_text",
             "value": "Comprado até 2014"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/agua.png"
+            "url": "https://app.ciano.pt/images/no_wast.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
           },
           {
@@ -979,7 +1015,7 @@
             "url": "https://app.ciano.pt/images/densidade.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
           },
           {
@@ -987,7 +1023,7 @@
             "url": "https://app.ciano.pt/images/esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
           },
           {
@@ -995,10 +1031,10 @@
             "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
           }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/water_foam_l.png",
@@ -1034,7 +1070,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/agua.png"
+            "url": "https://app.ciano.pt/images/no_wast.png"
           },
           {
             "type": "text",
@@ -1158,7 +1194,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/no_wast.png"
+                "url": "https://app.ciano.pt/images/water.png"
             },
             {
                 "type": "text",
@@ -2417,7 +2453,7 @@
             "type": "list",
             "items": [
               "Neutraliza rápida e duradouramente substâncias tóxicas como cloro, cloramina e metais pesados.",
-              "Protege as brânquias, pele e barbatanas dos peixes com extratos de substâncias naturais e vitaminas indispensáveis ás quais estão habituados no seu biótopo natural.",
+              "Protege as brânquias, pele e barbatanas dos peixes com extratos de substâncias naturais e vitaminas indispensáveis às quais estão habituados no seu biótopo natural.",
               "Reduz o stress e o risco de doenças nos peixes.",
               "Suporte para iniciação correta do aquário."
             ]
@@ -2432,7 +2468,7 @@
           {
             "type": "list",
             "items": [
-              "Agitar antes de usar. Adicionar a dose de WATER CONDITIONER de preferência na saída de água do filtro.",
+              "Agitar antes de usar. Adicionar a dose de WATER CONDITIONER de preferência próximo da saída de água do filtro.",
               "Dose: 10mL para 40L de água a tratar. (Se estiver a iniciar um aquário, adicionar a dose correspondente ao volume total do aquário.",
               "Para trocas parciais de água, adicionar a dose correspondente ao volume de água trocada (se adicionar para todo o volume de água não traz desvantagens)."
             ]
@@ -2447,14 +2483,14 @@
           {
             "type": "list",
             "items": [
-              "Seguir indicações deste produto e do guia 'CIANO CARE'."
+              "Seguir indicações deste produto e do guia CIANO CARE."
             ]
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -2476,14 +2512,6 @@
           {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/substancias_toxicas.png"
-          },
-          {
-            "type": "text",
-            "value": "<strong>Deficiências:</strong> Previne e corrige."
-          },
-          {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/15_dias.png"
           },
           {
             "type": "text",
@@ -5345,7 +5373,7 @@
                 "type": "list",
                 "items": [
                     "Aplicação My Ciano: Para uma gestão simples di sistema de filtração, a Ciano dispõe de aplicação My Ciano, que permite o acompanhamento em tempo real do desgaste dos seus consumíveis, criando alertas para a renovação dos mesmos;",
-                    "Tripla filtração: Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água;"
+                    "Tripla filtração: Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudiciais aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água;"
                 ]
             },
             {
@@ -5462,7 +5490,7 @@
             },
             {
                 "type": "text",
-                "value": "Tripla filtração: Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água."
+                "value": "Tripla filtração: Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudiciais aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água."
             },
             {
                 "type": "divider"
@@ -5579,7 +5607,7 @@
             },
             {
                 "type": "medium_text",
-                "text": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
+                "text": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudiciais aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
             },
             {
                 "type": "divider"
@@ -5692,7 +5720,7 @@
             },
             {
                 "type": "text",
-                "value": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudicias aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
+                "value": "Preparado para uma tripla filtração: química, biológica e mecânica, que irá eliminar substâncias prejudiciais aos peixes e manter a água cristalina sem odores, combater as algas, manter o ecossistema e reter partículas e matérias orgânicas existentes na água"
             },
             {
                 "type": "divider"
@@ -5815,119 +5843,119 @@
         "name": "TARTARIUM 40",
         "category": "tartariums",
         "details": [
-            {
-                "type": "large_image",
-                "url": "https://app.ciano.pt/images/tartarium_40.png"
-            },
-            {
-                "type": "text",
-                "value": "O Tartarium 40, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "Equipamentos Incluídos"
-        },
-        {
-            "type": "list",
-            "items": [
-                "1 Rampa em plástico de alta qualidade;"
-            ]
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/rampa.png"
-        },
-        {
-            "type": "title",
-            "text": "Design atrativo e inovador"
-        },
-        {
-            "type": "text",
-            "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/zona_seca.png"
-        },
-        {
-            "type": "title",
-            "text": "Zona seca prática e elegante"
-        },
-        {
-            "type": "text",
-            "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 40 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
-        },
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/filtracao_de_nova_geracao_opcional.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração de nova geração (opcional)"
-        },
-        {
-            "type": "text",
-            "value": "Como opção está disponível o CFSTONE 40, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "AO PORMENOR"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/qualidade.png"
-        },
-        {
-            "type": "title",
-            "text": "Qualidade"
-        },
-        {
-            "type": "text",
-            "value": "Apoios em plástico branco com alto brilho."
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/seguranca.png"
-        },
-        {
-            "type": "title",
-            "text": "Segurança"
-        },
-        {
-            "type": "text",
-            "value": "Tampa transparente para tartarugas não saltarem"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/conforto.png"
-        },
-        {
-            "type": "title",
-            "text": "Conforto"
-        },
-        {
-            "type": "text",
-            "value": "Zona seca para descanso e exposição solar"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
-        },
-        {
-            "type": "title",
-            "text": "Filtração Nova Geração"
-        },
-        {
-            "type": "text",
-            "value": "CFStone (opcional)"
-        }
-        ]
+          {
+              "type": "large_image",
+              "url": "https://app.ciano.pt/images/tartarium_40.png"
+          },
+          {
+              "type": "text",
+              "value": "O Tartarium 40, terrário em vidro, está equipado com apoios e zona seca em plástico branco de alta qualidade com acabamento alto brilho e por uma tampa em plástico transparente para o descanso da sua tartaruga e para uma ótima exposição ao calor, indispensável para o seu bem-estar e crescimento."
+          },
+          {
+              "type": "divider"
+          },
+          {
+              "type": "title",
+              "text": "Equipamentos Incluídos"
+          },
+          {
+              "type": "list",
+              "items": [
+                  "1 Rampa em plástico de alta qualidade;"
+              ]
+          },
+          {
+              "type": "large_image",
+              "url": "https://app.ciano.pt/images/rampa.png"
+          },
+          {
+              "type": "title",
+              "text": "Design atrativo e inovador"
+          },
+          {
+              "type": "text",
+              "value": "Com materias de alta qualidade o tartarium é constituído por vidro, que permite uma visão total de todos os movimentos das tartarugas e plástico branco com acabamento alto brilho nos seus quatro suportes e rampa."
+          },
+          {
+              "type": "large_image",
+              "url": "https://app.ciano.pt/images/zona_seca.png"
+          },
+          {
+              "type": "title",
+              "text": "Zona seca prática e elegante"
+          },
+          {
+              "type": "text",
+              "value": "Para que a tartaruga possa descansar e aquecer, a tartarium 40 dispõe de uma zona seca que a tartaruga facilmente pode aceder através da sua rampa, que é possível posicionar de três formas diferentes tendo uma fixação fácil e harmoniosa e para evitar que a tartaruga salte tem uma tampa transparente."
+          },
+          {
+              "type": "large_image",
+              "url": "https://app.ciano.pt/images/filtracao_de_nova_geracao_opcional.png"
+          },
+          {
+              "type": "title",
+              "text": "Filtração de nova geração (opcional)"
+          },
+          {
+              "type": "text",
+              "value": "Como opção está disponível o CFSTONE 40, um filtro interior de nova geração que além do papel de filtro tem também o papel decorativo, uma vez que o seu design é em forma de pedra, e os seus cabos elétricos são camuflados. Com dois circuitos de água independentes, assegura a limpeza e tratamento de água num, e garante a colonização de bactérias no outro, a sua versatilidade com duas opções para saída de água faz com que seja ideal para o tartarium."
+          },
+          {
+              "type": "divider"
+          },
+          {
+              "type": "title",
+              "text": "AO PORMENOR"
+          },
+          {
+              "type": "small_image",
+              "url": "https://app.ciano.pt/images/qualidade.png"
+          },
+          {
+              "type": "title",
+              "text": "Qualidade"
+          },
+          {
+              "type": "text",
+              "value": "Apoios em plástico branco com alto brilho."
+          },
+          {
+              "type": "small_image",
+              "url": "https://app.ciano.pt/images/seguranca.png"
+          },
+          {
+              "type": "title",
+              "text": "Segurança"
+          },
+          {
+              "type": "text",
+              "value": "Tampa transparente para tartarugas não saltarem"
+          },
+          {
+              "type": "small_image",
+              "url": "https://app.ciano.pt/images/conforto.png"
+          },
+          {
+              "type": "title",
+              "text": "Conforto"
+          },
+          {
+              "type": "text",
+              "value": "Zona seca para descanso e exposição solar"
+          },
+          {
+              "type": "small_image",
+              "url": "https://app.ciano.pt/images/filtracao_nova_geracao.png"
+          },
+          {
+              "type": "title",
+              "text": "Filtração Nova Geração"
+          },
+          {
+              "type": "text",
+              "value": "CFStone (opcional)"
+          }
+      ]
     },
     {
         "image": "https://app.ciano.pt/images/tartarium_60.png",
