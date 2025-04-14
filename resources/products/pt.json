@@ -79,7 +79,7 @@
                 "url": "https://app.ciano.pt/images/6_em_1.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>6 testes numa Tira:</strong> NO3-, NO2-, GH, Cl2, pH e KH."
             },
             {
@@ -87,7 +87,7 @@
                 "url": "https://app.ciano.pt/images/50_tiras.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>50 Tiras:</strong> 300 Testes Individuais."
             },
             {
@@ -95,7 +95,7 @@
                 "url": "https://app.ciano.pt/images/facil.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Utilização:</strong> Fácil."
             },
             {
@@ -103,7 +103,7 @@
                 "url": "https://app.ciano.pt/images/rapido.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Rápido:</strong> 1 minuto."
             }
         ]
@@ -118,7 +118,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_s.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -149,7 +149,7 @@
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -157,7 +157,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -165,7 +165,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -173,7 +173,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -258,7 +258,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_l.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -289,7 +289,7 @@
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -297,7 +297,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -305,7 +305,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -313,7 +313,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -328,7 +328,7 @@
                 "url": "https://app.ciano.pt/images/water_clear_protection_xl.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "Elimina substâncias prejudiciais aos seus peixes e mantém a água cristalina e sem odores. Ação preventiva no aparecimento de algas."
             },
             {
@@ -355,7 +355,7 @@
                 "url": "https://app.ciano.pt/images/agua.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
@@ -363,7 +363,7 @@
                 "url": "https://app.ciano.pt/images/prevencao.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Prevenção:</strong> Previne e elimina a cor e os odores."
             },
             {
@@ -371,7 +371,7 @@
                 "url": "https://app.ciano.pt/images/algas.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Algas:</strong> Ação preventiva no aparecimento de algas."
             },
             {
@@ -379,7 +379,7 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade do cartucho:</strong> 30 dias."
             }
         ]
@@ -645,7 +645,7 @@
             "type": "list",
             "items": [
               "Filtração Química;",
-              "Deve ser usado como tratamiento ocasional;",
+              "Deve ser usado como tratamento ocasional;",
               "Compatível com os filtros: CF20&40, CFSTONE40, Magi200*, SuperClean40*"
             ]
           },
@@ -715,23 +715,23 @@
             "type": "list",
             "items": [
               "Filtração Química;",
-              "Deve ser usado como tratamiento ocasional;",
+              "Deve ser usado como tratamento ocasional;",
               "Compatível com os filtros: CF80, CFSTONE80, CFBIO150&250, Magi380*, SuperClean60&90*"
             ]
           },
           {
             "type": "medium_text",
-            "value": "ATENÇÃO: Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
+            "value": "<strong>ATENÇÃO:</strong> Se usar medicamentos no seu aquário, deve retirar o WATER ALGAE."
           },
           {
             "type": "small_text",
-            "value": "*Comprado até 2014"
+            "value": "* Comprado até 2014."
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -740,7 +740,7 @@
           },
           {
             "type": "text",
-            "value": "Fosfatos: Elimina Fosfatos."
+            "value": "<strong>Fosfatos:</strong> Elimina Fosfatos."
           },
           {
             "type": "small_image",
@@ -748,7 +748,7 @@
           },
           {
             "type": "text",
-            "value": "Nitratos: Elimina Nitratos."
+            "value": "<strong>Nitratos:</strong> Elimina Nitratos."
           },
           {
             "type": "small_image",
@@ -756,7 +756,7 @@
           },
           {
             "type": "text",
-            "value": "Algas: Combate e elimina as algas."
+            "value": "<strong>Algas:</strong> Combate e elimina as algas."
           },
           {
             "type": "small_image",
@@ -764,7 +764,7 @@
           },
           {
             "type": "text",
-            "value": "Durabilidade do cartucho: 45 dias."
+            "value": "<strong>Durabilidade do cartucho:</strong> 45 dias."
           }
         ]
       },
@@ -779,13 +779,13 @@
           },
           {
             "type": "medium_text",
-            "value": "Combate as algas do seu aquário"
+            "value": "Combate as algas do seu aquário."
           },
           {
             "type": "list",
             "items": [
               "Filtração Química;",
-              "Deve ser usado como tratamiento ocasional;",
+              "Deve ser usado como tratamento ocasional;",
               "Compatível com os filtros: CFBIO L, CFBIO 150*&250*"
             ]
           },
@@ -795,7 +795,7 @@
           },
           {
             "type": "small_text",
-            "value": "*Verificar o tamanho no suporte dos cartuchos"
+            "value": "* Verificar o tamanho no suporte dos cartuchos"
           },
           {
             "type": "divider"
@@ -849,13 +849,13 @@
           },
           {
             "type": "medium_text",
-            "value": "Combate as algas do seu aquário"
+            "value": "Combate as algas do seu aquário."
           },
           {
             "type": "list",
             "items": [
               "Filtração Química;",
-              "Deve ser usado como tratamiento ocasional;",
+              "Deve ser usado como tratamento ocasional;",
               "Compatível com os filtros: CFBIO XL"
             ]
           },
@@ -927,7 +927,7 @@
           },
           {
             "type": "small_text",
-            "value": "*Comprado até 2014"
+            "value": "* Comprado até 2014"
           },
           {
             "type": "divider"
@@ -942,7 +942,7 @@
           },
           {
             "type": "medium_text",
-            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes."
           },
           {
             "type": "small_image",
@@ -950,7 +950,7 @@
           },
           {
             "type": "medium_text",
-            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas."
           },
           {
             "type": "small_image",
@@ -981,7 +981,7 @@
           },
           {
             "type": "medium_text",
-            "value": "Retém partículas e matéria orgânica existentes na água"
+            "value": "Retém partículas e matéria orgânica existentes na água."
           },
           {
             "type": "list",
@@ -993,7 +993,7 @@
           },
           {
             "type": "small_text",
-            "value": "Comprado até 2014"
+            "value": "* Comprado até 2014"
           },
           {
             "type": "divider"
@@ -1008,7 +1008,7 @@
           },
           {
             "type": "medium_text",
-            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes."
           },
           {
             "type": "small_image",
@@ -1016,7 +1016,7 @@
           },
           {
             "type": "medium_text",
-            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas."
           },
           {
             "type": "small_image",
@@ -1046,8 +1046,8 @@
             "url": "https://app.ciano.pt/images/water_foam_l.png"
           },
           {
-            "type": "text",
-            "value": "Retém partículas e matéria orgânica existentes na água"
+            "type": "medium_text",
+            "value": "Retém partículas e matéria orgânica existentes na água."
           },
           {
             "type": "list",
@@ -1058,14 +1058,14 @@
             ]
           },
           {
-            "type": "text",
-            "value": "Para filtro com cartucho L"
+            "type": "small_text",
+            "value": "* Para filtro com cartucho L"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -1073,23 +1073,23 @@
             "url": "https://app.ciano.pt/images/no_wast.png"
           },
           {
-            "type": "text",
-            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+            "type": "medium_text",
+            "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes."
           },
           {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/densidade.png"
           },
           {
-            "type": "text",
-            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+            "type": "medium_text",
+            "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas."
           },
           {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
           },
           {
@@ -1097,10 +1097,10 @@
             "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
           }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/water_foam_xl.png",
@@ -1112,8 +1112,8 @@
                 "url": "https://app.ciano.pt/images/water_foam_xl.png"
             },
             {
-                "type": "text",
-                "value": "Retém partículas e matéria orgânica existentes na água"
+                "type": "medium_text",
+                "value": "Retém partículas e matéria orgânica existentes na água."
             },
             {
                 "type": "list",
@@ -1127,7 +1127,7 @@
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Ao pormenor"
             },
             {
@@ -1135,23 +1135,23 @@
                 "url": "https://app.ciano.pt/images/no_wast.png"
             },
             {
-                "type": "text",
-                "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
+                "type": "medium_text",
+                "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes."
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/densidade.png"
             },
             {
-                "type": "small_text",
-                "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
+                "type": "medium_text",
+                "value": "<strong>Densidade:</strong> 30PPI para uma melhor relação entre o fluxo da água e retenção de partículas."
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/esponja.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Qualidade:</strong> Esponja com materias de alta qualidade."
             },
             {
@@ -1159,10 +1159,10 @@
                 "url": "https://app.ciano.pt/images/durabilidade_do_cartucho.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade da esponja:</strong> 90 dias."
             }
-            ]
+          ]
     },
     {
         "image": "https://app.ciano.pt/images/water_foam_coarse_xl.png",
@@ -1174,8 +1174,8 @@
                 "url": "https://app.ciano.pt/images/water_foam_coarse_xl.png"
             },
             {
-                "type": "text",
-                "value": "Remove as pequenas e micro partículas presentes na água"
+                "type": "medium_text",
+                "value": "Remove as pequenas e micro partículas presentes na água."
             },
             {
                 "type": "list",
@@ -1189,7 +1189,7 @@
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Ao pormenor"
             },
             {
@@ -1197,15 +1197,15 @@
                 "url": "https://app.ciano.pt/images/water.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes"
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/densidade.png"
+                "url": "https://app.ciano.pt/images/20ppi.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Densidade:</strong> 20PPI para uma melhor relação entre o fluxo da água e retenção de partículas"
             },
             {
@@ -1213,10 +1213,10 @@
                 "url": "https://app.ciano.pt/images/durabilidade.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade:</strong> 90 dias."
             }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/water_pad_xl.png",
@@ -1228,8 +1228,8 @@
                 "url": "https://app.ciano.pt/images/water_pad_xl.png"
             },
             {
-                "type": "text",
-                "value": "Remove as pequenas e micro partículas presentes na água"
+                "type": "medium_text",
+                "value": "Remove as pequenas e micro partículas presentes na água."
             },
             {
                 "type": "list",
@@ -1243,22 +1243,26 @@
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Ao pormenor"
             },
             {
-                "type": "text",
-                "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes\n<strong>Micro-Filtration:</strong> Micro Filtration Pad"
+                "type": "medium_text",
+                "value": "<strong>Água:</strong> Retém partículas e matéria orgânica existentes."
+            },
+            {
+                "type": "medium_text",
+                "value": "<strong>Densidade:</strong> Remove as pequenas e micro partículas."
             },
             {
                 "type": "small_image",
                 "url": "https://app.ciano.pt/images/durabilidade_da_esponja.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "<strong>Durabilidade da esponja:</strong> 15 dias."
             }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_s.png",
@@ -1270,19 +1274,19 @@
                 "url": "https://app.ciano.pt/images/fish_protection_dosator_s.png"
                 },
                 {
-                "type": "text",
-                "value": "<strong>Proteção:</strong> de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+                "type": "medium_text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças."
                 },
                 {
                 "type": "divider"
                 },
                 {
-                "type": "title",
+                "type": "title_left",
                 "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®? "
                 },
                 {
-                "type": "text",
-                "value": "Protege as Brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+                "type": "medium_text",
+                "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis às quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. O doseador FISH PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
                 },
                 {
                 "type": "divider"
