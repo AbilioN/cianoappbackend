@@ -2131,7 +2131,7 @@
             "items": [
                 "Agitar antes de usar. Retirar o carvão ativo e/ou massa filtrante adsorvente presente no filtro durante o tratamento. Não remova a esponja, insira de novo após atingir os resultados esperados.",
                 "Adicionar a dose de WATER CLEAR & PROTECTION de preferência na saída de água do filtro.",
-                "Dose: 10mL para 40L (sempre para o volume total de água do aquário)"
+                "Dose: 10mL para 40L (sempre para o volume total de água do aquário)."
               ]
             },
             {
@@ -2145,7 +2145,7 @@
             "type": "list",
             "items": [
                 "Fazer medição da água com \"WATER TEST STRIPS\" 6 em 1 CIANO®, no mínimo, a cada 15 dias.",
-                "Seguir indicações deste produto e do guia \"CIANO CARE\""
+                "Seguir indicações deste produto e do guia \"CIANO CARE\"."
               ]
             },
             {
@@ -2177,7 +2177,7 @@
             },
             {
             "type": "medium_text",
-            "value": "<strong>Prevenção:</strong> Previne e elimina as cores da água"
+            "value": "<strong>Prevenção:</strong> Previne e elimina as cores da água."
             },
             {
             "type": "small_image",
@@ -2185,7 +2185,7 @@
             },
             {
             "type": "medium_text",
-            "value": "<strong>Uso regular:</strong> Mensalmente"
+            "value": "<strong>Uso regular:</strong> Mensalmente."
             }
         ]
     },
@@ -2280,7 +2280,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/15_dias.png"
+            "url": "https://app.ciano.pt/images/15dias.png"
           },
           {
             "type": "medium_text",
