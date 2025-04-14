@@ -2299,7 +2299,7 @@
           },
           {
             "type": "medium_text",
-            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças."
           },
           {
             "type": "divider"
@@ -2311,7 +2311,7 @@
           {
             "type": "list",
             "items": [
-              "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural.",
+              "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis às quais os peixes estão habituados no seu biótopo natural.",
               "Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro."
             ]
           },
@@ -2326,7 +2326,7 @@
             "type": "list",
             "items": [
               "Agitar antes de usar. Adicionar a dose de FISH PROTECTION de preferência na saída de água do filtro.",
-              "Dose: 10mL para 40L (sempre para o volume total de água do aquário)",
+              "Dose: 10mL para 40L (sempre para o volume total de água do aquário).",
               "Aconselha-se o uso do doseador FISH PROTECTION para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
             ]
           },
@@ -2352,7 +2352,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/protecao.png"
+            "url": "https://app.ciano.pt/images/protecao_peixe.png"
           },
           {
             "type": "medium_text",
@@ -2360,7 +2360,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/extratos.png"
+            "url": "https://app.ciano.pt/images/plantas_naturais.png"
           },
           {
             "type": "medium_text",
@@ -2368,7 +2368,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/doencas.png"
+            "url": "https://app.ciano.pt/images/reduz_doencas.png"
           },
           {
             "type": "medium_text",
@@ -2376,7 +2376,7 @@
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/15_dias.png"
+            "url": "https://app.ciano.pt/images/15dias.png"
           },
           {
             "type": "medium_text",
