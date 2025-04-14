@@ -1288,11 +1288,12 @@
                 "type": "medium_text",
                 "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis às quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. O doseador FISH PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
                 },
+                
                 {
                 "type": "divider"
                 },
                 {
-                "type": "title",
+                "type": "title_left",
                 "text": "Características principais"
                 },
                 {
@@ -1305,10 +1306,10 @@
                 },
                 {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+                "url": "https://app.ciano.pt/images/instalacao_universal.png"
                 },
                 {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Fish Protection é UNIVERSAL."
                 },
                 {
@@ -1319,11 +1320,15 @@
                 },
                 {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+                "url": "https://app.ciano.pt/images/protecao_continua.png"
                 },
                 {
-                "type": "text",
-                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+                "type": "medium_text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+                },
+                {
+                  "type": "small_text",
+                  "value": "*Tempo de consumo estimado"
                 },
                 {
                 "type": "list",
@@ -1336,7 +1341,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
                 },
                 {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
                 },
                 {
@@ -1371,25 +1376,25 @@
             "url": "https://app.ciano.pt/images/fish_protection_dosator_m.png"
             },
             {
-            "type": "text",
-            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            "type": "medium_text",
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-            "type": "text",
-            "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+            "type": "medium_text",
+            "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. O doseador FISH PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Características principais"
             },
             {
@@ -1402,10 +1407,10 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1416,11 +1421,15 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-            "type": "text",
-            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            "type": "medium_text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+              "type": "small_text",
+              "value": "* Tempo de consumo estimado"
             },
             {
             "type": "list",
@@ -1468,25 +1477,25 @@
             "url": "https://app.ciano.pt/images/fish_protection_dosator_l.png"
             },
             {
-            "type": "text",
-            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+            "type": "medium_text",
+            "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-            "type": "text",
-            "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+              "type": "medium_text",
+              "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. O doseador FISH PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Características principais"
             },
             {
@@ -1499,10 +1508,10 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1513,11 +1522,15 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-            "type": "text",
-            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            "type": "medium_text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+              "type": "small_text",
+              "value": "* Tempo de consumo estimado"
             },
             {
             "type": "list",
@@ -1530,7 +1543,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1553,7 +1566,7 @@
                 "Instrução (Emotions & Universal)"
             ]
             }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/fish_protection_dosator_xl.png",
@@ -1565,25 +1578,25 @@
                 "url": "https://app.ciano.pt/images/fish_protection_dosator_xl.png"
             },
             {
-                "type": "text",
-                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
+                "type": "medium_text",
+                "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças."
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "PORQUÊ utilizar FISH PROTECTION DOSATOR CIANO®?"
             },
             {
-                "type": "text",
-                "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos deplantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. Odoseador FISH PROTECTION é ideal para uma adição controlada, continua e sem preocupações do condicionador ao longo do tempo."
+              "type": "medium_text",
+              "value": "Protege as brânquias, pele e barbatanas dos peixes com extratos de plantas naturais e vitaminas indispensáveis ás quais os peixes estão habituados no seu biótopo natural. Funciona como um revestimento natural que protege os peixes dos agentes causadores de doenças, com efeito duradouro. O doseador FISH PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do condicionador ao longo do tempo."
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Características principais"
             },
             {
@@ -1596,10 +1609,10 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+                "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Fish Protection é UNIVERSAL."
             },
             {
@@ -1610,11 +1623,15 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+                "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-                "type": "text",
-                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+                "type": "medium_text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+                "type": "small_text",
+                "value": "* Tempo de consumo estimado"
             },
             {
                 "type": "list",
@@ -1627,7 +1644,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Fish protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1662,14 +1679,14 @@
                 "url": "https://app.ciano.pt/images/plants_protection_dosator_s.png"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Um reforço para todos os tipos de plantas."
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
@@ -1677,7 +1694,7 @@
                 "items": [
                     "Uma fonte potente de nutrientes, destinada a plantas para aquários.",
                     "Um forte crescimento das plantas é percetível em poucas semanas.",
-                    "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão",
+                    "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão.",
                     "O doseador PLANTS PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do líquido ao longo do tempo."
                 ]
             },
@@ -1685,7 +1702,7 @@
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Características principais"
             },
             {
@@ -1698,10 +1715,10 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+                "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1712,11 +1729,15 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+                "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-                "type": "text",
-                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+                "type": "medium_text",
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+                "type": "small_text",
+                "value": "* Tempo de consumo estimado"
             },
             {
                 "type": "list",
@@ -1752,7 +1773,7 @@
                     "Instrução (Emotions & Universal)"
                 ]
             }
-            ]
+        ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_m.png",
@@ -1764,14 +1785,14 @@
                 "url": "https://app.ciano.pt/images/plants_protection_dosator_m.png"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Um reforço para todos os tipos de plantas."
             },
             {
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
@@ -1779,7 +1800,7 @@
                 "items": [
                     "Uma fonte potente de nutrientes, destinada a plantas para aquários.",
                     "Um forte crescimento das plantas é percetível em poucas semanas.",
-                    "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão",
+                    "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão.",
                     "O doseador PLANTS PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do líquido ao longo do tempo."
                 ]
             },
@@ -1787,7 +1808,7 @@
                 "type": "divider"
             },
             {
-                "type": "title",
+                "type": "title_left",
                 "text": "Características principais"
             },
             {
@@ -1800,10 +1821,10 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+                "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -1814,11 +1835,15 @@
             },
             {
                 "type": "medium_image",
-                "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+                "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
                 "type": "text",
-                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+                "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+                "type": "small_text",
+                "value": "* Tempo de consumo estimado"
             },
             {
                 "type": "list",
@@ -1831,7 +1856,7 @@
                 "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-                "type": "text",
+                "type": "medium_text",
                 "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1854,7 +1879,7 @@
                     "Instrução (Emotions & Universal)"
                 ]
             }
-            ]
+          ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_l.png",
@@ -1866,14 +1891,14 @@
             "url": "https://app.ciano.pt/images/plants_protection_dosator_l.png"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Um reforço para todos os tipos de plantas."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
@@ -1881,7 +1906,7 @@
             "items": [
                 "Uma fonte potente de nutrientes, destinada a plantas para aquários.",
                 "Um forte crescimento das plantas é percetível em poucas semanas.",
-                "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão",
+                "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão.",
                 "O doseador PLANTS PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do líquido ao longo do tempo."
             ]
             },
@@ -1889,7 +1914,7 @@
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Características principais"
             },
             {
@@ -1902,7 +1927,7 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
             "type": "text",
@@ -1916,11 +1941,15 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-            "type": "text",
-            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            "type": "medium_text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+                "type": "small_text",
+                "value": "* Tempo de consumo estimado"
             },
             {
             "type": "list",
@@ -1933,7 +1962,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -1956,7 +1985,7 @@
                 "Instrução (Emotions & Universal)"
             ]
             }
-            ]
+          ]
     },
     {
         "image": "https://app.ciano.pt/images/plants_protection_dosator_xl.png",
@@ -1968,14 +1997,14 @@
             "url": "https://app.ciano.pt/images/plants_protection_dosator_xl.png"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Um reforço para todos os tipos de plantas."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar PLANTS PROTECTION DOSATOR CIANO®?"
             },
             {
@@ -1983,7 +2012,7 @@
             "items": [
                 "Uma fonte potente de nutrientes, destinada a plantas para aquários.",
                 "Um forte crescimento das plantas é percetível em poucas semanas.",
-                "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão",
+                "As plantas poderão assim facilmente competir com as algas, que desse modo regredirão.",
                 "O doseador PLANTS PROTECTION é ideal para uma adição controlada, contínua e sem preocupações do líquido ao longo do tempo."
             ]
             },
@@ -1991,7 +2020,7 @@
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Características principais"
             },
             {
@@ -2004,10 +2033,10 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/universal_com_instalação_facil.png"
+            "url": "https://app.ciano.pt/images/instalacao_universal.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Plants Protection é UNIVERSAL."
             },
             {
@@ -2018,11 +2047,15 @@
             },
             {
             "type": "medium_image",
-            "url": "https://app.ciano.pt/images/proteção_contínua_com_mais_eficiencia.png"
+            "url": "https://app.ciano.pt/images/protecao_continua.png"
             },
             {
-            "type": "text",
-            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico).\n*Tempo de consumo estimado"
+            "type": "medium_text",
+            "value": "Até então, a dosagem dos líquidos nos aquários, é feita manualmente, propicia a esquecimento e com variações na dosagem o que provoca picos na proteção do peixe. Com o doseador Fish protection, e através do seu sistema de dosagem automático, a proteção ao seu peixe será contínua (sem picos) e mais eficiente ao longo de 60 dias*, (ver gráfico)."
+            },
+            {
+                "type": "small_text",
+                "value": "* Tempo de consumo estimado"
             },
             {
             "type": "list",
@@ -2035,7 +2068,7 @@
             "url": "https://app.ciano.pt/images/sem_consumo_de_energia.png"
             },
             {
-            "type": "text",
+            "type": "medium_text",
             "value": "O Doseador Plants protection é totalmente autónomo, não necessitando de energia para o seu funcionamento. Precisando apenas que respeite o nível da água (MAX e MIN) indicado no doseador."
             },
             {
@@ -2070,14 +2103,14 @@
             "url": "https://app.ciano.pt/images/water_clear_&_protection_100ml.png"
             },
             {
-            "type": "text",
-            "text": "Water Clear & Protection transforma rapidamente a água turva cristalina, própria para o aquário."
+              "type": "medium_text",
+              "value": "<strong>Water Clear & Protection</strong> transforma rapidamente a água turva cristalina, própria para o aquário."
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar WATER CLEAR & PROTECTION CIANO®?"
             },
             {
@@ -2090,21 +2123,36 @@
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "COMO utilizar?"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Agitar antes de usar. Retirar o carvão ativo e/ou massa filtrante adsorvente presente no filtro durante o tratamento. Não remova a esponja, insira de novo após atingir os resultados esperados.",
+                "Adicionar a dose de WATER CLEAR & PROTECTION de preferência na saída de água do filtro.",
+                "Dose: 10mL para 40L (sempre para o volume total de água do aquário)"
+              ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title_left",
+            "text": "Quando utilizar?"
             },
             {
             "type": "list",
             "items": [
                 "Fazer medição da água com \"WATER TEST STRIPS\" 6 em 1 CIANO®, no mínimo, a cada 15 dias.",
                 "Seguir indicações deste produto e do guia \"CIANO CARE\""
-            ]
+              ]
             },
             {
             "type": "divider"
             },
             {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
             },
             {
@@ -2112,32 +2160,32 @@
             "url": "https://app.ciano.pt/images/agua_cristalina.png"
             },
             {
-            "type": "text",
-            "value": "Água: Mantém a água cristalina."
+            "type": "medium_text",
+            "value": "<strong>Água:</strong> Mantém a água cristalina."
             },
             {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/turbidez.png"
+            "url": "https://app.ciano.pt/images/agua_sem_turbidez.png"
             },
             {
-            "type": "text",
-            "value": "Turbidez: Remove a turbidez microfina."
+            "type": "medium_text",
+            "value": "<strong>Turbidez:</strong> Remove a turbidez microfina."
             },
             {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/prevenção_cores.png"
+            "url": "https://app.ciano.pt/images/prevencao_cores.png"
             },
             {
-            "type": "text",
-            "value": "Prevenção: Previne e elimina as cores da água"
+            "type": "medium_text",
+            "value": "<strong>Prevenção:</strong> Previne e elimina as cores da água"
             },
             {
             "type": "small_image",
             "url": "https://app.ciano.pt/images/uso_regular.png"
             },
             {
-            "type": "text",
-            "value": "Uso regular: Mensalmente"
+            "type": "medium_text",
+            "value": "<strong>Uso regular:</strong> Mensalmente"
             }
         ]
     },
@@ -2151,14 +2199,14 @@
             "url": "https://app.ciano.pt/images/water_bio_bact_100.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Bactérias vivas para um ecossistema de aquário perfeito."
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar WATER BIO-BACT CIANO®?"
           },
           {
@@ -2173,7 +2221,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "COMO utilizar?"
           },
           {
@@ -2189,7 +2237,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "QUANDO utilizar?"
           },
           {
@@ -2203,7 +2251,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -2211,15 +2259,15 @@
             "url": "https://app.ciano.pt/images/bacterias.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Bactérias:</strong> Bactérias vivas."
           },
           {
             "type": "small_image",
-            "url": "https://app.ciano.pt/images/ecossistema.png"
+            "url": "https://app.ciano.pt/images/ecossistema_perfeito.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Ecossistema:</strong> Ecossistema de aquário perfeito"
           },
           {
@@ -2227,7 +2275,7 @@
             "url": "https://app.ciano.pt/images/amonia_e_nitrito.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Elimina:</strong> Amónia e Nitrito"
           },
           {
@@ -2235,7 +2283,7 @@
             "url": "https://app.ciano.pt/images/15_dias.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Uso regular:</strong> A cada 15 dias."
           }
         ]
@@ -2250,14 +2298,14 @@
             "url": "https://app.ciano.pt/images/fish_protection_100.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "Proteção de todo o tipo de peixes com extratos de plantas naturais. Estimula o sistema imunitário e reduz o risco de doenças"
           },
           {
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "PORQUÊ utilizar FISH PROTECTION CIANO®?"
           },
           {
@@ -2271,7 +2319,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "COMO utilizar?"
           },
           {
@@ -2286,7 +2334,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "QUANDO utilizar?"
           },
           {
@@ -2299,7 +2347,7 @@
             "type": "divider"
           },
           {
-            "type": "title",
+            "type": "title_left",
             "text": "Ao pormenor"
           },
           {
@@ -2307,7 +2355,7 @@
             "url": "https://app.ciano.pt/images/protecao.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Proteção:</strong> Todo o tipo de peixes"
           },
           {
@@ -2315,7 +2363,7 @@
             "url": "https://app.ciano.pt/images/extratos.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Extratos:</strong> Plantas naturais"
           },
           {
@@ -2323,7 +2371,7 @@
             "url": "https://app.ciano.pt/images/doencas.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Doenças:</strong> Reduz o risco de doenças."
           },
           {
@@ -2331,7 +2379,7 @@
             "url": "https://app.ciano.pt/images/15_dias.png"
           },
           {
-            "type": "text",
+            "type": "medium_text",
             "value": "<strong>Uso regular:</strong> A cada 15 dias."
           }
         ]
