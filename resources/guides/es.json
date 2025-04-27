@@ -461,8 +461,8 @@
         ]
     },
     {
-        "title": "Guía de Tratamiento del Agua",
-        "name": "Guía de Tratamiento del Agua",
+        "title": "Guía de Tratamiento de Agua",
+        "name": "Guía de Tratamiento de Agua",
         "category": "water_treatment",
         "notification": "water_treatment",
         "pages": [
@@ -584,6 +584,101 @@
                             "value": "<strong>¡Acuario en buenas condiciones, pero nunca olvide comprobar frecuentemente los valores de su Acuario!</strong>"
                         }
                     ]
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Guía de Tratamiento de Peces",
+        "name": "Guía de Tratamiento de Peces",
+        "category": "fish_treatment",
+        "notification": "fish_treatment",
+        "pages": [
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnóstico"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Pequeños puntos blancos en la superficie del cuerpo del pez",
+                        "Respiración agitada",
+                        "Pérdida de peso"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Solución</strong>: Consulte con su vendedor de peces el producto adecuado."
+                },
+                {
+                    "type": "text",
+                    "value": "Para la prevención y refuerzo del sistema inmunológico recomendamos el <strong>FISH PROTECTION DOSATOR</strong>."
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnóstico"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Parásitos visibles",
+                        "El pez se frota contra los objetos",
+                        "Respiración agitada",
+                        "Pérdida de peso (aunque se alimente normalmente)"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Solución</strong>: Consulte con su vendedor de peces el producto adecuado."
+                },
+                {
+                    "type": "text",
+                    "value": "Para la prevención y para tener una <strong>barrera antiparasitaria en su pez</strong>, recomendamos el uso del <strong>FISH PROTECTION DOSATOR</strong>."
+                },
+                {
+                    "type": "divider"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "text": "Diagnóstico"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Secreciones blanquecinas o amarillentas",
+                        "Inflamaciones en la superficie de la piel, sangrado y pérdida de escamas",
+                        "Descomposición de las membranas",
+                        "Barriga y ojos hinchados",
+                        "El pez no nada correctamente"
+                    ]
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "text",
+                    "value": "<strong>Solución</strong>: Consulte con su vendedor de peces el producto adecuado."
+                },
+                {
+                    "type": "text",
+                    "value": "Para la prevención y defensa activa contra parásitos y bacterias recomendamos el <strong>FISH PROTECTION DOSATOR</strong>."
+                },
+                {
+                    "type": "divider"
                 }
             ]
         ]
