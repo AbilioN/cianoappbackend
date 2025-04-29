@@ -185,6 +185,56 @@ class AuthController extends Controller
             return response()->json(['message' => 'Erro interno no servidor.', 'message_code' => 'internal_error', 'error' => $e->getMessage()], 500);
         }
     }
+
+    public function deleteAccount(Request $request)
+    {
+        try {
+            DB::beginTransaction();
+
+            $user = $request->user();
+            
+            // Delete all user's tokens
+            $user->tokens()->delete();
+            
+            // Delete login counters
+            LoginCounter::where('user_id', $user->id)->delete();
+            
+            // Get all user's aquariums
+            $aquariums = $user->aquariums;
+            
+            // Delete related records for each aquarium
+            foreach ($aquariums as $aquarium) {
+                // Delete aquarium notifications
+                DB::table('aquarium_notifications')->where('aquarium_id', $aquarium->id)->delete();
+                
+                // Delete any other related records here if needed
+                // For example: aquarium_parameters, aquarium_events, etc.
+            }
+            
+            // Now delete the aquariums
+            $user->aquariums()->delete();
+            
+            // Finally delete the user
+            $user->delete();
+
+            DB::commit();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Conta deletada com sucesso',
+                'message_code' => 'account_deleted_successfully'
+            ], 200);
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json([
+                'success' => false,
+                'message' => 'Erro ao deletar conta',
+                'message_code' => 'delete_account_error',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
     
     // public function resetPassword(Request $request)
     // {

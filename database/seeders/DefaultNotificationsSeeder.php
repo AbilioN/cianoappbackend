@@ -187,7 +187,7 @@ class DefaultNotificationsSeeder extends Seeder
         $notificationTest2 = Notification::create([
             'name' => 'Test Consumable 5M',
             'slug' => 'test-consumable-5m',
-            'duration_type' => 'minutes',
+            'duration_type' => 'seconds',
             'duration_value' => 5,
             'type' => 'single',
         ]);

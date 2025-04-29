@@ -9,7 +9,7 @@ class Notification extends Model
 {
     use HasFactory;
 
-    protected $fillable = [ 'key', 'duration_type', 'duration_value', 'type', 'start_date', 'end_date', 'renew_date', 'callback_key'];
+    protected $fillable = [ 'name', 'slug', 'duration_type', 'duration_value', 'type', 'start_date', 'end_date', 'renew_date', 'callback_key'];
 
 
     public function bodies()
