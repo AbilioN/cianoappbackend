@@ -12,18 +12,18 @@ class ProductController extends Controller
         return response()->json(
             cache()->remember('products', 60*24, function() {
                 return [
-                    // 'en' => $this->loadProductFile('en'),
-                    // 'pt' => $this->loadProductFile('pt'),
-                    // 'es' => $this->loadProductFile('es'),
-                    // 'it' => $this->loadProductFile('it'),
-                    // 'de' => $this->loadProductFile('de'),
-                    // 'fr' => $this->loadProductFile('fr')
-                    'en' => $this->loadProductFile('pt'),
+                    'en' => $this->loadProductFile('en'),
                     'pt' => $this->loadProductFile('pt'),
-                    'es' => $this->loadProductFile('pt'),
-                    'it' => $this->loadProductFile('pt'),
-                    'de' => $this->loadProductFile('pt'),
-                    'fr' => $this->loadProductFile('pt')
+                    'es' => $this->loadProductFile('es'),
+                    'it' => $this->loadProductFile('it'),
+                    'de' => $this->loadProductFile('de'),
+                    'fr' => $this->loadProductFile('fr')
+                    // 'en' => $this->loadProductFile('pt'),
+                    // 'pt' => $this->loadProductFile('pt'),
+                    // 'es' => $this->loadProductFile('pt'),
+                    // 'it' => $this->loadProductFile('pt'),
+                    // 'de' => $this->loadProductFile('pt'),
+                    // 'fr' => $this->loadProductFile('pt')
                 ];
             })
         );
@@ -33,9 +33,9 @@ class ProductController extends Controller
     {
         try {
 
-            if($language == 'it' || $language == 'de' || $language == 'es') {
-                $language = 'en';
-            }
+            // if($language == 'it' || $language == 'de' || $language == 'es') {
+            //     $language = 'en';
+            // }
 
             $products = $this->loadProductFile($language);
 
