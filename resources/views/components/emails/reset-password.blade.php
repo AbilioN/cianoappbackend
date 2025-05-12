@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redefinição de Senha - Ciano</title>
+    <title>Password Recovery - Ciano</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,26 +50,26 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://app.ciano.pt/main_logo.png" alt="Ciano Logo" class="logo">
+            {{-- <img src="https://app.ciano.pt/main_logo.png" alt="Ciano Logo" class="logo"> --}}
         </div>
         <div class="content">
-            <h2>Redefinição de Senha</h2>
-            <p>Olá,</p>
-            <p>Recebemos uma solicitação para redefinir a senha da sua conta Ciano. Se você fez esta solicitação, clique no botão abaixo para criar uma nova senha:</p>
+            <h2>Password Recovery</h2>
+            <p>Hello,</p>
+            <p>We received a request to reset your Ciano account password. If you made this request, click the button below to create a new password:</p>
             
             <div style="text-align: center;">
-                <a href="{{ url('/reset/'.$token) }}" class="button">Redefinir Senha</a>
+                <a href="{{ url('/reset/'.$token) }}" class="button">Reset Password</a>
             </div>
 
-            <p>Este link é válido por 60 minutos.</p>
+            <p>This link is valid for 60 minutes.</p>
             
-            <p>Se você não solicitou a redefinição de senha, por favor ignore este e-mail ou entre em contato com nosso suporte se tiver alguma dúvida.</p>
+            <p>If you did not request a password reset, please ignore this email or contact our support if you have any questions.</p>
             
-            <p>Atenciosamente,<br>Equipe Ciano</p>
+            <p>Best regards,<br>Ciano Team</p>
         </div>
         <div class="footer">
-            <p>Este é um e-mail automático, por favor não responda.</p>
-            <p>&copy; {{ date('Y') }} Ciano. Todos os direitos reservados.</p>
+            <p>This is an automated email, please do not reply.</p>
+            <p>&copy; {{ date('Y') }} Ciano. All rights reserved.</p>
         </div>
     </div>
 </body>
