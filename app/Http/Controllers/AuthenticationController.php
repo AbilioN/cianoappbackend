@@ -106,21 +106,25 @@ class AuthenticationController extends Controller
         return redirect($redirectRoute);
     }
 
-    // public function sendResetLink(Request $request)
-    // {
-    //     try {
-    //         $request->validate(['email' => 'required|email']);
-    
-    //         $status = Password::sendResetLink($request->only('email'));
-    
-    //         return $status === Password::RESET_LINK_SENT
-    //             ? redirect()->intended('/home')
-    //             : throw new Exception('Erro no envio do E-mail.');
+    public function sendResetLink(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+        ]);
 
-    //     } catch (Exception $e) {
-    //         dd($e->getMessage());
-    //     }
-    // }
+        $user = User::where('email', $request->email)->first();
+        $token = Password::createToken($user);
+
+        $language = $request->input('language', 'en');
+        $view = "components.emails.reset-password-{$language}";
+
+        Mail::to($user->email)->send(new ResetPasswordMail($token, $view));
+
+        return response()->json([
+            'message' => 'Password reset link sent successfully',
+            'reset_url' => route('auth.password.reset', ['token' => $token, 'language' => $language])
+        ]);
+    }
 
     public function resetPassword(Request $request)
     {
