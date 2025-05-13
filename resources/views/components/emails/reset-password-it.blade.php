@@ -19,7 +19,7 @@
         <p>Per reimpostare la tua password, clicca sul pulsante qui sotto:</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <a href="{{ url('reset-password', ['token' => $token, 'language' => 'it']) }}" 
+            <a href="{{ route('password.reset', ['token' => $token, 'language' => 'it']) }}" 
                style="background-color: #0693e3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
                 Reimposta Password
             </a>

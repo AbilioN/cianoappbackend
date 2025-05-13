@@ -30,8 +30,8 @@ Route::get('/register', Register::class);
 Route::get('/login', Login::class);
 // Route::post('/forgot-password', [AuthenticationController::class, 'sendResetLink'])->name('password.email');
 Route::post('/reset-password', [AuthenticationController::class, 'resetPassword'])->name('password.update');
-Route::get('/reset/{token}', function ($token, Request $request) {
-    $language = $request->query('lang', 'en');
+Route::get('/reset-password/{token}', function ($token, Request $request) {
+    $language = $request->query('language', 'en');
     return view("components.auth.reset-password-{$language}", ['token' => $token]);
 })->name('password.reset');
 Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');

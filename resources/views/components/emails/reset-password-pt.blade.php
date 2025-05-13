@@ -19,7 +19,7 @@
         <p>Para redefinir sua senha, clique no botão abaixo:</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <a href="{{ url('reset-password', ['token' => $token, 'language' => 'pt']) }}" 
+            <a href="{{ route('password.reset', ['token' => $token, 'language' => 'pt']) }}" 
                style="background-color: #0693e3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
                 Redefinir Senha
             </a>

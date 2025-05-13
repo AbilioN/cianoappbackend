@@ -19,7 +19,7 @@
         <p>Um Ihr Passwort zurückzusetzen, klicken Sie bitte auf die Schaltfläche unten:</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <a href="{{ url('reset-password', ['token' => $token, 'language' => 'de']) }}" 
+            <a href="{{ route('password.reset', ['token' => $token, 'language' => 'de']) }}" 
                style="background-color: #0693e3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
                 Passwort zurücksetzen
             </a>
