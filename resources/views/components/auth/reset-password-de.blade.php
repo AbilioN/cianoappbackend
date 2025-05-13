@@ -21,7 +21,7 @@
             <img src="{{ asset('main_logo.png') }}" alt="logo" class="max-w-[70%] self-center">
             
             <h2 class="text-lg mt-6">Passwort zurücksetzen</h2>
-            <form action="{{ route('password.update') }}" method="POST" class="mx-auto">
+            <form action="{{ route('auth.password.update') }}" method="POST" class="mx-auto">
                 @csrf
                 
                 <input type="hidden" required name="token" value="{{ $token }}">

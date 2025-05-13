@@ -20,23 +20,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/register', [Register::class, 'index']);
-// Route::get('/login', [Login::class, 'index']);
-// Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');
-// Route::post('/auth/login', [AuthenticationController::class, 'login'])->name('login');
-// Route::post('/auth/logout', [AuthenticationController::class, 'logout'])->name('logout');
-
-Route::get('/register', Register::class);
-Route::get('/login', Login::class);
-Route::post('/forgot-password', [AuthenticationController::class, 'sendResetLink'])->name('auth.password.email');
-Route::post('/reset-password', [AuthenticationController::class, 'resetPassword'])->name('auth.password.update');
-Route::get('/reset-password/{token}', function ($token, Request $request) {
-    $language = $request->query('language', 'en');
-    return view("components.emails.reset-password-{$language}", ['token' => $token]);
-})->name('auth.password.reset')->middleware('web');
-Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');
-Route::post('/auth/login', [AuthenticationController::class, 'login'])->name('login');
-Route::post('/auth/logout', [AuthenticationController::class, 'logout'])->name('logout');
+// Rotas de autenticação
+Route::middleware('web')->group(function () {
+    Route::get('/register', Register::class);
+    Route::get('/login', Login::class);
+    Route::post('/forgot-password', [AuthenticationController::class, 'sendResetLink'])->name('auth.password.email');
+    Route::post('/reset-password', [AuthenticationController::class, 'resetPassword'])->name('auth.password.update');
+    Route::get('/reset-password/{token}', function ($token, Request $request) {
+        $language = $request->query('language', 'en');
+        return view("components.auth.reset-password-{$language}", ['token' => $token]);
+    })->name('auth.password.reset');
+    Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');
+    Route::post('/auth/login', [AuthenticationController::class, 'login'])->name('login');
+    Route::post('/auth/logout', [AuthenticationController::class, 'logout'])->name('logout');
+});
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', function () {

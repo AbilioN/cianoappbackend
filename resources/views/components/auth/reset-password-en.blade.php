@@ -20,8 +20,8 @@
         <div class="w-96 py-7 my-auto mx-auto text-[#0693e3] bg-cyan-200 border border-gray shadow-md rounded-md flex flex-col text-center justify-content-center">
             <img src="{{ asset('main_logo.png') }}" alt="logo" class="max-w-[70%] self-center">
             
-            <h2 class="text-lg mt-6">Password Recovery</h2>
-            <form action="{{ route('password.update') }}" method="POST" class="mx-auto">
+            <h2 class="text-lg mt-6">Reset Password</h2>
+            <form action="{{ route('auth.password.update') }}" method="POST" class="mx-auto">
                 @csrf
                 
                 <input type="hidden" required name="token" value="{{ $token }}">
