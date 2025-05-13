@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Reset</title>
+    <title>Recuperación de Contraseña</title>
 </head>
 <body>
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <img src="{{ config('app.url') }}/main_logo.png" alt="Ciano Logo" style="max-width: 200px; margin-bottom: 20px;">
         
-        <h2 style="color: #0693e3;">Password Reset</h2>
+        <h2 style="color: #0693e3;">Recuperación de Contraseña</h2>
         
-        <p>Hello,</p>
+        <p>Hola,</p>
         
-        <p>We received a request to reset your account password.</p>
+        <p>Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.</p>
         
-        <p>To reset your password, click the button below:</p>
+        <p>Para restablecer tu contraseña, haz clic en el botón de abajo:</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <a href="{{ url('reset-password', ['token' => $token, 'language' => 'en']) }}" 
+            <a href="{{ url('reset-password', ['token' => $token, 'language' => 'es']) }}" 
                style="background-color: #0693e3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
-                Reset Password
+                Restablecer Contraseña
             </a>
         </div>
         
-        <p>If you did not request a password reset, you can ignore this email.</p>
+        <p>Si no solicitaste restablecer tu contraseña, puedes ignorar este correo electrónico.</p>
         
-        <p>This reset link will expire in 60 minutes.</p>
+        <p>Este enlace de restablecimiento expirará en 60 minutos.</p>
         
-        <p>Thank you,<br>The Ciano Team</p>
+        <p>Gracias,<br>El equipo de Ciano</p>
         
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
         
         <p style="color: #666; font-size: 12px;">
-            © 2025 CIANO. All rights reserved.
+            © 2025 CIANO. Todos los derechos reservados.
         </p>
     </div>
 </body>
-</html>
+</html> 

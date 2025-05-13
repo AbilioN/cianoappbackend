@@ -174,11 +174,32 @@ class AuthController extends Controller
             if (!$emailExists) {
                 return response()->json(['message' => 'Email do not exists', 'message_code' => 'email_not_found'], 404);
             }
-            $status = Password::sendResetLink($request->only('email'));
+
+            // Get user's preferred language or default to 'en'
+            // $user = User::where('email', $request->email)->first();
+            $language = $request->language ?? 'en';
+
+            // Override the default reset link URL to include language
+            Password::sendResetLink(
+                $request->only('email'),
+                function ($user, $token) use ($language) {
+                    $user->sendPasswordResetNotification($token, $language);
+                }
+            );
     
-            return $status === Password::RESET_LINK_SENT
-                ? response()->json(['message' => 'E-mail de recuperação enviado!', 'message_code' => 'email_sent'])
-                : response()->json(['message' => 'Erro ao enviar o email', 'message_code' => 'email_not_sent', 'error' => $status], 400);
+            $messages = [
+                'pt' => 'E-mail de recuperação enviado!',
+                'es' => '¡Correo de recuperación enviado!',
+                'it' => 'Email di recupero inviato!',
+                'fr' => 'E-mail de récupération envoyé !',
+                'de' => 'Wiederherstellungs-E-Mail gesendet!',
+                'en' => 'Recovery email sent!'
+            ];
+    
+            return response()->json([
+                'message' => $messages[$language] ?? $messages['en'],
+                'message_code' => 'email_sent'
+            ]);
         } catch (ValidationException $e) {
             return response()->json(['message' => 'validation error', 'message_code' => 'validation_error', 'errors' => $e->errors()], 422);
         } catch (Exception $e) {

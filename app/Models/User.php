@@ -52,10 +52,10 @@ class User extends Authenticatable
         ];
     }
 
-    public function sendPasswordResetNotification($token)
+    public function sendPasswordResetNotification($token, $language = 'en')
     {
-
-        Mail::to($this->email)->send(new ResetPasswordMail($token));
+        $resetUrl = url("/reset/{$token}?lang={$language}");
+        Mail::to($this->email)->send(new ResetPasswordMail($token, $language));
     }
 
     public function role()

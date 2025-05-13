@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Admin as AdminMiddleware;
 use App\Livewire\Aquariums\Create as AquariumsCreate;
 use App\Livewire\History\Show as HistoryShow;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,8 +30,9 @@ Route::get('/register', Register::class);
 Route::get('/login', Login::class);
 // Route::post('/forgot-password', [AuthenticationController::class, 'sendResetLink'])->name('password.email');
 Route::post('/reset-password', [AuthenticationController::class, 'resetPassword'])->name('password.update');
-Route::get('/reset/{token}/{email?}', function ($token) {
-    return view('components.auth.reset-password', ['token' => $token]);
+Route::get('/reset/{token}', function ($token, Request $request) {
+    $language = $request->query('lang', 'en');
+    return view("components.auth.reset-password-{$language}", ['token' => $token]);
 })->name('password.reset');
 Route::post('/auth/register', [AuthenticationController::class, 'register'])->name('register');
 Route::post('/auth/login', [AuthenticationController::class, 'login'])->name('login');

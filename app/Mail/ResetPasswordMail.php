@@ -14,12 +14,15 @@ class ResetPasswordMail extends Mailable
     use Queueable, SerializesModels;
 
     public $token;
+    public $language;
+
     /**
      * Create a new message instance.
      */
-    public function __construct($token)
+    public function __construct($token, $language = 'en')
     {
         $this->token = $token;
+        $this->language = $language;
     }
 
     /**
@@ -27,8 +30,17 @@ class ResetPasswordMail extends Mailable
      */
     public function envelope(): Envelope
     {
+        $subjects = [
+            'pt' => 'Ciano - Recuperação de Senha',
+            'es' => 'Ciano - Recuperación de Contraseña',
+            'it' => 'Ciano - Recupero Password',
+            'fr' => 'Ciano - Réinitialisation du mot de passe',
+            'de' => 'Ciano - Passwort zurücksetzen',
+            'en' => 'Ciano - Password Reset'
+        ];
+
         return new Envelope(
-            subject: 'Ciano Reset Password',
+            subject: $subjects[$this->language] ?? $subjects['en'],
         );
     }
 
@@ -37,8 +49,17 @@ class ResetPasswordMail extends Mailable
      */
     public function content(): Content
     {
+        $views = [
+            'pt' => 'components.emails.reset-password-pt',
+            'es' => 'components.emails.reset-password-es',
+            'it' => 'components.emails.reset-password-it',
+            'fr' => 'components.emails.reset-password-fr',
+            'de' => 'components.emails.reset-password-de',
+            'en' => 'components.emails.reset-password'
+        ];
+
         return new Content(
-            view: 'components.emails.reset-password',
+            view: $views[$this->language] ?? $views['en'],
         );
     }
 
