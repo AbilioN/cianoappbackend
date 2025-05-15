@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use PhpParser\Node\Stmt\TryCatch;
 use Illuminate\Support\Facades\Log;
+use App\Mail\PasswordChangedMail;
 
 class AuthenticationController extends Controller
 {
@@ -145,8 +146,18 @@ class AuthenticationController extends Controller
                     return Hash::check($request->token, $entry->token);
                 });
 
+            $invalidTokenMessage = [
+                'pt' => 'Token inválido ou expirado.',
+                'en' => 'Invalid or expired token.',
+                'es' => 'Token inválido o expirado.',
+                'fr' => 'Token invalide ou expiré.',
+                'de' => 'Token ungültig oder abgelaufen.',  
+            ];
+
             if (!$resetEntry) {
-                return redirect()->back()->withErrors(['error' => 'Token inválido ou expirado.']);
+                $language = $request->input('language', 'en');
+                $errorMessage = $invalidTokenMessage[$language] ?? $invalidTokenMessage['en'];
+                return redirect()->back()->withErrors(['error' => $errorMessage]);
             }
 
             // Agora temos o email, podemos fazer o reset
@@ -164,8 +175,24 @@ class AuthenticationController extends Controller
                 }
             );
 
+            $successMessages = [
+                'pt' => 'Senha redefinida com sucesso!',
+                'en' => 'Password reset successfully!',
+                'es' => '¡Contraseña restablecida con éxito!',
+                'fr' => 'Mot de passe réinitialisé avec succès!',
+                'de' => 'Passwort erfolgreich zurückgesetzt!',
+                'it' => 'Password reimpostato con successo!',
+            ];
+
             if ($status === Password::PASSWORD_RESET) {
-                return redirect()->back()->with('success', 'Senha redefinida com sucesso!');
+                // Enviar email de confirmação
+                $language = $request->input('language', 'en');
+                $view = "components.emails.password-changed-{$language}";
+                Mail::to($resetEntry->email)->send(new PasswordChangedMail($view));
+
+                $successMessage = $successMessages[$language] ?? $successMessages['en'];
+
+                return redirect()->back()->with('success', $successMessage);
             }
 
             return redirect()->back()->withErrors(['error' => __($status)]);

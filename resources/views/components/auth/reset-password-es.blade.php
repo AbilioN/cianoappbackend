@@ -31,7 +31,7 @@
     @endif
     
     <div class="w-full min-h-[100vh] flex align-items-center justify-center">
-        <div class="w-96 py-7 my-auto mx-auto text-[#0693e3] bg-cyan-200 border border-gray shadow-md rounded-md flex flex-col text-center justify-content-center">
+        <div class="w-96 py-7 my-auto mx-auto text-[#0693e3] border border-gray shadow-md rounded-md flex flex-col text-center justify-content-center">
             <img src="{{ asset('main_logo.png') }}" alt="logo" class="max-w-[55%] self-center">
             
             <h2 class="text-lg mt-6">Restablecer Contraseña</h2>
