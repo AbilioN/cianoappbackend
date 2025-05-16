@@ -43,3 +43,9 @@ Route::post('/login', [AuthController::class, 'login']);
 // Route::post('/reset-password', [AuthController::class, 'resetPassword']);
 Route::post('/forgot-password', [AuthController::class, 'sendResetLink'])->name('password.email');
     // Route::post('/reset-password', [AuthController::class, 'resetPassword'])->name('password.update');
+Route::get('/app-version', function () {
+    return response()->json([
+        'success' => true,
+        'version' => '1.1.4',
+    ]);
+});

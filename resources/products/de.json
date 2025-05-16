@@ -6243,5 +6243,61 @@
                 "value": "CFStone (optional)"
             }
         ]
-    }    
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_20.png",
+        "name": "CLA20",
+        "category": "lighting",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/cla_20.png"
+            },
+            {
+                "type": "text",
+                "value": "Das CLA20 Ciano® ist ein zertifiziertes Niederspannungsbeleuchtungssystem für absolute Sicherheit, das natürliche Beleuchtung und niedrigen Energieverbrauch gewährleistet. Mit diesem System bringen Sie noch mehr Leben in Ihr Aquarium. Das CLA20 Ciano® ist mit Aquarien der Marke Ciano® kompatibel (siehe technische Informationen)."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Enthaltene Ausrüstung"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "CLA20 Ciano® Beleuchtungssystem (1,5W - 12VDC);",
+                    "LED-Konverter (12 VDC);"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/iluminação_natural.png"
+            },
+            {
+                "type": "title",
+                "text": "Natürliche Beleuchtung"
+            },
+            {
+                "type": "text",
+                "value": "6300K."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+                "type": "title",
+                "text": "Niedriger Verbrauch"
+            },
+            {
+                "type": "text",
+                "value": "1,5 W."
+            }
+        ]
+    }
 ]
