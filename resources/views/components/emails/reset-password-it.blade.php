@@ -7,7 +7,7 @@
 </head>
 <body>
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <img src="https://app.ciano.pt/main_logo.png" alt="Ciano Logo" style="max-width: 100px; margin-bottom: 20px;">
+        <img src="{!! 'https://app.ciano.pt/main_logo.png' !!}" alt="Ciano Logo" style="max-width: 100px; margin-bottom: 20px;">
         
         <h2 style="color: #0693e3;">Recupero Password</h2>
         
