@@ -7,8 +7,7 @@
 </head>
 <body>
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <img src="{{ config('app.url') }}/main_logo.png" alt="Ciano Logo" style="max-width: 200px; margin-bottom: 20px;">
-        {{-- <img src="{{ asset('main_logo.png') }}" alt="Ciano Logo" style="max-width: 100px; margin-bottom: 20px;"> --}}
+        <img src="{{ config('app.url') }}/storage/main_logo.png" alt="Ciano Logo" style="max-width: 100px; margin-bottom: 20px;">
         
         <h2 style="color: #0693e3;">Recuperação de Senha</h2>
         
