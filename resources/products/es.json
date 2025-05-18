@@ -5288,6 +5288,231 @@
     ]
 },
 {
+    "image": "https://app.ciano.pt/images/cla_20.png",
+    "name": "CLA20",
+    "category": "lighting",
+    "details": [
+        {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_20.png"
+        },
+        {
+            "type": "text",
+            "value": "El CLA20 Ciano® es un sistema de iluminación certificado de baja tensión, para una seguridad total, garantizando una iluminación natural y de bajo consumo energético. Con este sistema dará aún más vida a su acuario. El CLA20 Ciano® es compatible con acuarios de la marca Ciano® (ver información técnica)."
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "title",
+            "text": "Equipos Incluidos"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Sistema de iluminación CLA20 Ciano® (1,5W - 12VDC);",
+                "Convertidor LED (12 VDC);"
+            ]
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/iluminação_natural.png"
+        },
+        {
+            "type": "title",
+            "text": "Iluminación Natural"
+        },
+        {
+            "type": "text",
+            "value": "6300K."
+        },
+        {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/cable.png"
+        },
+        {
+            "type": "title",
+            "text": "Bajo Consumo"
+        },
+        {
+            "type": "text",
+            "value": "1,5 W."
+        }
+    ]
+},
+{
+  "image": "https://app.ciano.pt/images/cla_20_universal.png",
+  "name": "CLA20 UNIVERSAL",
+  "category": "lighting",
+  "details": [
+    {
+      "type": "large_image",
+      "url": "https://app.ciano.pt/images/cla_20_universal.png"
+    },
+    {
+      "type": "text",
+      "value": "El CLA20 Ciano® es un sistema de iluminación certificado de baja tensión que garantiza una seguridad total, proporcionando iluminación natural y bajo consumo de energía. Con una instalación muy sencilla, el CLA20 Universal se adapta a todos los acuarios sin marco con vidrio de 3, 4 o 5 mm de grosor."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "title",
+      "text": "Equipamiento Incluido"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Soporte del sistema de iluminación;",
+        "Sistema de iluminación CLA20 Ciano® (1,5W - 12VDC);",
+        "Convertidor LED (12 VDC);"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "small_image",
+      "url": "https://app.ciano.pt/images/universal.png"
+    },
+    {
+      "type": "title",
+      "text": "Universal"
+    },
+    {
+      "type": "text",
+      "value": "Compatible con cristales de 3 mm, 4 mm y 5 mm."
+    },
+    {
+      "type": "small_image",
+      "url": "https://app.ciano.pt/images/natural_light.png"
+    },
+    {
+      "type": "title",
+      "text": "Iluminación Natural"
+    },
+    {
+      "type": "text",
+      "value": "6300K"
+    }
+  ]
+},
+{
+    "image": "https://app.ciano.pt/images/cla_60_plants.png",
+    "name": "CLA60 PLANTS",
+    "category": "lighting",
+    "details": [
+        {
+        "type": "large_image",
+        "url": "https://app.ciano.pt/images/cla_60_plants.png"
+        },
+        {
+        "type": "text",
+        "value": "El CLA60 Plants Ciano® es un sistema de iluminación certificado de baja tensión, que garantiza una seguridad total y un bajo consumo energético, diseñado para promover el crecimiento de las plantas. El CLA60 Plants Ciano® es compatible con acuarios de la marca Ciano® (ver información técnica)."
+        },
+        {
+        "type": "divider"
+        },
+        {
+        "type": "title",
+        "text": "Equipamiento Incluido"
+        },
+        {
+        "type": "list",
+        "items": [
+            "Sistema de iluminación CLA60 Plants Ciano® (8W - 18VDC);",
+            "Convertidor LED (18 VDC);"
+        ]
+        },
+        {
+        "type": "divider"
+        },
+        {
+        "type": "small_image",
+        "url": "https://app.ciano.pt/images/especial_plants.png"
+        },
+        {
+        "type": "title",
+        "text": "Especial para Plantas"
+        },
+        {
+        "type": "text",
+        "value": "Favorece el crecimiento de las plantas."
+        },
+        {
+        "type": "small_image",
+        "url": "https://app.ciano.pt/images/cable.png"
+        },
+        {
+        "type": "title",
+        "text": "Bajo Consumo"
+        },
+        {
+        "type": "text",
+        "value": "8 W."
+        }
+    ]
+},
+{
+    "image": "https://app.ciano.pt/images/cla_60.png",
+    "name": "CLA60",
+    "category": "lighting",
+    "details": [
+        {
+        "type": "large_image",
+        "url": "https://app.ciano.pt/images/cla_60.png"
+        },
+        {
+        "type": "text",
+        "value": "El CLA60 Ciano® es un sistema de iluminación certificado de baja tensión, que garantiza una seguridad total, ofreciendo una iluminación natural y un bajo consumo energético. Con este sistema, su acuario cobrará aún más vida. El CLA60 Ciano® es compatible con acuarios de la marca Ciano® (ver información técnica)."
+        },
+        {
+        "type": "divider"
+        },
+        {
+        "type": "title",
+        "text": "Equipamiento Incluido"
+        },
+        {
+        "type": "list",
+        "items": [
+            "Sistema de iluminación CLA60 Ciano® (8W - 18VDC);",
+            "Convertidor LED (18 VDC);"
+        ]
+        },
+        {
+        "type": "divider"
+        },
+        {
+        "type": "small_image",
+        "url": "https://app.ciano.pt/images/natural_light.png"
+        },
+        {
+        "type": "title",
+        "text": "Iluminación Natural"
+        },
+        {
+        "type": "text",
+        "value": "6300K."
+        },
+        {
+        "type": "small_image",
+        "url": "https://app.ciano.pt/images/cable.png"
+        },
+        {
+        "type": "title",
+        "text": "Bajo Consumo"
+        },
+        {
+        "type": "text",
+        "value": "8 W."
+        }
+    ]
+},
+{
     "image": "https://app.ciano.pt/images/cf_20.png",
     "name": "CF20",
     "category": "filtration",
@@ -6240,62 +6465,6 @@
         {
             "type": "text",
             "value": "CFStone (opcional)"
-        }
-    ]
-},
-{
-    "image": "https://app.ciano.pt/images/cla_20.png",
-    "name": "CLA20",
-    "category": "lighting",
-    "details": [
-        {
-            "type": "large_image",
-            "url": "https://app.ciano.pt/images/cla_20.png"
-        },
-        {
-            "type": "text",
-            "value": "El CLA20 Ciano® es un sistema de iluminación certificado de baja tensión, para una seguridad total, garantizando una iluminación natural y de bajo consumo energético. Con este sistema dará aún más vida a su acuario. El CLA20 Ciano® es compatible con acuarios de la marca Ciano® (ver información técnica)."
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "title",
-            "text": "Equipos Incluidos"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Sistema de iluminación CLA20 Ciano® (1,5W - 12VDC);",
-                "Convertidor LED (12 VDC);"
-            ]
-        },
-        {
-            "type": "divider"
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/iluminação_natural.png"
-        },
-        {
-            "type": "title",
-            "text": "Iluminación Natural"
-        },
-        {
-            "type": "text",
-            "value": "6300K."
-        },
-        {
-            "type": "small_image",
-            "url": "https://app.ciano.pt/images/cable.png"
-        },
-        {
-            "type": "title",
-            "text": "Bajo Consumo"
-        },
-        {
-            "type": "text",
-            "value": "1,5 W."
         }
     ]
 }

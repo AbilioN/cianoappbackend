@@ -5334,6 +5334,175 @@
         ]
     },
     {
+        "image": "https://app.ciano.pt/images/cla_20_universal.png",
+        "name": "CLA20 UNIVERSAL",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_20_universal.png"
+            },
+            {
+            "type": "text",
+            "value": "The CLA20 Ciano® is a certified low-voltage lighting system for complete safety, providing natural lighting and low energy consumption. With a very simple installation, the CLA20 Universal fits all frameless aquariums with 3, 4, or 5 mm thick glass."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Included Equipment"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Lighting system support;",
+                "CLA20 Ciano® lighting system (1.5W - 12VDC);",
+                "LED converter (12 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/universal.png"
+            },
+            {
+            "type": "title",
+            "text": "Universal"
+            },
+            {
+            "type": "text",
+            "value": "Compatible with 3 mm, 4 mm and 5 mm glass."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/natural_light.png"
+            },
+            {
+            "type": "title",
+            "text": "Natural Lighting"
+            },
+            {
+            "type": "text",
+            "value": "6300K"
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_60_plants.png",
+        "name": "CLA60 PLANTS",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_60_plants.png"
+            },
+            {
+            "type": "text",
+            "value": "The CLA60 Plants Ciano® is a certified low-voltage lighting system for total safety and low energy consumption, designed to promote plant growth. The CLA60 Plants Ciano® is compatible with Ciano® brand aquariums (see technical information)."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Included Equipment"
+            },
+            {
+            "type": "list",
+            "items": [
+                "CLA60 Plants Ciano® lighting system (8W - 18VDC);",
+                "LED converter (18 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/especial_plants.png"
+            },
+            {
+            "type": "title",
+            "text": "Plant Special"
+            },
+            {
+            "type": "text",
+            "value": "Promotes plant growth."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+            "type": "title",
+            "text": "Low Consumption"
+            },
+            {
+            "type": "text",
+            "value": "8 W."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_60.png",
+        "name": "CLA60",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_60.png"
+            },
+            {
+            "type": "text",
+            "value": "The CLA60 Ciano® is a certified low-voltage lighting system for complete safety, providing natural lighting with low energy consumption. With this system, your aquarium will come even more to life. The CLA60 Ciano® is compatible with Ciano® brand aquariums (see technical information)."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Included Equipment"
+            },
+            {
+            "type": "list",
+            "items": [
+                "CLA60 Ciano® lighting system (8W - 18VDC);",
+                "LED converter (18 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/natural_light.png"
+            },
+            {
+            "type": "title",
+            "text": "Natural Lighting"
+            },
+            {
+            "type": "text",
+            "value": "6300K."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+            "type": "title",
+            "text": "Low Consumption"
+            },
+            {
+            "type": "text",
+            "value": "8 W."
+            }
+        ]
+    },
+    {
         "image": "https://app.ciano.pt/images/cf_20.png",
         "name": "CF20",
         "category": "filtration",
