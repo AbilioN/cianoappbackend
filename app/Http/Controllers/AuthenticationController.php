@@ -129,12 +129,56 @@ class AuthenticationController extends Controller
 
     public function resetPassword(Request $request)
     {
+        $language = $request->input('language', 'en');
+
+        $passwordRules = [
+            'required' => [
+                'pt' => 'A senha é obrigatória.',
+                'en' => 'Password is required.',
+                'es' => 'La contraseña es obligatoria.',
+                'fr' => 'Le mot de passe est obligatoire.',
+                'de' => 'Passwort ist erforderlich.',
+                'it' => 'La password è obbligatoria.',
+            ],
+            'min' => [
+                'pt' => 'A senha deve ter pelo menos 8 caracteres.',
+                'en' => 'Password must be at least 8 characters.',
+                'es' => 'La contraseña debe tener al menos 8 caracteres.',
+                'fr' => 'Le mot de passe doit contenir au moins 8 caractères.',
+                'de' => 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+                'it' => 'La password deve essere di almeno 8 caratteri.',
+            ],
+            'confirmed' => [
+                'pt' => 'A confirmação da senha não corresponde.',
+                'en' => 'Password confirmation does not match.',
+                'es' => 'La confirmación de la contraseña no coincide.',
+                'fr' => 'La confirmation du mot de passe ne correspond pas.',
+                'de' => 'Die Passwortbestätigung stimmt nicht überein.',
+                'it' => 'La password di conferma non corrisponde.',
+            ],
+            'regex' => [
+                'pt' => 'A senha deve conter pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial.',
+                'en' => 'Password must contain at least one uppercase letter, one lowercase letter, one number and one special character.',
+                'es' => 'La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un carácter especial.',
+                'fr' => 'Le mot de passe doit contenir au moins une lettre majuscule, une minuscule, un chiffre et un caractère spécial.',
+                'de' => 'Das Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten.',
+                'it' => 'La password deve contenere almeno una lettera maiuscola, una lettera minuscola, un numero e un carattere speciale.',
+            ]
+        ];
+
         $request->validate([
             'token' => 'required',
-            'password' => 'required|min:8|confirmed',
+            'password' => [
+                'required',
+                'min:8',
+                'confirmed',
+                'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/'
+            ],
         ], [
-            'password' => 'Senha Inválida.',
-            'password.confirmed' => 'A senha não corresponde.',
+            'password.required' => $passwordRules['required'][$language] ?? $passwordRules['required']['en'],
+            'password.min' => $passwordRules['min'][$language] ?? $passwordRules['min']['en'],
+            'password.confirmed' => $passwordRules['confirmed'][$language] ?? $passwordRules['confirmed']['en'],
+            'password.regex' => $passwordRules['regex'][$language] ?? $passwordRules['regex']['en'],
         ]);
 
         try {
@@ -155,7 +199,6 @@ class AuthenticationController extends Controller
             ];
 
             if (!$resetEntry) {
-                $language = $request->input('language', 'en');
                 $errorMessage = $invalidTokenMessage[$language] ?? $invalidTokenMessage['en'];
                 return redirect()->back()->withErrors(['error' => $errorMessage]);
             }

@@ -42,7 +42,10 @@
                 <input type="hidden" name="language" value="es">
 
                 <div class="mt-5">
-                    <small class="block text-start pl-1">contraseña: @if ($errors->has('password'))<span class="text-red-500 text-xs mt-1">*{{ $errors->first('password') }}</span>@endif</small>
+                    <small class="block text-start pl-1">contraseña:</small>
+                    @if ($errors->has('password'))
+                        <small class="block text-start pl-1 text-red-500 text-xs mt-1">{{ $errors->first('password') }}</small>
+                    @endif
                     <input type="password" required name="password" class="rounded-[4px] w-full shadow-sm border border-gray-300 focus:outline-[#0693e3]">
                 </div>
                 
