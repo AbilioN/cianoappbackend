@@ -5293,6 +5293,231 @@
         ]
     },
     {
+        "image": "https://app.ciano.pt/images/cla_20.png",
+        "name": "CLA20",
+        "category": "lighting",
+        "details": [
+            {
+                "type": "large_image",
+                "url": "https://app.ciano.pt/images/cla_20.png"
+            },
+            {
+                "type": "text",
+                "value": "Il CLA20 Ciano® è un sistema di illuminazione certificato a bassa tensione, per una sicurezza totale, garantendo un'illuminazione naturale e a basso consumo energetico. Con questo sistema darai ancora più vita al tuo acquario. Il CLA20 Ciano® è compatibile con gli acquari del marchio Ciano® (vedi informazioni tecniche)."
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "title",
+                "text": "Equipaggiamenti Inclusi"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Sistema di illuminazione CLA20 Ciano® (1,5W - 12VDC);",
+                    "Convertitore LED (12 VDC);"
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/natural_light.png"
+            },
+            {
+                "type": "title",
+                "text": "Illuminazione Naturale"
+            },
+            {
+                "type": "text",
+                "value": "6300K."
+            },
+            {
+                "type": "small_image",
+                "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+                "type": "title",
+                "text": "Basso Consumo"
+            },
+            {
+                "type": "text",
+                "value": "1,5 W."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_20_universal.png",
+        "name": "CLA20 UNIVERSAL",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_20_universal.png"
+            },
+            {
+            "type": "text",
+            "value": "Il CLA20 Ciano® è un sistema di illuminazione certificato a bassa tensione, per garantire la massima sicurezza, offrendo illuminazione naturale e basso consumo energetico. Con un’installazione molto semplice, il CLA20 Universal si adatta a tutti gli acquari senza cornice con vetro da 3, 4 o 5 mm di spessore."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Dotazione Inclusa"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Supporto per il sistema di illuminazione;",
+                "Sistema di illuminazione CLA20 Ciano® (1,5W - 12VDC);",
+                "Convertitore LED (12 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/universal.png"
+            },
+            {
+            "type": "title",
+            "text": "Universale"
+            },
+            {
+            "type": "text",
+            "value": "Compatibile con vetri da 3 mm, 4 mm e 5 mm."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/natural_light.png"
+            },
+            {
+            "type": "title",
+            "text": "Illuminazione Naturale"
+            },
+            {
+            "type": "text",
+            "value": "6300K"
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_60_plants.png",
+        "name": "CLA60 PLANTS",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_60_plants.png"
+            },
+            {
+            "type": "text",
+            "value": "Il CLA60 Plants Ciano® è un sistema di illuminazione certificato a bassa tensione, per una sicurezza totale e un basso consumo energetico, progettato per favorire la crescita delle piante. Il CLA60 Plants Ciano® è compatibile con gli acquari del marchio Ciano® (vedi informazioni tecniche)."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Dotazione Inclusa"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Sistema di illuminazione CLA60 Plants Ciano® (8W - 18VDC);",
+                "Convertitore LED (18 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/especial_plants.png"
+            },
+            {
+            "type": "title",
+            "text": "Speciale per Piante"
+            },
+            {
+            "type": "text",
+            "value": "Favorisce la crescita delle piante."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+            "type": "title",
+            "text": "Basso Consumo"
+            },
+            {
+            "type": "text",
+            "value": "8 W."
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cla_60.png",
+        "name": "CLA60",
+        "category": "lighting",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cla_60.png"
+            },
+            {
+            "type": "text",
+            "value": "Il CLA60 Ciano® è un sistema di illuminazione certificato a bassa tensione, che garantisce totale sicurezza, illuminazione naturale e basso consumo energetico. Con questo sistema, il tuo acquario prenderà ancora più vita. Il CLA60 Ciano® è compatibile con gli acquari del marchio Ciano® (vedi informazioni tecniche)."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Dotazione Inclusa"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Sistema di illuminazione CLA60 Ciano® (8W - 18VDC);",
+                "Convertitore LED (18 VDC);"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/natural_light.png"
+            },
+            {
+            "type": "title",
+            "text": "Illuminazione Naturale"
+            },
+            {
+            "type": "text",
+            "value": "6300K."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/cable.png"
+            },
+            {
+            "type": "title",
+            "text": "Basso Consumo"
+            },
+            {
+            "type": "text",
+            "value": "8 W."
+            }
+        ]
+    },
+    {
         "image": "https://app.ciano.pt/images/cf_20.png",
         "name": "CF20",
         "category": "filtration",
@@ -5547,7 +5772,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/barra_de_pulverização.png"
+                "url": "https://app.ciano.pt/images/barra_de_pulverizacao2.png"
             },
             {
                 "type": "title",
@@ -5700,7 +5925,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/barra_de_pulverização_regulavel.png"
+                "url": "https://app.ciano.pt/images/barra_de_pulverizacao_regulavel.png"
             },
             {
                 "type": "title",
@@ -5813,7 +6038,7 @@
             },
             {
                 "type": "small_image",
-                "url": "https://app.ciano.pt/images/barra_de_pulverização_regulavel.png"
+                "url": "https://app.ciano.pt/images/barra_de_pulverizacao_regulavel.png"
             },
             {
                 "type": "title",
