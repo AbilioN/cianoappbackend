@@ -5710,6 +5710,219 @@
         ]
     },
     {
+        "image": "https://app.ciano.pt/images/cf_80.png",
+        "name": "CF80",
+        "category": "filtration",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cf_80.png"
+            },
+            {
+            "type": "text",
+            "value": "<strong>The CF80 Ciano® is a high-performance internal filter, easy to install and low maintenance. Optimized to reduce fish stress. Ideal for aquariums between 40 and 80 liters.</strong>"
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Included Equipment"
+            },
+            {
+            "type": "list",
+            "items": [
+                "1 Spray bar (for more even water distribution and increased oxygenation);",
+                "1 WATER CLEAR & PROTECTION \"M\" Ciano®;",
+                "1 WATER FOAM \"M\" (sponge) 30PPI Ciano®;"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Key Features"
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/tripla_filtração.png"
+            },
+            {
+            "type": "text",
+            "value": "Triple filtration: Equipped for triple filtration—chemical, biological, and mechanical—which eliminates harmful substances for fish, keeps water crystal clear and odor-free, controls algae, maintains the ecosystem, and retains organic particles and debris present in the water."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/barra_de_pulverização.png"
+            },
+            {
+            "type": "title",
+            "text": "Spray Bar"
+            },
+            {
+            "type": "text",
+            "value": "More even water distribution and increased oxygenation."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/stress_do_peixe.png"
+            },
+            {
+            "type": "title",
+            "text": "Fish Stress"
+            },
+            {
+            "type": "text",
+            "value": "Optimized to reduce fish stress."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/tripla_filtração.png"
+            },
+            {
+            "type": "title",
+            "text": "Triple Filtration"
+            },
+            {
+            "type": "text",
+            "value": "Mechanical, Biological and Chemical"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/facil.png"
+            },
+            {
+            "type": "title",
+            "text": "Easy"
+            },
+            {
+            "type": "text",
+            "value": "Installation and maintenance"
+            }
+        ]
+    },
+    {
+        "image": "https://app.ciano.pt/images/cf_stone_40.png",
+        "name": "CFSTONE 40",
+        "category": "filtration",
+        "details": [
+            {
+            "type": "large_image",
+            "url": "https://app.ciano.pt/images/cf_stone_40.png"
+            },
+            {
+            "type": "medium_text",
+            "value": "The CFSTONE 40 Ciano® is a next-generation internal filter. Its stone-shaped design allows it to blend in with the aquarium décor. It is a high-performance filtration system, easy to install and with low maintenance. Its two independent water circuits ensure water cleaning, treatment, and promote bacterial colonization. Ideal for aquariums between 20 and 40 liters with a maximum height of up to 35 cm."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "Included Equipment"
+            },
+            {
+            "type": "list",
+            "items": [
+                "1 Adjustable spray bar up to 35 cm high (more even water distribution and increased oxygenation);",
+                "2 WATER CLEAR & PROTECTION \"S\" Ciano®;",
+                "1 WATER BIO-BACTS \"S\" Ciano®;",
+                "1 WATER FOAM \"S\" (sponge) 30PPI Ciano®;"
+            ]
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "title",
+            "text": "MAIN FEATURES"
+            },
+            {
+            "type": "list",
+            "items": [
+                "Decorative"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/pedra_decorativo.png"
+            },
+            {
+            "type": "text",
+            "value": "The CFSTONE is not just a filter. Its innovative design allows it to blend with the aquarium decoration due to its stone-like appearance and the camouflage of the power cable."
+            },
+            {
+            "type": "list",
+            "items": [
+                "Triple Filtration"
+            ]
+            },
+            {
+            "type": "medium_image",
+            "url": "https://app.ciano.pt/images/tripla_filtração.png"
+            },
+            {
+            "type": "medium_text",
+            "text": "Designed for triple filtration: chemical, biological, and mechanical, which will eliminate harmful substances for fish, keep the water crystal clear and odor-free, fight algae, maintain the ecosystem, and retain particles and organic matter present in the water."
+            },
+            {
+            "type": "divider"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/pedra_design.png"
+            },
+            {
+            "type": "title",
+            "text": "Design"
+            },
+            {
+            "type": "text",
+            "value": "Innovative stone-shaped filter."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/circuitos_de_agua.png"
+            },
+            {
+            "type": "title",
+            "text": "2 Water Circuits"
+            },
+            {
+            "type": "text",
+            "value": "1st Ensures water cleaning and treatment. 2nd Promotes bacterial colonization."
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/saidas_de_agua.png"
+            },
+            {
+            "type": "title",
+            "text": "2 Water Outlets"
+            },
+            {
+            "type": "text",
+            "value": "2 options for water outlet"
+            },
+            {
+            "type": "small_image",
+            "url": "https://app.ciano.pt/images/barra_de_pulverização_regulavel.png"
+            },
+            {
+            "type": "title",
+            "text": "Adjustable Spray Bar"
+            },
+            {
+            "type": "text",
+            "value": "Adjustable up to 35 cm"
+            }
+        ]
+    },
+    {
         "image": "https://app.ciano.pt/images/cf_stone_80.png",
         "name": "CFSTONE 80",
         "category": "filtration",
