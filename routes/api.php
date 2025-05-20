@@ -49,6 +49,6 @@ Route::get('/app-version', function () {
     
     return response()->json([
         'success' => true,
-        'version' => '1.1.3',
+        'version' => '1.1.4',
     ]);
 });
