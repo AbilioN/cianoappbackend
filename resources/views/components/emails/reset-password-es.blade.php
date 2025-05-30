@@ -11,11 +11,11 @@
         
         <h2 style="color: #0693e3;">Recuperación de Contraseña</h2>
         
-        <p>Hola,</p>
+        <p style="color: #000000;">Hola,</p>
         
-        <p>Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.</p>
+        <p style="color: #000000;">Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.</p>
         
-        <p>Para restablecer tu contraseña, haz clic en el botón de abajo:</p>
+        <p style="color: #000000;">Para restablecer tu contraseña, haz clic en el botón de abajo:</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <a href="{{ route('auth.password.reset', ['token' => $token, 'language' => 'es']) }}" 
@@ -24,11 +24,11 @@
             </a>
         </div>
         
-        <p>Si no solicitaste restablecer tu contraseña, puedes ignorar este correo electrónico.</p>
+        <p style="color: #000000;">Si no solicitaste restablecer tu contraseña, puedes ignorar este correo electrónico.</p>
         
-        <p>Este enlace de restablecimiento expirará en 60 minutos.</p>
+        <p style="color: #000000;">Este enlace de restablecimiento expirará en 60 minutos.</p>
         
-        <p>Gracias,<br>El equipo de Ciano</p>
+        <p style="color: #000000;">Gracias,<br>El equipo de Ciano</p>
         
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
         

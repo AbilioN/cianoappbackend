@@ -11,11 +11,11 @@
         
         <h2 style="color: #0693e3;">Recuperação de Senha</h2>
         
-        <p>Olá,</p>
+        <p style="color: #000000;">Olá,</p>
         
-        <p>Recebemos uma solicitação para redefinir a senha da sua conta.</p>
+        <p style="color: #000000;">Recebemos uma solicitação para redefinir a senha da sua conta.</p>
         
-        <p>Para redefinir sua senha, clique no botão abaixo:</p>
+        <p style="color: #000000;">Para redefinir sua senha, clique no botão abaixo:</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <a href="{{ route('auth.password.reset', ['token' => $token, 'language' => 'pt']) }}" 
@@ -24,11 +24,11 @@
             </a>
         </div>
         
-        <p>Se você não solicitou a redefinição de senha, você pode ignorar este e-mail.</p>
+        <p style="color: #000000;">Se você não solicitou a redefinição de senha, você pode ignorar este e-mail.</p>
         
-        <p>Este link de redefinição expirará em 60 minutos.</p>
+        <p style="color: #000000;">Este link de redefinição expirará em 60 minutos.</p>
         
-        <p>Obrigado,<br>Equipe Ciano</p>
+        <p style="color: #000000;">Obrigado,<br>Equipe Ciano</p>
         
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
         

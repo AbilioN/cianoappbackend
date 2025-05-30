@@ -11,11 +11,11 @@
         
         <h2 style="color: #0693e3;">Recupero Password</h2>
         
-        <p>Ciao,</p>
+        <p style="color: #000000;">Ciao,</p>
         
-        <p>Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.</p>
+        <p style="color: #000000;">Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.</p>
         
-        <p>Per reimpostare la tua password, clicca sul pulsante qui sotto:</p>
+        <p style="color: #000000;">Per reimpostare la tua password, clicca sul pulsante qui sotto:</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <a href="{{ route('auth.password.reset', ['token' => $token, 'language' => 'it']) }}" 
@@ -24,11 +24,11 @@
             </a>
         </div>
         
-        <p>Se non hai richiesto il recupero della password, puoi ignorare questa email.</p>
+        <p style="color: #000000;">Se non hai richiesto il recupero della password, puoi ignorare questa email.</p>
         
-        <p>Questo link di reimpostazione della password scadrà tra 60 minuti.</p>
+        <p style="color: #000000;">Questo link di reimpostazione della password scadrà tra 60 minuti.</p>
         
-        <p>Grazie,<br>Il team Ciano</p>
+        <p style="color: #000000;">Grazie,<br>Il team Ciano</p>
         
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
         

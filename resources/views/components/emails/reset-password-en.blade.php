@@ -11,11 +11,11 @@
         
         <h2 style="color: #0693e3;">Password Reset</h2>
         
-        <p>Hello,</p>
+        <p style="color: #000000;">Hello,</p>
         
-        <p>We received a request to reset your account password.</p>
+        <p style="color: #000000;">We received a request to reset your account password.</p>
         
-        <p>To reset your password, click the button below:</p>
+        <p style="color: #000000;">To reset your password, click the button below:</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <a href="{{ route('auth.password.reset', ['token' => $token, 'language' => 'en']) }}" 
@@ -24,11 +24,11 @@
             </a>
         </div>
         
-        <p>If you did not request a password reset, you can ignore this email.</p>
+        <p style="color: #000000;">If you did not request a password reset, you can ignore this email.</p>
         
-        <p>This reset link will expire in 60 minutes.</p>
+        <p style="color: #000000;">This reset link will expire in 60 minutes.</p>
         
-        <p>Thank you,<br>The Ciano Team</p>
+        <p style="color: #000000;">Thank you,<br>The Ciano Team</p>
         
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
         
