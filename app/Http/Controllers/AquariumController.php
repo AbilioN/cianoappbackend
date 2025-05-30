@@ -196,5 +196,65 @@ class AquariumController extends Controller
             return response()->json(['message' => 'failed' , 'message_code' => 'delete_aquarium_failed' , 'errors' => $e->getMessage()], 500);
         }
     }
+
+    public function deleteProduct(Request $request)
+    {
+        try {
+            DB::beginTransaction();
+
+            $validator = Validator::make($request->all(), [
+                'aquarium_id' => 'required|integer',
+                'product_id' => 'required|integer',
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['message' => 'Validation failed', 'message_code' => 'validation_failed', 'errors' => $validator->errors()], 422);
+            }
+
+            $user = Auth::user();
+            $aquarium = Aquarium::find($request->aquarium_id);
+
+            if (!$aquarium) {
+                return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+            }
+
+            if ($aquarium->user_id != $user->id) {
+                return response()->json(['message' => 'Aquarium not found', 'message_code' => 'aquarium_not_found'], 404);
+            }
+
+            // Find the aquarium notification that contains the product
+            $aquariumNotification = AquariumNotification::where('aquarium_id', $aquarium->id)
+                ->whereHas('consumableNotification', function ($query) use ($request) {
+                    $query->where('consumable_id', $request->product_id);
+                })->first();
+
+            if (!$aquariumNotification) {
+                return response()->json(['message' => 'Product not found in aquarium', 'message_code' => 'product_not_found_in_aquarium'], 404);
+            }
+
+            // Delete the aquarium notification (this will cascade delete related records due to foreign key constraints)
+            $aquariumNotification->delete();
+            $aquarium->refresh();
+            DB::commit();
+
+            // Get the last aquarium with its relationships
+            $aquarium = Aquarium::with([
+                'consumableNotifications.consumable',
+                'aquariumNotifications.notification.bodies',
+                'aquariumNotifications.aquarium'
+            ])->where('user_id', $user->id)
+              ->orderBy('created_at', 'desc')
+              ->first();
+
+            return response()->json([
+                'message' => 'success', 
+                'message_code' => 'product_deleted_successfully',
+                'aquarium' => $aquarium->toDto()
+            ]);
+        } catch (Exception $e) {
+            DB::rollBack();
+            return response()->json(['message' => 'failed', 'message_code' => 'delete_product_failed', 'errors' => $e->getMessage()], 500);
+        }
+    }
 }
 

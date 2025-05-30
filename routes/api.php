@@ -33,6 +33,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/guides/{language}', [GuideController::class, 'getGuidesByLanguage']);
     Route::get('products', [ProductController::class, 'getProducts']);
     Route::get('products/{language}', [ProductController::class, 'getProductsByLanguage']);
+    Route::post('aquarium/delete-product', [AquariumController::class, 'deleteProduct']);
     Route::delete('/account/delete', [AuthController::class, 'deleteAccount']);
 
     // Adicione outras rotas autenticadas aqui
