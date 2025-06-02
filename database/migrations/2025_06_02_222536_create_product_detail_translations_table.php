@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('language', 2); // ISO 639-1 language codes
             $table->json('content');
             $table->timestamps();
-            $table->unique(['product_detail_id', 'language']);
+            $table->unique(['product_detail_id', 'language'], 'idx_detail_trans_unique');
         });
     }
 
