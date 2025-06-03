@@ -2,6 +2,12 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Product;
+use App\Models\ProductCategory;
+use App\Models\ProductCategoryTranslation;
+use App\Models\ProductDetail;
+use App\Models\ProductDetailTranslation;
+use App\Models\ProductTranslation;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -29,6 +35,7 @@ class ImportProductsFromJson extends Command
     private array $languages = ['de', 'en', 'es', 'fr', 'it', 'pt'];
     private array $translations = [];
     private array $categoryTranslations = [];
+    private array $categoryMap = []; // Maps category slugs to their IDs
 
     private array $categoriesTranslations = [
         'en' => [
@@ -100,7 +107,7 @@ class ImportProductsFromJson extends Command
             }
 
             $this->translations[$language] = $data;
-            $this->categoryTranslations[$language] = $data; // Data is already the categories array
+            $this->categoryTranslations[$language] = $data;
         }
 
         if (empty($this->translations)) {
@@ -110,36 +117,13 @@ class ImportProductsFromJson extends Command
 
         DB::beginTransaction();
         try {
-            // Process each language as reference
-            foreach ($this->languages as $referenceLanguage) {
-                if (!isset($this->translations[$referenceLanguage])) {
-                    continue;
-                }
+            // PHASE 1: Import all categories first
+            $this->info("\n=== PHASE 1: Importing Categories ===");
+            $this->importAllCategories($targetCategory);
 
-                $this->info("\n=== Processing with {$referenceLanguage} as reference language ===");
-                $categories = $this->translations[$referenceLanguage]; // Direct array of categories
-                foreach ($categories as $categoryData) {
-                    $categorySlug = Str::slug($categoryData['category']);
-                    // Skip if category filter is set and doesn't match
-                    if ($targetCategory && $categorySlug !== $targetCategory) {
-                        continue;
-                    }
-                    $this->info("\nProcessing category: {$categoryData['category']} ({$referenceLanguage})");
-                    // Create/update category with all translations, passing the current reference language
-                    $category = $this->createOrUpdateCategoryWithTranslations($categoryData, $categorySlug, $referenceLanguage);
-                    foreach ($categoryData['products'] ?? [] as $productData) {
-                        // Skip if product filter is set and doesn't match
-                        if ($targetProduct && $productData['name'] !== $targetProduct) {
-                            continue;
-                        }
-                        $this->info("\nProcessing product: {$productData['name']}");
-                        $product = $this->importProductWithTranslations($productData, $category->id, $categorySlug);
-                        if ($product) {
-                            $this->info("✓ Product imported successfully");
-                        }
-                    }
-                }
-            }
+            // PHASE 2: Import products using the category map
+            $this->info("\n=== PHASE 2: Importing Products ===");
+            $this->importAllProducts($targetCategory, $targetProduct);
 
             // DB::commit();
             $this->info("\nImport completed successfully!");
@@ -151,11 +135,103 @@ class ImportProductsFromJson extends Command
         }
     }
 
+    private function importAllCategories(?string $targetCategory)
+    {
+        // Process each language as reference
+        foreach ($this->languages as $referenceLanguage) {
+            if (!isset($this->translations[$referenceLanguage])) {
+                continue;
+            }
+
+            $this->info("\nProcessing categories with {$referenceLanguage} as reference language");
+            $categories = $this->translations[$referenceLanguage];
+
+            foreach ($categories as $categoryData) {
+                $categorySlug = Str::slug($categoryData['category']);
+                
+                // Skip if category filter is set and doesn't match
+                if ($targetCategory && $categorySlug !== $targetCategory) {
+                    continue;
+                }
+
+                $this->info("Processing category: {$categoryData['category']} ({$referenceLanguage})");
+                
+                // Create/update category and store its ID in the map
+                $category = $this->createOrUpdateCategoryWithTranslations($categoryData, $categorySlug, $referenceLanguage);
+                dd($category);
+                $this->categoryMap[$categorySlug] = $category->id;
+            }
+        }
+    }
+
+    private function importAllProducts(?string $targetCategory, ?string $targetProduct)
+    {
+        // Process each language as reference
+        foreach ($this->languages as $referenceLanguage) {
+            if (!isset($this->translations[$referenceLanguage])) {
+                continue;
+            }
+
+            $this->info("\nProcessing products with {$referenceLanguage} as reference language");
+            $categories = $this->translations[$referenceLanguage];
+
+            foreach ($categories as $categoryData) {
+                $categorySlug = Str::slug($categoryData['category']);
+                
+                // Skip if category filter is set and doesn't match
+                if ($targetCategory && $categorySlug !== $targetCategory) {
+                    continue;
+                }
+
+                // Get category ID from our map
+                $categoryId = $this->categoryMap[$categorySlug] ?? null;
+                if (!$categoryId) {
+                    $this->warn("Category ID not found for slug: {$categorySlug}");
+                    continue;
+                }
+
+                foreach ($categoryData['products'] ?? [] as $productData) {
+                    // Skip if product filter is set and doesn't match
+                    if ($targetProduct && $productData['name'] !== $targetProduct) {
+                        continue;
+                    }
+
+                    $this->info("Processing product: {$productData['name']}");
+                    $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug);
+                    
+                    if ($product) {
+                        $this->info("✓ Product imported successfully");
+                    }
+                }
+            }
+        }
+    }
+
+    private function createOrUpdateCategory(array $data, string $language)
+    {
+        $slug = Str::slug($data['category']);
+        
+        $category = ProductCategory::where('slug', $slug)->first();
+
+        if (!$category) {
+            $category = ProductCategory::create([
+                'slug' => $slug,
+            ]);
+        }
+        // Create or update translation
+        $category->translations()->updateOrCreate(
+            ['language' => $language],
+            ['name' => $data['category']]
+        );
+
+        return $category;
+    }
+
     private function createOrUpdateCategoryWithTranslations(array $categoryData, string $categorySlug, string $referenceLanguage)
     {
         // Create or update category in current reference language
         $category = $this->createOrUpdateCategory($categoryData, $referenceLanguage);
-        dd($category);
+
         // Import translations for all languages
         foreach ($this->languages as $language) {
             if (!isset($this->categoryTranslations[$language])) {
@@ -172,16 +248,9 @@ class ImportProductsFromJson extends Command
             
             if ($translatedCategory) {
                 // Update category translation
-                DB::table('product_category_translations')->updateOrInsert(
-                    [
-                        'product_category_id' => $category->id,
-                        'language' => $language,
-                    ],
-                    [
-                        'name' => $translatedCategory['category'],
-                        'created_at' => now(),
-                        'updated_at' => now(),
-                    ]
+                $category->translations()->updateOrCreate(
+                    ['language' => $language],
+                    ['name' => $translatedCategory['category']]
                 );
             }
         }
@@ -200,21 +269,43 @@ class ImportProductsFromJson extends Command
         return null;
     }
 
-    private function importProductWithTranslations(array $productData, int $categoryId, string $categorySlug)
+    private function importProductWithTranslations(array $data, int $categoryId, string $categorySlug)
     {
         // Create or update product in reference language
-        $product = $this->createOrUpdateProduct($productData, $categoryId, array_key_first($this->translations));
+        $product = Product::updateOrCreate(
+            [
+                'name' => $data['name'],
+                'product_category_id' => $categoryId,
+            ],
+            [
+                'description' => $data['description'] ?? '',
+                'image' => $data['image'] ?? '',
+                'price' => $data['price'] ?? '0',
+                'stock' => $data['stock'] ?? '0',
+                'status' => $data['status'] ?? 'active',
+            ]
+        );
 
         // Import translations for all languages
-        foreach ($this->translations as $language => $translationData) {
+        foreach ($this->languages as $language) {
+            if (!isset($this->translations[$language])) {
+                continue;
+            }
+
             $this->info("  Processing {$language} translation...");
 
             // Find product in this language's data
-            $translatedProduct = $this->findProductInTranslations($productData['name'], $categorySlug, $language);
+            $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $language);
             
             if ($translatedProduct) {
                 // Update product translation
-                $this->updateProductTranslation($product->id, $translatedProduct, $language);
+                $product->translations()->updateOrCreate(
+                    ['language' => $language],
+                    [
+                        'name' => $translatedProduct['name'],
+                        'description' => $translatedProduct['description'] ?? '',
+                    ]
+                );
 
                 // Import product details with translations
                 foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
@@ -245,110 +336,23 @@ class ImportProductsFromJson extends Command
         return null;
     }
 
-    private function createOrUpdateCategory(array $data, string $language)
-    {
-        $slug = Str::slug($data['name']);
-        $category = DB::table('product_categories')
-            ->where('slug', $slug)
-            ->first();
-
-        if (!$category) {
-            $categoryId = DB::table('product_categories')->insertGetId([
-                'slug' => $slug,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-            $category = (object)['id' => $categoryId];
-        }
-
-        // Create or update translation
-        DB::table('product_category_translations')->updateOrInsert(
-            [
-                'product_category_id' => $category->id,
-                'language' => $language,
-            ],
-            [
-                'name' => $data['name'],
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]
-        );
-
-        return $category;
-    }
-
-    private function createOrUpdateProduct(array $data, int $categoryId, string $language)
-    {
-        $product = DB::table('products')
-            ->where('name', $data['name'])
-            ->where('product_category_id', $categoryId)
-            ->first();
-
-        if (!$product) {
-            $productId = DB::table('products')->insertGetId([
-                'product_category_id' => $categoryId,
-                'name' => $data['name'],
-                'description' => $data['description'] ?? '',
-                'image' => $data['image'] ?? '',
-                'price' => $data['price'] ?? '0',
-                'stock' => $data['stock'] ?? '0',
-                'status' => $data['status'] ?? 'active',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-            $product = (object)['id' => $productId];
-        }
-
-        return $product;
-    }
-
-    private function updateProductTranslation(int $productId, array $data, string $language)
-    {
-        DB::table('product_translations')->updateOrInsert(
-            [
-                'product_id' => $productId,
-                'language' => $language,
-            ],
-            [
-                'name' => $data['name'],
-                'description' => $data['description'] ?? '',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]
-        );
-    }
-
     private function importProductDetailWithTranslation(array $data, int $productId, int $order, string $language)
     {
-        $detail = DB::table('product_details')
-            ->where('product_id', $productId)
-            ->where('type', $data['type'])
-            ->where('order', $order)
-            ->first();
-
-        if (!$detail) {
-            $detailId = DB::table('product_details')->insertGetId([
+        $detail = ProductDetail::updateOrCreate(
+            [
                 'product_id' => $productId,
                 'type' => $data['type'],
-                'content' => json_encode($data['content']),
                 'order' => $order,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-            $detail = (object)['id' => $detailId];
-        }
-
-        // Create or update translation
-        DB::table('product_detail_translations')->updateOrInsert(
-            [
-                'product_detail_id' => $detail->id,
-                'language' => $language,
             ],
             [
-                'content' => json_encode($data['content']),
-                'created_at' => now(),
-                'updated_at' => now(),
+                'content' => $data['content'],
             ]
+        );
+
+        // Create or update translation
+        $detail->translations()->updateOrCreate(
+            ['language' => $language],
+            ['content' => $data['content']]
         );
 
         return $detail;
