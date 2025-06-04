@@ -58,22 +58,22 @@
 
                 <!-- Product Info -->
                 <div class="p-4">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold text-gray-800">{{ $product->name }}</h3>
-                        <a 
-                            href="{{ route('products.edit', $product->id) }}" 
-                            class="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
-                        >
-                            Edit
-                        </a>
-                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ $product->name }}</h3>
 
                     <!-- Category Badge -->
-                    <div class="mt-2">
+                    <div class="mb-3">
                         <span class="inline-block px-2 py-1 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full">
                             {{ $product->category->translations->first()?->name ?? $product->category->slug }}
                         </span>
                     </div>
+
+                    <!-- Edit Button -->
+                    <a 
+                        href="{{ route('admin.products.edit', $product->id) }}" 
+                        class="block w-full text-center px-3 py-2 text-sm bg-blue-100 text-blue-600 rounded hover:bg-blue-200 transition-colors font-semibold"
+                    >
+                        Edit
+                    </a>
                 </div>
             </div>
         @empty
