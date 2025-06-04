@@ -114,7 +114,6 @@ class ImportProductsFromJson extends Command
             return 1;
         }
 
-        DB::beginTransaction();
         
         // Disable foreign key checks
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
@@ -131,17 +130,19 @@ class ImportProductsFromJson extends Command
         // DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         try {
+            DB::beginTransaction();
+
             // PHASE 1: Import all categories first
             $this->info("\n=== PHASE 1: Importing Categories ===");
             $this->importAllCategories($targetCategory);
 
             // PHASE 2: Import products using the category map
             $this->info("\n=== PHASE 2: Importing Products ===");
-            // $this->importAllProducts($targetCategory, $targetProduct);
+            $this->importAllProducts($targetCategory, $targetProduct);
 
-            // DB::commit();
+            DB::commit();
             $this->info("\nImport completed successfully!");
-            DB::rollBack();
+            // DB::rollBack();
 
             return 0;
         } catch (\Exception $e) {
@@ -188,11 +189,10 @@ class ImportProductsFromJson extends Command
             }
 
             $this->info("\nProcessing products with {$referenceLanguage} as reference language");
-            $categories = $this->translations[$referenceLanguage];
-
-            foreach ($categories as $categoryData) {
-                $categorySlug = Str::slug($categoryData['category']);
-                
+            $products = $this->translations[$referenceLanguage];
+            foreach ($products as $productData) {
+                // $categorySlug = Str::slug($productData['category']);
+                $categorySlug = $productData['category'];
                 // Skip if category filter is set and doesn't match
                 if ($targetCategory && $categorySlug !== $targetCategory) {
                     continue;
@@ -204,20 +204,21 @@ class ImportProductsFromJson extends Command
                     $this->warn("Category ID not found for slug: {$categorySlug}");
                     continue;
                 }
+                // dd($productData , $categoryId , $categorySlug);
+                $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug);
+                // foreach ($categoryData['products'] ?? [] as $productData) {
+                //     // Skip if product filter is set and doesn't match
+                //     if ($targetProduct && $productData['name'] !== $targetProduct) {
+                //         continue;
+                //     }
 
-                foreach ($categoryData['products'] ?? [] as $productData) {
-                    // Skip if product filter is set and doesn't match
-                    if ($targetProduct && $productData['name'] !== $targetProduct) {
-                        continue;
-                    }
-
-                    $this->info("Processing product: {$productData['name']}");
-                    $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug);
+                //     $this->info("Processing product: {$productData['name']}");
+                //     $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug);
                     
-                    if ($product) {
-                        $this->info("✓ Product imported successfully");
-                    }
-                }
+                //     if ($product) {
+                //         $this->info("✓ Product imported successfully");
+                //     }
+                // }
             }
         }
     }
@@ -303,7 +304,7 @@ class ImportProductsFromJson extends Command
                 'status' => $data['status'] ?? 'active',
             ]
         );
-
+        // dd($product  , $data);
         // Import translations for all languages
         foreach ($this->languages as $language) {
             if (!isset($this->translations[$language])) {
@@ -312,19 +313,19 @@ class ImportProductsFromJson extends Command
 
             $this->info("  Processing {$language} translation...");
 
+
             // Find product in this language's data
             $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $language);
-            
+            // dd($translatedProduct);
             if ($translatedProduct) {
                 // Update product translation
-                $product->translations()->updateOrCreate(
-                    ['language' => $language],
-                    [
-                        'name' => $translatedProduct['name'],
-                        'description' => $translatedProduct['description'] ?? '',
-                    ]
-                );
-
+                // $product->translations()->updateOrCreate(
+                //     ['language' => $language],
+                //     [
+                //         'name' => $translatedProduct['name'],
+                //         'description' => $translatedProduct['description'] ?? '',
+                //     ]
+                // );
                 // Import product details with translations
                 foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
                     $this->importProductDetailWithTranslation($detailData, $product->id, $order, $language);
@@ -339,16 +340,14 @@ class ImportProductsFromJson extends Command
 
     private function findProductInTranslations(string $productName, string $categorySlug, string $language)
     {
-        $categories = $this->translations[$language]['categories'] ?? [];
+        $products = $this->translations[$language];
         
-        foreach ($categories as $category) {
-            if (Str::slug($category['name']) === $categorySlug) {
-                foreach ($category['products'] ?? [] as $product) {
-                    if ($product['name'] === $productName) {
-                        return $product;
-                    }
-                }
+        foreach ($products as $product) {
+
+            if($product['name'] === $productName){
+                return $product;
             }
+
         }
 
         return null;
@@ -363,14 +362,13 @@ class ImportProductsFromJson extends Command
                 'order' => $order,
             ],
             [
-                'content' => $data['content'],
+                'content' => collect($data)->toJson(),
             ]
         );
-
         // Create or update translation
         $detail->translations()->updateOrCreate(
             ['language' => $language],
-            ['content' => $data['content']]
+            ['content' => collect($data)->toJson()]
         );
 
         return $detail;
