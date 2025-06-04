@@ -7,7 +7,7 @@ use App\Models\ProductCategory;
 use App\Models\ProductCategoryTranslation;
 use App\Models\ProductDetail;
 use App\Models\ProductDetailTranslation;
-use App\Models\ProductTranslation;
+// use App\Models\ProductTranslation;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -32,11 +32,10 @@ class ImportProductsFromJson extends Command
      */
     protected $description = 'Import products and their translations from JSON files';
 
-    private array $languages = ['de', 'en', 'es', 'fr', 'it', 'pt'];
+    private array $languages = [ 'en', 'pt' , 'es', 'fr', 'it', 'de'];
     private array $translations = [];
-    private array $categoryTranslations = [];
     private array $categoryMap = []; // Maps category slugs to their IDs
-
+    private array $categoryTranslations = [];
     private array $categoriesTranslations = [
         'en' => [
             'ciano_care' => 'Ciano Care',
@@ -116,6 +115,21 @@ class ImportProductsFromJson extends Command
         }
 
         DB::beginTransaction();
+        
+        // Disable foreign key checks
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+
+        // Truncate all tables
+        ProductCategoryTranslation::truncate();
+        ProductDetailTranslation::truncate();
+        // ProductTranslation::truncate();
+        // ProductDetail::truncate();
+        // Product::truncate();
+        // ProductCategory::truncate();
+
+        // Re-enable foreign key checks
+        // DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
         try {
             // PHASE 1: Import all categories first
             $this->info("\n=== PHASE 1: Importing Categories ===");
@@ -123,10 +137,12 @@ class ImportProductsFromJson extends Command
 
             // PHASE 2: Import products using the category map
             $this->info("\n=== PHASE 2: Importing Products ===");
-            $this->importAllProducts($targetCategory, $targetProduct);
+            // $this->importAllProducts($targetCategory, $targetProduct);
 
             // DB::commit();
             $this->info("\nImport completed successfully!");
+            DB::rollBack();
+
             return 0;
         } catch (\Exception $e) {
             DB::rollBack();
@@ -145,20 +161,19 @@ class ImportProductsFromJson extends Command
 
             $this->info("\nProcessing categories with {$referenceLanguage} as reference language");
             $categories = $this->translations[$referenceLanguage];
-
             foreach ($categories as $categoryData) {
-                $categorySlug = Str::slug($categoryData['category']);
-                
+                $categorySlug = $categoryData['category'];
+
                 // Skip if category filter is set and doesn't match
                 if ($targetCategory && $categorySlug !== $targetCategory) {
                     continue;
                 }
 
                 $this->info("Processing category: {$categoryData['category']} ({$referenceLanguage})");
+                $this->info("Total of products: " . count($categories));
                 
                 // Create/update category and store its ID in the map
                 $category = $this->createOrUpdateCategoryWithTranslations($categoryData, $categorySlug, $referenceLanguage);
-                dd($category);
                 $this->categoryMap[$categorySlug] = $category->id;
             }
         }
@@ -209,8 +224,8 @@ class ImportProductsFromJson extends Command
 
     private function createOrUpdateCategory(array $data, string $language)
     {
-        $slug = Str::slug($data['category']);
-        
+        // $slug = Str::slug($data['category']);
+        $slug = $data['category'];
         $category = ProductCategory::where('slug', $slug)->first();
 
         if (!$category) {
@@ -230,38 +245,41 @@ class ImportProductsFromJson extends Command
     private function createOrUpdateCategoryWithTranslations(array $categoryData, string $categorySlug, string $referenceLanguage)
     {
         // Create or update category in current reference language
-        $category = $this->createOrUpdateCategory($categoryData, $referenceLanguage);
+        $category = ProductCategory::updateOrCreate(
+            ['slug' => $categorySlug],
+            []
+        );
 
-        // Import translations for all languages
+        // Create translation for reference language
+        $category->translations()->updateOrCreate(
+            ['language' => $referenceLanguage],
+            ['name' => $this->categoriesTranslations[$referenceLanguage][$categorySlug]]
+        );
+
+        // Import translations for all other languages
         foreach ($this->languages as $language) {
-            if (!isset($this->categoryTranslations[$language])) {
-                continue;
-            }
-
             // Skip if it's the reference language (already processed)
             if ($language === $referenceLanguage) {
                 continue;
             }
 
-            // Find category in this language's data
-            $translatedCategory = $this->findCategoryInTranslations($categorySlug, $language);
-            
-            if ($translatedCategory) {
-                // Update category translation
+            // Create translation using the predefined translations
+            if (isset($this->categoriesTranslations[$language][$categorySlug])) {
                 $category->translations()->updateOrCreate(
                     ['language' => $language],
-                    ['name' => $translatedCategory['category']]
+                    ['name' => $this->categoriesTranslations[$language][$categorySlug]]
                 );
             }
         }
 
+        $category->refresh();
         return $category;
     }
 
     private function findCategoryInTranslations(string $categorySlug, string $language)
     {
-        foreach ($this->categoryTranslations[$language] ?? [] as $category) {
-            if (Str::slug($category['name']) === $categorySlug) {
+        foreach ($this->categoriesTranslations[$language] ?? [] as $category) {
+            if (Str::slug($category) === $categorySlug) {
                 return $category;
             }
         }
