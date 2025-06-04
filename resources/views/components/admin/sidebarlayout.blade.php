@@ -199,34 +199,22 @@
                         </li>
                     </ul> --}}
                 </li>
-                <li>
-                  <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" -->
-                  <a href="{{route('admin.products')}}"  class="bg-gray-800 text-white group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                <li x-data="{ open: false }">
+                  <a @click="open = !open" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold cursor-pointer" aria-controls="sub-menu-products" aria-expanded="false">
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                     </svg>
                     Produtos
                   </a>
-                </li>
-                {{-- <li x-data="{ open: false }">
-                  <a @click="open = !open" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold cursor-pointer" aria-controls="sub-menu-1" aria-expanded="false">
-                    <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                    </svg>
-                      Aquários
-                    </a>
-                  <ul x-show="open" class="mt-1 px-2" id="sub-menu-1">
-                      <li>
-                          <a href="#" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white ">Consumo de Creditos</a>
-                      </li>
-                      <li>
-                          <a href="{{route('admin.partner.create')}}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Cadastro</a>
-                      </li>
-                      <li>
-                          <a href="{{route('admin.partner.show')}}"  class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Listar</a>
-                      </li>
+                  <ul x-show="open" class="mt-1 px-2" id="sub-menu-products">
+                    <li>
+                      <a href="{{ route('admin.products') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Listar</a>
+                    </li>
+                    <li>
+                      <a href="{{ route('admin.products.create') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Criar</a>
+                    </li>
                   </ul>
-              </li> --}}
+                </li>
                 {{-- <li>
                   <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">

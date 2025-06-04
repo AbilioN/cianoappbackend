@@ -67,13 +67,21 @@
                         </span>
                     </div>
 
-                    <!-- Edit Button -->
-                    <a 
-                        href="{{ route('admin.products.edit', $product->id) }}" 
-                        class="mt-auto block w-full text-center px-3 py-2 text-sm bg-blue-100 text-blue-600 rounded hover:bg-blue-200 transition-colors font-semibold"
-                    >
-                        Edit
-                    </a>
+                    <!-- Action Buttons -->
+                    <div class="mt-auto flex gap-2">
+                        <a 
+                            href="{{ route('admin.products.show', $product->id) }}" 
+                            class="flex-1 text-center px-3 py-2 text-sm bg-gray-100 text-gray-600 rounded hover:bg-gray-200 transition-colors font-semibold"
+                        >
+                            View
+                        </a>
+                        <a 
+                            href="{{ route('admin.products.edit', $product->id) }}" 
+                            class="flex-1 text-center px-3 py-2 text-sm bg-blue-100 text-blue-600 rounded hover:bg-blue-200 transition-colors font-semibold"
+                        >
+                            Edit
+                        </a>
+                    </div>
                 </div>
             </div>
         @empty

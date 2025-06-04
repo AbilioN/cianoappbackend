@@ -18,6 +18,8 @@ use App\Livewire\Aquariums\Create as AquariumsCreate;
 use App\Livewire\History\Show as HistoryShow;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ProductController;
+use App\Livewire\ShowProduct;
+use App\Livewire\CreateProduct;
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,7 +53,9 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/client/edit/{id}', Edit::class)->name('admin.partner.edit');
     Route::get('/admin/history/{id}', HistoryShow::class)->name('history-show');
     Route::get('/admin/products', Products::class)->name('admin.products');
+    Route::get('/admin/products/create', CreateProduct::class)->name('admin.products.create');
     Route::get('/admin/products/{id}/edit', EditProduct::class)->name('admin.products.edit');
+    Route::get('/admin/products/{id}', ShowProduct::class)->name('admin.products.show');
 
     Route::get('/profile', function () {
         // ...
