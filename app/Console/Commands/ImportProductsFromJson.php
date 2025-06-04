@@ -144,7 +144,7 @@ class ImportProductsFromJson extends Command
             $this->info("\nImport completed successfully!");
             // DB::rollBack();
 
-            return 0;
+            return 0;   
         } catch (\Exception $e) {
             DB::rollBack();
             $this->error("\nError during import: {$e->getMessage()}");
@@ -204,7 +204,6 @@ class ImportProductsFromJson extends Command
                     $this->warn("Category ID not found for slug: {$categorySlug}");
                     continue;
                 }
-                // dd($productData , $categoryId , $categorySlug);
                 $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug , $referenceLanguage);
                 // foreach ($categoryData['products'] ?? [] as $productData) {
                 //     // Skip if product filter is set and doesn't match
@@ -304,45 +303,14 @@ class ImportProductsFromJson extends Command
                 'status' => $data['status'] ?? 'active',
             ]
         );
-        // dd($product  , $data);
-        // Import translations for all languages
-        $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $referenceLanguage);
 
+        // Import product details with translations
+        $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $referenceLanguage);
         if($translatedProduct){
             foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
                 $this->importProductDetailWithTranslation($detailData, $product->id, $order, $referenceLanguage);
             }
         }
-
-        
-        // foreach ($this->languages as $language) {
-        //     if (!isset($this->translations[$language])) {
-        //         continue;
-        //     }
-
-        //     $this->info("  Processing {$language} translation...");
-
-
-        //     // Find product in this language's data
-        //     $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $language);
-        //     // dd($translatedProduct);
-        //     if ($translatedProduct) {
-        //         // Update product translation
-        //         // $product->translations()->updateOrCreate(
-        //         //     ['language' => $language],
-        //         //     [
-        //         //         'name' => $translatedProduct['name'],
-        //         //         'description' => $translatedProduct['description'] ?? '',
-        //         //     ]
-        //         // );
-        //         // Import product details with translations
-        //         foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
-        //             $this->importProductDetailWithTranslation($detailData, $product->id, $order, $language);
-        //         }
-        //     } else {
-        //         $this->warn("  No translation found for {$language}");
-        //     }
-        // }
 
         return $product;
     }
