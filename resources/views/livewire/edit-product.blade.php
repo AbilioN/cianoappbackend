@@ -135,8 +135,15 @@
                     </div>
                 </div>
 
-                <!-- Submit Button -->
-                <div class="flex justify-end">
+                <!-- Submit Buttons -->
+                <div class="flex justify-end gap-4">
+                    <button 
+                        wire:click="saveAsDraft" 
+                        type="button" 
+                        class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium"
+                    >
+                        Save as Draft
+                    </button>
                     <button 
                         type="submit" 
                         class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"

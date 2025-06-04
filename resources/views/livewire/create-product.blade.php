@@ -109,9 +109,20 @@
             </div>
         </div>
 
-        <!-- Save Button -->
-        <div class="mt-8 flex justify-end">
-            <button wire:click="save" type="button" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+        <!-- Save Buttons -->
+        <div class="mt-8 flex justify-end gap-4">
+            <button 
+                wire:click="saveAsDraft" 
+                type="button" 
+                class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+            >
+                Save as Draft
+            </button>
+            <button 
+                wire:click="save" 
+                type="button" 
+                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
                 Create Product
             </button>
         </div>

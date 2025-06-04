@@ -223,6 +223,83 @@ class CreateProduct extends Component
         }
     }
 
+    public function saveAsDraft()
+    {
+        $this->validate();
+
+        DB::beginTransaction();
+        try {
+            // Handle image upload
+            if ($this->image) {
+                $path = $this->image->store('products', 'public');
+                $this->product->image = $path;
+            }
+
+            // Create product as draft
+            $product = Product::create([
+                'name' => $this->product->name,
+                'product_category_id' => $this->product->product_category_id,
+                'image' => $this->product->image,
+                'description' => '',
+                'price' => '0',
+                'stock' => '0',
+                'status' => 'draft'
+            ]);
+
+            // Create details with translations
+            foreach ($this->details as $order => $detail) {
+                // Prepare content based on type
+                $content = match($detail['type']) {
+                    'list', 'ordered_list' => ['items' => $detail['items'] ?? []],
+                    'title', 'title_left' => ['text' => $detail['text'] ?? ''],
+                    'description' => ['content' => $detail['content'] ?? ''],
+                    'notification_button', 'link_button' => [
+                        'text' => $detail['text'] ?? '',
+                        'url' => $detail['url'] ?? '',
+                    ],
+                    'yes_or_no' => ['value' => (bool)($detail['value'] ?? false)],
+                    'divider' => [],
+                    default => ['value' => $detail['value'] ?? ''],
+                };
+
+                $productDetail = $product->details()->create([
+                    'type' => $detail['type'],
+                    'order' => $order
+                ]);
+
+                // Create translations for all languages
+                foreach ($this->languages as $language) {
+                    $translationContent = $language === $this->selectedLanguage 
+                        ? $content 
+                        : match($detail['type']) {
+                            'list', 'ordered_list' => ['items' => []],
+                            'title', 'title_left' => ['text' => ''],
+                            'description' => ['content' => ''],
+                            'notification_button', 'link_button' => ['text' => '', 'url' => ''],
+                            'yes_or_no' => ['value' => false],
+                            'divider' => [],
+                            default => ['value' => ''],
+                        };
+
+                    $productDetail->translations()->create([
+                        'language' => $language,
+                        'content' => json_encode($translationContent)
+                    ]);
+                }
+            }
+
+            DB::commit();
+            session()->flash('message', 'Product saved as draft successfully.');
+            return redirect()->route('admin.products');
+        } catch (\Exception $e) {
+            DB::rollBack();
+            if (isset($path) && Storage::disk('public')->exists($path)) {
+                Storage::disk('public')->delete($path);
+            }
+            session()->flash('error', 'Error saving product as draft: ' . $e->getMessage());
+        }
+    }
+
     public function changeLanguage($language)
     {
         $this->selectedLanguage = $language;
