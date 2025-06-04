@@ -66,5 +66,5 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     //     return 'history';
     // })->name('history-show');
 
-    Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
+    // Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
 });
