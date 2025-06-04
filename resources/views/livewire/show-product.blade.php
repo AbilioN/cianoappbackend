@@ -30,41 +30,5 @@
                 <livewire:page-builder :details="$details" :key="'page-builder'" />
             </div>
         </div>
-
-        <!-- Basic Information -->
-        <div class="bg-white rounded-lg shadow-sm p-6">
-            <div class="space-y-4">
-                <h3 class="text-lg font-medium text-gray-900">Basic Information</h3>
-                
-                <!-- Product Name -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Product Name</label>
-                    <div class="mt-1 text-gray-900">{{ $product->name }}</div>
-                </div>
-
-                <!-- Category -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Category</label>
-                    <div class="mt-1 text-gray-900">
-                        @foreach($product->category->translations as $translation)
-                            {{ $translation->name }} ({{ strtoupper($translation->language) }})
-                            @if(!$loop->last), @endif
-                        @endforeach
-                    </div>
-                </div>
-
-                <!-- Image URL -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Image URL</label>
-                    <div class="mt-1">
-                        @if($product->image)
-                            <img src="{{ $product->image }}" alt="{{ $product->name }}" class="w-32 h-32 object-cover rounded-lg">
-                        @else
-                            <span class="text-gray-500">No image available</span>
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>

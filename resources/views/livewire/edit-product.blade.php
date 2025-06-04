@@ -75,61 +75,62 @@
                         @error('product.product_category_id') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                     </div>
 
-                    <!-- Image URL -->
+                    <!-- Image Upload -->
                     <div>
-                        <label for="image" class="block text-sm font-medium text-gray-700">Image URL</label>
-                        <input 
-                            type="text" 
-                            id="image" 
-                            wire:model="product.image" 
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        >
+                        <label class="block text-sm font-medium text-gray-700">Product Image</label>
+                        <div class="mt-1 flex items-center gap-4">
+                            <div class="flex-1">
+                                <input type="file" wire:model="image" accept="image/*" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                                @error('image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                            </div>
+                            @if($tempImageUrl)
+                                <div class="relative w-32 h-32">
+                                    <img src="{{ $tempImageUrl }}" alt="Preview" class="w-full h-full object-cover rounded-lg">
+                                    <button wire:click="removeImage" type="button" class="absolute -top-2 -right-2 p-1 bg-red-100 text-red-600 rounded-full hover:bg-red-200">
+                                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            @elseif($product->image)
+                                <div class="relative w-32 h-32">
+                                    <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover rounded-lg">
+                                    <button wire:click="removeImage" type="button" class="absolute -top-2 -right-2 p-1 bg-red-100 text-red-600 rounded-full hover:bg-red-200">
+                                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            @endif
+                        </div>
+                        <p class="mt-1 text-sm text-gray-500">PNG, JPG, GIF up to 2MB</p>
+                    </div>
+
+                    <!-- Image URL (fallback) -->
+                    <div>
+                        <label for="image_url" class="block text-sm font-medium text-gray-700">Or use Image URL</label>
+                        <input type="text" wire:model="product.image" id="image_url" placeholder="https://..." class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
                         @error('product.image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                     </div>
                 </div>
 
                 <!-- Product Details -->
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
+                <div class="mt-8 bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex justify-between items-center mb-4">
                         <h3 class="text-lg font-medium text-gray-900">Product Details</h3>
-                        <button 
-                            type="button" 
-                            wire:click="addDetail" 
-                            class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors text-sm font-medium"
-                        >
+                        <button wire:click="addDetail" type="button" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors">
                             Add Detail
                         </button>
                     </div>
 
                     <div class="space-y-4">
                         @foreach($details as $index => $detail)
-                            <div class="flex gap-4 items-start p-4 bg-gray-50 rounded-lg">
-                                <div class="flex-1">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Type</label>
-                                    <input 
-                                        type="text" 
-                                        wire:model="details.{{ $index }}.type" 
-                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                                    >
-                                </div>
-                                <div class="flex-1">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Value</label>
-                                    <input 
-                                        type="text" 
-                                        wire:model="details.{{ $index }}.value" 
-                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                                    >
-                                </div>
-                                <div class="flex-none pt-6">
-                                    <button 
-                                        type="button" 
-                                        wire:click="removeDetail({{ $index }})" 
-                                        class="text-red-600 hover:text-red-800"
-                                    >
-                                        Remove
-                                    </button>
-                                </div>
-                            </div>
+                            <livewire:detail-input 
+                                :key="'detail-'.$index" 
+                                :index="$index" 
+                                :detail="$detail"
+                                wire:key="detail-{{ $index }}"
+                            />
                         @endforeach
                     </div>
                 </div>
