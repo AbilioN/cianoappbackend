@@ -23,6 +23,23 @@
             </div>
         </div>
 
+        <!-- Preview (PageBuilder) -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4 text-gray-800">Preview</h3>
+                <livewire:page-builder :details="$details" />
+                <div class="flex justify-end mt-4">
+                    <button 
+                        wire:click="$set('editing', true)"
+                        class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    >
+                        Editar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        @if($editing ?? false)
         <div class="bg-white rounded-lg shadow-sm">
             <form wire:submit="save" class="space-y-6 p-6">
                 <!-- Basic Information -->
@@ -128,5 +145,6 @@
                 </div>
             </form>
         </div>
+        @endif
     </div>
 </div>
