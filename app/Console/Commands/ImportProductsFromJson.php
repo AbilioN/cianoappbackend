@@ -205,7 +205,7 @@ class ImportProductsFromJson extends Command
                     continue;
                 }
                 // dd($productData , $categoryId , $categorySlug);
-                $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug);
+                $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug , $referenceLanguage);
                 // foreach ($categoryData['products'] ?? [] as $productData) {
                 //     // Skip if product filter is set and doesn't match
                 //     if ($targetProduct && $productData['name'] !== $targetProduct) {
@@ -288,7 +288,7 @@ class ImportProductsFromJson extends Command
         return null;
     }
 
-    private function importProductWithTranslations(array $data, int $categoryId, string $categorySlug)
+    private function importProductWithTranslations(array $data, int $categoryId, string $categorySlug , $referenceLanguage)
     {
         // Create or update product in reference language
         $product = Product::updateOrCreate(
@@ -306,34 +306,43 @@ class ImportProductsFromJson extends Command
         );
         // dd($product  , $data);
         // Import translations for all languages
-        foreach ($this->languages as $language) {
-            if (!isset($this->translations[$language])) {
-                continue;
-            }
+        $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $referenceLanguage);
 
-            $this->info("  Processing {$language} translation...");
-
-
-            // Find product in this language's data
-            $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $language);
-            // dd($translatedProduct);
-            if ($translatedProduct) {
-                // Update product translation
-                // $product->translations()->updateOrCreate(
-                //     ['language' => $language],
-                //     [
-                //         'name' => $translatedProduct['name'],
-                //         'description' => $translatedProduct['description'] ?? '',
-                //     ]
-                // );
-                // Import product details with translations
-                foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
-                    $this->importProductDetailWithTranslation($detailData, $product->id, $order, $language);
-                }
-            } else {
-                $this->warn("  No translation found for {$language}");
+        if($translatedProduct){
+            foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
+                $this->importProductDetailWithTranslation($detailData, $product->id, $order, $referenceLanguage);
             }
         }
+
+        
+        // foreach ($this->languages as $language) {
+        //     if (!isset($this->translations[$language])) {
+        //         continue;
+        //     }
+
+        //     $this->info("  Processing {$language} translation...");
+
+
+        //     // Find product in this language's data
+        //     $translatedProduct = $this->findProductInTranslations($data['name'], $categorySlug, $language);
+        //     // dd($translatedProduct);
+        //     if ($translatedProduct) {
+        //         // Update product translation
+        //         // $product->translations()->updateOrCreate(
+        //         //     ['language' => $language],
+        //         //     [
+        //         //         'name' => $translatedProduct['name'],
+        //         //         'description' => $translatedProduct['description'] ?? '',
+        //         //     ]
+        //         // );
+        //         // Import product details with translations
+        //         foreach ($translatedProduct['details'] ?? [] as $order => $detailData) {
+        //             $this->importProductDetailWithTranslation($detailData, $product->id, $order, $language);
+        //         }
+        //     } else {
+        //         $this->warn("  No translation found for {$language}");
+        //     }
+        // }
 
         return $product;
     }

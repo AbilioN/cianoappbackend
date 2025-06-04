@@ -34,8 +34,8 @@ class Product extends Model
         return $this->hasMany(ProductDetail::class);
     }
 
-    public function translation(string $language): HasOne
-    {
-        return $this->hasOne(ProductTranslation::class)->where('language', $language);
-    }
+    // public function translation(string $language): HasOne
+    // {
+    //     return $this->hasOne(ProductTranslation::class)->where('language', $language);
+    // }
 }
