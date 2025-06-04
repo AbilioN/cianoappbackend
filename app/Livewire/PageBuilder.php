@@ -8,6 +8,8 @@ class PageBuilder extends Component
 {
     public $details = [];
 
+    protected $listeners = ['updateDetails' => 'setDetails'];
+
     // Permite receber detalhes como prop
     public function mount($details = [])
     {

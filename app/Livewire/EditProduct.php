@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Product;
 use Livewire\Component;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class EditProduct extends Component
 {
@@ -36,11 +37,26 @@ class EditProduct extends Component
 
     public function loadDetails()
     {
-        $this->details = $this->product->details->map(function($detail) {
-            $translation = $detail->translations->where('language', $this->selectedLanguage)->first();
-            $content = json_decode($translation?->content ?? '{}', true);
-            return $content;
-        })->toArray();
+        // dd("aqui");
+        try {
+            $this->details = $this->product->details->map(function($detail) {
+                Log::info($detail->translations);
+                $translations = $detail->translations->where('language', $this->selectedLanguage);
+                
+                $content = $translations->map(function($translation) {
+                    return json_decode($translation->content, true);
+                });
+                return $content->first();
+            })->toArray();
+            // dd($this->details);
+        
+        } catch (\Throwable $th) {
+
+            dd($th->getMessage());
+            //throw $th;
+        }
+
+        // dd($this->details);
     }
 
     public function updatedSelectedLanguage()
@@ -101,6 +117,12 @@ class EditProduct extends Component
             DB::rollBack();
             session()->flash('error', 'Error updating product: ' . $e->getMessage());
         }
+    }
+
+    public function updateSelectedLanguage($language)
+    {
+        $this->selectedLanguage = $language;
+        $this->loadDetails();
     }
 
     public function render()
