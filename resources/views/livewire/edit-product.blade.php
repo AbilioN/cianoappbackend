@@ -27,7 +27,7 @@
         <div class="mb-8">
             <div class="bg-white rounded-lg shadow p-6">
                 <h3 class="text-lg font-semibold mb-4 text-gray-800">Preview</h3>
-                <livewire:page-builder :details="$details" />
+                <livewire:page-builder :details="$details" :key="'page-builder'" />
                 <div class="flex justify-end mt-4">
                     <button 
                         wire:click="$set('editing', true)"

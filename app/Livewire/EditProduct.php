@@ -14,6 +14,8 @@ class EditProduct extends Component
     public array $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
     public string $selectedLanguage = 'en';
 
+    protected $listeners = [];
+
     protected $rules = [
         'product.name' => 'required|string|max:255',
         'product.product_category_id' => 'required|exists:product_categories,id',
@@ -37,10 +39,8 @@ class EditProduct extends Component
 
     public function loadDetails()
     {
-        // dd("aqui");
         try {
             $this->details = $this->product->details->map(function($detail) {
-                Log::info($detail->translations);
                 $translations = $detail->translations->where('language', $this->selectedLanguage);
                 
                 $content = $translations->map(function($translation) {
@@ -48,19 +48,18 @@ class EditProduct extends Component
                 });
                 return $content->first();
             })->toArray();
-            // dd($this->details);
+            
+            $this->dispatch('details-updated', details: $this->details);
         
         } catch (\Throwable $th) {
-
-            dd($th->getMessage());
-            //throw $th;
+            Log::error('Error loading details: ' . $th->getMessage());
+            throw $th;
         }
-
-        // dd($this->details);
     }
 
-    public function updatedSelectedLanguage()
+    public function updateSelectedLanguage($language)
     {
+        $this->selectedLanguage = $language;
         $this->loadDetails();
     }
 
@@ -117,12 +116,6 @@ class EditProduct extends Component
             DB::rollBack();
             session()->flash('error', 'Error updating product: ' . $e->getMessage());
         }
-    }
-
-    public function updateSelectedLanguage($language)
-    {
-        $this->selectedLanguage = $language;
-        $this->loadDetails();
     }
 
     public function render()
