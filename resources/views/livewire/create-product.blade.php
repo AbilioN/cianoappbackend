@@ -14,7 +14,7 @@
             <div class="flex gap-2">
                 @foreach($languages as $lang)
                     <button 
-                        wire:click="updateSelectedLanguage('{{ $lang }}')"
+                        wire:click="changeLanguage('{{ $lang }}')"
                         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors {{ $selectedLanguage === $lang ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200' }}"
                     >
                         {{ strtoupper($lang) }}

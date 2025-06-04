@@ -22,7 +22,8 @@ class EditProduct extends Component
 
     protected $listeners = [
         'remove-detail' => 'removeDetail',
-        'detail-updated' => 'updateDetail'
+        'detail-updated' => 'updateDetail',
+        'detail-removed' => 'removeDetail'
     ];
 
     protected $rules = [
@@ -276,6 +277,17 @@ class EditProduct extends Component
             }
             session()->flash('error', 'Error updating product: ' . $e->getMessage());
         }
+    }
+
+    public function changeLanguage($language)
+    {
+        $this->selectedLanguage = $language;
+        $this->dispatch('language-changed', $language);
+    }
+
+    public function updatedSelectedLanguage($value)
+    {
+        $this->dispatch('language-changed', $value);
     }
 
     public function render()

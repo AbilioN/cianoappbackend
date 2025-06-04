@@ -22,7 +22,8 @@ class CreateProduct extends Component
 
     protected $listeners = [
         'remove-detail' => 'removeDetail',
-        'detail-updated' => 'updateDetail'
+        'detail-updated' => 'updateDetail',
+        'detail-removed' => 'removeDetail'
     ];
 
     protected $rules = [
@@ -220,6 +221,17 @@ class CreateProduct extends Component
             }
             session()->flash('error', 'Error creating product: ' . $e->getMessage());
         }
+    }
+
+    public function changeLanguage($language)
+    {
+        $this->selectedLanguage = $language;
+        $this->dispatch('language-changed', $language);
+    }
+
+    public function updatedSelectedLanguage($value)
+    {
+        $this->dispatch('language-changed', $value);
     }
 
     public function render()

@@ -23,7 +23,15 @@ class DetailInput extends Component
     public $newOptionYes = '';
     public $newOptionNo = '';
 
-    protected $listeners = ['resetType' => 'resetType'];
+    // Campos para tradução
+    public $translations = [];
+    public $currentLanguage = 'en';
+
+    protected $listeners = [
+        'resetType' => 'resetType',
+        'remove-detail' => 'removeDetail',
+        'language-changed' => 'handleLanguageChange'
+    ];
 
     public function mount($index, $detail = null)
     {
@@ -42,6 +50,11 @@ class DetailInput extends Component
                 $this->title = $detail['title'] ?? '';
                 $this->optionYes = $detail['option_yes'] ?? [];
                 $this->optionNo = $detail['option_no'] ?? [];
+            }
+
+            // Carrega traduções se existirem
+            if (isset($detail['translations'])) {
+                $this->translations = $detail['translations'];
             }
         }
     }
@@ -211,31 +224,132 @@ class DetailInput extends Component
         }
     }
 
-    public function getDetailData()
+    public function handleLanguageChange($language)
     {
-        if ($this->type === 'yes_or_no') {
-            return [
-                'type' => $this->type,
-                'title' => $this->title,
-                'option_yes' => $this->optionYes,
-                'option_no' => $this->optionNo
-            ];
+        $this->currentLanguage = $language;
+        
+        // Atualiza os campos com as traduções do idioma atual
+        if (isset($this->translations[$language])) {
+            $translation = $this->translations[$language];
+            
+            switch ($this->type) {
+                case 'yes_or_no':
+                    $this->title = $translation['title'] ?? $this->title;
+                    $this->optionYes = $translation['option_yes'] ?? $this->optionYes;
+                    $this->optionNo = $translation['option_no'] ?? $this->optionNo;
+                    break;
+                    
+                case 'title':
+                case 'title_left':
+                    $this->text = $translation['text'] ?? $this->text;
+                    break;
+                    
+                case 'description':
+                    $this->content = $translation['content'] ?? $this->content;
+                    break;
+                    
+                case 'notification_button':
+                case 'link_button':
+                    $this->text = $translation['text'] ?? $this->text;
+                    $this->url = $translation['url'] ?? $this->url;
+                    break;
+                    
+                case 'list':
+                case 'ordered_list':
+                    $this->items = $translation['items'] ?? $this->items;
+                    break;
+                    
+                default:
+                    $this->value = $translation['value'] ?? $this->value;
+            }
         }
 
+        // Notifica o componente pai sobre a mudança
+        $this->dispatch('detail-updated', [
+            'index' => $this->index,
+            'detail' => $this->getDetailData()
+        ]);
+    }
+
+    public function getDetailData()
+    {
         $data = [
             'type' => $this->type,
-            'value' => $this->value,
-            'text' => $this->text,
-            'url' => $this->url,
-            'content' => $this->content,
-            'items' => $this->items,
-            'newItem' => $this->newItem
+            'translations' => [
+                $this->currentLanguage => []
+            ]
         ];
 
-        // Remove campos vazios para manter o array limpo
-        return array_filter($data, function($value) {
-            return $value !== '' && $value !== null && $value !== [];
-        });
+        // Adiciona os campos específicos do tipo
+        switch ($this->type) {
+            case 'yes_or_no':
+                $data['title'] = $this->title;
+                $data['option_yes'] = $this->optionYes;
+                $data['option_no'] = $this->optionNo;
+                $data['translations'][$this->currentLanguage] = [
+                    'title' => $this->title,
+                    'option_yes' => $this->optionYes,
+                    'option_no' => $this->optionNo
+                ];
+                break;
+                
+            case 'title':
+            case 'title_left':
+                $data['text'] = $this->text;
+                $data['translations'][$this->currentLanguage] = [
+                    'text' => $this->text
+                ];
+                break;
+                
+            case 'description':
+                $data['content'] = $this->content;
+                $data['translations'][$this->currentLanguage] = [
+                    'content' => $this->content
+                ];
+                break;
+                
+            case 'notification_button':
+            case 'link_button':
+                $data['text'] = $this->text;
+                $data['url'] = $this->url;
+                $data['translations'][$this->currentLanguage] = [
+                    'text' => $this->text,
+                    'url' => $this->url
+                ];
+                break;
+                
+            case 'list':
+            case 'ordered_list':
+                $data['items'] = $this->items;
+                $data['translations'][$this->currentLanguage] = [
+                    'items' => $this->items
+                ];
+                break;
+                
+            default:
+                $data['value'] = $this->value;
+                $data['translations'][$this->currentLanguage] = [
+                    'value' => $this->value
+                ];
+        }
+
+        // Mantém as traduções de outros idiomas
+        foreach ($this->translations as $lang => $translation) {
+            if ($lang !== $this->currentLanguage) {
+                $data['translations'][$lang] = $translation;
+            }
+        }
+
+        return $data;
+    }
+
+    public function removeDetail($data)
+    {
+        if ($data['index'] === $this->index) {
+            $this->dispatch('detail-removed', [
+                'index' => $this->index
+            ]);
+        }
     }
 
     public function render()
