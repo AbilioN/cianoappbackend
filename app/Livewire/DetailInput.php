@@ -15,6 +15,9 @@ class DetailInput extends Component
     public $content = '';
     public $items = [];
     public $newItem = '';
+    public $selectedLanguage;
+    public $draftTranslations = [];
+    public $isDraft = false;
     
     // Campos específicos para yes_or_no
     public $title = '';
@@ -30,12 +33,17 @@ class DetailInput extends Component
     protected $listeners = [
         'resetType' => 'resetType',
         'remove-detail' => 'removeDetail',
-        'language-changed' => 'handleLanguageChange'
+        'language-changed' => 'handleLanguageChange',
+        'save-draft' => 'saveAsDraft',
+        'publish-draft' => 'publishDraft'
     ];
 
-    public function mount($index, $detail = null)
+    public function mount($index, $detail = null, $selectedLanguage = 'en')
     {
         $this->index = $index;
+        $this->selectedLanguage = $selectedLanguage;
+        $this->isDraft = false;
+
         if ($detail) {
             $this->type = $detail['type'] ?? '';
             $this->value = $detail['value'] ?? '';
@@ -56,6 +64,25 @@ class DetailInput extends Component
             if (isset($detail['translations'])) {
                 $this->translations = $detail['translations'];
             }
+        }
+
+        // Initialize draft translations for all languages
+        $this->initializeDraftTranslations();
+    }
+
+    protected function initializeDraftTranslations()
+    {
+        $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
+        foreach ($languages as $lang) {
+            $this->draftTranslations[$lang] = [
+                'type' => $this->type,
+                'value' => $this->value,
+                'text' => $this->text,
+                'url' => $this->url,
+                'content' => $this->content,
+                'items' => $this->items,
+                'isDraft' => false
+            ];
         }
     }
 
@@ -226,130 +253,116 @@ class DetailInput extends Component
 
     public function handleLanguageChange($language)
     {
-        $this->currentLanguage = $language;
-        
-        // Atualiza os campos com as traduções do idioma atual
-        if (isset($this->translations[$language])) {
-            $translation = $this->translations[$language];
-            
-            switch ($this->type) {
-                case 'yes_or_no':
-                    $this->title = $translation['title'] ?? $this->title;
-                    $this->optionYes = $translation['option_yes'] ?? $this->optionYes;
-                    $this->optionNo = $translation['option_no'] ?? $this->optionNo;
-                    break;
-                    
-                case 'title':
-                case 'title_left':
-                    $this->text = $translation['text'] ?? $this->text;
-                    break;
-                    
-                case 'description':
-                    $this->content = $translation['content'] ?? $this->content;
-                    break;
-                    
-                case 'notification_button':
-                case 'link_button':
-                    $this->text = $translation['text'] ?? $this->text;
-                    $this->url = $translation['url'] ?? $this->url;
-                    break;
-                    
-                case 'list':
-                case 'ordered_list':
-                    $this->items = $translation['items'] ?? $this->items;
-                    break;
-                    
-                default:
-                    $this->value = $translation['value'] ?? $this->value;
+        // Save current state to draft for previous language
+        $this->saveCurrentStateToDraft($this->selectedLanguage);
+
+        // Update selected language
+        $this->selectedLanguage = $language;
+
+        // Load draft state for new language
+        $this->loadDraftState($language);
+    }
+
+    protected function saveCurrentStateToDraft($language)
+    {
+        $this->draftTranslations[$language] = [
+            'type' => $this->type,
+            'value' => $this->value,
+            'text' => $this->text,
+            'url' => $this->url,
+            'content' => $this->content,
+            'items' => $this->items,
+            'isDraft' => true
+        ];
+    }
+
+    protected function loadDraftState($language)
+    {
+        $draft = $this->draftTranslations[$language] ?? null;
+        if ($draft) {
+            $this->type = $draft['type'];
+            $this->value = $draft['value'];
+            $this->text = $draft['text'];
+            $this->url = $draft['url'];
+            $this->content = $draft['content'];
+            $this->items = $draft['items'];
+            $this->isDraft = $draft['isDraft'];
+        }
+    }
+
+    public function saveAsDraft()
+    {
+        $this->saveCurrentStateToDraft($this->selectedLanguage);
+        $this->isDraft = true;
+        $this->dispatch('detail-draft-saved', [
+            'index' => $this->index,
+            'language' => $this->selectedLanguage,
+            'data' => $this->draftTranslations[$this->selectedLanguage]
+        ]);
+    }
+
+    public function publishDraft()
+    {
+        // Validate that all languages have the same structure
+        if (!$this->validateDraftStructure()) {
+            $this->dispatch('draft-validation-error', [
+                'message' => 'All translations must have the same structure (type and number of items)'
+            ]);
+            return;
+        }
+
+        $this->isDraft = false;
+        foreach ($this->draftTranslations as $lang => $draft) {
+            $this->draftTranslations[$lang]['isDraft'] = false;
+        }
+
+        $this->dispatch('detail-published', [
+            'index' => $this->index,
+            'translations' => $this->draftTranslations
+        ]);
+    }
+
+    protected function validateDraftStructure()
+    {
+        $referenceType = null;
+        $referenceItemsCount = null;
+
+        foreach ($this->draftTranslations as $lang => $draft) {
+            if ($referenceType === null) {
+                $referenceType = $draft['type'];
+                $referenceItemsCount = is_array($draft['items']) ? count($draft['items']) : 0;
+                continue;
+            }
+
+            if ($draft['type'] !== $referenceType) {
+                return false;
+            }
+
+            if (is_array($draft['items']) && count($draft['items']) !== $referenceItemsCount) {
+                return false;
             }
         }
 
-        // Notifica o componente pai sobre a mudança
-        $this->dispatch('detail-updated', [
-            'index' => $this->index,
-            'detail' => $this->getDetailData()
-        ]);
+        return true;
     }
 
     public function getDetailData()
     {
-        $data = [
+        return [
             'type' => $this->type,
-            'translations' => [
-                $this->currentLanguage => []
-            ]
+            'value' => $this->value,
+            'text' => $this->text,
+            'url' => $this->url,
+            'content' => $this->content,
+            'items' => $this->items,
+            'isDraft' => $this->isDraft,
+            'translations' => $this->draftTranslations
         ];
-
-        // Adiciona os campos específicos do tipo
-        switch ($this->type) {
-            case 'yes_or_no':
-                $data['title'] = $this->title;
-                $data['option_yes'] = $this->optionYes;
-                $data['option_no'] = $this->optionNo;
-                $data['translations'][$this->currentLanguage] = [
-                    'title' => $this->title,
-                    'option_yes' => $this->optionYes,
-                    'option_no' => $this->optionNo
-                ];
-                break;
-                
-            case 'title':
-            case 'title_left':
-                $data['text'] = $this->text;
-                $data['translations'][$this->currentLanguage] = [
-                    'text' => $this->text
-                ];
-                break;
-                
-            case 'description':
-                $data['content'] = $this->content;
-                $data['translations'][$this->currentLanguage] = [
-                    'content' => $this->content
-                ];
-                break;
-                
-            case 'notification_button':
-            case 'link_button':
-                $data['text'] = $this->text;
-                $data['url'] = $this->url;
-                $data['translations'][$this->currentLanguage] = [
-                    'text' => $this->text,
-                    'url' => $this->url
-                ];
-                break;
-                
-            case 'list':
-            case 'ordered_list':
-                $data['items'] = $this->items;
-                $data['translations'][$this->currentLanguage] = [
-                    'items' => $this->items
-                ];
-                break;
-                
-            default:
-                $data['value'] = $this->value;
-                $data['translations'][$this->currentLanguage] = [
-                    'value' => $this->value
-                ];
-        }
-
-        // Mantém as traduções de outros idiomas
-        foreach ($this->translations as $lang => $translation) {
-            if ($lang !== $this->currentLanguage) {
-                $data['translations'][$lang] = $translation;
-            }
-        }
-
-        return $data;
     }
 
-    public function removeDetail($data)
+    public function removeDetail()
     {
-        if ($data['index'] === $this->index) {
-            $this->dispatch('detail-removed', [
-                'index' => $this->index
-            ]);
-        }
+        $this->dispatch('remove-detail', ['index' => $this->index]);
     }
 
     public function render()

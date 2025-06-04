@@ -23,8 +23,14 @@ class EditProduct extends Component
     protected $listeners = [
         'remove-detail' => 'removeDetail',
         'detail-updated' => 'updateDetail',
-        'detail-removed' => 'removeDetail'
+        'detail-removed' => 'removeDetail',
+        'detail-draft-saved' => 'handleDetailDraftSaved',
+        'detail-published' => 'handleDetailPublished',
+        'draft-validation-error' => 'handleDraftValidationError'
     ];
+
+    public $draftDetails = [];
+    public $hasDraftChanges = false;
 
     protected $rules = [
         'product.name' => 'required|string|max:255',
@@ -51,6 +57,7 @@ class EditProduct extends Component
         ])->findOrFail($id);
 
         $this->loadDetails();
+        $this->draftDetails = $this->details;
     }
 
     public function updatedImage()
@@ -199,12 +206,139 @@ class EditProduct extends Component
     public function removeDetail($data)
     {
         $index = $data['index'];
-        unset($this->details[$index]);
-        $this->details = array_values($this->details);
+        
+        // Remove from both details and draft details
+        if (isset($this->details[$index])) {
+            unset($this->details[$index]);
+            $this->details = array_values($this->details); // Reindex array
+        }
+        
+        if (isset($this->draftDetails[$index])) {
+            unset($this->draftDetails[$index]);
+            $this->draftDetails = array_values($this->draftDetails); // Reindex array
+        }
+    }
+
+    public function handleDetailDraftSaved($data)
+    {
+        $index = $data['index'];
+        $language = $data['language'];
+        $detailData = $data['data'];
+
+        if (!isset($this->draftDetails[$index])) {
+            $this->draftDetails[$index] = [];
+        }
+
+        $this->draftDetails[$index][$language] = $detailData;
+        $this->hasDraftChanges = true;
+    }
+
+    public function handleDetailPublished($data)
+    {
+        $index = $data['index'];
+        $translations = $data['translations'];
+
+        // Update the main details array with the published translations
+        $this->details[$index] = [
+            'type' => $translations[$this->selectedLanguage]['type'],
+            'value' => $translations[$this->selectedLanguage]['value'],
+            'text' => $translations[$this->selectedLanguage]['text'],
+            'url' => $translations[$this->selectedLanguage]['url'],
+            'content' => $translations[$this->selectedLanguage]['content'],
+            'items' => $translations[$this->selectedLanguage]['items'],
+        ];
+
+        // Update draft details to match
+        $this->draftDetails[$index] = $translations;
+        $this->hasDraftChanges = false;
+    }
+
+    public function handleDraftValidationError($data)
+    {
+        session()->flash('error', $data['message']);
+    }
+
+    public function saveAsDraft()
+    {
+        $this->validate();
+
+        DB::beginTransaction();
+        try {
+            // Handle image upload
+            if ($this->image) {
+                // Delete old image if exists
+                if ($this->product->image && Storage::disk('public')->exists($this->product->image)) {
+                    Storage::disk('public')->delete($this->product->image);
+                }
+                $path = $this->image->store('products', 'public');
+                $this->product->image = $path;
+            }
+
+            // Update product status to draft
+            $this->product->status = 'draft';
+            $this->product->save();
+
+            // Delete all existing details and translations
+            $this->product->details()->delete();
+
+            // Create new details with translations from draft
+            foreach ($this->draftDetails as $order => $translations) {
+                $referenceLang = $this->selectedLanguage;
+                $detailData = $translations[$referenceLang];
+
+                // Create the detail with the reference language structure
+                $productDetail = $this->product->details()->create([
+                    'type' => $detailData['type'],
+                    'order' => $order,
+                    'content' => json_encode($this->prepareContentForType($detailData))
+                ]);
+
+                // Create translations for all languages
+                foreach ($this->languages as $language) {
+                    $translationData = $translations[$language] ?? $detailData;
+                    $productDetail->translations()->create([
+                        'language' => $language,
+                        'content' => json_encode($this->prepareContentForType($translationData))
+                    ]);
+                }
+            }
+
+            DB::commit();
+            session()->flash('message', 'Product saved as draft successfully.');
+            return redirect()->route('admin.products');
+        } catch (\Exception $e) {
+            DB::rollBack();
+            if (isset($path) && Storage::disk('public')->exists($path)) {
+                Storage::disk('public')->delete($path);
+            }
+            session()->flash('error', 'Error saving product as draft: ' . $e->getMessage());
+        }
+    }
+
+    protected function prepareContentForType($data)
+    {
+        return match($data['type']) {
+            'list', 'ordered_list' => ['items' => $data['items'] ?? []],
+            'title', 'title_left' => ['text' => $data['text'] ?? ''],
+            'description' => ['content' => $data['content'] ?? ''],
+            'notification_button', 'link_button' => [
+                'text' => $data['text'] ?? '',
+                'url' => $data['url'] ?? '',
+            ],
+            'yes_or_no' => ['value' => (bool)($data['value'] ?? false)],
+            'divider' => [],
+            default => ['value' => $data['value'] ?? ''],
+        };
     }
 
     public function save()
     {
+        // Validate that all details are published (no drafts)
+        if ($this->hasDraftChanges) {
+            session()->flash('error', 'Please publish all detail drafts before saving the product.');
+            return;
+        }
+
         $this->validate();
 
         DB::beginTransaction();
@@ -280,83 +414,6 @@ class EditProduct extends Component
         }
     }
 
-    public function saveAsDraft()
-    {
-        $this->validate();
-
-        DB::beginTransaction();
-        try {
-            // Handle image upload
-            if ($this->image) {
-                // Delete old image if exists
-                if ($this->product->image && Storage::disk('public')->exists($this->product->image)) {
-                    Storage::disk('public')->delete($this->product->image);
-                }
-                $path = $this->image->store('products', 'public');
-                $this->product->image = $path;
-            }
-
-            // Update product status to draft
-            $this->product->status = 'draft';
-            $this->product->save();
-
-            // Delete all existing details and translations
-            $this->product->details()->delete();
-
-            // Create new details with translations
-            foreach ($this->details as $order => $detail) {
-                // Prepare content based on type
-                $content = match($detail['type']) {
-                    'list', 'ordered_list' => ['items' => $detail['items'] ?? []],
-                    'title', 'title_left' => ['text' => $detail['text'] ?? ''],
-                    'description' => ['content' => $detail['content'] ?? ''],
-                    'notification_button', 'link_button' => [
-                        'text' => $detail['text'] ?? '',
-                        'url' => $detail['url'] ?? '',
-                    ],
-                    'yes_or_no' => ['value' => (bool)($detail['value'] ?? false)],
-                    'divider' => [],
-                    default => ['value' => $detail['value'] ?? ''],
-                };
-
-                $productDetail = $this->product->details()->create([
-                    'type' => $detail['type'],
-                    'order' => $order
-                ]);
-
-                // Create translations for all languages
-                foreach ($this->languages as $language) {
-                    $translationContent = $language === $this->selectedLanguage 
-                        ? $content 
-                        : match($detail['type']) {
-                            'list', 'ordered_list' => ['items' => []],
-                            'title', 'title_left' => ['text' => ''],
-                            'description' => ['content' => ''],
-                            'notification_button', 'link_button' => ['text' => '', 'url' => ''],
-                            'yes_or_no' => ['value' => false],
-                            'divider' => [],
-                            default => ['value' => ''],
-                        };
-
-                    $productDetail->translations()->create([
-                        'language' => $language,
-                        'content' => json_encode($translationContent)
-                    ]);
-                }
-            }
-
-            DB::commit();
-            session()->flash('message', 'Product saved as draft successfully.');
-            return redirect()->route('admin.products');
-        } catch (\Exception $e) {
-            DB::rollBack();
-            if (isset($path) && Storage::disk('public')->exists($path)) {
-                Storage::disk('public')->delete($path);
-            }
-            session()->flash('error', 'Error saving product as draft: ' . $e->getMessage());
-        }
-    }
-
     public function changeLanguage($language)
     {
         $this->selectedLanguage = $language;
@@ -373,3 +430,4 @@ class EditProduct extends Component
         return view('livewire.edit-product');
     }
 }
+
