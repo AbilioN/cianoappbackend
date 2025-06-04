@@ -61,8 +61,6 @@ class ProductController extends Controller
 
             $categoryProducts = [];
             foreach ($products as $product) {
-         
-
                 $productData = [
                     'name' => $product->name,
                     // 'description' => $productTranslation->description,
@@ -89,15 +87,15 @@ class ProductController extends Controller
             }
 
             // Add category to result if it has products
-            if (!empty($categoryProducts)) {
-                $result[] = [
-                    'category' => $category->slug,
-                    'products' => $categoryProducts
-                ];
-            }
+            // if (!empty($categoryProducts)) {
+            //     $result[] = [
+            //         'category' => $category->slug,
+            //         'products' => $categoryProducts
+            //     ];
+            // }
         }
 
-        return response()->json($result);
+        return $categoryProducts;
     }
 
     public function getProductsByLanguage($language)
