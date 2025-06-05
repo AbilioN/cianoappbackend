@@ -110,21 +110,27 @@
         </div>
 
         <!-- Save Buttons -->
-        <div class="mt-8 flex justify-end gap-4">
-            <button 
-                wire:click="saveAsDraft" 
-                type="button" 
-                class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
-            >
-                Save as Draft
-            </button>
-            <button 
-                wire:click="save" 
-                type="button" 
-                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-                Create Product
-            </button>
+        <div class="mt-8 flex flex-col items-end gap-2">
+            <div class="flex gap-4">
+                <button type="button" 
+                        wire:click="saveAsDraft" 
+                        class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    Guardar como Rascunho
+                </button>
+
+                <button type="button" 
+                        wire:click="createProduct" 
+                        class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        @if(!$allowedToSave) disabled @endif
+                        title="O botão Criar Produto será ativado quando todas as páginas de idiomas tiverem sido editadas">
+                    Criar Produto
+                </button>
+            </div>
+            @if(!$allowedToSave)
+                <p class="text-sm text-gray-500 italic">
+                    Por favor, edite pelo menos um detalhe em cada idioma para ativar o botão Criar Produto
+                </p>
+            @endif
         </div>
     </div>
 </div>

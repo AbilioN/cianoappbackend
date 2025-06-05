@@ -28,6 +28,8 @@ class CreateProduct extends Component
     public $publishedDetails = []; // Track published state per language
     public $hasDraftChanges = false;
 
+    public $allowedToSave = false;
+
     protected $listeners = [
         'remove-detail' => 'removeDetail',
         'detail-updated' => 'updateDetail',
@@ -281,8 +283,22 @@ class CreateProduct extends Component
         session()->flash('error', $data['message']);
     }
 
+    public function updatedProduct()
+    {
+        $this->checkIfCanSave();
+    }
+
+    public function checkIfCanSave()
+    {
+        $this->allowedToSave = !empty($this->product['name']) && !empty($this->product['product_category_id']);
+    }
+
     public function saveAsDraft()
     {
+        if (!$this->allowedToSave) {
+            return;
+        }
+
         // $this->validate();
 
         Log::info('Salvando como rascunho', [
