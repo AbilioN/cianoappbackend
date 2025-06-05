@@ -21,6 +21,7 @@ class CreateProduct extends Component
     public string $selectedLanguage = 'en';
 
     public $draftDetails = [];
+    public $publishedDetails = []; // Track published state per language
     public $hasDraftChanges = false;
 
     protected $listeners = [
@@ -48,54 +49,91 @@ class CreateProduct extends Component
 
     public function mount()
     {
+        Log::info('Iniciando montagem do componente CreateProduct');
         $this->product = new Product();
-        $this->details = [
-            [
-                'type' => '',
-                'value' => '',
-                'items' => [],
-                'newItem' => '',
-            ]
-        ];
-        $this->draftDetails = $this->details;
+        $this->selectedLanguage = 'en';
+        
+        // Initialize details structure for all languages
+        foreach ($this->languages as $lang) {
+            $this->details[$lang] = [];
+            $this->draftDetails[$lang] = [];
+            $this->publishedDetails[$lang] = [];
+            Log::info("Estrutura inicial criada para língua: {$lang}", [
+                'details' => $this->details[$lang],
+                'draftDetails' => $this->draftDetails[$lang],
+                'publishedDetails' => $this->publishedDetails[$lang]
+            ]);
+        }
     }
 
     public function updated($property)
     {
+        Log::info('Property updated', [
+            'property' => $property,
+            'value' => $this->{$property} ?? null
+        ]);
+
         if (preg_match('/^details\.(\d+)\.type$/', $property, $matches)) {
             $index = $matches[1];
+            $type = $this->details[$this->selectedLanguage][$index]['type'];
+            
+            Log::info('Atualizando estrutura do detail após mudança de tipo', [
+                'index' => $index,
+                'type' => $type,
+                'detailBefore' => $this->details[$this->selectedLanguage][$index]
+            ]);
+
             // Reset the value fields based on the new type
-            $this->details[$index] = match($this->details[$index]['type']) {
+            $this->details[$this->selectedLanguage][$index] = match($type) {
                 'list', 'ordered_list' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'items' => [],
                     'newItem' => '',
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 'title', 'title_left' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'text' => '',
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 'description' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'content' => '',
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 'notification_button', 'link_button' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'text' => '',
                     'url' => '',
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 'yes_or_no' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'value' => false,
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 'divider' => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
+                    'is_draft' => true,
+                    'order' => $index
                 ],
                 default => [
-                    'type' => $this->details[$index]['type'],
+                    'type' => $type,
                     'value' => '',
+                    'is_draft' => true,
+                    'order' => $index
                 ],
             };
+
+            Log::info('Estrutura do detail atualizada', [
+                'index' => $index,
+                'detailAfter' => $this->details[$this->selectedLanguage][$index]
+            ]);
         }
     }
 
@@ -114,12 +152,41 @@ class CreateProduct extends Component
 
     public function addDetail()
     {
-        $this->details[] = [
-            'type' => '',
+        Log::info('Adicionando novo detail', [
+            'currentLanguage' => $this->selectedLanguage,
+            'currentDetailsCount' => count($this->details[$this->selectedLanguage])
+        ]);
+
+        $newDetail = [
+            'type' => 'text',
             'value' => '',
-            'items' => [],
-            'newItem' => '',
+            'is_draft' => true,
+            'order' => count($this->details[$this->selectedLanguage])
         ];
+
+        // Initialize empty arrays for all languages
+        foreach ($this->languages as $lang) {
+            if (!isset($this->details[$lang])) {
+                $this->details[$lang] = [];
+            }
+            if (!isset($this->draftDetails[$lang])) {
+                $this->draftDetails[$lang] = [];
+            }
+            if (!isset($this->publishedDetails[$lang])) {
+                $this->publishedDetails[$lang] = [];
+            }
+        }
+
+        // Add the detail to the current language
+        $this->details[$this->selectedLanguage][] = $newDetail;
+        $this->draftDetails[$this->selectedLanguage][] = $newDetail;
+        
+        Log::info('Novo detail adicionado', [
+            'language' => $this->selectedLanguage,
+            'detail' => $newDetail,
+            'totalDetails' => count($this->details[$this->selectedLanguage]),
+            'allDetails' => $this->details
+        ]);
     }
 
     public function addListItem($index)
@@ -139,61 +206,144 @@ class CreateProduct extends Component
         $this->details[$detailIndex]['items'] = array_values($this->details[$detailIndex]['items']);
     }
 
-    public function removeDetail($data)
+    public function removeDetail($index)
     {
-        $index = $data['index'];
-        
-        // Remove from both details and draft details
-        if (isset($this->details[$index])) {
-            unset($this->details[$index]);
-            $this->details = array_values($this->details); // Reindex array
-        }
-        
-        if (isset($this->draftDetails[$index])) {
-            unset($this->draftDetails[$index]);
-            $this->draftDetails = array_values($this->draftDetails); // Reindex array
+        Log::info('Iniciando remoção de detail', [
+            'index' => $index,
+            'currentLanguage' => $this->selectedLanguage,
+            'detailsBefore' => $this->details[$this->selectedLanguage]
+        ]);
+
+        foreach ($this->languages as $lang) {
+            if (isset($this->details[$lang][$index])) {
+                Log::info("Removendo detail da língua: {$lang}", [
+                    'index' => $index,
+                    'detail' => $this->details[$lang][$index]
+                ]);
+
+                unset($this->details[$lang][$index]);
+                unset($this->draftDetails[$lang][$index]);
+                unset($this->publishedDetails[$lang][$index]);
+
+                // Reindex arrays
+                $this->details[$lang] = array_values($this->details[$lang]);
+                $this->draftDetails[$lang] = array_values($this->draftDetails[$lang]);
+                $this->publishedDetails[$lang] = array_values($this->publishedDetails[$lang]);
+
+                Log::info("Detail removido da língua: {$lang}", [
+                    'detailsAfter' => $this->details[$lang],
+                    'draftDetailsAfter' => $this->draftDetails[$lang],
+                    'publishedDetailsAfter' => $this->publishedDetails[$lang]
+                ]);
+            }
         }
     }
 
     public function updateDetail($data)
     {
+        Log::info('Atualizando detail', [
+            'data' => $data
+        ]);
+
         $index = $data['index'];
         $detail = $data['detail'];
-        $this->details[$index] = $detail;
+
+        if (isset($this->details[$this->selectedLanguage][$index])) {
+            // Atualiza o detail com os novos dados
+            $this->details[$this->selectedLanguage][$index] = array_merge(
+                $this->details[$this->selectedLanguage][$index],
+                $detail
+            );
+            
+            if (isset($this->publishedDetails[$this->selectedLanguage][$index])) {
+                $this->publishedDetails[$this->selectedLanguage][$index] = array_merge(
+                    $this->publishedDetails[$this->selectedLanguage][$index],
+                    $detail
+                );
+                Log::info('Detail publicado atualizado', [
+                    'index' => $index,
+                    'detail' => $this->publishedDetails[$this->selectedLanguage][$index]
+                ]);
+            } else {
+                $this->draftDetails[$this->selectedLanguage][$index] = array_merge(
+                    $this->draftDetails[$this->selectedLanguage][$index],
+                    $detail
+                );
+                Log::info('Detail em rascunho atualizado', [
+                    'index' => $index,
+                    'detail' => $this->draftDetails[$this->selectedLanguage][$index]
+                ]);
+            }
+        }
     }
 
-    public function handleDetailDraftSaved($data)
+    public function handleDetailDraftSaved($detailData)
     {
-        $index = $data['index'];
-        $language = $data['language'];
-        $detailData = $data['data'];
+        Log::info('Salvando rascunho de detail', [
+            'detailData' => $detailData,
+            'currentLanguage' => $this->selectedLanguage
+        ]);
 
-        if (!isset($this->draftDetails[$index])) {
-            $this->draftDetails[$index] = [];
+        $index = $detailData['index'];
+        $language = $detailData['language'];
+        $data = $detailData['data'];
+
+        if (!isset($this->draftDetails[$language])) {
+            $this->draftDetails[$language] = [];
         }
 
-        $this->draftDetails[$index][$language] = $detailData;
+        $this->draftDetails[$language][$index] = $data;
         $this->hasDraftChanges = true;
+
+        Log::info('Rascunho salvo', [
+            'language' => $language,
+            'index' => $index,
+            'data' => $data
+        ]);
     }
 
-    public function handleDetailPublished($data)
+    public function handleDetailPublished($detailData)
     {
-        $index = $data['index'];
-        $translations = $data['translations'];
+        Log::info('Publicando detail', [
+            'detailData' => $detailData,
+            'currentLanguage' => $this->selectedLanguage
+        ]);
 
-        // Update the main details array with the published translations
-        $this->details[$index] = [
-            'type' => $translations[$this->selectedLanguage]['type'],
-            'value' => $translations[$this->selectedLanguage]['value'],
-            'text' => $translations[$this->selectedLanguage]['text'],
-            'url' => $translations[$this->selectedLanguage]['url'],
-            'content' => $translations[$this->selectedLanguage]['content'],
-            'items' => $translations[$this->selectedLanguage]['items'],
-        ];
+        $index = $detailData['index'];
+        if (isset($this->details[$this->selectedLanguage][$index])) {
+            $this->details[$this->selectedLanguage][$index] = array_merge(
+                $this->details[$this->selectedLanguage][$index],
+                $detailData['detail']
+            );
+            $this->details[$this->selectedLanguage][$index]['is_draft'] = false;
+            
+            $this->publishedDetails[$this->selectedLanguage][$index] = $this->details[$this->selectedLanguage][$index];
+            unset($this->draftDetails[$this->selectedLanguage][$index]);
 
-        // Update draft details to match
-        $this->draftDetails[$index] = $translations;
-        $this->hasDraftChanges = false;
+            Log::info('Detail publicado com sucesso', [
+                'index' => $index,
+                'detail' => $this->details[$this->selectedLanguage][$index],
+                'draftDetails' => $this->draftDetails[$this->selectedLanguage],
+                'publishedDetails' => $this->publishedDetails[$this->selectedLanguage]
+            ]);
+
+            // Check if all languages are published for this detail
+            $allPublished = true;
+            foreach ($this->languages as $lang) {
+                if (!isset($this->publishedDetails[$lang][$index])) {
+                    $allPublished = false;
+                    break;
+                }
+            }
+
+            Log::info('Verificação de publicação em todas as línguas', [
+                'index' => $index,
+                'allPublished' => $allPublished,
+                'publishedStatus' => array_map(function($lang) use ($index) {
+                    return isset($this->publishedDetails[$lang][$index]);
+                }, $this->languages)
+            ]);
+        }
     }
 
     public function handleDraftValidationError($data)
@@ -276,10 +426,14 @@ class CreateProduct extends Component
 
     public function save()
     {
-        // Validate that all details are published (no drafts)
-        if ($this->hasDraftChanges) {
-            session()->flash('error', 'Please publish all detail drafts before saving the product.');
-            return;
+        // Check if all details are published in all languages
+        foreach ($this->details as $index => $detail) {
+            foreach ($this->languages as $language) {
+                if (!isset($this->publishedDetails[$language][$index])) {
+                    session()->flash('error', 'Please publish all detail drafts in all languages before saving the product.');
+                    return;
+                }
+            }
         }
 
         $this->validate();
@@ -359,8 +513,33 @@ class CreateProduct extends Component
 
     public function changeLanguage($language)
     {
+        Log::info('Trocando língua', [
+            'from' => $this->selectedLanguage,
+            'to' => $language,
+            'detailsBefore' => $this->details[$this->selectedLanguage]
+        ]);
+
         $this->selectedLanguage = $language;
-        $this->dispatch('language-changed', $language);
+        
+        // Update current view with the correct state for each detail
+        foreach ($this->details[$language] as $index => $detail) {
+            if (isset($this->publishedDetails[$language][$index])) {
+                $this->details[$language][$index] = $this->publishedDetails[$language][$index];
+                Log::info("Detail {$index} carregado como publicado", [
+                    'detail' => $this->details[$language][$index]
+                ]);
+            } else {
+                $this->details[$language][$index] = $this->draftDetails[$language][$index];
+                Log::info("Detail {$index} carregado como rascunho", [
+                    'detail' => $this->details[$language][$index]
+                ]);
+            }
+        }
+
+        Log::info('Troca de língua concluída', [
+            'newLanguage' => $language,
+            'detailsAfter' => $this->details[$language]
+        ]);
     }
 
     public function updatedSelectedLanguage($value)

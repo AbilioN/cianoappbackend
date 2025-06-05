@@ -86,15 +86,16 @@ class DetailInput extends Component
         }
     }
 
-    public function changeType($value)
+    public function changeType($type)
     {
-        $this->type = $value;
+        $this->type = $type;
+        $this->dispatch('updateDetail', ['index' => $this->index, 'field' => 'type', 'value' => $type]);
         $this->handleTypeChange();
     }
 
     protected function handleTypeChange()
     {
-        \Log::info('Type changed to: ' . $this->type);
+        Log::info('Type changed to: ' . $this->type);
         
         $this->resetFields();
         
@@ -185,7 +186,7 @@ class DetailInput extends Component
     {
         unset($this->items[$itemIndex]);
         $this->items = array_values($this->items);
-        $this->dispatch('detail-updated', [
+        $this->dispatch('detail-removed', [
             'index' => $this->index,
             'detail' => $this->getDetailData()
         ]);
@@ -365,8 +366,21 @@ class DetailInput extends Component
         $this->dispatch('remove-detail', ['index' => $this->index]);
     }
 
+    public function updatedValue($value)
+    {
+        $this->dispatch('updateDetail', ['index' => $this->index, 'field' => 'value', 'value' => $value]);
+    }
+
     public function render()
     {
         return view('livewire.detail-input');
+    }
+
+    public function updateDetail($data)
+    {
+        $index = $data['index'];
+        $field = $data['field'];
+        $value = $data['value'];
+        // ...
     }
 } 

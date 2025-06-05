@@ -27,7 +27,7 @@
         <div class="mb-8">
             <div class="bg-white rounded-lg shadow p-6">
                 <h3 class="text-lg font-semibold mb-4 text-gray-800">Preview</h3>
-                <livewire:page-builder :details="$details" :key="'page-builder'" />
+                <livewire:page-builder :details="$details[$selectedLanguage]" :key="'page-builder-'.$selectedLanguage" />
             </div>
         </div>
 
@@ -98,12 +98,12 @@
             </div>
 
             <div class="space-y-4">
-                @foreach($details as $index => $detail)
+                @foreach($details[$selectedLanguage] as $index => $detail)
                     <livewire:detail-input 
-                        :key="'detail-'.$index" 
+                        :key="'detail-'.$selectedLanguage.'-'.$index" 
                         :index="$index" 
                         :detail="$detail"
-                        wire:key="detail-{{ $index }}"
+                        wire:key="detail-{{ $selectedLanguage }}-{{ $index }}"
                     />
                 @endforeach
             </div>
