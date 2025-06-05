@@ -21,8 +21,8 @@ class ShowProduct extends Component
             'category.translations',
             'details' => function($query) {
                 $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
             },
-            'details.translations'
         ])->findOrFail($id);
 
         $this->loadDetails();
@@ -32,12 +32,7 @@ class ShowProduct extends Component
     {
         try {
             $this->details = $this->product->details->map(function($detail) {
-                $translations = $detail->translations->where('language', $this->selectedLanguage);
-                
-                $content = $translations->map(function($translation) {
-                    return json_decode($translation->content, true);
-                });
-                return $content->first();
+                return json_decode($detail->content, true);
             })->toArray();
             
             $this->dispatch('details-updated', details: $this->details);

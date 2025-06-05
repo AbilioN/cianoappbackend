@@ -35,8 +35,6 @@ class Products extends Component
         $query = Product::with([
             'details' => function($query) {
                 $query->orderBy('order');
-            },
-            'details.translations' => function($query) {
                 $query->where('language', $this->language);
             },
             'category.translations' => function($query) {

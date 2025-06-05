@@ -119,8 +119,8 @@ class ImportProductsFromJson extends Command
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
         // Truncate all tables
-        ProductCategoryTranslation::truncate();
-        ProductDetailTranslation::truncate();
+        // ProductCategoryTranslation::truncate();
+        // ProductDetailTranslation::truncate();
         // ProductTranslation::truncate();
         // ProductDetail::truncate();
         // Product::truncate();
@@ -142,8 +142,6 @@ class ImportProductsFromJson extends Command
 
             DB::commit();
             $this->info("\nImport completed successfully!");
-            // DB::rollBack();
-
             return 0;   
         } catch (\Exception $e) {
             DB::rollBack();
@@ -204,7 +202,7 @@ class ImportProductsFromJson extends Command
                     $this->warn("Category ID not found for slug: {$categorySlug}");
                     continue;
                 }
-                $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug , $referenceLanguage);
+                $product = $this->importProductWithTranslations($productData, $categoryId, $categorySlug, $referenceLanguage);
                 // foreach ($categoryData['products'] ?? [] as $productData) {
                 //     // Skip if product filter is set and doesn't match
                 //     if ($targetProduct && $productData['name'] !== $targetProduct) {
@@ -287,7 +285,7 @@ class ImportProductsFromJson extends Command
         return null;
     }
 
-    private function importProductWithTranslations(array $data, int $categoryId, string $categorySlug , $referenceLanguage)
+    private function importProductWithTranslations(array $data, int $categoryId, string $categorySlug, string $referenceLanguage)
     {
         // Create or update product in reference language
         $product = Product::updateOrCreate(
@@ -337,15 +335,11 @@ class ImportProductsFromJson extends Command
                 'product_id' => $productId,
                 'type' => $data['type'],
                 'order' => $order,
+                'language' => $language,
             ],
             [
-                'content' => collect($data)->toJson(),
+                'content' => json_encode($data),
             ]
-        );
-        // Create or update translation
-        $detail->translations()->updateOrCreate(
-            ['language' => $language],
-            ['content' => collect($data)->toJson()]
         );
 
         return $detail;

@@ -13,6 +13,7 @@ class ProductDetail extends Model
         'type',
         'order',
         'content',
+        'language',
     ];
 
     public function product()
@@ -20,8 +21,8 @@ class ProductDetail extends Model
         return $this->belongsTo(Product::class);
     }
 
-    public function translations()
-    {
-        return $this->hasMany(ProductDetailTranslation::class);
-    }
+    // public function translations()
+    // {
+    //     return $this->hasMany(ProductDetailTranslation::class);
+    // }
 }

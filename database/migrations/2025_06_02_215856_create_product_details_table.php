@@ -35,6 +35,7 @@ return new class extends Migration
             ]);
             $table->json('content');
             $table->integer('order')->default(0);
+            $table->string('language', 2);
             $table->timestamps();
         });
     }
