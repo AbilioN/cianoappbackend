@@ -93,7 +93,7 @@ class DetailInput extends Component
         $this->handleTypeChange();
     }
 
-    protected function handleTypeChange()
+    public function handleTypeChange()
     {
         Log::info('Type changed to: ' . $this->type);
         
@@ -138,10 +138,16 @@ class DetailInput extends Component
                 $this->value = '';
         }
 
+        $detailData = $this->getDetailData();
         // Notifica o componente pai sobre a mudança
         $this->dispatch('detail-updated', [
             'index' => $this->index,
-            'detail' => $this->getDetailData()
+            'detail' => $detailData
+        ]);
+        // Dispara evento específico para o PageBuilder
+        $this->dispatch('page-builder-update', [
+            'index' => $this->index,
+            'detail' => $detailData
         ]);
     }
 
@@ -245,9 +251,26 @@ class DetailInput extends Component
     public function updated($property)
     {
         if ($property !== 'type' && $property !== 'newItem') {
+            $detailData = $this->getDetailData();
+            
+            // Dispara evento para atualização do detalhe
             $this->dispatch('detail-updated', [
                 'index' => $this->index,
-                'detail' => $this->getDetailData()
+                'detail' => $detailData
+            ]);
+
+            // Dispara evento específico para o PageBuilder
+            $this->dispatch('page-builder-update', [
+                'index' => $this->index,
+                'detail' => $detailData
+            ]);
+
+            // Log para debug
+            Log::info('DetailInput: valor atualizado', [
+                'property' => $property,
+                'value' => $this->value,
+                'detailData' => $detailData,
+                'timestamp' => now()->toDateTimeString()
             ]);
         }
     }
@@ -262,6 +285,12 @@ class DetailInput extends Component
 
         // Load draft state for new language
         $this->loadDraftState($language);
+
+        // Notify parent component about the language change
+        $this->dispatch('detail-updated', [
+            'index' => $this->index,
+            'detail' => $this->getDetailData()
+        ]);
     }
 
     protected function saveCurrentStateToDraft($language)
@@ -273,7 +302,10 @@ class DetailInput extends Component
             'url' => $this->url,
             'content' => $this->content,
             'items' => $this->items,
-            'isDraft' => true
+            'isDraft' => $this->isDraft,
+            'title' => $this->title,
+            'optionYes' => $this->optionYes,
+            'optionNo' => $this->optionNo
         ];
     }
 
@@ -288,6 +320,9 @@ class DetailInput extends Component
             $this->content = $draft['content'];
             $this->items = $draft['items'];
             $this->isDraft = $draft['isDraft'];
+            $this->title = $draft['title'] ?? '';
+            $this->optionYes = $draft['optionYes'] ?? [];
+            $this->optionNo = $draft['optionNo'] ?? [];
         }
     }
 
@@ -349,7 +384,7 @@ class DetailInput extends Component
 
     public function getDetailData()
     {
-        return [
+        $data = [
             'type' => $this->type,
             'value' => $this->value,
             'text' => $this->text,
@@ -359,6 +394,13 @@ class DetailInput extends Component
             'isDraft' => $this->isDraft,
             'translations' => $this->draftTranslations
         ];
+
+        // Para tipos de imagem, garantir que o valor também esteja no campo url
+        if (in_array($this->type, ['image', 'large_image', 'medium_image', 'small_image'])) {
+            $data['url'] = $this->value;
+        }
+
+        return $data;
     }
 
     public function removeDetail()
