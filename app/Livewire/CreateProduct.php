@@ -13,7 +13,11 @@ class CreateProduct extends Component
 {
     use WithFileUploads;
 
-    public $product;
+    public $product = [
+        'name' => '',
+        'product_category_id' => '',
+        'image' => ''
+    ];
     public $details = [];
     public $image;
     public $tempImageUrl;
@@ -49,12 +53,11 @@ class CreateProduct extends Component
 
     public function mount()
     {
-        $this->product = new \stdClass();
-        $this->product->name = '';
-        $this->product->product_category_id = '';
-        $this->product->image = '';
+        $this->initializeDetails();
+    }
 
-        // Inicializa os arrays de detalhes para cada idioma
+    public function initializeDetails()
+    {
         foreach ($this->languages as $language) {
             $this->details[$language] = [];
             $this->draftDetails[$language] = [];
@@ -149,36 +152,21 @@ class CreateProduct extends Component
     {
         $this->image = null;
         $this->tempImageUrl = null;
-        $this->product->image = null;
+        $this->product['image'] = null;
     }
 
     public function addDetail()
     {
-        $index = count($this->details[$this->selectedLanguage]);
-        
-        $this->details[$this->selectedLanguage][] = [
-            'type' => '',
-            'value' => '',
-            'text' => '',
-            'url' => '',
-            'content' => '',
-            'items' => [],
-            'newItem' => '',
-            'is_draft' => true,
-            'order' => $index
-        ];
-
-        Log::info('CreateProduct: addDetail chamado', [
-            'selectedLanguage' => $this->selectedLanguage,
-            'index' => $index,
-            'details_count' => count($this->details[$this->selectedLanguage]),
-            'timestamp' => now()->toDateTimeString()
-        ]);
-
-        // Dispara evento para atualizar o PageBuilder
-        $this->dispatch('page-builder-update', [
-            'details' => $this->details[$this->selectedLanguage]
-        ]);
+        foreach ($this->languages as $language) {
+            $this->details[$language][] = [
+                'type' => '',
+                'value' => '',
+                'text' => '',
+                'url' => '',
+                'content' => '',
+                'items' => []
+            ];
+        }
     }
 
     public function addListItem($index)
@@ -198,25 +186,12 @@ class CreateProduct extends Component
         $this->details[$detailIndex]['items'] = array_values($this->details[$detailIndex]['items']);
     }
 
-    public function removeDetail($data)
+    public function removeDetail($index)
     {
-        $index = $data['index'];
-        
-        // Remove from both details and draft details
-        if (isset($this->details[$this->selectedLanguage][$index])) {
-            unset($this->details[$this->selectedLanguage][$index]);
-            $this->details[$this->selectedLanguage] = array_values($this->details[$this->selectedLanguage]); // Reindex array
+        foreach ($this->languages as $language) {
+            unset($this->details[$language][$index]);
+            $this->details[$language] = array_values($this->details[$language]);
         }
-        
-        if (isset($this->draftDetails[$index])) {
-            unset($this->draftDetails[$index]);
-            $this->draftDetails = array_values($this->draftDetails); // Reindex array
-        }
-
-        // Dispara evento para atualizar o PageBuilder
-        $this->dispatch('page-builder-update', [
-            'details' => $this->details[$this->selectedLanguage]
-        ]);
     }
 
     public function updateDetail($data)
@@ -308,73 +283,77 @@ class CreateProduct extends Component
 
     public function saveAsDraft()
     {
-        $this->validate();
+        // $this->validate();
+
+        Log::info('Salvando como rascunho', [
+            'product' => $this->product,
+            'details' => $this->details,
+            'image' => $this->image,
+            'timestamp' => now()->toDateTimeString()
+        ]);
 
         DB::beginTransaction();
         try {
             // Handle image upload
             if ($this->image) {
                 $path = $this->image->store('products', 'public');
-                $this->product->image = $path;
+                $this->product['image'] = $path;
             }
 
             // Create product as draft
             $product = Product::create([
-                'name' => $this->product->name,
-                'product_category_id' => $this->product->product_category_id,
-                'image' => $this->product->image,
+                'name' => $this->product['name'],
+                'product_category_id' => $this->product['product_category_id'],
+                'image' => $this->product['image'],
                 'description' => '',
                 'price' => '0',
                 'stock' => '0',
                 'status' => 'draft'
             ]);
 
-            // Create details with translations from draft
-            foreach ($this->draftDetails as $order => $translations) {
-                $referenceLang = $this->selectedLanguage;
-                $detailData = $translations[$referenceLang];
-
-                // Create the detail with the reference language structure
-                $productDetail = $product->details()->create([
-                    'type' => $detailData['type'],
-                    'order' => $order
-                ]);
-
-                // Create translations for all languages
-                foreach ($this->languages as $language) {
-                    $translationData = $translations[$language] ?? $detailData;
-                    $productDetail->translations()->create([
-                        'language' => $language,
-                        'content' => json_encode($this->prepareContentForType($translationData))
-                    ]);
+            // Create details for each language
+            foreach ($this->languages as $language) {
+                foreach ($this->details[$language] as $order => $detail) {
+                    if (!empty($detail['type'])) {
+                        $content = $this->prepareContentForType($detail);
+                        $product->details()->create([
+                            'type' => $detail['type'],
+                            'order' => $order,
+                            'language' => $language,
+                            'content' => json_encode($content)
+                        ]);
+                    }
                 }
             }
+
+            Log::info('Rascunho salvo com sucesso', [
+                'product' => $product,
+                'details' => $this->details,
+                'timestamp' => now()->toDateTimeString()
+            ]);
 
             DB::commit();
             session()->flash('message', 'Product saved as draft successfully.');
             return redirect()->route('admin.products');
         } catch (\Exception $e) {
             DB::rollBack();
-            if (isset($path) && Storage::disk('public')->exists($path)) {
-                Storage::disk('public')->delete($path);
-            }
-            session()->flash('error', 'Error saving product as draft: ' . $e->getMessage());
+            session()->flash('error', 'Error saving product: ' . $e->getMessage());
         }
     }
 
-    protected function prepareContentForType($data)
+    private function prepareContentForType($detail)
     {
-        return match($data['type']) {
-            'list', 'ordered_list' => ['items' => $data['items'] ?? []],
-            'title', 'title_left' => ['text' => $data['text'] ?? ''],
-            'description' => ['content' => $data['content'] ?? ''],
+        return match($detail['type']) {
+            'list', 'ordered_list' => ['items' => $detail['items'] ?? []],
+            'title', 'title_left' => ['text' => $detail['text'] ?? ''],
+            'description' => ['content' => $detail['content'] ?? ''],
             'notification_button', 'link_button' => [
-                'text' => $data['text'] ?? '',
-                'url' => $data['url'] ?? '',
+                'text' => $detail['text'] ?? '',
+                'url' => $detail['url'] ?? '',
             ],
-            'yes_or_no' => ['value' => (bool)($data['value'] ?? false)],
+            'yes_or_no' => ['value' => (bool)($detail['value'] ?? false)],
             'divider' => [],
-            default => ['value' => $data['value'] ?? ''],
+            default => ['value' => $detail['value'] ?? ''],
         };
     }
 
@@ -397,14 +376,14 @@ class CreateProduct extends Component
             // Handle image upload
             if ($this->image) {
                 $path = $this->image->store('products', 'public');
-                $this->product->image = $path;
+                $this->product['image'] = $path;
             }
 
             // Create product
             $product = Product::create([
-                'name' => $this->product->name,
-                'product_category_id' => $this->product->product_category_id,
-                'image' => $this->product->image,
+                'name' => $this->product['name'],
+                'product_category_id' => $this->product['product_category_id'],
+                'image' => $this->product['image'],
                 'description' => '',
                 'price' => '0',
                 'stock' => '0',

@@ -56,6 +56,9 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/products/create', CreateProduct::class)->name('admin.products.create');
     Route::get('/admin/products/{id}/edit', EditProduct::class)->name('admin.products.edit');
     Route::get('/admin/products/{id}', ShowProduct::class)->name('admin.products.show');
+    Route::get('/admin/products/drafts', function(){
+        // return view('admin.products.drafts');
+    })->name('admin.products.drafts');
 
     Route::get('/profile', function () {
         // ...

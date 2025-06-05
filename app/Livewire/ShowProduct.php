@@ -13,7 +13,7 @@ class ShowProduct extends Component
     public array $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
     public string $selectedLanguage = 'en';
 
-    protected $listeners = [];
+    protected $listeners = ['updateSelectedLanguage'];
 
     public function mount($id)
     {
@@ -35,7 +35,10 @@ class ShowProduct extends Component
                 return json_decode($detail->content, true);
             })->toArray();
             
-            $this->dispatch('details-updated', details: $this->details);
+            // Dispara evento para atualizar o PageBuilder
+            $this->dispatch('page-builder-update', [
+                'details' => $this->details
+            ]);
         
         } catch (\Throwable $th) {
             Log::error('Error loading details: ' . $th->getMessage());
@@ -46,6 +49,16 @@ class ShowProduct extends Component
     public function updateSelectedLanguage($language)
     {
         $this->selectedLanguage = $language;
+        
+        // Recarrega o produto com os detalhes do novo idioma
+        $this->product = Product::with([
+            'category.translations',
+            'details' => function($query) {
+                $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
+            },
+        ])->findOrFail($this->product->id);
+
         $this->loadDetails();
     }
 
