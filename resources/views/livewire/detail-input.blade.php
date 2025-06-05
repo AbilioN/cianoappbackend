@@ -2,7 +2,7 @@
     <div class="flex justify-between items-center">
         <h4 class="text-lg font-medium text-gray-900">Detail #{{ $index + 1 }}</h4>
         <div class="flex gap-2">
-            @if($isDraft)
+            {{-- @if($isDraft)
                 <button 
                     wire:click="publishDraft" 
                     type="button" 
@@ -18,7 +18,7 @@
                 >
                     Save as Draft
                 </button>
-            @endif
+            @endif --}}
             <button 
                 wire:click="removeDetail" 
                 type="button" 
