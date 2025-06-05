@@ -40,63 +40,47 @@ class ProductController extends Controller
             $query->where('language', $language);
         }])->get();
 
-
-        $result = [];
+        $allProducts = [];
         foreach ($categories as $category) {
             // Get category translation for the specified language
-
             $categoryTranslation = $category->translations->first();
             if (!$categoryTranslation) continue;
 
-            // Get all products for this category with their translations and details
+            // Get all products for this category with their details
             $products = Product::with([
-                'details' => function($query) {
+                'details' => function($query) use ($language) {
                     $query->orderBy('order');
-                },
-                'details.translations' => function($query) use ($language) {
                     $query->where('language', $language);
                 }
             ])
             ->where('product_category_id', $category->id)
             ->get();
 
-            $categoryProducts = [];
             foreach ($products as $product) {
                 $productData = [
                     'name' => $product->name,
-                    // 'description' => $productTranslation->description,
                     'image' => $product->image,
-                    'category' => $category->name,
-                    // 'price' => $product->price,
-                    // 'stock' => $product->stock,
-                    // 'status' => $product->status,
+                    'category' => $category->slug,
                     'details' => []
                 ];
 
                 // Process product details
                 foreach ($product->details as $detail) {
-                    $detailTranslation = $detail->translations->first();
-                    if (!$detailTranslation) continue;
-
-                    $detailContent = json_decode($detailTranslation->content, true);
+                    $detailContent = json_decode($detail->content, true);
                     if (!$detailContent) continue;
                     $productData['details'][] = $detailContent;
-
                 }
 
-                $categoryProducts[] = $productData;
+                $allProducts[] = $productData;
             }
-
-            // Add category to result if it has products
-            // if (!empty($categoryProducts)) {
-            //     $result[] = [
-            //         'category' => $category->slug,
-            //         'products' => $categoryProducts
-            //     ];
-            // }
         }
 
-        return $categoryProducts;
+        // Sort products by category slug
+        usort($allProducts, function($a, $b) {
+            return strcmp($a['category'], $b['category']);
+        });
+
+        return $allProducts;
     }
 
     public function getProductsByLanguage($language)
