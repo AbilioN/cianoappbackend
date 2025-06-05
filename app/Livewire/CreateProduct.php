@@ -159,16 +159,33 @@ class CreateProduct extends Component
 
     public function addDetail()
     {
+        $newDetail = [
+            'type' => '',
+            'value' => '',
+            'text' => '',
+            'url' => '',
+            'content' => '',
+            'items' => [],
+            'is_draft' => true,
+            'order' => 0
+        ];
+
         foreach ($this->languages as $language) {
-            $this->details[$language][] = [
-                'type' => '',
-                'value' => '',
-                'text' => '',
-                'url' => '',
-                'content' => '',
-                'items' => []
-            ];
+            if (!isset($this->details[$language])) {
+                $this->details[$language] = [];
+            }
+            $newDetail['order'] = count($this->details[$language]);
+            $this->details[$language][] = $newDetail;
         }
+
+        $this->checkIfCanSave();
+
+        Log::info('Novo detalhe adicionado', [
+            'languages' => $this->languages,
+            'detailsCount' => array_map(function($lang) {
+                return count($this->details[$lang]);
+            }, $this->languages)
+        ]);
     }
 
     public function addListItem($index)
@@ -290,7 +307,28 @@ class CreateProduct extends Component
 
     public function checkIfCanSave()
     {
-        $this->allowedToSave = !empty($this->product['name']) && !empty($this->product['product_category_id']);
+        // Verifica se o produto tem nome e categoria
+        $hasBasicInfo = !empty($this->product['name']) && !empty($this->product['product_category_id']);
+
+        // Verifica se há pelo menos um detalhe em cada idioma
+        $hasDetailsInAllLanguages = true;
+        foreach ($this->languages as $language) {
+            if (empty($this->details[$language])) {
+                $hasDetailsInAllLanguages = false;
+                break;
+            }
+        }
+
+        $this->allowedToSave = $hasBasicInfo && $hasDetailsInAllLanguages;
+
+        Log::info('Verificação de permissão para salvar', [
+            'hasBasicInfo' => $hasBasicInfo,
+            'hasDetailsInAllLanguages' => $hasDetailsInAllLanguages,
+            'allowedToSave' => $this->allowedToSave,
+            'detailsCount' => array_map(function($lang) {
+                return count($this->details[$lang]);
+            }, $this->languages)
+        ]);
     }
 
     public function saveAsDraft()
@@ -350,7 +388,8 @@ class CreateProduct extends Component
 
             DB::commit();
             session()->flash('message', 'Product saved as draft successfully.');
-            return redirect()->route('admin.products');
+            $this->checkIfCanSave();
+            // return redirect()->route('admin.products');
         } catch (\Exception $e) {
             DB::rollBack();
             session()->flash('error', 'Error saving product: ' . $e->getMessage());
@@ -491,9 +530,130 @@ class CreateProduct extends Component
         ]);
     }
 
-    public function updatedSelectedLanguage($value)
+    public function updateSelectedLanguage($value)
     {
+        Log::info('Atualizando idioma selecionado', [
+            'from' => $this->selectedLanguage,
+            'to' => $value
+        ]);
+
+        // Salva os detalhes do idioma atual antes de mudar
+        if (!empty($this->details[$this->selectedLanguage])) {
+            $this->saveDetailsAsDraft();
+        }
+
+        $this->selectedLanguage = $value;
+        
+        // Inicializa o array de detalhes para o novo idioma
+        $this->details[$value] = [];
+
+        // Carrega os detalhes do banco para o novo idioma
+        $product = Product::where('status', 'draft')
+                         ->where('name', $this->product['name'])
+                         ->first();
+
+        if ($product) {
+            $savedDetails = $product->details()
+                                  ->where('language', $value)
+                                  ->orderBy('order')
+                                  ->get();
+
+            foreach ($savedDetails as $detail) {
+                $content = json_decode($detail->content, true);
+                $this->details[$value][] = [
+                    'type' => $detail->type,
+                    'content' => $content,
+                    'order' => $detail->order,
+                    'items' => $content['items'] ?? [],
+                    'options' => $content['options'] ?? [],
+                    'text' => $content['text'] ?? '',
+                    'image' => $content['image'] ?? '',
+                    'url' => $content['url'] ?? '',
+                    'title' => $content['title'] ?? '',
+                    'subtitle' => $content['subtitle'] ?? '',
+                    'description' => $content['description'] ?? '',
+                    'button_text' => $content['button_text'] ?? '',
+                    'button_url' => $content['button_url'] ?? '',
+                    'is_draft' => false
+                ];
+            }
+        }
+
+        Log::info('Detalhes carregados para o novo idioma', [
+            'language' => $value,
+            'details' => $this->details[$value]
+        ]);
+
         $this->dispatch('language-changed', $value);
+    }
+
+    public function saveDetailsAsDraft()
+    {
+        Log::info('Salvando detalhes como rascunho', [
+            'language' => $this->selectedLanguage,
+            'details' => $this->details[$this->selectedLanguage]
+        ]);
+
+        try {
+            DB::beginTransaction();
+
+            // Se já existe um produto em rascunho, atualiza os detalhes
+            $product = Product::where('status', 'draft')
+                            ->where('name', $this->product['name'])
+                            ->first();
+
+            if (!$product) {
+                // Cria um novo produto em rascunho
+                $product = Product::create([
+                    'name' => $this->product['name'],
+                    'product_category_id' => $this->product['product_category_id'],
+                    'image' => $this->product['image'],
+                    'description' => '',
+                    'price' => '0',
+                    'stock' => '0',
+                    'status' => 'draft'
+                ]);
+            }
+
+            // Remove detalhes existentes para o idioma atual
+            $deleted = $product->details()
+                   ->where('language', $this->selectedLanguage)
+                   ->delete();
+
+            Log::info('Detalhes anteriores deletados', [
+                'language' => $this->selectedLanguage,
+                'deleted_count' => $deleted
+            ]);
+
+            // Adiciona os novos detalhes
+            foreach ($this->details[$this->selectedLanguage] as $order => $detail) {
+                if (!empty($detail['type'])) {
+                    $content = $this->prepareContentForType($detail);
+                    $product->details()->create([
+                        'type' => $detail['type'],
+                        'order' => $order,
+                        'language' => $this->selectedLanguage,
+                        'content' => json_encode($content)
+                    ]);
+                }
+            }
+
+            DB::commit();
+            session()->flash('message', 'Detalhes salvos como rascunho com sucesso!');
+            
+            Log::info('Detalhes salvos com sucesso', [
+                'product' => $product,
+                'details' => $this->details[$this->selectedLanguage]
+            ]);
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+            Log::error('Erro ao salvar detalhes', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
+            session()->flash('error', 'Erro ao salvar detalhes: ' . $e->getMessage());
+        }
     }
 
     public function render()
