@@ -49,6 +49,8 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/history/{id}', HistoryShow::class)->name('history-show');
 
     Route::get('/profile', function () {
+
+        
         // ...
     })->withoutMiddleware([AdminMiddleware::class]);
     // Route::get('/admin/dashboard' , Dashboard::class)->name('admin.dashboard');
