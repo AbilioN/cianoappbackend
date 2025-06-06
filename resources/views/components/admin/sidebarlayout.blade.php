@@ -210,12 +210,12 @@
                     <li>
                       <a href="{{ route('admin.products') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Listar</a>
                     </li>
-                    <li>
+                    {{-- <li>
                       <a href="{{ route('admin.products.create') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Criar</a>
                     </li>
                     <li>
                       <a href="{{ route('admin.products.drafts') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Rascunhos</a>
-                    </li>
+                    </li> --}}
                   </ul>
                 </li>
                 {{-- <li>
