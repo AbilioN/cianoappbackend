@@ -19,6 +19,7 @@ class EditProduct extends Component
     public $tempImageUrl;
     public array $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
     public string $selectedLanguage = 'en';
+    public bool $editing = false;
 
     protected $listeners = [
         'remove-detail' => 'removeDetail',
@@ -395,6 +396,11 @@ class EditProduct extends Component
         ])->findOrFail($this->product->id);
 
         $this->loadDetails();
+    }
+
+    public function toggleEditing()
+    {
+        $this->editing = !$this->editing;
     }
 
     public function updatedSelectedLanguage($value)

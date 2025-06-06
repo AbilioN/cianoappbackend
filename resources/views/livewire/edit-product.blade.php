@@ -30,10 +30,10 @@
                 <livewire:page-builder :details="$details" :key="'page-builder'" />
                 <div class="flex justify-end mt-4">
                     <button 
-                        wire:click="$set('editing', true)"
+                        wire:click="toggleEditing"
                         class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
                     >
-                        Edit
+                        {{ $editing ? 'Cancel' : 'Edit' }}
                     </button>
                 </div>
             </div>
