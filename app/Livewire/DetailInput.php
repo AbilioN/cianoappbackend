@@ -71,18 +71,10 @@ class DetailInput extends Component
         }
     }
 
-    public function removeListItem($itemIndex)
+    public function removeListItem($index)
     {
-        unset($this->items[$itemIndex]);
+        unset($this->items[$index]);
         $this->items = array_values($this->items);
-        $this->dispatch('detail-updated', [
-            'index' => $this->index,
-            'detail' => [
-                'id' => $this->detail['id'] ?? null,
-                'type' => $this->detail['type'],
-                'items' => $this->items
-            ]
-        ]);
     }
 
     public function updateListItem($itemIndex)
