@@ -8,9 +8,13 @@ use Illuminate\Support\Facades\Log;
 class PageBuilder extends Component
 {
     public $details = [];
+    public $languages = [];
+    public $details_count = 0;
+    public $selectedLanguage = 'en';
 
     protected $listeners = [
-        'updateDetails' => 'setDetails',
+        'detailUpdated' => 'handleDetailUpdate',
+        'typeChanged' => 'handleTypeChange',
         'language-changed' => 'handleLanguageChange',
         'details-updated' => 'updateDetailsFromEvent',
         'page-builder-update' => 'handleDetailUpdate'
@@ -20,8 +24,8 @@ class PageBuilder extends Component
     public function mount($details = [])
     {
         Log::info('PageBuilder: mount chamado', [
-            'details_count' => count($details),
-            'timestamp' => now()->toDateTimeString()
+            'details_count' => $this->details_count,
+            'timestamp' => now()->format('Y-m-d H:i:s')
         ]);
         $this->details = $details;
     }
@@ -50,44 +54,49 @@ class PageBuilder extends Component
         Log::info('PageBuilder: handleDetailUpdate chamado', [
             'data' => $data,
             'current_details_count' => count($this->details),
-            'timestamp' => now()->toDateTimeString()
+            'timestamp' => now()->format('Y-m-d H:i:s')
         ]);
-        
-        if (isset($data['details'])) {
-            // Atualização completa dos detalhes
-            $this->details = $data['details'];
-            Log::info('PageBuilder: todos os detalhes atualizados', [
-                'new_details_count' => count($this->details),
-                'timestamp' => now()->toDateTimeString()
+
+        $index = $data['index'];
+        $detail = $data['detail'];
+
+        if (!isset($this->details[$index])) {
+            Log::warning('PageBuilder: tentativa de atualizar detalhe inexistente', [
+                'index' => $index,
+                'timestamp' => now()->format('Y-m-d H:i:s')
             ]);
-        } else {
-            // Atualização de um detalhe específico
-            $index = $data['index'];
-            $detail = $data['detail'];
-            
-            if (isset($this->details[$index])) {
-                $oldDetail = $this->details[$index];
-                
-                // Para tipos de imagem, garantir que o valor esteja em ambos os campos
-                if (in_array($detail['type'], ['image', 'large_image', 'medium_image', 'small_image'])) {
-                    $detail['url'] = $detail['value'];
-                }
-                
-                $this->details[$index] = $detail;
-                
-                Log::info('PageBuilder: detalhe específico atualizado', [
-                    'index' => $index,
-                    'old_detail' => $oldDetail,
-                    'new_detail' => $detail,
-                    'timestamp' => now()->toDateTimeString()
-                ]);
-            } else {
-                Log::warning('PageBuilder: tentativa de atualizar detalhe inexistente', [
-                    'index' => $index,
-                    'timestamp' => now()->toDateTimeString()
-                ]);
-            }
+            return;
         }
+
+        // Atualiza o detalhe com os novos valores
+        $this->details[$index] = $detail;
+
+        // Log para debug
+        Log::info('PageBuilder: detalhe atualizado', [
+            'index' => $index,
+            'detail' => $this->details[$index],
+            'timestamp' => now()->format('Y-m-d H:i:s')
+        ]);
+    }
+
+    public function handleTypeChange($data)
+    {
+        Log::info('Type changed to: ' . $data['type']);
+        
+        $index = $data['index'];
+        $type = $data['type'];
+
+        if (!isset($this->details[$index])) {
+            return;
+        }
+
+        $this->details[$index]['type'] = $type;
+        
+        // Limpa os campos específicos do tipo anterior
+        $this->details[$index]['value'] = '';
+        $this->details[$index]['text'] = '';
+        $this->details[$index]['url'] = '';
+        $this->details[$index]['items'] = [];
     }
 
     public function handleLanguageChange($language)

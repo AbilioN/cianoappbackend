@@ -410,12 +410,57 @@ class DetailInput extends Component
 
     public function updatedValue($value)
     {
-        $this->dispatch('updateDetail', ['index' => $this->index, 'field' => 'value', 'value' => $value]);
+        Log::info('DetailInput: valor atualizado', [
+            'property' => 'value',
+            'value' => $value,
+            'detailData' => $this->getDetailData(),
+            'timestamp' => now()->format('Y-m-d H:i:s')
+        ]);
+
+        $this->getDetailData()['value'] = $value;
+        $this->emit('detailUpdated', [
+            'index' => $this->index,
+            'detail' => $this->getDetailData()
+        ]);
+    }
+
+    public function updatedText($value)
+    {
+        Log::info('DetailInput: texto atualizado', [
+            'property' => 'text',
+            'value' => $value,
+            'detailData' => $this->getDetailData(),
+            'timestamp' => now()->format('Y-m-d H:i:s')
+        ]);
+
+        $this->getDetailData()['text'] = $value;
+        $this->emit('detailUpdated', [
+            'index' => $this->index,
+            'detail' => $this->getDetailData()
+        ]);
+    }
+
+    public function updatedUrl($value)
+    {
+        Log::info('DetailInput: url atualizada', [
+            'property' => 'url',
+            'value' => $value,
+            'detailData' => $this->getDetailData(),
+            'timestamp' => now()->format('Y-m-d H:i:s')
+        ]);
+
+        $this->getDetailData()['url'] = $value;
+        $this->emit('detailUpdated', [
+            'index' => $this->index,
+            'detail' => $this->getDetailData()
+        ]);
     }
 
     public function render()
     {
-        return view('livewire.detail-input');
+        return view('livewire.detail-input', [
+            'detail' => $this->getDetailData()
+        ]);
     }
 
     public function updateDetail($data)
