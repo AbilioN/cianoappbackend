@@ -95,12 +95,15 @@ class DetailInput extends Component
 
             $content = match($this->detail['type']) {
                 'text', 'large_text', 'medium_text', 'small_text' => [
+                    'type' => $this->detail['type'],
                     'value' => $this->value
                 ],
                 'list', 'ordered_list' => [
+                    'type' => $this->detail['type'],
                     'items' => $this->items
                 ],
                 'title', 'title_left' => [
+                    'type' => $this->detail['type'],
                     'text' => $this->text
                 ],
                 default => []

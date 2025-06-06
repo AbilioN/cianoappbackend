@@ -85,11 +85,11 @@ class EditProduct extends Component
                     'id' => $detail->id,
                     'type' => $detail->type,
                     'order' => $detail->order,
+                    'value' => $content['value'] ?? '',
                     'text' => $content['text'] ?? '',
+                    'items' => $content['items'] ?? [],
                     'url' => $content['url'] ?? '',
                     'content' => $content['content'] ?? '',
-                    'value' => $content['value'] ?? '',
-                    'items' => $content['items'] ?? [],
                     'image' => $content['image'] ?? '',
                     'alt' => $content['alt'] ?? ''
                 ];
@@ -109,33 +109,6 @@ class EditProduct extends Component
                             'title',
                             'title_left'
                         ]);
-                    })
-                    ->map(function($detail) {
-                        $mappedDetail = [
-                            'id' => $detail['id'],
-                            'type' => $detail['type'],
-                            'order' => $detail['order']
-                        ];
-
-                        // Mapeia os campos específicos para cada tipo
-                        switch ($detail['type']) {
-                            case 'text':
-                            case 'large_text':
-                            case 'medium_text':
-                            case 'small_text':
-                                $mappedDetail['value'] = $detail['value'];
-                                break;
-                            case 'list':
-                            case 'ordered_list':
-                                $mappedDetail['items'] = $detail['items'];
-                                break;
-                            case 'title':
-                            case 'title_left':
-                                $mappedDetail['text'] = $detail['text'];
-                                break;
-                        }
-
-                        return $mappedDetail;
                     })
                     ->values()
                     ->toArray();
@@ -409,12 +382,15 @@ class EditProduct extends Component
                     // Atualiza apenas o conteúdo específico do tipo
                     $content = match($detail['type']) {
                         'text', 'large_text', 'medium_text', 'small_text' => array_merge($currentContent, [
+                            'type' => $detail['type'],
                             'value' => $detail['value'] ?? ''
                         ]),
                         'list', 'ordered_list' => array_merge($currentContent, [
+                            'type' => $detail['type'],
                             'items' => $detail['items'] ?? []
                         ]),
                         'title', 'title_left' => array_merge($currentContent, [
+                            'type' => $detail['type'],
                             'text' => $detail['text'] ?? ''
                         ]),
                         default => $currentContent
