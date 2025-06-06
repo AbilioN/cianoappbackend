@@ -52,8 +52,8 @@ class EditProduct extends Component
             'category.translations',
             'details' => function($query) {
                 $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
             },
-            'details.translations'
         ])->findOrFail($id);
 
         $this->loadDetails();
@@ -77,46 +77,13 @@ class EditProduct extends Component
     {
         try {
             $this->details = $this->product->details->map(function($detail) {
-                $translations = $detail->translations->where('language', $this->selectedLanguage);
-                $content = $translations->map(function($translation) {
-                    return json_decode($translation->content, true);
-                })->first() ?? [];
-
-                // Convert content to the appropriate format based on type
-                return match($detail->type) {
-                    'list', 'ordered_list' => [
-                        'type' => $detail->type,
-                        'items' => $content['items'] ?? [],
-                        'newItem' => '',
-                    ],
-                    'title', 'title_left' => [
-                        'type' => $detail->type,
-                        'text' => $content['text'] ?? '',
-                    ],
-                    'description' => [
-                        'type' => $detail->type,
-                        'content' => $content['content'] ?? '',
-                    ],
-                    'notification_button', 'link_button' => [
-                        'type' => $detail->type,
-                        'text' => $content['text'] ?? '',
-                        'url' => $content['url'] ?? '',
-                    ],
-                    'yes_or_no' => [
-                        'type' => $detail->type,
-                        'value' => (bool)($content['value'] ?? false),
-                    ],
-                    'divider' => [
-                        'type' => $detail->type,
-                    ],
-                    default => [
-                        'type' => $detail->type,
-                        'value' => $content['value'] ?? '',
-                    ],
-                };
+                return json_decode($detail->content, true);
             })->toArray();
             
-            $this->dispatch('details-updated', details: $this->details);
+            // Dispara evento para atualizar o PageBuilder
+            $this->dispatch('page-builder-update', [
+                'details' => $this->details
+            ]);
         
         } catch (\Throwable $th) {
             Log::error('Error loading details: ' . $th->getMessage());
@@ -417,7 +384,17 @@ class EditProduct extends Component
     public function changeLanguage($language)
     {
         $this->selectedLanguage = $language;
-        $this->dispatch('language-changed', $language);
+        
+        // Recarrega o produto com os detalhes do novo idioma
+        $this->product = Product::with([
+            'category.translations',
+            'details' => function($query) {
+                $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
+            },
+        ])->findOrFail($this->product->id);
+
+        $this->loadDetails();
     }
 
     public function updatedSelectedLanguage($value)
