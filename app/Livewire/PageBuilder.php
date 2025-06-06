@@ -57,6 +57,25 @@ class PageBuilder extends Component
             'timestamp' => now()->format('Y-m-d H:i:s')
         ]);
 
+        // Se for uma atualização em massa (troca de idioma)
+        if (isset($data['details'])) {
+            $this->details = $data['details'];
+            Log::info('PageBuilder: detalhes atualizados em massa', [
+                'details_count' => count($this->details),
+                'timestamp' => now()->format('Y-m-d H:i:s')
+            ]);
+            return;
+        }
+
+        // Se for uma atualização individual
+        if (!isset($data['index']) || !isset($data['detail'])) {
+            Log::warning('PageBuilder: dados inválidos recebidos', [
+                'data' => $data,
+                'timestamp' => now()->format('Y-m-d H:i:s')
+            ]);
+            return;
+        }
+
         $index = $data['index'];
         $detail = $data['detail'];
 
