@@ -75,18 +75,14 @@ class DetailInput extends Component
     {
         unset($this->items[$index]);
         $this->items = array_values($this->items);
+        $this->saveDetail();
     }
 
-    public function updateListItem($itemIndex)
+    public function updatedItems($value, $key)
     {
-        $this->dispatch('detail-updated', [
-            'index' => $this->index,
-            'detail' => [
-                'id' => $this->detail['id'] ?? null,
-                'type' => $this->detail['type'],
-                'items' => $this->items
-            ]
-        ]);
+        // Força a atualização do array de items
+        $this->items = array_values($this->items);
+        $this->saveDetail();
     }
 
     public function saveDetail()
@@ -94,41 +90,34 @@ class DetailInput extends Component
         try {
             $detail = ProductDetail::find($this->detail['id']);
             if (!$detail) {
-                return;
+                throw new \Exception('Detail not found');
             }
 
-            $content = json_decode($detail->content, true) ?? [];
-            
-            // Atualiza apenas o campo específico do tipo
-            switch ($detail->type) {
-                case 'text':
-                case 'large_text':
-                case 'medium_text':
-                case 'small_text':
-                    $content['value'] = $this->value;
-                    break;
-                case 'list':
-                case 'ordered_list':
-                    $content['items'] = $this->items;
-                    break;
-                case 'title':
-                case 'title_left':
-                    $content['text'] = $this->text;
-                    break;
-            }
+            $content = match($this->detail['type']) {
+                'text', 'large_text', 'medium_text', 'small_text' => [
+                    'value' => $this->value
+                ],
+                'list', 'ordered_list' => [
+                    'items' => $this->items
+                ],
+                'title', 'title_left' => [
+                    'text' => $this->text
+                ],
+                default => []
+            };
 
             $detail->update([
                 'content' => json_encode($content)
             ]);
 
-            // Dispara evento para atualizar o PageBuilder
+            // Dispara evento para recarregar todo o produto
             $this->dispatch('product-detail-updated', [
                 'product_id' => $detail->product_id
             ]);
 
         } catch (\Exception $e) {
             Log::error('Error saving detail: ' . $e->getMessage());
-            session()->flash('error', 'Error saving detail: ' . $e->getMessage());
+            throw $e;
         }
     }
 
