@@ -77,13 +77,75 @@ class EditProduct extends Component
     public function loadDetails()
     {
         try {
-            $this->details = $this->product->details->map(function($detail) {
-                return json_decode($detail->content, true);
+            // Carrega todos os detalhes para manter a ordem
+            $allDetails = $this->product->details->map(function($detail) {
+                $content = json_decode($detail->content, true);
+                return [
+                    'id' => $detail->id,
+                    'type' => $detail->type,
+                    'order' => $detail->order,
+                    'text' => $content['text'] ?? '',
+                    'url' => $content['url'] ?? '',
+                    'content' => $content['content'] ?? '',
+                    'value' => $content['value'] ?? '',
+                    'items' => $content['items'] ?? [],
+                    'image' => $content['image'] ?? '',
+                    'alt' => $content['alt'] ?? ''
+                ];
             })->toArray();
+
+            // Se estiver em modo de edição, filtra apenas os detalhes de texto
+            if ($this->editing) {
+                $this->details = collect($allDetails)
+                    ->filter(function($detail) {
+                        return in_array($detail['type'], [
+                            'text',
+                            'large_text',
+                            'medium_text',
+                            'small_text',
+                            'list',
+                            'ordered_list',
+                            'title',
+                            'title_left'
+                        ]);
+                    })
+                    ->map(function($detail) {
+                        $mappedDetail = [
+                            'id' => $detail['id'],
+                            'type' => $detail['type'],
+                            'order' => $detail['order']
+                        ];
+
+                        // Mapeia os campos específicos para cada tipo
+                        switch ($detail['type']) {
+                            case 'text':
+                            case 'large_text':
+                            case 'medium_text':
+                            case 'small_text':
+                                $mappedDetail['value'] = $detail['value'];
+                                break;
+                            case 'list':
+                            case 'ordered_list':
+                                $mappedDetail['items'] = $detail['items'];
+                                break;
+                            case 'title':
+                            case 'title_left':
+                                $mappedDetail['text'] = $detail['text'];
+                                break;
+                        }
+
+                        return $mappedDetail;
+                    })
+                    ->values()
+                    ->toArray();
+            } else {
+                // Se não estiver em modo de edição, mantém todos os detalhes
+                $this->details = $allDetails;
+            }
             
-            // Dispara evento para atualizar o PageBuilder
+            // Dispara evento para atualizar o PageBuilder com todos os detalhes
             $this->dispatch('page-builder-update', [
-                'details' => $this->details
+                'details' => $allDetails
             ]);
         
         } catch (\Throwable $th) {
@@ -301,12 +363,6 @@ class EditProduct extends Component
 
     public function save()
     {
-        // Validate that all details are published (no drafts)
-        if ($this->hasDraftChanges) {
-            session()->flash('error', 'Please publish all detail drafts before saving the product.');
-            return;
-        }
-
         $this->validate();
 
         DB::beginTransaction();
@@ -325,54 +381,40 @@ class EditProduct extends Component
             $this->product->status = 'active';
             $this->product->save();
 
-            // Delete all existing details and translations
-            $this->product->details()->delete();
+            // Get all existing details to maintain order
+            $existingDetails = $this->product->details()->orderBy('order')->get();
+            $existingDetailsMap = $existingDetails->keyBy('id');
 
-            // Create new details with translations
-            foreach ($this->details as $order => $detail) {
-                // Prepare content based on type
-                $content = match($detail['type']) {
-                    'list', 'ordered_list' => ['items' => $detail['items'] ?? []],
-                    'title', 'title_left' => ['text' => $detail['text'] ?? ''],
-                    'description' => ['content' => $detail['content'] ?? ''],
-                    'notification_button', 'link_button' => [
-                        'text' => $detail['text'] ?? '',
-                        'url' => $detail['url'] ?? '',
-                    ],
-                    'yes_or_no' => ['value' => (bool)($detail['value'] ?? false)],
-                    'divider' => [],
-                    default => ['value' => $detail['value'] ?? ''],
-                };
+            // Update only text details while maintaining order
+            foreach ($this->details as $detail) {
+                if (isset($detail['id']) && isset($existingDetailsMap[$detail['id']])) {
+                    $existingDetail = $existingDetailsMap[$detail['id']];
+                    $currentContent = json_decode($existingDetail->content, true);
+                    
+                    // Atualiza apenas o conteúdo específico do tipo
+                    $content = match($detail['type']) {
+                        'text', 'large_text', 'medium_text', 'small_text' => array_merge($currentContent, [
+                            'value' => $detail['value'] ?? ''
+                        ]),
+                        'list', 'ordered_list' => array_merge($currentContent, [
+                            'items' => $detail['items'] ?? []
+                        ]),
+                        'title', 'title_left' => array_merge($currentContent, [
+                            'text' => $detail['text'] ?? ''
+                        ]),
+                        default => $currentContent
+                    };
 
-                $productDetail = $this->product->details()->create([
-                    'type' => $detail['type'],
-                    'order' => $order
-                ]);
-
-                // Create translations for all languages
-                foreach ($this->languages as $language) {
-                    $translationContent = $language === $this->selectedLanguage 
-                        ? $content 
-                        : match($detail['type']) {
-                            'list', 'ordered_list' => ['items' => []],
-                            'title', 'title_left' => ['text' => ''],
-                            'description' => ['content' => ''],
-                            'notification_button', 'link_button' => ['text' => '', 'url' => ''],
-                            'yes_or_no' => ['value' => false],
-                            'divider' => [],
-                            default => ['value' => ''],
-                        };
-
-                    $productDetail->translations()->create([
-                        'language' => $language,
-                        'content' => json_encode($translationContent)
+                    $existingDetail->update([
+                        'content' => json_encode($content)
                     ]);
                 }
             }
 
             DB::commit();
             session()->flash('message', 'Product updated successfully.');
-            return redirect()->route('admin.products');
+            $this->editing = false;
+            $this->loadDetails();
         } catch (\Exception $e) {
             DB::rollBack();
             if (isset($path) && Storage::disk('public')->exists($path)) {
