@@ -125,12 +125,14 @@
 
                     <div class="space-y-4">
                         @foreach($details as $index => $detail)
-                            <livewire:detail-input 
-                                :key="'detail-'.$index" 
-                                :index="$index" 
-                                :detail="$detail"
-                                wire:key="detail-{{ $index }}"
-                            />
+                            @if($editing && in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
+                                <livewire:detail-input 
+                                    :key="'detail-'.$index" 
+                                    :index="$index" 
+                                    :detail="$detail"
+                                    wire:key="detail-{{ $index }}"
+                                />
+                            @endif
                         @endforeach
                     </div>
                 </div>
