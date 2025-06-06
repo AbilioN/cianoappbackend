@@ -4,6 +4,8 @@
 // use App\Http\Controllers\Auth\Register;
 use App\Http\Controllers\AuthenticationController;
 use App\Livewire\Admin;
+use App\Livewire\Products;
+use App\Livewire\EditProduct;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Dashboard;
@@ -15,6 +17,9 @@ use App\Http\Middleware\Admin as AdminMiddleware;
 use App\Livewire\Aquariums\Create as AquariumsCreate;
 use App\Livewire\History\Show as HistoryShow;
 use Illuminate\Http\Request;
+use App\Http\Controllers\ProductController;
+use App\Livewire\ShowProduct;
+use App\Livewire\CreateProduct;
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,6 +52,13 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/admin/client/show', Show::class)->name('admin.partner.show');
     Route::get('/admin/client/edit/{id}', Edit::class)->name('admin.partner.edit');
     Route::get('/admin/history/{id}', HistoryShow::class)->name('history-show');
+    Route::get('/admin/products', Products::class)->name('admin.products');
+    Route::get('/admin/products/create', CreateProduct::class)->name('admin.products.create');
+    Route::get('/admin/products/{id}/edit', EditProduct::class)->name('admin.products.edit');
+    Route::get('/admin/products/{id}', ShowProduct::class)->name('admin.products.show');
+    Route::get('/admin/products/drafts', function(){
+        // return view('admin.products.drafts');
+    })->name('admin.products.drafts');
 
     Route::get('/profile', function () {
 
@@ -55,7 +67,13 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     })->withoutMiddleware([AdminMiddleware::class]);
     // Route::get('/admin/dashboard' , Dashboard::class)->name('admin.dashboard');
 
+
+    Route::get('/products', function(){
+        return view('products');
+    })->name('products');
     // Route::get('/history', function(){
     //     return 'history';
     // })->name('history-show');
+
+    // Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
 });
