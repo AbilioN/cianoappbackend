@@ -504,8 +504,19 @@ class CreateProduct extends Component
         Log::info('Trocando língua', [
             'from' => $this->selectedLanguage,
             'to' => $language,
-            'detailsBefore' => $this->details[$this->selectedLanguage]
+            'detailsBefore' => $this->details[$this->selectedLanguage] ?? []
         ]);
+
+        // Ensure arrays are initialized for the target language
+        if (!isset($this->details[$language])) {
+            $this->details[$language] = [];
+        }
+        if (!isset($this->publishedDetails[$language])) {
+            $this->publishedDetails[$language] = [];
+        }
+        if (!isset($this->draftDetails[$language])) {
+            $this->draftDetails[$language] = [];
+        }
 
         $this->selectedLanguage = $language;
         
@@ -516,7 +527,7 @@ class CreateProduct extends Component
                 Log::info("Detail {$index} carregado como publicado", [
                     'detail' => $this->details[$language][$index]
                 ]);
-            } else {
+            } else if (isset($this->draftDetails[$language][$index])) {
                 $this->details[$language][$index] = $this->draftDetails[$language][$index];
                 Log::info("Detail {$index} carregado como rascunho", [
                     'detail' => $this->details[$language][$index]
