@@ -43,7 +43,7 @@
         <div class="bg-white rounded-lg shadow-sm">
             <form wire:submit="save" class="space-y-6 p-6">
                 <!-- Basic Information -->
-                <div class="space-y-4">
+                {{-- <div class="space-y-4">
                     <h3 class="text-lg font-medium text-gray-900">Basic Information</h3>
                     
                     <!-- Product Name -->
@@ -112,16 +112,16 @@
                         <input type="text" wire:model="product.image" id="image_url" placeholder="https://..." class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
                         @error('product.image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Product Details -->
                 <div class="mt-8 bg-white rounded-lg shadow-sm p-6">
-                    <div class="flex justify-between items-center mb-4">
+                    {{-- <div class="flex justify-between items-center mb-4">
                         <h3 class="text-lg font-medium text-gray-900">Product Details</h3>
                         <button wire:click="addDetail" type="button" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors">
                             Add Detail
                         </button>
-                    </div>
+                    </div> --}}
 
                     <div class="space-y-4">
                         @foreach($details as $index => $detail)

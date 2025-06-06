@@ -28,7 +28,8 @@ class EditProduct extends Component
         'detail-draft-saved' => 'handleDetailDraftSaved',
         'detail-published' => 'handleDetailPublished',
         'draft-validation-error' => 'handleDraftValidationError',
-        'product-detail-updated' => 'handleProductDetailUpdated'
+        'product-detail-updated' => 'handleProductDetailUpdated',
+        'page-builder-update-detail' => 'handlePageBuilderUpdateDetail'
     ];
 
     public $draftDetails = [];
@@ -273,7 +274,66 @@ class EditProduct extends Component
             },
         ])->findOrFail($this->product->id);
 
-        $this->loadDetails();
+        // Atualiza os detalhes sem duplicar
+        $allDetails = $this->product->details->map(function($detail) {
+            $content = json_decode($detail->content, true);
+            return [
+                'id' => $detail->id,
+                'type' => $detail->type,
+                'order' => $detail->order,
+                'value' => $content['value'] ?? '',
+                'text' => $content['text'] ?? '',
+                'items' => $content['items'] ?? [],
+                'url' => $content['url'] ?? '',
+                'content' => $content['content'] ?? '',
+                'image' => $content['image'] ?? '',
+                'alt' => $content['alt'] ?? ''
+            ];
+        })->toArray();
+
+        // Se estiver em modo de edição, filtra apenas os detalhes de texto
+        if ($this->editing) {
+            $this->details = collect($allDetails)
+                ->filter(function($detail) {
+                    return in_array($detail['type'], [
+                        'text',
+                        'large_text',
+                        'medium_text',
+                        'small_text',
+                        'list',
+                        'ordered_list',
+                        'title',
+                        'title_left'
+                    ]);
+                })
+                ->values()
+                ->toArray();
+        } else {
+            // Se não estiver em modo de edição, mantém todos os detalhes
+            $this->details = $allDetails;
+        }
+        
+        // Dispara evento para atualizar o PageBuilder com todos os detalhes
+        $this->dispatch('page-builder-update', [
+            'details' => $allDetails
+        ]);
+    }
+
+    public function handlePageBuilderUpdateDetail($data)
+    {
+        // Atualiza apenas o detalhe específico no PageBuilder
+        $this->dispatch('page-builder-update', [
+            'details' => collect($this->details)->map(function($detail) use ($data) {
+                if ($detail['id'] === $data['detail']['id']) {
+                    return array_merge($detail, [
+                        'value' => $data['detail']['content']['value'] ?? '',
+                        'text' => $data['detail']['content']['text'] ?? '',
+                        'items' => $data['detail']['content']['items'] ?? []
+                    ]);
+                }
+                return $detail;
+            })->toArray()
+        ]);
     }
 
     public function saveAsDraft()
