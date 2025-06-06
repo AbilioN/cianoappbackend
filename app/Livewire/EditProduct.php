@@ -27,7 +27,8 @@ class EditProduct extends Component
         'detail-removed' => 'removeDetail',
         'detail-draft-saved' => 'handleDetailDraftSaved',
         'detail-published' => 'handleDetailPublished',
-        'draft-validation-error' => 'handleDraftValidationError'
+        'draft-validation-error' => 'handleDraftValidationError',
+        'product-detail-updated' => 'handleProductDetailUpdated'
     ];
 
     public $draftDetails = [];
@@ -288,6 +289,20 @@ class EditProduct extends Component
         session()->flash('error', $data['message']);
     }
 
+    public function handleProductDetailUpdated($data)
+    {
+        // Recarrega o produto com os detalhes atualizados
+        $this->product = Product::with([
+            'category.translations',
+            'details' => function($query) {
+                $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
+            },
+        ])->findOrFail($this->product->id);
+
+        $this->loadDetails();
+    }
+
     public function saveAsDraft()
     {
         $this->validate();
@@ -427,6 +442,7 @@ class EditProduct extends Component
     public function changeLanguage($language)
     {
         $this->selectedLanguage = $language;
+        $this->editing = false; // Fecha o editor
         
         // Recarrega o produto com os detalhes do novo idioma
         $this->product = Product::with([

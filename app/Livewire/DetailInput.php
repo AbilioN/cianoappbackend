@@ -121,9 +121,9 @@ class DetailInput extends Component
                 'content' => json_encode($content)
             ]);
 
-            $this->dispatch('detail-updated', [
-                'index' => $this->index,
-                'detail' => $detail->toArray()
+            // Dispara evento para atualizar o PageBuilder
+            $this->dispatch('product-detail-updated', [
+                'product_id' => $detail->product_id
             ]);
 
         } catch (\Exception $e) {
