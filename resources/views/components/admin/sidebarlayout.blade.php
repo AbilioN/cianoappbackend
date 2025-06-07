@@ -210,12 +210,19 @@
                     <li>
                       <a href="{{ route('admin.products') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Listar</a>
                     </li>
-                    {{-- <li>
-                      <a href="{{ route('admin.products.create') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Criar</a>
-                    </li>
+                  </ul>
+                </li>
+                <li x-data="{ open: false }">
+                  <a @click="open = !open" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold cursor-pointer" aria-controls="sub-menu-guides" aria-expanded="false">
+                    <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    Guias
+                  </a>
+                  <ul x-show="open" class="mt-1 px-2" id="sub-menu-guides">
                     <li>
-                      <a href="{{ route('admin.products.drafts') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Rascunhos</a>
-                    </li> --}}
+                      <a href="{{ route('admin.guides') }}" class="hover:bg-gray-700 block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-white">Listar</a>
+                    </li>
                   </ul>
                 </li>
                 {{-- <li>

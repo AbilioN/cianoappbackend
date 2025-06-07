@@ -76,4 +76,8 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     // })->name('history-show');
 
     // Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
+
+    Route::get('/admin/guides', \App\Livewire\Guides::class)->name('admin.guides');
+    Route::get('/admin/guides/{id}', \App\Livewire\ShowGuide::class)->name('admin.guides.show');
+    Route::get('/admin/guides/{id}/edit', \App\Livewire\EditGuide::class)->name('admin.guides.edit');
 });

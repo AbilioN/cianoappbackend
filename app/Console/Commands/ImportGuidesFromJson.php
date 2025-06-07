@@ -180,7 +180,7 @@ class ImportGuidesFromJson extends Command
             'text', 'medium_text', 'small_text' => [
                 'value' => $componentData['value'] ?? ''
             ],
-            'image', 'medium_image', 'large_image' => [
+            'image', 'medium_image', 'large_image' , 'small_image' => [
                 'url' => $componentData['url'] ?? ''
             ],
             'youtube' => [
