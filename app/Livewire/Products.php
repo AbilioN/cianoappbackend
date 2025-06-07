@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\ProductCategory;
 use App\Models\Product;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 class Products extends Component
 {
@@ -32,6 +33,12 @@ class Products extends Component
 
     public function loadProducts()
     {
+        Log::info('Products::loadProducts - Iniciando carregamento de produtos', [
+            'selected_category' => $this->selectedCategory,
+            'language' => $this->language,
+            'search' => $this->search
+        ]);
+
         $query = Product::with([
             'details' => function($query) {
                 $query->orderBy('order');
@@ -51,6 +58,10 @@ class Products extends Component
         }
 
         $this->products = $query->get();
+
+        Log::info('Products::loadProducts - Produtos carregados', [
+            'products_count' => count($this->products)
+        ]);
     }
 
     public function filterByCategory($categoryId)
@@ -69,6 +80,21 @@ class Products extends Component
         $this->selectedCategory = null;
         $this->search = '';
         $this->loadProducts();
+    }
+
+    public function updatedSelectedCategory($value)
+    {
+        Log::info('Products::updatedSelectedCategory - Iniciando mudança de categoria', [
+            'category_id' => $value,
+            'current_language' => $this->language
+        ]);
+
+        $this->selectedCategory = $value;
+        $this->loadProducts();
+
+        Log::info('Products::updatedSelectedCategory - Produtos recarregados', [
+            'products_count' => count($this->products)
+        ]);
     }
 
     public function render()
