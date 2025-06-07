@@ -24,11 +24,20 @@ class Products extends Component
 
     public function loadCategories()
     {
-        $this->categories = Cache::remember('product_categories_' . $this->language, 60*24, function() {
+        Log::info('Products::loadCategories - Carregando categorias em inglês');
+
+        // Força o recarregamento das categorias em inglês
+        Cache::forget('product_categories_en');
+        
+        $this->categories = Cache::remember('product_categories_en', 60*24, function() {
             return ProductCategory::with(['translations' => function($query) {
-                $query->where('language', $this->language);
+                $query->where('language', 'en');
             }])->get();
         });
+
+        Log::info('Products::loadCategories - Categorias carregadas', [
+            'categories_count' => count($this->categories)
+        ]);
     }
 
     public function loadProducts()
@@ -45,7 +54,7 @@ class Products extends Component
                 $query->where('language', $this->language);
             },
             'category.translations' => function($query) {
-                $query->where('language', $this->language);
+                $query->where('language', 'en'); // Força as traduções da categoria em inglês
             }
         ]);
 
@@ -90,6 +99,11 @@ class Products extends Component
         ]);
 
         $this->selectedCategory = $value;
+        
+        // Recarrega as categorias em inglês
+        $this->loadCategories();
+        
+        // Recarrega os produtos
         $this->loadProducts();
 
         Log::info('Products::updatedSelectedCategory - Produtos recarregados', [
