@@ -27,7 +27,31 @@
         <div class="mb-8">
             <div class="bg-white rounded-lg shadow p-6">
                 <h3 class="text-lg font-semibold mb-4 text-gray-800">Preview</h3>
-                <livewire:page-builder :details="$details" :key="'page-builder'" />
+                @foreach($guide->pages->groupBy('order') as $pageOrder => $pages)
+                    @php
+                        $page = $pages->first();
+                        $pageDetails = $page->components->map(function($component) {
+                            $content = is_string($component->content) ? json_decode($component->content, true) : $component->content;
+                            return [
+                                'type' => $component->type,
+                                ...$content
+                            ];
+                        })->toArray();
+                    @endphp
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-1">
+                                <h4 class="text-lg font-medium text-gray-900">Page {{ $pageOrder + 1 }}</h4>
+                            </div>
+                        </div>
+                        <livewire:page-builder :details="$pageDetails" :key="'page-builder-'.$pageOrder" />
+                    </div>
+                    
+                    @if(!$loop->last)
+                        <div class="my-8 border-t border-gray-200"></div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
