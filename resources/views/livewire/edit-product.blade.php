@@ -138,7 +138,7 @@
                 </div>
 
                 <!-- Submit Buttons -->
-                <div class="flex justify-end gap-4">
+                {{-- <div class="flex justify-end gap-4">
                     <button 
                         wire:click="saveAsDraft" 
                         type="button" 
@@ -152,7 +152,7 @@
                     >
                         Save Changes
                     </button>
-                </div>
+                </div> --}}
             </form>
         </div>
         @endif
