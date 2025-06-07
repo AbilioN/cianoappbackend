@@ -2,42 +2,91 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Guide;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 
 class GuideController extends Controller
 {
-    public function getGuides()
+    public function getGuides(Request $request = null)
     {
-        return response()->json(
-            cache()->remember('guides', 60*24, function() {
-                return [
-                    'en' => $this->loadGuideFile('en'),
-                    'pt' => $this->loadGuideFile('pt'),
-                    'es' => $this->loadGuideFile('es'),
-                    'it' => $this->loadGuideFile('it'),
-                    'de' => $this->loadGuideFile('de'),
-                    'fr' => $this->loadGuideFile('fr')
-                ];
-            })
-        );
+        try {
+            $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
+            $result = [];
+
+            foreach ($languages as $language) {
+                // Carrega os guias do banco de dados para cada idioma
+                $guides = Guide::with(['pages' => function($query) use ($language) {
+                    $query->where('language', $language)
+                          ->orderBy('order')
+                          ->with(['components' => function($query) {
+                              $query->orderBy('order');
+                          }]);
+                }])->get()->map(function($guide) {
+                    return [
+                        'title' => $guide->name,
+                        'name' => $guide->name,
+                        'category' => $guide->category,
+                        'notification' => $guide->notification,
+                        'pages' => $guide->pages->map(function($page) {
+                            return $page->components->map(function($component) {
+                                return [
+                                    'type' => $component->type,
+                                    ...$component->content
+                                ];
+                            })->toArray();
+                        })->toArray()
+                    ];
+                });
+
+                $result[$language] = $guides;
+            }
+
+            return response()->json($result);
+        } catch (\Exception $e) {
+            Log::error('Error loading guides from database: ' . $e->getMessage(), [
+                'exception' => $e,
+                'trace' => $e->getTraceAsString()
+            ]);
+
+            // Em caso de erro, tenta carregar do arquivo como fallback
+            return response()->json([
+                'en' => $this->loadGuideFile('en'),
+                'pt' => $this->loadGuideFile('pt'),
+                'es' => $this->loadGuideFile('es'),
+                'fr' => $this->loadGuideFile('fr'),
+                'it' => $this->loadGuideFile('it'),
+                'de' => $this->loadGuideFile('de')
+            ]);
+        }
     }
 
+    /**
+     * Método antigo mantido como backup
+     */
     private function loadGuideFile($language)
     {
-        $path = resource_path("guides/{$language}.json");
-        
-        if (!file_exists($path)) {
-            Log::error("File not found at path: " . $path);
+        try {
+            $file = resource_path("guides/{$language}.json");
+            if (!File::exists($file)) {
+                return [];
+            }
+
+            $guides = json_decode(File::get($file), true);
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                return [];
+            }
+
+            return $guides;
+        } catch (\Exception $e) {
+            Log::error('Error loading guide file: ' . $e->getMessage(), [
+                'exception' => $e,
+                'trace' => $e->getTraceAsString()
+            ]);
             return [];
         }
-        
-        $content = file_get_contents($path);
-        return json_decode($content, true);
     }
-
 
     /**
      * Get guides for a specific language
