@@ -94,14 +94,9 @@ class GuideDetailInput extends Component
     public function saveDetail()
     {
         try {
-            $component = GuideComponent::with('page')->find($this->detail['id']);
+            $component = GuideComponent::find($this->detail['id']);
             if (!$component) {
                 throw new \Exception('Component not found');
-            }
-
-            if (!$component->page) {
-                Log::error('Page not found for component: ' . $this->detail['id']);
-                throw new \Exception('Page not found for this component');
             }
 
             $content = match($this->detail['type']) {
@@ -126,7 +121,7 @@ class GuideDetailInput extends Component
 
             // Dispara evento para recarregar o guia
             $this->dispatch('guide-detail-updated', [
-                'guide_id' => $component->page->guide_id
+                'guide_id' => $this->detail['guide_id']
             ]);
 
         } catch (\Exception $e) {

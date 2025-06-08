@@ -35,10 +35,18 @@ class ShowGuide extends Component
         try {
             $this->details = $this->guide->pages->flatMap(function($page) {
                 return $page->components->map(function($component) {
-                    return [
-                        'type' => $component->type,
-                        ...$component->content
-                    ];
+                    $content = $component->content;
+                    if (is_string($content)) {
+                        $content = json_decode($content, true) ?? [];
+                    }
+                    if (!is_array($content)) {
+                        $content = [];
+                    }
+                    return $content;
+                    // return [
+                    //     'type' => $component->type,
+                    //     ...$component->content
+                    // ];
                 });
             })->toArray();
             
