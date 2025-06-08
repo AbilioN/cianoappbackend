@@ -16,26 +16,6 @@
         </div>
     </div>
 
-    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                <input type="text" wire:model="guide.name" class="w-full rounded-lg border-gray-300" {{ !$editing ? 'disabled' : '' }}>
-                @error('guide.name') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-            </div>
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
-                <input type="text" wire:model="guide.category" class="w-full rounded-lg border-gray-300" {{ !$editing ? 'disabled' : '' }}>
-                @error('guide.category') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-            </div>
-            <div class="md:col-span-2">
-                <label class="block text-sm font-medium text-gray-700 mb-2">Notification</label>
-                <input type="text" wire:model="guide.notification" class="w-full rounded-lg border-gray-300" {{ !$editing ? 'disabled' : '' }}>
-                @error('guide.notification') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-            </div>
-        </div>
-    </div>
-
     <div class="bg-white rounded-lg shadow-md p-6">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl font-semibold text-gray-900">Guide Content</h2>
@@ -49,6 +29,21 @@
             </div>
         </div>
 
-        <livewire:page-builder :details="$details" :editing="$editing" />
+        @if($editing)
+            <div class="space-y-4">
+                @foreach($details as $index => $detail)
+                    @if(in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
+                        <livewire:detail-input 
+                            :key="'detail-'.$index" 
+                            :index="$index" 
+                            :detail="$detail"
+                            wire:key="detail-{{ $index }}"
+                        />
+                    @endif
+                @endforeach
+            </div>
+        @else
+            <livewire:page-builder :details="$details" :editing="$editing" />
+        @endif
     </div>
 </div> 
