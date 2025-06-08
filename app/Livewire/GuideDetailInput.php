@@ -33,9 +33,9 @@ class GuideDetailInput extends Component
         if (in_array($this->detail['type'], ['list', 'ordered_list'])) {
             $this->items = $this->detail['items'] ?? [];
         } elseif (in_array($this->detail['type'], ['title', 'title_left'])) {
-            $this->text = $this->detail['content']['text'] ?? '';
+            $this->text = $this->detail['text'] ?? '';
         } else {
-            $this->value = $this->detail['content']['value'] ?? '';
+            $this->value = $this->detail['value'] ?? '';
         }
     }
 
@@ -49,7 +49,7 @@ class GuideDetailInput extends Component
         $this->dispatch('detail-updated', [
             'index' => $this->index,
             'detail' => [
-                'id' => $this->detail['id'] ?? null,
+                'id' => $this->detail['id'],
                 'type' => $this->detail['type'],
                 'value' => $value
             ]
@@ -61,7 +61,7 @@ class GuideDetailInput extends Component
         $this->dispatch('detail-updated', [
             'index' => $this->index,
             'detail' => [
-                'id' => $this->detail['id'] ?? null,
+                'id' => $this->detail['id'],
                 'type' => $this->detail['type'],
                 'text' => $value
             ]
@@ -94,9 +94,14 @@ class GuideDetailInput extends Component
     public function saveDetail()
     {
         try {
-            $component = GuideComponent::find($this->detail['id']);
+            $component = GuideComponent::with('page')->find($this->detail['id']);
             if (!$component) {
                 throw new \Exception('Component not found');
+            }
+
+            if (!$component->page) {
+                Log::error('Page not found for component: ' . $this->detail['id']);
+                throw new \Exception('Page not found for this component');
             }
 
             $content = match($this->detail['type']) {
@@ -121,7 +126,7 @@ class GuideDetailInput extends Component
 
             // Dispara evento para recarregar o guia
             $this->dispatch('guide-detail-updated', [
-                'guide_id' => $component->guide_page->guide_id
+                'guide_id' => $component->page->guide_id
             ]);
 
         } catch (\Exception $e) {

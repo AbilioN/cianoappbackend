@@ -62,17 +62,23 @@ class EditGuide extends Component
         try {
             $this->details = $this->guide->pages->flatMap(function($page) {
                 return $page->components->map(function($component) {
+                    $content = is_string($component->content) ? json_decode($component->content, true) : $component->content;
                     return [
+                        'id' => $component->id,
+                        'guide_page_id' => $component->guide_page_id,
                         'type' => $component->type,
-                        ...$component->content
+                        ...$content
                     ];
                 });
-            })->toArray();
+            });
+
             
             // Dispara evento para atualizar o PageBuilder
             $this->dispatch('page-builder-update', [
                 'details' => $this->details
             ]);
+
+
         
         } catch (\Throwable $th) {
             Log::error('Error loading details: ' . $th->getMessage());

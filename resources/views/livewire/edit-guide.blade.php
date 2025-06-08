@@ -33,10 +33,11 @@
             <div class="space-y-4">
                 @foreach($details as $index => $detail)
                     @if(in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
-                        <livewire:detail-input 
+                        <livewire:guide-detail-input 
                             :key="'detail-'.$index" 
                             :index="$index" 
                             :detail="$detail"
+                            :selectedLanguage="$selectedLanguage"
                             wire:key="detail-{{ $index }}"
                         />
                     @endif
