@@ -1,4 +1,22 @@
 <div class="container mx-auto px-4 py-8">
+    <!-- Feedback Message -->
+    @if($showFeedback)
+        <div x-data="{ show: true }" 
+             x-show="show" 
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 transform scale-95"
+             x-transition:enter-end="opacity-100 transform scale-100"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="opacity-100 transform scale-100"
+             x-transition:leave-end="opacity-0 transform scale-95"
+             class="fixed top-4 right-4 z-50"
+             x-init="setTimeout(() => { show = false; $wire.hideFeedback() }, 3000)">
+            <div class="rounded-lg shadow-lg px-4 py-3 {{ $feedbackType === 'error' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700' }}">
+                {{ $feedbackMessage }}
+            </div>
+        </div>
+    @endif
+
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-2xl font-bold text-gray-900">Edit Guide</h1>
         <div class="flex space-x-4">
@@ -32,19 +50,30 @@
         @if($editing)
             <div class="space-y-4">
                 @foreach($details as $index => $detail)
-                    @if(in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
+                    <div wire:key="detail-{{ $detail['id'] }}">
                         <livewire:guide-detail-input 
-                            :key="'detail-'.$index" 
+                            :detail="$detail" 
                             :index="$index" 
-                            :detail="$detail"
                             :selectedLanguage="$selectedLanguage"
-                            wire:key="detail-{{ $index }}"
+                            wire:key="guide-detail-input-{{ $detail['id'] }}"
                         />
-                    @endif
+                    </div>
                 @endforeach
             </div>
         @else
             <livewire:page-builder :details="$details" :editing="$editing" />
         @endif
     </div>
-</div> 
+</div>
+
+@push('scripts')
+<script>
+    document.addEventListener('livewire:initialized', () => {
+        Livewire.on('hide-feedback-after-delay', () => {
+            setTimeout(() => {
+                @this.hideFeedback();
+            }, 3000);
+        });
+    });
+</script>
+@endpush 

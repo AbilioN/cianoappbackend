@@ -23,11 +23,18 @@ class EditGuide extends Component
         'detail-published' => 'handleDetailPublished',
         'draft-validation-error' => 'handleDraftValidationError',
         'guide-detail-updated' => 'handleGuideDetailUpdated',
-        'page-builder-update-detail' => 'handlePageBuilderUpdateDetail'
+        'page-builder-update-detail' => 'handlePageBuilderUpdateDetail',
+        'reset-editing-state' => 'handleResetEditingState',
+        'show-save-feedback' => 'handleSaveFeedback',
+        'disable-editing' => 'handleDisableEditing'
     ];
 
     public $draftDetails = [];
     public $hasDraftChanges = false;
+    public $editingComponents = [];
+    public $feedbackMessage = '';
+    public $feedbackType = 'success';
+    public $showFeedback = false;
 
     protected $rules = [
         'guide.name' => 'required|string|max:255',
@@ -107,9 +114,15 @@ class EditGuide extends Component
         $this->loadDetails();
     }
 
-    public function toggleEditing()
+    public function toggleEditing($componentId = null)
     {
-        $this->editing = !$this->editing;
+        if ($componentId === null) {
+            // Toggle global editing state
+            $this->editing = !$this->editing;
+        } else {
+            // Toggle component-specific editing state
+            $this->editingComponents[$componentId] = !($this->editingComponents[$componentId] ?? false);
+        }
     }
 
     public function save()
@@ -150,5 +163,35 @@ class EditGuide extends Component
     public function render()
     {
         return view('livewire.edit-guide');
+    }
+
+    public function handleResetEditingState($data)
+    {
+        $componentId = $data['component_id'];
+        if (isset($this->editingComponents[$componentId])) {
+            unset($this->editingComponents[$componentId]);
+        }
+    }
+
+    public function handleSaveFeedback($data)
+    {
+        $this->feedbackMessage = $data['message'];
+        $this->feedbackType = $data['type'] ?? 'success';
+        $this->showFeedback = true;
+
+        // Dispatch event to hide feedback after 3 seconds using JavaScript
+        $this->dispatch('hide-feedback-after-delay');
+    }
+
+    public function hideFeedback()
+    {
+        $this->showFeedback = false;
+    }
+
+    public function handleDisableEditing($data)
+    {
+        if ($data['guide_id'] === $this->guide->id) {
+            $this->editing = false;
+        }
     }
 } 

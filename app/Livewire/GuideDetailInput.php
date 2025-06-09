@@ -44,30 +44,6 @@ class GuideDetailInput extends Component
         $this->selectedLanguage = $language;
     }
 
-    public function updatedValue($value)
-    {
-        $this->dispatch('detail-updated', [
-            'index' => $this->index,
-            'detail' => [
-                'id' => $this->detail['id'],
-                'type' => $this->detail['type'],
-                'value' => $value
-            ]
-        ]);
-    }
-
-    public function updatedText($value)
-    {
-        $this->dispatch('detail-updated', [
-            'index' => $this->index,
-            'detail' => [
-                'id' => $this->detail['id'],
-                'type' => $this->detail['type'],
-                'text' => $value
-            ]
-        ]);
-    }
-
     public function addListItem()
     {
         if (!empty($this->newItem)) {
@@ -88,7 +64,6 @@ class GuideDetailInput extends Component
     {
         // Força a atualização do array de items
         $this->items = array_values($this->items);
-        $this->saveDetail();
     }
 
     public function saveDetail()
@@ -119,13 +94,20 @@ class GuideDetailInput extends Component
                 'content' => json_encode($content)
             ]);
 
-            // Dispara evento para recarregar o guia
-            $this->dispatch('guide-detail-updated', [
-                'guide_id' => $this->detail['guide_id']
+            // Dispara evento para mostrar feedback visual
+            $this->dispatch('show-save-feedback', [
+                'message' => 'Changes saved successfully!'
             ]);
+
+            // Redireciona para a mesma página para forçar o reload
+            return redirect()->route('admin.guides.edit', ['id' => $this->detail['guide_id']]);
 
         } catch (\Exception $e) {
             Log::error('Error saving detail: ' . $e->getMessage());
+            $this->dispatch('show-save-feedback', [
+                'message' => 'Error saving changes: ' . $e->getMessage(),
+                'type' => 'error'
+            ]);
             throw $e;
         }
     }
