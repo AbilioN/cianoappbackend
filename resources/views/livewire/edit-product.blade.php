@@ -1,160 +1,79 @@
-<div class="py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Header -->
-        <div class="mb-6 flex justify-between items-center">
-            <h2 class="text-2xl font-semibold text-gray-900">Product: {{ $product->name }}</h2>
-            <a href="{{ route('admin.products') }}" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+<div class="container mx-auto px-4 py-8">
+    <!-- Feedback Message -->
+    @if($showFeedback)
+        <div x-data="{ show: true }" 
+             x-show="show" 
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 transform scale-95"
+             x-transition:enter-end="opacity-100 transform scale-100"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="opacity-100 transform scale-100"
+             x-transition:leave-end="opacity-0 transform scale-95"
+             class="fixed top-4 right-4 z-50"
+             x-init="setTimeout(() => { show = false; $wire.hideFeedback() }, 3000)">
+            <div class="rounded-lg shadow-lg px-4 py-3 {{ $feedbackType === 'error' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700' }}">
+                {{ $feedbackMessage }}
+            </div>
+        </div>
+    @endif
+
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-900">Edit Product</h1>
+        <div class="flex space-x-4">
+            <a href="{{ route('admin.products') }}" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">
                 Back to Products
             </a>
+            <button wire:click="toggleEditing" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                {{ $editing ? 'Cancel Editing' : 'Edit Product' }}
+            </button>
+            @if($editing)
+                <button wire:click="$dispatch('save-all-details')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
+                    Save Changes
+                </button>
+            @endif
         </div>
+    </div>
 
-        <!-- Language Selector -->
-        <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-700 mb-2">Select Language</label>
-            <div class="flex gap-2">
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold text-gray-900">Product Content</h2>
+            <div class="flex space-x-2">
                 @foreach($languages as $lang)
-                    <button 
-                        wire:click="changeLanguage('{{ $lang }}')"
-                        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors {{ $selectedLanguage === $lang ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200' }}"
-                    >
+                    <button wire:click="updateSelectedLanguage('{{ $lang }}')" 
+                            class="px-3 py-1 rounded-lg {{ $selectedLanguage === $lang ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700' }}">
                         {{ strtoupper($lang) }}
                     </button>
                 @endforeach
             </div>
         </div>
 
-        <!-- Preview (PageBuilder) -->
-        <div class="mb-8">
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold mb-4 text-gray-800">Preview</h3>
-                <livewire:page-builder :details="$details" :key="'page-builder'" />
-                <div class="flex justify-end mt-4">
-                    <button 
-                        wire:click="toggleEditing"
-                        class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-                    >
-                        {{ $editing ? 'Cancel' : 'Edit' }}
-                    </button>
-                </div>
+        @if($editing)
+            <div class="space-y-4">
+                @foreach($details as $index => $detail)
+                    @if(in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
+                        <livewire:detail-input 
+                            :key="'detail-'.$index" 
+                            :index="$index" 
+                            :detail="$detail"
+                            wire:key="detail-{{ $index }}"
+                        />
+                    @endif
+                @endforeach
             </div>
-        </div>
-
-        @if($editing ?? false)
-        <div class="bg-white rounded-lg shadow-sm">
-            <form wire:submit="save" class="space-y-6 p-6">
-                <!-- Basic Information -->
-                {{-- <div class="space-y-4">
-                    <h3 class="text-lg font-medium text-gray-900">Basic Information</h3>
-                    
-                    <!-- Product Name -->
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Product Name</label>
-                        <input 
-                            type="text" 
-                            id="name" 
-                            wire:model="product.name" 
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        >
-                        @error('product.name') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                    </div>
-
-                    <!-- Category -->
-                    <div>
-                        <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
-                        <select 
-                            id="category" 
-                            wire:model="product.product_category_id" 
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        >
-                            @foreach($product->category->translations as $translation)
-                                <option value="{{ $product->category->id }}">
-                                    {{ $translation->name }} ({{ strtoupper($translation->language) }})
-                                </option>
-                            @endforeach
-                        </select>
-                        @error('product.product_category_id') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                    </div>
-
-                    <!-- Image Upload -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Product Image</label>
-                        <div class="mt-1 flex items-center gap-4">
-                            <div class="flex-1">
-                                <input type="file" wire:model="image" accept="image/*" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
-                                @error('image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                            </div>
-                            @if($tempImageUrl)
-                                <div class="relative w-32 h-32">
-                                    <img src="{{ $tempImageUrl }}" alt="Preview" class="w-full h-full object-cover rounded-lg">
-                                    <button wire:click="removeImage" type="button" class="absolute -top-2 -right-2 p-1 bg-red-100 text-red-600 rounded-full hover:bg-red-200">
-                                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            @elseif($product->image)
-                                <div class="relative w-32 h-32">
-                                    <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover rounded-lg">
-                                    <button wire:click="removeImage" type="button" class="absolute -top-2 -right-2 p-1 bg-red-100 text-red-600 rounded-full hover:bg-red-200">
-                                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            @endif
-                        </div>
-                        <p class="mt-1 text-sm text-gray-500">PNG, JPG, GIF up to 2MB</p>
-                    </div>
-
-                    <!-- Image URL (fallback) -->
-                    <div>
-                        <label for="image_url" class="block text-sm font-medium text-gray-700">Or use Image URL</label>
-                        <input type="text" wire:model="product.image" id="image_url" placeholder="https://..." class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
-                        @error('product.image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                    </div>
-                </div> --}}
-
-                <!-- Product Details -->
-                <div class="mt-8 bg-white rounded-lg shadow-sm p-6">
-                    {{-- <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-lg font-medium text-gray-900">Product Details</h3>
-                        <button wire:click="addDetail" type="button" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors">
-                            Add Detail
-                        </button>
-                    </div> --}}
-
-                    <div class="space-y-4">
-                        @foreach($details as $index => $detail)
-                            @if($editing && in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left']))
-                                <livewire:detail-input 
-                                    :key="'detail-'.$index" 
-                                    :index="$index" 
-                                    :detail="$detail"
-                                    wire:key="detail-{{ $index }}"
-                                />
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-
-                <!-- Submit Buttons -->
-                {{-- <div class="flex justify-end gap-4">
-                    <button 
-                        wire:click="saveAsDraft" 
-                        type="button" 
-                        class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium"
-                    >
-                        Save as Draft
-                    </button>
-                    <button 
-                        type="submit" 
-                        class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-                    >
-                        Save Changes
-                    </button>
-                </div> --}}
-            </form>
-        </div>
+        @else
+            <livewire:page-builder :details="$details" :editing="$editing" />
         @endif
     </div>
 </div>
+
+@push('scripts')
+<script>
+    document.addEventListener('livewire:initialized', () => {
+        Livewire.on('hide-feedback-after-delay', () => {
+            setTimeout(() => {
+                @this.hideFeedback();
+            }, 3000);
+        });
+    });
+</script>
+@endpush

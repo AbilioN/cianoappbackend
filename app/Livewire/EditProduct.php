@@ -20,6 +20,9 @@ class EditProduct extends Component
     public array $languages = ['en', 'pt', 'es', 'fr', 'it', 'de'];
     public string $selectedLanguage = 'en';
     public bool $editing = false;
+    public $showFeedback = false;
+    public $feedbackMessage = '';
+    public $feedbackType = 'success';
 
     protected $listeners = [
         'remove-detail' => 'removeDetail',
@@ -29,7 +32,9 @@ class EditProduct extends Component
         'detail-published' => 'handleDetailPublished',
         'draft-validation-error' => 'handleDraftValidationError',
         'product-detail-updated' => 'handleProductDetailUpdated',
-        'page-builder-update-detail' => 'handlePageBuilderUpdateDetail'
+        'page-builder-update-detail' => 'handlePageBuilderUpdateDetail',
+        'save-all-details' => 'handleSaveAllDetails',
+        'show-save-feedback' => 'handleSaveFeedback'
     ];
 
     public $draftDetails = [];
@@ -495,11 +500,54 @@ class EditProduct extends Component
     public function toggleEditing()
     {
         $this->editing = !$this->editing;
+        if (!$this->editing) {
+            $this->dispatch('reset-editing-state');
+        }
     }
 
     public function updatedSelectedLanguage($value)
     {
         $this->dispatch('language-changed', $value);
+    }
+
+    public function handleSaveFeedback($data)
+    {
+        $this->feedbackMessage = $data['message'];
+        $this->feedbackType = $data['type'] ?? 'success';
+        $this->showFeedback = true;
+    }
+
+    public function hideFeedback()
+    {
+        $this->showFeedback = false;
+    }
+
+    public function handleSaveAllDetails()
+    {
+        try {
+            foreach ($this->details as $index => $detail) {
+                if (in_array($detail['type'], ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list', 'title', 'title_left'])) {
+                    $this->dispatch('detail-updated', [
+                        'index' => $index,
+                        'detail' => $detail
+                    ]);
+                }
+            }
+
+            $this->handleSaveFeedback([
+                'message' => 'Changes saved successfully!',
+                'type' => 'success'
+            ]);
+
+            $this->editing = false;
+            $this->dispatch('reset-editing-state');
+
+        } catch (\Exception $e) {
+            $this->handleSaveFeedback([
+                'message' => 'Error saving changes: ' . $e->getMessage(),
+                'type' => 'error'
+            ]);
+        }
     }
 
     public function render()
