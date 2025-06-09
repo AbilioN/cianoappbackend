@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ciano</title>
-    <link rel="stylesheet" href="{{ URL::asset('build/assets/app-DVq7K88X.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('build/assets/app-CFONZVdK.css') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
