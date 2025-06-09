@@ -31,10 +31,14 @@ class GuideController extends Controller
                         'notification' => $guide->notification,
                         'pages' => $guide->pages->map(function($page) {
                             return $page->components->map(function($component) {
-                                return [
-                                    'type' => $component->type,
-                                    ...$component->content
-                                ];
+                                $content = is_string($component->content) ? json_decode($component->content, true) : $component->content;
+                                if (!is_array($content)) {
+                                    $content = [];
+                                }
+                                return array_merge(
+                                    ['type' => $component->type],
+                                    $content
+                                );
                             })->toArray();
                         })->toArray()
                     ];
