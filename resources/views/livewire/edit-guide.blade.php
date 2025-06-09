@@ -47,9 +47,13 @@
             </div>
         </div>
 
+        @php
+            $supportedTypes = ['text', 'large_text', 'medium_text', 'small_text', 'list', 'ordered_list'];
+        @endphp
         @if($editing)
             <div class="space-y-4">
                 @foreach($details as $index => $detail)
+                    @if(in_array($detail['type'], $supportedTypes))
                     <div wire:key="detail-{{ $detail['id'] }}">
                         <livewire:guide-detail-input 
                             :detail="$detail" 
@@ -58,6 +62,7 @@
                             wire:key="guide-detail-input-{{ $detail['id'] }}"
                         />
                     </div>
+                    @endif
                 @endforeach
             </div>
         @else
