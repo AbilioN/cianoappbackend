@@ -27,7 +27,7 @@
                 {{ $editing ? 'Cancel Editing' : 'Edit Guide' }}
             </button>
             @if($editing)
-                <button wire:click="save" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
+                <button wire:click="$dispatch('save-all-details')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
                     Save Changes
                 </button>
             @endif

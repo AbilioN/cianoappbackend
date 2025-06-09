@@ -17,7 +17,8 @@ class GuideDetailInput extends Component
     public $selectedLanguage;
 
     protected $listeners = [
-        'language-changed' => 'updateLanguage'
+        'language-changed' => 'updateLanguage',
+        'save-all-details' => 'handleSaveAllDetails'
     ];
 
     public function mount($detail, $index, $selectedLanguage = 'en')
@@ -49,7 +50,7 @@ class GuideDetailInput extends Component
         if (!empty($this->newItem)) {
             $this->items[] = $this->newItem;
             $this->newItem = '';
-            $this->saveDetail();
+            $this->saveDetail(false);
         }
     }
 
@@ -57,7 +58,7 @@ class GuideDetailInput extends Component
     {
         unset($this->items[$index]);
         $this->items = array_values($this->items);
-        $this->saveDetail();
+        $this->saveDetail(false);
     }
 
     public function updatedItems($value, $key)
@@ -66,7 +67,7 @@ class GuideDetailInput extends Component
         $this->items = array_values($this->items);
     }
 
-    public function saveDetail()
+    public function saveDetail($shouldRedirect = true)
     {
         try {
             $component = GuideComponent::find($this->detail['id']);
@@ -99,8 +100,10 @@ class GuideDetailInput extends Component
                 'message' => 'Changes saved successfully!'
             ]);
 
-            // Redireciona para a mesma página para forçar o reload
-            return redirect()->route('admin.guides.edit', ['id' => $this->detail['guide_id']]);
+            // Só redireciona se explicitamente solicitado (botão Save Changes)
+            if ($shouldRedirect) {
+                return redirect()->route('admin.guides.edit', ['id' => $this->detail['guide_id']]);
+            }
 
         } catch (\Exception $e) {
             Log::error('Error saving detail: ' . $e->getMessage());
@@ -110,6 +113,11 @@ class GuideDetailInput extends Component
             ]);
             throw $e;
         }
+    }
+
+    public function handleSaveAllDetails()
+    {
+        $this->saveDetail(true);
     }
 
     public function render()

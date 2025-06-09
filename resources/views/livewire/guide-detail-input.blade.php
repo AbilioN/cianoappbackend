@@ -19,7 +19,7 @@
         @case('small_text')
             <div class="flex gap-2">
                 <input type="text" wire:model="value" class="flex-1 form-input rounded-md shadow-sm" placeholder="Enter text">
-                <button wire:click="saveDetail" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                <button wire:click="saveDetail(false)" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                     </svg>
@@ -56,7 +56,7 @@
                     @endforeach
                 </div>
                 <div class="flex justify-end">
-                    <button wire:click="saveDetail" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                    <button wire:click="saveDetail(false)" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -69,7 +69,7 @@
         @case('title_left')
             <div class="flex gap-2">
                 <input type="text" wire:model="text" class="flex-1 form-input rounded-md shadow-sm" placeholder="Enter title">
-                <button wire:click="saveDetail" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                <button wire:click="saveDetail(false)" class="px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                     </svg>
