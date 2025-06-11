@@ -77,7 +77,12 @@ class EditGuide extends Component
                         $content = [];
                     }
                     return array_merge(
-                        ['type' => $component->type],
+                        [
+                            'id' => $component->id,
+                            'type' => $component->type,
+                            'guide_id' => $this->guide->id,
+                            'guide_page_id' => $component->guide_page_id
+                        ],
                         $content
                     );
                 });
