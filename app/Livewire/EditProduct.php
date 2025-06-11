@@ -86,19 +86,19 @@ class EditProduct extends Component
         try {
             // Carrega todos os detalhes para manter a ordem
             $allDetails = $this->product->details->map(function($detail) {
-                $content = json_decode($detail->content, true);
-                return [
-                    'id' => $detail->id,
-                    'type' => $detail->type,
-                    'order' => $detail->order,
-                    'value' => $content['value'] ?? '',
-                    'text' => $content['text'] ?? '',
-                    'items' => $content['items'] ?? [],
-                    'url' => $content['url'] ?? '',
-                    'content' => $content['content'] ?? '',
-                    'image' => $content['image'] ?? '',
-                    'alt' => $content['alt'] ?? ''
-                ];
+                $content = is_string($detail->content) ? json_decode($detail->content, true) : $detail->content;
+                if (!is_array($content)) {
+                    $content = [];
+                }
+                return array_merge(
+                    [
+                        'id' => $detail->id,
+                        'type' => $detail->type,
+                        'order' => $detail->order,
+                        'product_id' => $this->product->id
+                    ],
+                    $content
+                );
             })->toArray();
 
             // Se estiver em modo de edição, filtra apenas os detalhes de texto
@@ -176,6 +176,17 @@ class EditProduct extends Component
     public function updateSelectedLanguage($language)
     {
         $this->selectedLanguage = $language;
+        $this->editing = false; // Fecha o editor
+        
+        // Recarrega o produto com os detalhes do novo idioma
+        $this->product = Product::with([
+            'category.translations',
+            'details' => function($query) {
+                $query->orderBy('order');
+                $query->where('language', $this->selectedLanguage);
+            },
+        ])->findOrFail($this->product->id);
+
         $this->loadDetails();
     }
 
@@ -281,19 +292,19 @@ class EditProduct extends Component
 
         // Atualiza os detalhes sem duplicar
         $allDetails = $this->product->details->map(function($detail) {
-            $content = json_decode($detail->content, true);
-            return [
-                'id' => $detail->id,
-                'type' => $detail->type,
-                'order' => $detail->order,
-                'value' => $content['value'] ?? '',
-                'text' => $content['text'] ?? '',
-                'items' => $content['items'] ?? [],
-                'url' => $content['url'] ?? '',
-                'content' => $content['content'] ?? '',
-                'image' => $content['image'] ?? '',
-                'alt' => $content['alt'] ?? ''
-            ];
+            $content = is_string($detail->content) ? json_decode($detail->content, true) : $detail->content;
+            if (!is_array($content)) {
+                $content = [];
+            }
+            return array_merge(
+                [
+                    'id' => $detail->id,
+                    'type' => $detail->type,
+                    'order' => $detail->order,
+                    'product_id' => $this->product->id
+                ],
+                $content
+            );
         })->toArray();
 
         // Se estiver em modo de edição, filtra apenas os detalhes de texto
@@ -478,23 +489,6 @@ class EditProduct extends Component
             }
             session()->flash('error', 'Error updating product: ' . $e->getMessage());
         }
-    }
-
-    public function changeLanguage($language)
-    {
-        $this->selectedLanguage = $language;
-        $this->editing = false; // Fecha o editor
-        
-        // Recarrega o produto com os detalhes do novo idioma
-        $this->product = Product::with([
-            'category.translations',
-            'details' => function($query) {
-                $query->orderBy('order');
-                $query->where('language', $this->selectedLanguage);
-            },
-        ])->findOrFail($this->product->id);
-
-        $this->loadDetails();
     }
 
     public function toggleEditing()
