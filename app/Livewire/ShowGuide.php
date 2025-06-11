@@ -42,11 +42,10 @@ class ShowGuide extends Component
                     if (!is_array($content)) {
                         $content = [];
                     }
-                    return $content;
-                    // return [
-                    //     'type' => $component->type,
-                    //     ...$component->content
-                    // ];
+                    return array_merge(
+                        ['type' => $component->type],
+                        $content
+                    );
                 });
             })->toArray();
             

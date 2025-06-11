@@ -76,15 +76,12 @@ class EditGuide extends Component
                     if (!is_array($content)) {
                         $content = [];
                     }
-                    
-                    return array_merge([
-                        'id' => $component->id,
-                        'guide_page_id' => $component->guide_page_id,
-                        'guide_id' => $this->guide->id,
-                        'type' => $component->type,
-                    ], $content);
+                    return array_merge(
+                        ['type' => $component->type],
+                        $content
+                    );
                 });
-            });
+            })->toArray();
 
             // Dispara evento para atualizar o PageBuilder
             $this->dispatch('page-builder-update', [
